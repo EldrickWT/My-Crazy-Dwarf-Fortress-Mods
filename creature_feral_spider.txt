@@ -1,0 +1,32 @@
+creature_feral_spider
+
+[OBJECT:CREATURE]
+
+[CREATURE:FERAL_SPIDER]
+	[NAME:Feral Spider:Feral Spiders:Feral Arachnid]
+	[CASTE_NAME:Feral Spider:Feral Spiders:Feral Arachnid]
+	[DESCRIPTION:An imposing spider skitters nearby. Its patterned, battle damaged carapace warns of its feral nature. Beware it's bites.]
+	[CASTE:FERAL_SPIDER_FEMALE]
+		[FEMALE]
+		[CASTE_COLOR:0:7:0]
+	[CASTE:FERAL_SPIDER_MALE]
+		[MALE]
+		[CASTE_COLOR:0:7:1]
+	[SELECT_CASTE:ALL]
+		[BODY_DETAIL_PLAN:CHITIN_TISSUES]
+		[APPLY_CREATURE_VARIATION:SPIDER_START]
+		[APPLY_CURRENT_CREATURE_VARIATION]
+		[APPLY_CREATURE_VARIATION:SPIDER_MIDDLE]
+		[APPLY_CURRENT_CREATURE_VARIATION]
+		[APPLY_CREATURE_VARIATION:SPIDER_END]
+		[APPLY_CURRENT_CREATURE_VARIATION]
+		[APPLY_CREATURE_VARIATION:FERAL_SPIDER_FLAVORED]
+		[APPLY_CURRENT_CREATURE_VARIATION]
+
+[CREATURE:GIANT_FERAL_SPIDER]
+	[COPY_TAGS_FROM:FERAL_SPIDER]
+	[APPLY_CREATURE_VARIATION:GIANT_SPIDER]
+	[DESCRIPTION:A giant imposing spider skitters nearby. Its patterned, battle damaged carapace warns of its feral nature. Beware it's bites.]
+	[NAME:Giant Feral Spider:Giant Feral Spiders:Giant Feral Arachnid]
+	[CASTE_NAME:Giant Feral Spider:Giant Feral Spiders:Giant Feral Arachnid]
+

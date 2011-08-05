@@ -1,0 +1,3113 @@
+Scanning file: item_ammo.txt
+Scanning file: item_ammo_rails.txt
+Scanning file: item_armor.txt
+Scanning file: item_armor_silliness.txt
+Scanning file: item_food.txt
+Scanning file: item_gloves.txt
+Scanning file: item_helm.txt
+Scanning file: item_instrument.txt
+Scanning file: item_pants.txt
+Scanning file: item_shield.txt
+Scanning file: item_shoes.txt
+Scanning file: item_siegeammo.txt
+Scanning file: item_silliness.txt
+Scanning file: item_tool.txt
+Scanning file: item_toy.txt
+Scanning file: item_trapcomp.txt
+Scanning file: item_weapon.txt
+Scanning file: item_weapon_bolt_sword.txt
+Scanning file: item_weapon_railgun.txt
+Scanning file: item_weapon_silliness.txt
+    <dfjob name="Sacrifice to Armok" category="armok_altar" reaction="SACRIFICE">
+        <item type="bar" material="ADAMANTINE"/>
+    </dfjob>
+    <dfjob name="Ignite large fire" category="bonfire" reaction="BONFIRE_START">
+        <item type="boulder" material="COAL_BONFIRE"/>
+    </dfjob>
+    <dfjob name="Ignite small fire" category="bonfire" reaction="FIREWOOD_START">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Train MINING" category="training_booth" reaction="TRAIN_SKILL_000">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train WOODCUTTING" category="training_booth" reaction="TRAIN_SKILL_001">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train CARPENTRY" category="training_booth" reaction="TRAIN_SKILL_002">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train DETAILSTONE" category="training_booth" reaction="TRAIN_SKILL_003">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train MASONRY" category="training_booth" reaction="TRAIN_SKILL_004">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train ANIMALTRAIN" category="training_booth" reaction="TRAIN_SKILL_005">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train ANIMALCARE" category="training_booth" reaction="TRAIN_SKILL_006">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train DISSECT_FISH" category="training_booth" reaction="TRAIN_SKILL_007">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train DISSECT_VERMIN" category="training_booth" reaction="TRAIN_SKILL_008">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train PROCESSFISH" category="training_booth" reaction="TRAIN_SKILL_009">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train BUTCHER" category="training_booth" reaction="TRAIN_SKILL_010">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train TRAPPING" category="training_booth" reaction="TRAIN_SKILL_011">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train TANNER" category="training_booth" reaction="TRAIN_SKILL_012">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train WEAVING" category="training_booth" reaction="TRAIN_SKILL_013">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train BREWING" category="training_booth" reaction="TRAIN_SKILL_014">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train ALCHEMY" category="training_booth" reaction="TRAIN_SKILL_015">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train CLOTHESMAKING" category="training_booth" reaction="TRAIN_SKILL_016">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train MILLING" category="training_booth" reaction="TRAIN_SKILL_017">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train PROCESSPLANTS" category="training_booth" reaction="TRAIN_SKILL_018">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train CHEESEMAKING" category="training_booth" reaction="TRAIN_SKILL_019">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train MILK" category="training_booth" reaction="TRAIN_SKILL_020">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train COOK" category="training_booth" reaction="TRAIN_SKILL_021">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train PLANT" category="training_booth" reaction="TRAIN_SKILL_022">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train HERBALISM" category="training_booth" reaction="TRAIN_SKILL_023">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train FISH" category="training_booth" reaction="TRAIN_SKILL_024">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train SMELT" category="training_booth" reaction="TRAIN_SKILL_025">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train EXTRACT_STRAND" category="training_booth" reaction="TRAIN_SKILL_026">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train FORGE_WEAPON" category="training_booth" reaction="TRAIN_SKILL_027">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train FORGE_ARMOR" category="training_booth" reaction="TRAIN_SKILL_028">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train FORGE_FURNITURE" category="training_booth" reaction="TRAIN_SKILL_029">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train CUTGEM" category="training_booth" reaction="TRAIN_SKILL_030">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train ENCRUSTGEM" category="training_booth" reaction="TRAIN_SKILL_031">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train WOODCRAFT" category="training_booth" reaction="TRAIN_SKILL_032">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train STONECRAFT" category="training_booth" reaction="TRAIN_SKILL_033">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train METALCRAFT" category="training_booth" reaction="TRAIN_SKILL_034">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train GLASSMAKER" category="training_booth" reaction="TRAIN_SKILL_035">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train LEATHERWORK" category="training_booth" reaction="TRAIN_SKILL_036">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train BONECARVE" category="training_booth" reaction="TRAIN_SKILL_037">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train AXE" category="training_booth" reaction="TRAIN_SKILL_038">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train SWORD" category="training_booth" reaction="TRAIN_SKILL_039">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train DAGGER" category="training_booth" reaction="TRAIN_SKILL_040">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train MACE" category="training_booth" reaction="TRAIN_SKILL_041">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train HAMMER" category="training_booth" reaction="TRAIN_SKILL_042">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train SPEAR" category="training_booth" reaction="TRAIN_SKILL_043">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train CROSSBOW" category="training_booth" reaction="TRAIN_SKILL_044">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train SHIELD" category="training_booth" reaction="TRAIN_SKILL_045">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train ARMOR" category="training_booth" reaction="TRAIN_SKILL_046">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train SIEGECRAFT" category="training_booth" reaction="TRAIN_SKILL_047">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train SIEGEOPERATE" category="training_booth" reaction="TRAIN_SKILL_048">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train BOWYER" category="training_booth" reaction="TRAIN_SKILL_049">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train PIKE" category="training_booth" reaction="TRAIN_SKILL_050">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train WHIP" category="training_booth" reaction="TRAIN_SKILL_051">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train BOW" category="training_booth" reaction="TRAIN_SKILL_052">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train BLOWGUN" category="training_booth" reaction="TRAIN_SKILL_053">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train THROW" category="training_booth" reaction="TRAIN_SKILL_054">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train MECHANICS" category="training_booth" reaction="TRAIN_SKILL_055">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train MAGIC_NATURE" category="training_booth" reaction="TRAIN_SKILL_056">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train SNEAK" category="training_booth" reaction="TRAIN_SKILL_057">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train DESIGNBUILDING" category="training_booth" reaction="TRAIN_SKILL_058">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train DRESS_WOUNDS" category="training_booth" reaction="TRAIN_SKILL_059">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train DIAGNOSE" category="training_booth" reaction="TRAIN_SKILL_060">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train SURGERY" category="training_booth" reaction="TRAIN_SKILL_061">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train SET_BONE" category="training_booth" reaction="TRAIN_SKILL_062">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train SUTURE" category="training_booth" reaction="TRAIN_SKILL_063">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train CRUTCH_WALK" category="training_booth" reaction="TRAIN_SKILL_064">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train WOOD_BURNING" category="training_booth" reaction="TRAIN_SKILL_065">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train LYE_MAKING" category="training_booth" reaction="TRAIN_SKILL_066">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train SOAP_MAKING" category="training_booth" reaction="TRAIN_SKILL_067">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train POTASH_MAKING" category="training_booth" reaction="TRAIN_SKILL_068">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train DYER" category="training_booth" reaction="TRAIN_SKILL_069">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train OPERATE_PUMP" category="training_booth" reaction="TRAIN_SKILL_070">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train SWIMMING" category="training_booth" reaction="TRAIN_SKILL_071">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train PERSUASION" category="training_booth" reaction="TRAIN_SKILL_072">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train NEGOTIATION" category="training_booth" reaction="TRAIN_SKILL_073">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train JUDGING_INTENT" category="training_booth" reaction="TRAIN_SKILL_074">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train APPRAISAL" category="training_booth" reaction="TRAIN_SKILL_075">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train ORGANIZATION" category="training_booth" reaction="TRAIN_SKILL_076">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train RECORD_KEEPING" category="training_booth" reaction="TRAIN_SKILL_077">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train LYING" category="training_booth" reaction="TRAIN_SKILL_078">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train INTIMIDATION" category="training_booth" reaction="TRAIN_SKILL_079">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train CONVERSATION" category="training_booth" reaction="TRAIN_SKILL_080">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train COMEDY" category="training_booth" reaction="TRAIN_SKILL_081">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train FLATTERY" category="training_booth" reaction="TRAIN_SKILL_082">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train CONSOLE" category="training_booth" reaction="TRAIN_SKILL_083">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train PACIFY" category="training_booth" reaction="TRAIN_SKILL_084">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train TRACKING" category="training_booth" reaction="TRAIN_SKILL_085">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train KNOWLEDGE_ACQUISITION" category="training_booth" reaction="TRAIN_SKILL_086">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train CONCENTRATION" category="training_booth" reaction="TRAIN_SKILL_087">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train DISCIPLINE" category="training_booth" reaction="TRAIN_SKILL_088">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train SITUATIONAL_AWARENESS" category="training_booth" reaction="TRAIN_SKILL_089">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train WRITING" category="training_booth" reaction="TRAIN_SKILL_090">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train PROSE" category="training_booth" reaction="TRAIN_SKILL_091">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train POETRY" category="training_booth" reaction="TRAIN_SKILL_092">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train READING" category="training_booth" reaction="TRAIN_SKILL_093">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train SPEAKING" category="training_booth" reaction="TRAIN_SKILL_094">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train COORDINATION" category="training_booth" reaction="TRAIN_SKILL_095">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train BALANCE" category="training_booth" reaction="TRAIN_SKILL_096">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train LEADERSHIP" category="training_booth" reaction="TRAIN_SKILL_097">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train TEACHING" category="training_booth" reaction="TRAIN_SKILL_098">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train MELEE_COMBAT" category="training_booth" reaction="TRAIN_SKILL_099">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train RANGED_COMBAT" category="training_booth" reaction="TRAIN_SKILL_100">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train WRESTLING" category="training_booth" reaction="TRAIN_SKILL_101">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train BITE" category="training_booth" reaction="TRAIN_SKILL_102">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train GRASP_STRIKE" category="training_booth" reaction="TRAIN_SKILL_103">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train STANCE_STRIKE" category="training_booth" reaction="TRAIN_SKILL_104">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train DODGING" category="training_booth" reaction="TRAIN_SKILL_105">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train MISC_WEAPON" category="training_booth" reaction="TRAIN_SKILL_106">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train KNAPPING" category="training_booth" reaction="TRAIN_SKILL_107">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train MILITARY_TACTICS" category="training_booth" reaction="TRAIN_SKILL_108">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train SHEARING" category="training_booth" reaction="TRAIN_SKILL_109">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train SPINNING" category="training_booth" reaction="TRAIN_SKILL_110">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train POTTERY" category="training_booth" reaction="TRAIN_SKILL_111">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train GLAZING" category="training_booth" reaction="TRAIN_SKILL_112">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train PRESSING" category="training_booth" reaction="TRAIN_SKILL_113">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train BEEKEEPING" category="training_booth" reaction="TRAIN_SKILL_114">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Train WAX_WORKING" category="training_booth" reaction="TRAIN_SKILL_115">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Hematite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_001">
+        <item type="boulder" material="HEMATITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Limonite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_002">
+        <item type="boulder" material="LIMONITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Garnierite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_003">
+        <item type="boulder" material="GARNIERITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Native Gold" category="cheat_free_mineral" reaction="CHEAT_MINERAL_004">
+        <item type="boulder" material="NATIVE_GOLD"/>
+    </dfjob>
+    <dfjob name="Free Mineral Native Silver" category="cheat_free_mineral" reaction="CHEAT_MINERAL_005">
+        <item type="boulder" material="NATIVE_SILVER"/>
+    </dfjob>
+    <dfjob name="Free Mineral Native Copper" category="cheat_free_mineral" reaction="CHEAT_MINERAL_006">
+        <item type="boulder" material="NATIVE_COPPER"/>
+    </dfjob>
+    <dfjob name="Free Mineral Malachite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_007">
+        <item type="boulder" material="MALACHITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Galena" category="cheat_free_mineral" reaction="CHEAT_MINERAL_008">
+        <item type="boulder" material="GALENA"/>
+    </dfjob>
+    <dfjob name="Free Mineral Sphalerite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_009">
+        <item type="boulder" material="SPHALERITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Cassiterite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_010">
+        <item type="boulder" material="CASSITERITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Coal Bituminous" category="cheat_free_mineral" reaction="CHEAT_MINERAL_011">
+        <item type="boulder" material="COAL_BITUMINOUS"/>
+    </dfjob>
+    <dfjob name="Free Mineral Lignite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_012">
+        <item type="boulder" material="LIGNITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Native Platinum" category="cheat_free_mineral" reaction="CHEAT_MINERAL_013">
+        <item type="boulder" material="NATIVE_PLATINUM"/>
+    </dfjob>
+    <dfjob name="Free Mineral Cinnabar" category="cheat_free_mineral" reaction="CHEAT_MINERAL_014">
+        <item type="boulder" material="CINNABAR"/>
+    </dfjob>
+    <dfjob name="Free Mineral Cobaltite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_015">
+        <item type="boulder" material="COBALTITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Tetrahedrite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_016">
+        <item type="boulder" material="TETRAHEDRITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Horn Silver" category="cheat_free_mineral" reaction="CHEAT_MINERAL_017">
+        <item type="boulder" material="HORN_SILVER"/>
+    </dfjob>
+    <dfjob name="Free Mineral Gypsum" category="cheat_free_mineral" reaction="CHEAT_MINERAL_018">
+        <item type="boulder" material="GYPSUM"/>
+    </dfjob>
+    <dfjob name="Free Mineral Talc" category="cheat_free_mineral" reaction="CHEAT_MINERAL_019">
+        <item type="boulder" material="TALC"/>
+    </dfjob>
+    <dfjob name="Free Mineral Jet" category="cheat_free_mineral" reaction="CHEAT_MINERAL_020">
+        <item type="boulder" material="JET"/>
+    </dfjob>
+    <dfjob name="Free Mineral Puddingstone" category="cheat_free_mineral" reaction="CHEAT_MINERAL_021">
+        <item type="boulder" material="PUDDINGSTONE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Petrified Wood" category="cheat_free_mineral" reaction="CHEAT_MINERAL_022">
+        <item type="boulder" material="PETRIFIED_WOOD"/>
+    </dfjob>
+    <dfjob name="Free Mineral Graphite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_023">
+        <item type="boulder" material="GRAPHITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Brimstone" category="cheat_free_mineral" reaction="CHEAT_MINERAL_024">
+        <item type="boulder" material="BRIMSTONE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Kimberlite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_025">
+        <item type="boulder" material="KIMBERLITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Bismuthinite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_026">
+        <item type="boulder" material="BISMUTHINITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Realgar" category="cheat_free_mineral" reaction="CHEAT_MINERAL_027">
+        <item type="boulder" material="REALGAR"/>
+    </dfjob>
+    <dfjob name="Free Mineral Orpiment" category="cheat_free_mineral" reaction="CHEAT_MINERAL_028">
+        <item type="boulder" material="ORPIMENT"/>
+    </dfjob>
+    <dfjob name="Free Mineral Stibnite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_029">
+        <item type="boulder" material="STIBNITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Marcasite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_030">
+        <item type="boulder" material="MARCASITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Sylvite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_031">
+        <item type="boulder" material="SYLVITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Cryolite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_032">
+        <item type="boulder" material="CRYOLITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Periclase" category="cheat_free_mineral" reaction="CHEAT_MINERAL_033">
+        <item type="boulder" material="PERICLASE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Ilmenite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_034">
+        <item type="boulder" material="ILMENITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Rutile" category="cheat_free_mineral" reaction="CHEAT_MINERAL_035">
+        <item type="boulder" material="RUTILE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Magnetite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_036">
+        <item type="boulder" material="MAGNETITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Chromite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_037">
+        <item type="boulder" material="CHROMITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Pyrolusite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_038">
+        <item type="boulder" material="PYROLUSITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Pitchblende" category="cheat_free_mineral" reaction="CHEAT_MINERAL_039">
+        <item type="boulder" material="PITCHBLENDE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Bauxite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_040">
+        <item type="boulder" material="BAUXITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Native Aluminum" category="cheat_free_mineral" reaction="CHEAT_MINERAL_041">
+        <item type="boulder" material="NATIVE_ALUMINUM"/>
+    </dfjob>
+    <dfjob name="Free Mineral Borax" category="cheat_free_mineral" reaction="CHEAT_MINERAL_042">
+        <item type="boulder" material="BORAX"/>
+    </dfjob>
+    <dfjob name="Free Mineral Olivine" category="cheat_free_mineral" reaction="CHEAT_MINERAL_043">
+        <item type="boulder" material="OLIVINE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Hornblende" category="cheat_free_mineral" reaction="CHEAT_MINERAL_044">
+        <item type="boulder" material="HORNBLENDE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Kaolinite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_045">
+        <item type="boulder" material="KAOLINITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Serpentine" category="cheat_free_mineral" reaction="CHEAT_MINERAL_046">
+        <item type="boulder" material="SERPENTINE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Orthoclase" category="cheat_free_mineral" reaction="CHEAT_MINERAL_047">
+        <item type="boulder" material="ORTHOCLASE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Microcline" category="cheat_free_mineral" reaction="CHEAT_MINERAL_048">
+        <item type="boulder" material="MICROCLINE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Mica" category="cheat_free_mineral" reaction="CHEAT_MINERAL_049">
+        <item type="boulder" material="MICA"/>
+    </dfjob>
+    <dfjob name="Free Mineral Calcite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_050">
+        <item type="boulder" material="CALCITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Saltpeter" category="cheat_free_mineral" reaction="CHEAT_MINERAL_051">
+        <item type="boulder" material="SALTPETER"/>
+    </dfjob>
+    <dfjob name="Free Mineral Alabaster" category="cheat_free_mineral" reaction="CHEAT_MINERAL_052">
+        <item type="boulder" material="ALABASTER"/>
+    </dfjob>
+    <dfjob name="Free Mineral Selenite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_053">
+        <item type="boulder" material="SELENITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Satinspar" category="cheat_free_mineral" reaction="CHEAT_MINERAL_054">
+        <item type="boulder" material="SATINSPAR"/>
+    </dfjob>
+    <dfjob name="Free Mineral Anhydrite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_055">
+        <item type="boulder" material="ANHYDRITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Alunite" category="cheat_free_mineral" reaction="CHEAT_MINERAL_056">
+        <item type="boulder" material="ALUNITE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Raw Adamantine" category="cheat_free_mineral" reaction="CHEAT_MINERAL_057">
+        <item type="boulder" material="RAW_ADAMANTINE"/>
+    </dfjob>
+    <dfjob name="Free Mineral Slade" category="cheat_free_mineral" reaction="CHEAT_MINERAL_058">
+        <item type="boulder" material="SLADE"/>
+    </dfjob>
+    <dfjob name="Free Stone Sandstone" category="cheat_free_stone" reaction="CHEAT_STONE_001">
+        <item type="boulder" material="SANDSTONE"/>
+    </dfjob>
+    <dfjob name="Free Stone Siltstone" category="cheat_free_stone" reaction="CHEAT_STONE_002">
+        <item type="boulder" material="SILTSTONE"/>
+    </dfjob>
+    <dfjob name="Free Stone Mudstone" category="cheat_free_stone" reaction="CHEAT_STONE_003">
+        <item type="boulder" material="MUDSTONE"/>
+    </dfjob>
+    <dfjob name="Free Stone Shale" category="cheat_free_stone" reaction="CHEAT_STONE_004">
+        <item type="boulder" material="SHALE"/>
+    </dfjob>
+    <dfjob name="Free Stone Claystone" category="cheat_free_stone" reaction="CHEAT_STONE_005">
+        <item type="boulder" material="CLAYSTONE"/>
+    </dfjob>
+    <dfjob name="Free Stone Rock Salt" category="cheat_free_stone" reaction="CHEAT_STONE_006">
+        <item type="boulder" material="ROCK_SALT"/>
+    </dfjob>
+    <dfjob name="Free Stone Limestone" category="cheat_free_stone" reaction="CHEAT_STONE_007">
+        <item type="boulder" material="LIMESTONE"/>
+    </dfjob>
+    <dfjob name="Free Stone Conglomerate" category="cheat_free_stone" reaction="CHEAT_STONE_008">
+        <item type="boulder" material="CONGLOMERATE"/>
+    </dfjob>
+    <dfjob name="Free Stone Dolomite" category="cheat_free_stone" reaction="CHEAT_STONE_009">
+        <item type="boulder" material="DOLOMITE"/>
+    </dfjob>
+    <dfjob name="Free Stone Chert" category="cheat_free_stone" reaction="CHEAT_STONE_010">
+        <item type="boulder" material="CHERT"/>
+    </dfjob>
+    <dfjob name="Free Stone Chalk" category="cheat_free_stone" reaction="CHEAT_STONE_011">
+        <item type="boulder" material="CHALK"/>
+    </dfjob>
+    <dfjob name="Free Stone Granite" category="cheat_free_stone" reaction="CHEAT_STONE_012">
+        <item type="boulder" material="GRANITE"/>
+    </dfjob>
+    <dfjob name="Free Stone Diorite" category="cheat_free_stone" reaction="CHEAT_STONE_013">
+        <item type="boulder" material="DIORITE"/>
+    </dfjob>
+    <dfjob name="Free Stone Gabbro" category="cheat_free_stone" reaction="CHEAT_STONE_014">
+        <item type="boulder" material="GABBRO"/>
+    </dfjob>
+    <dfjob name="Free Stone Rhyolite" category="cheat_free_stone" reaction="CHEAT_STONE_015">
+        <item type="boulder" material="RHYOLITE"/>
+    </dfjob>
+    <dfjob name="Free Stone Basalt" category="cheat_free_stone" reaction="CHEAT_STONE_016">
+        <item type="boulder" material="BASALT"/>
+    </dfjob>
+    <dfjob name="Free Stone Andesite" category="cheat_free_stone" reaction="CHEAT_STONE_017">
+        <item type="boulder" material="ANDESITE"/>
+    </dfjob>
+    <dfjob name="Free Stone Dacite" category="cheat_free_stone" reaction="CHEAT_STONE_018">
+        <item type="boulder" material="DACITE"/>
+    </dfjob>
+    <dfjob name="Free Stone Obsidian" category="cheat_free_stone" reaction="CHEAT_STONE_019">
+        <item type="boulder" material="OBSIDIAN"/>
+    </dfjob>
+    <dfjob name="Free Stone Quartzite" category="cheat_free_stone" reaction="CHEAT_STONE_020">
+        <item type="boulder" material="QUARTZITE"/>
+    </dfjob>
+    <dfjob name="Free Stone Slate" category="cheat_free_stone" reaction="CHEAT_STONE_021">
+        <item type="boulder" material="SLATE"/>
+    </dfjob>
+    <dfjob name="Free Stone Phyllite" category="cheat_free_stone" reaction="CHEAT_STONE_022">
+        <item type="boulder" material="PHYLLITE"/>
+    </dfjob>
+    <dfjob name="Free Stone Schist" category="cheat_free_stone" reaction="CHEAT_STONE_023">
+        <item type="boulder" material="SCHIST"/>
+    </dfjob>
+    <dfjob name="Free Stone Gneiss" category="cheat_free_stone" reaction="CHEAT_STONE_024">
+        <item type="boulder" material="GNEISS"/>
+    </dfjob>
+    <dfjob name="Free Stone Marble" category="cheat_free_stone" reaction="CHEAT_STONE_025">
+        <item type="boulder" material="MARBLE"/>
+    </dfjob>
+    <dfjob name="Free Metal Iron" category="cheat_free_metal" reaction="CHEAT_METAL_001">
+        <item type="bar" material="IRON"/>
+    </dfjob>
+    <dfjob name="Free Metal Gold" category="cheat_free_metal" reaction="CHEAT_METAL_002">
+        <item type="bar" material="GOLD"/>
+    </dfjob>
+    <dfjob name="Free Metal Silver" category="cheat_free_metal" reaction="CHEAT_METAL_003">
+        <item type="bar" material="SILVER"/>
+    </dfjob>
+    <dfjob name="Free Metal Copper" category="cheat_free_metal" reaction="CHEAT_METAL_004">
+        <item type="bar" material="COPPER"/>
+    </dfjob>
+    <dfjob name="Free Metal Nickel" category="cheat_free_metal" reaction="CHEAT_METAL_005">
+        <item type="bar" material="NICKEL"/>
+    </dfjob>
+    <dfjob name="Free Metal Zinc" category="cheat_free_metal" reaction="CHEAT_METAL_006">
+        <item type="bar" material="ZINC"/>
+    </dfjob>
+    <dfjob name="Free Metal Bronze" category="cheat_free_metal" reaction="CHEAT_METAL_007">
+        <item type="bar" material="BRONZE"/>
+    </dfjob>
+    <dfjob name="Free Metal Brass" category="cheat_free_metal" reaction="CHEAT_METAL_008">
+        <item type="bar" material="BRASS"/>
+    </dfjob>
+    <dfjob name="Free Metal Steel" category="cheat_free_metal" reaction="CHEAT_METAL_009">
+        <item type="bar" material="STEEL"/>
+    </dfjob>
+    <dfjob name="Free Metal Pig Iron" category="cheat_free_metal" reaction="CHEAT_METAL_010">
+        <item type="bar" material="PIG_IRON"/>
+    </dfjob>
+    <dfjob name="Free Metal Platinum" category="cheat_free_metal" reaction="CHEAT_METAL_011">
+        <item type="bar" material="PLATINUM"/>
+    </dfjob>
+    <dfjob name="Free Metal Electrum" category="cheat_free_metal" reaction="CHEAT_METAL_012">
+        <item type="bar" material="ELECTRUM"/>
+    </dfjob>
+    <dfjob name="Free Metal Tin" category="cheat_free_metal" reaction="CHEAT_METAL_013">
+        <item type="bar" material="TIN"/>
+    </dfjob>
+    <dfjob name="Free Metal Pewter Fine" category="cheat_free_metal" reaction="CHEAT_METAL_014">
+        <item type="bar" material="PEWTER_FINE"/>
+    </dfjob>
+    <dfjob name="Free Metal Pewter Trifle" category="cheat_free_metal" reaction="CHEAT_METAL_015">
+        <item type="bar" material="PEWTER_TRIFLE"/>
+    </dfjob>
+    <dfjob name="Free Metal Pewter Lay" category="cheat_free_metal" reaction="CHEAT_METAL_016">
+        <item type="bar" material="PEWTER_LAY"/>
+    </dfjob>
+    <dfjob name="Free Metal Lead" category="cheat_free_metal" reaction="CHEAT_METAL_017">
+        <item type="bar" material="LEAD"/>
+    </dfjob>
+    <dfjob name="Free Metal Aluminum" category="cheat_free_metal" reaction="CHEAT_METAL_018">
+        <item type="bar" material="ALUMINUM"/>
+    </dfjob>
+    <dfjob name="Free Metal Nickel Silver" category="cheat_free_metal" reaction="CHEAT_METAL_019">
+        <item type="bar" material="NICKEL_SILVER"/>
+    </dfjob>
+    <dfjob name="Free Metal Billion" category="cheat_free_metal" reaction="CHEAT_METAL_020">
+        <item type="bar" material="BILLON"/>
+    </dfjob>
+    <dfjob name="Free Metal Sterling Silver" category="cheat_free_metal" reaction="CHEAT_METAL_021">
+        <item type="bar" material="STERLING_SILVER"/>
+    </dfjob>
+    <dfjob name="Free Metal Black Bronze" category="cheat_free_metal" reaction="CHEAT_METAL_022">
+        <item type="bar" material="BLACK_BRONZE"/>
+    </dfjob>
+    <dfjob name="Free Metal Rose Gold" category="cheat_free_metal" reaction="CHEAT_METAL_023">
+        <item type="bar" material="ROSE_GOLD"/>
+    </dfjob>
+    <dfjob name="Free Metal Bismuth" category="cheat_free_metal" reaction="CHEAT_METAL_024">
+        <item type="bar" material="BISMUTH"/>
+    </dfjob>
+    <dfjob name="Free Metal Bismuth Bronze" category="cheat_free_metal" reaction="CHEAT_METAL_025">
+        <item type="bar" material="BISMUTH_BRONZE"/>
+    </dfjob>
+    <dfjob name="Free Metal Adamantine" category="cheat_free_metal" reaction="CHEAT_METAL_026">
+        <item type="bar" material="ADAMANTINE"/>
+    </dfjob>
+    <dfjob name="Free Gem Onyx" category="cheat_free_gem" reaction="CHEAT_GEM_001">
+        <item type="rough" material="ONYX"/>
+    </dfjob>
+    <dfjob name="Free Gem Morion" category="cheat_free_gem" reaction="CHEAT_GEM_002">
+        <item type="rough" material="MORION"/>
+    </dfjob>
+    <dfjob name="Free Gem Schorl" category="cheat_free_gem" reaction="CHEAT_GEM_003">
+        <item type="rough" material="SCHORL"/>
+    </dfjob>
+    <dfjob name="Free Gem Lace Agate" category="cheat_free_gem" reaction="CHEAT_GEM_004">
+        <item type="rough" material="LACE AGATE"/>
+    </dfjob>
+    <dfjob name="Free Gem Blue Jade" category="cheat_free_gem" reaction="CHEAT_GEM_005">
+        <item type="rough" material="BLUE JADE"/>
+    </dfjob>
+    <dfjob name="Free Gem Lapis Lazuli" category="cheat_free_gem" reaction="CHEAT_GEM_006">
+        <item type="rough" material="LAPIS LAZULI"/>
+    </dfjob>
+    <dfjob name="Free Gem Prase" category="cheat_free_gem" reaction="CHEAT_GEM_007">
+        <item type="rough" material="PRASE"/>
+    </dfjob>
+    <dfjob name="Free Gem Prase Opal" category="cheat_free_gem" reaction="CHEAT_GEM_008">
+        <item type="rough" material="PRASE OPAL"/>
+    </dfjob>
+    <dfjob name="Free Gem Bloodstone" category="cheat_free_gem" reaction="CHEAT_GEM_009">
+        <item type="rough" material="BLOODSTONE"/>
+    </dfjob>
+    <dfjob name="Free Gem Moss Agate" category="cheat_free_gem" reaction="CHEAT_GEM_010">
+        <item type="rough" material="MOSS AGATE"/>
+    </dfjob>
+    <dfjob name="Free Gem Moss Opal" category="cheat_free_gem" reaction="CHEAT_GEM_011">
+        <item type="rough" material="MOSS OPAL"/>
+    </dfjob>
+    <dfjob name="Free Gem Variscite" category="cheat_free_gem" reaction="CHEAT_GEM_012">
+        <item type="rough" material="VARISCITE"/>
+    </dfjob>
+    <dfjob name="Free Gem Chyrsoprase" category="cheat_free_gem" reaction="CHEAT_GEM_013">
+        <item type="rough" material="CHRYSOPRASE"/>
+    </dfjob>
+    <dfjob name="Free Gem Chrysocolla" category="cheat_free_gem" reaction="CHEAT_GEM_014">
+        <item type="rough" material="CHRYSOCOLLA"/>
+    </dfjob>
+    <dfjob name="Free Gem Sard" category="cheat_free_gem" reaction="CHEAT_GEM_015">
+        <item type="rough" material="SARD"/>
+    </dfjob>
+    <dfjob name="Free Gem Carnelian" category="cheat_free_gem" reaction="CHEAT_GEM_016">
+        <item type="rough" material="CARNELIAN"/>
+    </dfjob>
+    <dfjob name="Free Gem Banded Agate" category="cheat_free_gem" reaction="CHEAT_GEM_017">
+        <item type="rough" material="BANDED AGATE"/>
+    </dfjob>
+    <dfjob name="Free Gem Sardonyx" category="cheat_free_gem" reaction="CHEAT_GEM_018">
+        <item type="rough" material="SARDONYX"/>
+    </dfjob>
+    <dfjob name="Free Gem Cherry Opal" category="cheat_free_gem" reaction="CHEAT_GEM_019">
+        <item type="rough" material="CHERRY OPAL"/>
+    </dfjob>
+    <dfjob name="Free Gem Lavender Jade" category="cheat_free_gem" reaction="CHEAT_GEM_020">
+        <item type="rough" material="LAVENDER JADE"/>
+    </dfjob>
+    <dfjob name="Free Gem Pink Jade" category="cheat_free_gem" reaction="CHEAT_GEM_021">
+        <item type="rough" material="PINK JADE"/>
+    </dfjob>
+    <dfjob name="Free Gem Tube Agate" category="cheat_free_gem" reaction="CHEAT_GEM_022">
+        <item type="rough" material="TUBE AGATE"/>
+    </dfjob>
+    <dfjob name="Free Gem Fire Agate" category="cheat_free_gem" reaction="CHEAT_GEM_023">
+        <item type="rough" material="FIRE AGATE"/>
+    </dfjob>
+    <dfjob name="Free Gem Plume Agate" category="cheat_free_gem" reaction="CHEAT_GEM_024">
+        <item type="rough" material="PLUME AGATE"/>
+    </dfjob>
+    <dfjob name="Free Gem Brown Jasper" category="cheat_free_gem" reaction="CHEAT_GEM_025">
+        <item type="rough" material="BROWN JASPER"/>
+    </dfjob>
+    <dfjob name="Free Gem Picture Jasper" category="cheat_free_gem" reaction="CHEAT_GEM_026">
+        <item type="rough" material="PICTURE JASPER"/>
+    </dfjob>
+    <dfjob name="Free Gem Smoky Quartz" category="cheat_free_gem" reaction="CHEAT_GEM_027">
+        <item type="rough" material="SMOKY QUARTZ"/>
+    </dfjob>
+    <dfjob name="Free Gem Wax Opal" category="cheat_free_gem" reaction="CHEAT_GEM_028">
+        <item type="rough" material="WAX OPAL"/>
+    </dfjob>
+    <dfjob name="Free Gem Wood Opal" category="cheat_free_gem" reaction="CHEAT_GEM_029">
+        <item type="rough" material="WOOD OPAL"/>
+    </dfjob>
+    <dfjob name="Free Gem Amber Opal" category="cheat_free_gem" reaction="CHEAT_GEM_030">
+        <item type="rough" material="AMBER OPAL"/>
+    </dfjob>
+    <dfjob name="Free Gem Gold Opal" category="cheat_free_gem" reaction="CHEAT_GEM_031">
+        <item type="rough" material="GOLD OPAL"/>
+    </dfjob>
+    <dfjob name="Free Gem Citrine" category="cheat_free_gem" reaction="CHEAT_GEM_032">
+        <item type="rough" material="CITRINE"/>
+    </dfjob>
+    <dfjob name="Free Gem Yellow Jasper" category="cheat_free_gem" reaction="CHEAT_GEM_033">
+        <item type="rough" material="YELLOW JASPER"/>
+    </dfjob>
+    <dfjob name="Free Gem Tigereye" category="cheat_free_gem" reaction="CHEAT_GEM_034">
+        <item type="rough" material="TIGEREYE"/>
+    </dfjob>
+    <dfjob name="Free Gem Tiger Iron" category="cheat_free_gem" reaction="CHEAT_GEM_035">
+        <item type="rough" material="TIGER IRON"/>
+    </dfjob>
+    <dfjob name="Free Gem Sunstone" category="cheat_free_gem" reaction="CHEAT_GEM_036">
+        <item type="rough" material="SUNSTONE"/>
+    </dfjob>
+    <dfjob name="Free Gem Resin Opal" category="cheat_free_gem" reaction="CHEAT_GEM_037">
+        <item type="rough" material="RESIN OPAL"/>
+    </dfjob>
+    <dfjob name="Free Gem Pyrite" category="cheat_free_gem" reaction="CHEAT_GEM_038">
+        <item type="rough" material="PYRITE"/>
+    </dfjob>
+    <dfjob name="Free Gem Clear Tourmaline" category="cheat_free_gem" reaction="CHEAT_GEM_039">
+        <item type="rough" material="CLEAR TOURMALINE"/>
+    </dfjob>
+    <dfjob name="Free Gem Gray Chalcedony" category="cheat_free_gem" reaction="CHEAT_GEM_040">
+        <item type="rough" material="GRAY CHALCEDONY"/>
+    </dfjob>
+    <dfjob name="Free Gem Dendritic Agate" category="cheat_free_gem" reaction="CHEAT_GEM_041">
+        <item type="rough" material="DENDRITIC AGATE"/>
+    </dfjob>
+    <dfjob name="Free Gem Shell Opal" category="cheat_free_gem" reaction="CHEAT_GEM_042">
+        <item type="rough" material="SHELL OPAL"/>
+    </dfjob>
+    <dfjob name="Free Gem Bone Opal" category="cheat_free_gem" reaction="CHEAT_GEM_043">
+        <item type="rough" material="BONE OPAL"/>
+    </dfjob>
+    <dfjob name="Free Gem White Chalcedony" category="cheat_free_gem" reaction="CHEAT_GEM_044">
+        <item type="rough" material="WHITE CHALCEDONY"/>
+    </dfjob>
+    <dfjob name="Free Gem Fortification Agate" category="cheat_free_gem" reaction="CHEAT_GEM_045">
+        <item type="rough" material="FORTIFICATION AGATE"/>
+    </dfjob>
+    <dfjob name="Free Gem Milk Quartz" category="cheat_free_gem" reaction="CHEAT_GEM_046">
+        <item type="rough" material="MILK QUARTZ"/>
+    </dfjob>
+    <dfjob name="Free Gem Moonstone" category="cheat_free_gem" reaction="CHEAT_GEM_047">
+        <item type="rough" material="MOONSTONE"/>
+    </dfjob>
+    <dfjob name="Free Gem White Jade" category="cheat_free_gem" reaction="CHEAT_GEM_048">
+        <item type="rough" material="WHITE JADE"/>
+    </dfjob>
+    <dfjob name="Free Gem Jasper Opal" category="cheat_free_gem" reaction="CHEAT_GEM_049">
+        <item type="rough" material="JASPER OPAL"/>
+    </dfjob>
+    <dfjob name="Free Gem Pineapple Opal" category="cheat_free_gem" reaction="CHEAT_GEM_050">
+        <item type="rough" material="PINEAPPLE OPAL"/>
+    </dfjob>
+    <dfjob name="Free Gem Onyx Opal" category="cheat_free_gem" reaction="CHEAT_GEM_051">
+        <item type="rough" material="ONYX OPAL"/>
+    </dfjob>
+    <dfjob name="Free Gem Milk Opal" category="cheat_free_gem" reaction="CHEAT_GEM_052">
+        <item type="rough" material="MILK OPAL"/>
+    </dfjob>
+    <dfjob name="Free Gem Pipe Opal" category="cheat_free_gem" reaction="CHEAT_GEM_053">
+        <item type="rough" material="PIPE OPAL"/>
+    </dfjob>
+    <dfjob name="Free Gem Aventurine" category="cheat_free_gem" reaction="CHEAT_GEM_054">
+        <item type="rough" material="AVENTURINE"/>
+    </dfjob>
+    <dfjob name="Free Gem Turquoise" category="cheat_free_gem" reaction="CHEAT_GEM_055">
+        <item type="rough" material="TURQUOISE"/>
+    </dfjob>
+    <dfjob name="Free Gem Rose Quartz" category="cheat_free_gem" reaction="CHEAT_GEM_056">
+        <item type="rough" material="QUARTZ_ROSE"/>
+    </dfjob>
+    <dfjob name="Free Gem Rock Crystal" category="cheat_free_gem" reaction="CHEAT_GEM_057">
+        <item type="rough" material="CRYSTAL_ROCK"/>
+    </dfjob>
+    <dfjob name="Free Gem Black Zircon" category="cheat_free_gem" reaction="CHEAT_GEM_058">
+        <item type="rough" material="BLACK ZIRCON"/>
+    </dfjob>
+    <dfjob name="Free Gem Black Pyrope" category="cheat_free_gem" reaction="CHEAT_GEM_059">
+        <item type="rough" material="BLACK PYROPE"/>
+    </dfjob>
+    <dfjob name="Free Gem Melanite" category="cheat_free_gem" reaction="CHEAT_GEM_060">
+        <item type="rough" material="MELANITE"/>
+    </dfjob>
+    <dfjob name="Free Gem Indigo Tourmaline" category="cheat_free_gem" reaction="CHEAT_GEM_061">
+        <item type="rough" material="INDIGO TOURMALINE"/>
+    </dfjob>
+    <dfjob name="Free Gem Blue Garnet" category="cheat_free_gem" reaction="CHEAT_GEM_062">
+        <item type="rough" material="BLUE GARNET"/>
+    </dfjob>
+    <dfjob name="Free Gem Tsavorite" category="cheat_free_gem" reaction="CHEAT_GEM_063">
+        <item type="rough" material="TSAVORITE"/>
+    </dfjob>
+    <dfjob name="Free Gem Green Tourmaline" category="cheat_free_gem" reaction="CHEAT_GEM_064">
+        <item type="rough" material="GREEN TOURMALINE"/>
+    </dfjob>
+    <dfjob name="Free Gem Demantoid" category="cheat_free_gem" reaction="CHEAT_GEM_065">
+        <item type="rough" material="DEMANTOID"/>
+    </dfjob>
+    <dfjob name="Free Gem Green Zircon" category="cheat_free_gem" reaction="CHEAT_GEM_066">
+        <item type="rough" material="GREEN ZIRCON"/>
+    </dfjob>
+    <dfjob name="Free Gem Green Jade" category="cheat_free_gem" reaction="CHEAT_GEM_067">
+        <item type="rough" material="GREEN JADE"/>
+    </dfjob>
+    <dfjob name="Free Gem Heliodor" category="cheat_free_gem" reaction="CHEAT_GEM_068">
+        <item type="rough" material="HELIODOR"/>
+    </dfjob>
+    <dfjob name="Free Gem Peridot" category="cheat_free_gem" reaction="CHEAT_GEM_069">
+        <item type="rough" material="PERIDOT"/>
+    </dfjob>
+    <dfjob name="Free Gem Red Zircon" category="cheat_free_gem" reaction="CHEAT_GEM_070">
+        <item type="rough" material="RED ZIRCON"/>
+    </dfjob>
+    <dfjob name="Free Gem Red Tourmaline" category="cheat_free_gem" reaction="CHEAT_GEM_071">
+        <item type="rough" material="RED TOURMALINE"/>
+    </dfjob>
+    <dfjob name="Free Gem Red Pyrope" category="cheat_free_gem" reaction="CHEAT_GEM_072">
+        <item type="rough" material="RED PYROPE"/>
+    </dfjob>
+    <dfjob name="Free Gem Almandine" category="cheat_free_gem" reaction="CHEAT_GEM_073">
+        <item type="rough" material="ALMANDINE"/>
+    </dfjob>
+    <dfjob name="Free Gem Red Grossular" category="cheat_free_gem" reaction="CHEAT_GEM_074">
+        <item type="rough" material="RED GROSSULAR"/>
+    </dfjob>
+    <dfjob name="Free Gem Pink Tourmaline" category="cheat_free_gem" reaction="CHEAT_GEM_075">
+        <item type="rough" material="PINK TOURMALINE"/>
+    </dfjob>
+    <dfjob name="Free Gem Red Beryl" category="cheat_free_gem" reaction="CHEAT_GEM_076">
+        <item type="rough" material="RED BERYL"/>
+    </dfjob>
+    <dfjob name="Free Gem Fire Opal" category="cheat_free_gem" reaction="CHEAT_GEM_077">
+        <item type="rough" material="FIRE OPAL"/>
+    </dfjob>
+    <dfjob name="Free Gem Rhodolite" category="cheat_free_gem" reaction="CHEAT_GEM_078">
+        <item type="rough" material="RHODOLITE"/>
+    </dfjob>
+    <dfjob name="Free Gem Purple Spinel" category="cheat_free_gem" reaction="CHEAT_GEM_079">
+        <item type="rough" material="SPINEL_PURPLE"/>
+    </dfjob>
+    <dfjob name="Free Gem Alexandrite" category="cheat_free_gem" reaction="CHEAT_GEM_080">
+        <item type="rough" material="ALEXANDRITE"/>
+    </dfjob>
+    <dfjob name="Free Gem Tanzanite" category="cheat_free_gem" reaction="CHEAT_GEM_081">
+        <item type="rough" material="TANZANITE"/>
+    </dfjob>
+    <dfjob name="Free Gem Morganite" category="cheat_free_gem" reaction="CHEAT_GEM_082">
+        <item type="rough" material="MORGANITE"/>
+    </dfjob>
+    <dfjob name="Free Gem Violet Spessartine" category="cheat_free_gem" reaction="CHEAT_GEM_083">
+        <item type="rough" material="VIOLET SPESSARTINE"/>
+    </dfjob>
+    <dfjob name="Free Gem Pink Garnet" category="cheat_free_gem" reaction="CHEAT_GEM_084">
+        <item type="rough" material="PINK GARNET"/>
+    </dfjob>
+    <dfjob name="Free Gem Kunzite" category="cheat_free_gem" reaction="CHEAT_GEM_085">
+        <item type="rough" material="KUNZITE"/>
+    </dfjob>
+    <dfjob name="Free Gem Cinnamon Grossular" category="cheat_free_gem" reaction="CHEAT_GEM_086">
+        <item type="rough" material="CINNAMON GROSSULAR"/>
+    </dfjob>
+    <dfjob name="Free Gem Honey Yellow Beryl" category="cheat_free_gem" reaction="CHEAT_GEM_087">
+        <item type="rough" material="HONEY YELLOW BERYL"/>
+    </dfjob>
+    <dfjob name="Free Gem Jelly Opal" category="cheat_free_gem" reaction="CHEAT_GEM_088">
+        <item type="rough" material="JELLY OPAL"/>
+    </dfjob>
+    <dfjob name="Free Gem Brown Zircon" category="cheat_free_gem" reaction="CHEAT_GEM_089">
+        <item type="rough" material="BROWN ZIRCON"/>
+    </dfjob>
+    <dfjob name="Free Gem Yellow Zircon" category="cheat_free_gem" reaction="CHEAT_GEM_090">
+        <item type="rough" material="YELLOW ZIRCON"/>
+    </dfjob>
+    <dfjob name="Free Gem Golden Beryl" category="cheat_free_gem" reaction="CHEAT_GEM_091">
+        <item type="rough" material="GOLDEN BERYL"/>
+    </dfjob>
+    <dfjob name="Free Gem Yellow Spessartine" category="cheat_free_gem" reaction="CHEAT_GEM_092">
+        <item type="rough" material="YELLOW SPESSARTINE"/>
+    </dfjob>
+    <dfjob name="Free Gem Topaz" category="cheat_free_gem" reaction="CHEAT_GEM_093">
+        <item type="rough" material="TOPAZ"/>
+    </dfjob>
+    <dfjob name="Free Gem Topazolite" category="cheat_free_gem" reaction="CHEAT_GEM_094">
+        <item type="rough" material="TOPAZOLITE"/>
+    </dfjob>
+    <dfjob name="Free Gem Yellow Grossular" category="cheat_free_gem" reaction="CHEAT_GEM_095">
+        <item type="rough" material="YELLOW GROSSULAR"/>
+    </dfjob>
+    <dfjob name="Free Gem Rubicelle" category="cheat_free_gem" reaction="CHEAT_GEM_096">
+        <item type="rough" material="RUBICELLE"/>
+    </dfjob>
+    <dfjob name="Free Gem Clear Garnet" category="cheat_free_gem" reaction="CHEAT_GEM_097">
+        <item type="rough" material="CLEAR GARNET"/>
+    </dfjob>
+    <dfjob name="Free Gem Goshenite" category="cheat_free_gem" reaction="CHEAT_GEM_098">
+        <item type="rough" material="GOSHENITE"/>
+    </dfjob>
+    <dfjob name="Free Gem Cat's Eye" category="cheat_free_gem" reaction="CHEAT_GEM_099">
+        <item type="rough" material="CAT'S EYE"/>
+    </dfjob>
+    <dfjob name="Free Gem Clear Zircon" category="cheat_free_gem" reaction="CHEAT_GEM_100">
+        <item type="rough" material="CLEAR ZIRCON"/>
+    </dfjob>
+    <dfjob name="Free Gem Amethyst" category="cheat_free_gem" reaction="CHEAT_GEM_101">
+        <item type="rough" material="AMETHYST"/>
+    </dfjob>
+    <dfjob name="Free Gem Aquamarine" category="cheat_free_gem" reaction="CHEAT_GEM_102">
+        <item type="rough" material="AQUAMARINE"/>
+    </dfjob>
+    <dfjob name="Free Gem Red Spinel" category="cheat_free_gem" reaction="CHEAT_GEM_103">
+        <item type="rough" material="SPINEL_RED"/>
+    </dfjob>
+    <dfjob name="Free Gem Chrysoberyl" category="cheat_free_gem" reaction="CHEAT_GEM_104">
+        <item type="rough" material="CHRYSOBERYL"/>
+    </dfjob>
+    <dfjob name="Free Gem Precious Fire Opal" category="cheat_free_gem" reaction="CHEAT_GEM_105">
+        <item type="rough" material="OPAL_PFIRE"/>
+    </dfjob>
+    <dfjob name="Free Gem Red Flash Opal" category="cheat_free_gem" reaction="CHEAT_GEM_106">
+        <item type="rough" material="OPAL_REDFLASH"/>
+    </dfjob>
+    <dfjob name="Free Gem Black Opal" category="cheat_free_gem" reaction="CHEAT_GEM_107">
+        <item type="rough" material="OPAL_BLACK"/>
+    </dfjob>
+    <dfjob name="Free Gem White Opal" category="cheat_free_gem" reaction="CHEAT_GEM_108">
+        <item type="rough" material="OPAL_WHITE"/>
+    </dfjob>
+    <dfjob name="Free Gem Crystal Opal" category="cheat_free_gem" reaction="CHEAT_GEM_109">
+        <item type="rough" material="OPAL_CRYSTAL"/>
+    </dfjob>
+    <dfjob name="Free Gem Claro Opal" category="cheat_free_gem" reaction="CHEAT_GEM_110">
+        <item type="rough" material="OPAL_CLARO"/>
+    </dfjob>
+    <dfjob name="Free Gem Levin Opal" category="cheat_free_gem" reaction="CHEAT_GEM_111">
+        <item type="rough" material="OPAL_LEVIN"/>
+    </dfjob>
+    <dfjob name="Free Gem Harlequin Opal" category="cheat_free_gem" reaction="CHEAT_GEM_112">
+        <item type="rough" material="OPAL_HARLEQUIN"/>
+    </dfjob>
+    <dfjob name="Free Gem Pinfire Opal" category="cheat_free_gem" reaction="CHEAT_GEM_113">
+        <item type="rough" material="OPAL_PINFIRE"/>
+    </dfjob>
+    <dfjob name="Free Gem Bandfire Opal" category="cheat_free_gem" reaction="CHEAT_GEM_114">
+        <item type="rough" material="OPAL_BANDFIRE"/>
+    </dfjob>
+    <dfjob name="Free Gem Light Yellow Diamond" category="cheat_free_gem" reaction="CHEAT_GEM_115">
+        <item type="rough" material="DIAMOND_LY"/>
+    </dfjob>
+    <dfjob name="Free Gem Faint Yellow Diamond" category="cheat_free_gem" reaction="CHEAT_GEM_116">
+        <item type="rough" material="DIAMOND_FY"/>
+    </dfjob>
+    <dfjob name="Free Gem Emerald" category="cheat_free_gem" reaction="CHEAT_GEM_117">
+        <item type="rough" material="EMERALD"/>
+    </dfjob>
+    <dfjob name="Free Gem Ruby" category="cheat_free_gem" reaction="CHEAT_GEM_118">
+        <item type="rough" material="RUBY"/>
+    </dfjob>
+    <dfjob name="Free Gem Sapphire" category="cheat_free_gem" reaction="CHEAT_GEM_119">
+        <item type="rough" material="SAPPHIRE"/>
+    </dfjob>
+    <dfjob name="Free Gem Clear Diamond" category="cheat_free_gem" reaction="CHEAT_GEM_120">
+        <item type="rough" material="DIAMOND_CLEAR"/>
+    </dfjob>
+    <dfjob name="Free Gem Red Diamond" category="cheat_free_gem" reaction="CHEAT_GEM_121">
+        <item type="rough" material="DIAMOND_RED"/>
+    </dfjob>
+    <dfjob name="Free Gem Green Diamond" category="cheat_free_gem" reaction="CHEAT_GEM_122">
+        <item type="rough" material="DIAMOND_GREEN"/>
+    </dfjob>
+    <dfjob name="Free Gem Blue Diamond" category="cheat_free_gem" reaction="CHEAT_GEM_123">
+        <item type="rough" material="DIAMOND_BLUE"/>
+    </dfjob>
+    <dfjob name="Free Gem Yellow Diamond" category="cheat_free_gem" reaction="CHEAT_GEM_124">
+        <item type="rough" material="DIAMOND_YELLOW"/>
+    </dfjob>
+    <dfjob name="Free Gem Black Diamond" category="cheat_free_gem" reaction="CHEAT_GEM_125">
+        <item type="rough" material="DIAMOND_BLACK"/>
+    </dfjob>
+    <dfjob name="Free Gem Star Sapphire" category="cheat_free_gem" reaction="CHEAT_GEM_126">
+        <item type="rough" material="SAPPHIRE_STAR"/>
+    </dfjob>
+    <dfjob name="Free Gem Star Ruby" category="cheat_free_gem" reaction="CHEAT_GEM_127">
+        <item type="rough" material="RUBY_STAR"/>
+    </dfjob>
+    <dfjob name="Free Mangrove" category="cheat_free_tree" reaction="CHEAT_TREE_001">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Saguaro" category="cheat_free_tree" reaction="CHEAT_TREE_002">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Pine" category="cheat_free_tree" reaction="CHEAT_TREE_003">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Cedar" category="cheat_free_tree" reaction="CHEAT_TREE_004">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Oak" category="cheat_free_tree" reaction="CHEAT_TREE_005">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Mahogany" category="cheat_free_tree" reaction="CHEAT_TREE_006">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Acacia" category="cheat_free_tree" reaction="CHEAT_TREE_007">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Kapok" category="cheat_free_tree" reaction="CHEAT_TREE_008">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Maple" category="cheat_free_tree" reaction="CHEAT_TREE_009">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Willow" category="cheat_free_tree" reaction="CHEAT_TREE_010">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Tower Cap" category="cheat_free_tree" reaction="CHEAT_TREE_011">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Black Cap" category="cheat_free_tree" reaction="CHEAT_TREE_012">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Nether Cap" category="cheat_free_tree" reaction="CHEAT_TREE_013">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Goblin Cap" category="cheat_free_tree" reaction="CHEAT_TREE_014">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Fungiwood" category="cheat_free_tree" reaction="CHEAT_TREE_015">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Tunnel Tube" category="cheat_free_tree" reaction="CHEAT_TREE_016">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Spore Tree" category="cheat_free_tree" reaction="CHEAT_TREE_017">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Blood Thorn" category="cheat_free_tree" reaction="CHEAT_TREE_018">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Glumprong" category="cheat_free_tree" reaction="CHEAT_TREE_019">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Feather" category="cheat_free_tree" reaction="CHEAT_TREE_020">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Highwood" category="cheat_free_tree" reaction="CHEAT_TREE_021">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Larch" category="cheat_free_tree" reaction="CHEAT_TREE_022">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Chestnut" category="cheat_free_tree" reaction="CHEAT_TREE_023">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Alder" category="cheat_free_tree" reaction="CHEAT_TREE_024">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Birch" category="cheat_free_tree" reaction="CHEAT_TREE_025">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Ash" category="cheat_free_tree" reaction="CHEAT_TREE_026">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Candlenut" category="cheat_free_tree" reaction="CHEAT_TREE_027">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Mango" category="cheat_free_tree" reaction="CHEAT_TREE_028">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Rubber" category="cheat_free_tree" reaction="CHEAT_TREE_029">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Cacao" category="cheat_free_tree" reaction="CHEAT_TREE_030">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Palm" category="cheat_free_tree" reaction="CHEAT_TREE_031">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Plump Helmet Mushroom" category="cheat_free_plant" reaction="CHEAT_PLANT_001">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Pig Tail Grass" category="cheat_free_plant" reaction="CHEAT_PLANT_002">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Cave Wheat Grass" category="cheat_free_plant" reaction="CHEAT_PLANT_003">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Sweet Pod" category="cheat_free_plant" reaction="CHEAT_PLANT_004">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Quarry Bush" category="cheat_free_plant" reaction="CHEAT_PLANT_005">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Muck Root" category="cheat_free_plant" reaction="CHEAT_PLANT_006">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Bloated Tuber" category="cheat_free_plant" reaction="CHEAT_PLANT_007">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Kobold Bulb" category="cheat_free_plant" reaction="CHEAT_PLANT_008">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Prickle Berries" category="cheat_free_plant" reaction="CHEAT_PLANT_009">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Wild Stawberries" category="cheat_free_plant" reaction="CHEAT_PLANT_010">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Longland Grass" category="cheat_free_plant" reaction="CHEAT_PLANT_011">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Valley Herb" category="cheat_free_plant" reaction="CHEAT_PLANT_012">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Rat Weed" category="cheat_free_plant" reaction="CHEAT_PLANT_013">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Fisher Berries" category="cheat_free_plant" reaction="CHEAT_PLANT_014">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Rope Reed" category="cheat_free_plant" reaction="CHEAT_PLANT_015">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Dimple Cup Mushroom" category="cheat_free_plant" reaction="CHEAT_PLANT_016">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Blade Weed" category="cheat_free_plant" reaction="CHEAT_PLANT_017">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Hide Root" category="cheat_free_plant" reaction="CHEAT_PLANT_018">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Sliver Barb" category="cheat_free_plant" reaction="CHEAT_PLANT_019">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Sun Berry" category="cheat_free_plant" reaction="CHEAT_PLANT_020">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="Free Whip Vine" category="cheat_free_plant" reaction="CHEAT_PLANT_021">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 cow cheese" category="creation_forge" reaction="FREE_COW_CHEESE">
+        <item type="cheese" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create a barrel of sunshine" category="creation_forge" reaction="FREE_SUNSHINE">
+        <item type="drink" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create adamantine wafers" category="creation_forge" reaction="FREE_ADAMANTINE_WAFERS">
+        <item type="bar" material="ADAMANTINE"/>
+    </dfjob>
+    <dfjob name="create adamantine thread" category="creation_forge" reaction="FREE_ADAMANTINE_THREAD">
+        <item type="thread" material="ADAMANTINE"/>
+    </dfjob>
+    <dfjob name="create raw adamantine" category="creation_forge" reaction="FREE_RAW_ADAMANTINE">
+        <item type="boulder" material="RAW_ADAMANTINE"/>
+    </dfjob>
+    <dfjob name="create 10 clear diamonds" category="creation_forge" reaction="FREE_CLEAR_DIAMOND">
+        <item type="rough" material="DIAMOND_CLEAR"/>
+    </dfjob>
+    <dfjob name="create 10 obsidian" category="creation_forge" reaction="FREE_OBSIDIAN">
+        <item type="stone" material="STONE"/>
+    </dfjob>
+    <dfjob name="create 10 dragon leather" category="creation_forge" reaction="FREE_LEATHER">
+        <item type="skin_tanned" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 dragon meat" category="creation_forge" reaction="FREE_MEAT">
+        <item type="meat" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 dragon fat" category="creation_forge" reaction="FREE_FAT">
+        <item type="glob" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 steel anvil" category="creation_forge" reaction="FREE_ANVIL">
+        <item type="anvil" material="STEEL"/>
+    </dfjob>
+    <dfjob name="create 10 silk thread" category="creation_forge" reaction="FREE_SILK">
+        <item type="thread" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 yarn (wool) thread" category="creation_forge" reaction="FREE_YARN">
+        <item type="thread" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 rope reed fiber thread" category="creation_forge" reaction="FREE_FIBER">
+        <item type="thread" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 coke bars" category="creation_forge" reaction="FREE_COKE">
+        <item type="bar" material="COAL"/>
+    </dfjob>
+    <dfjob name="create sand" category="creation_forge" reaction="FREE_SAND">
+        <item type="powder_misc" material="SAND_BLACK"/>
+    </dfjob>
+    <dfjob name="pray for a cure to your hunger at the Curious Altar" category="curious_altar" reaction="FREE_1_MEAT_OF_CURIOUS_ORIGIN">
+        <item type="meat" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="pray for a cure to your thirst at the Curious Altar" category="curious_altar" reaction="FREE_1_WATER_OF_CURIOUS_ORIGIN">
+        <item type="drink" material="WATER"/>
+    </dfjob>
+    <dfjob name="create 1 stack of wyrd gold arrows" category="curious_altar" reaction="FREE_1_STACK_WYRD_GOLD_ARROWS">
+        <item type="arrows" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 stack of wyrd gold blow darts" category="curious_altar" reaction="FREE_1_STACK_WYRD_GOLD_BLOWDARTS">
+        <item type="blowdarts" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 stack of wyrd gold bolts" category="curious_altar" reaction="FREE_1_STACK_WYRD_GOLD_BOLTS">
+        <item type="bolts" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold animal trap" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ANIMALTRAP">
+        <item type="animaltrap" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold anvil" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ANVIL">
+        <item type="anvil" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold backpack" category="curious_altar" reaction="FREE_1_WYRD_GOLD_BACKPACK">
+        <item type="backpack" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold bar" category="curious_altar" reaction="FREE_1_WYRD_GOLD_BAR">
+        <item type="bar" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 10 wyrd gold bars" category="curious_altar" reaction="FREE_10_WYRD_GOLD_BARS">
+        <item type="bar" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 100 wyrd gold bars" category="curious_altar" reaction="FREE_100_WYRD_GOLD_BARS">
+        <item type="bar" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold barrel" category="curious_altar" reaction="FREE_1_WYRD_GOLD_BARREL">
+        <item type="barrel" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold bin" category="curious_altar" reaction="FREE_1_WYRD_GOLD_BIN">
+        <item type="bin" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold block" category="curious_altar" reaction="FREE_1_WYRD_GOLD_BLOCK">
+        <item type="blocks" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 10 wyrd gold blocks" category="curious_altar" reaction="FREE_10_WYRD_GOLD_BLOCKS">
+        <item type="blocks" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 100 wyrd gold blocks" category="curious_altar" reaction="FREE_100_WYRD_GOLD_BLOCKS">
+        <item type="blocks" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold bowl" category="curious_altar" reaction="FREE_1_WYRD_GOLD_BOWL">
+        <item type="bowls" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold bucket" category="curious_altar" reaction="FREE_1_WYRD_GOLD_BUCKET">
+        <item type="bucket" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold cauldron" category="curious_altar" reaction="FREE_1_WYRD_GOLD_CAULDRON">
+        <item type="cauldrons" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold chain" category="curious_altar" reaction="FREE_1_WYRD_GOLD_CHAIN">
+        <item type="chain" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold crutch" category="curious_altar" reaction="FREE_1_WYRD_GOLD_CRUTCH">
+        <item type="crutch" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold cup" category="curious_altar" reaction="FREE_1_WYRD_GOLD_CUP">
+        <item type="goblet" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold flask" category="curious_altar" reaction="FREE_1_WYRD_GOLD_FLASK">
+        <item type="flask" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold carving fork" category="curious_altar" reaction="FREE_1_WYRD_GOLD_FORK_CARVING">
+        <item type="carving forks" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold hive" category="curious_altar" reaction="FREE_1_WYRD_GOLD_HIVE">
+        <item type="hives" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold honeycomb" category="curious_altar" reaction="FREE_1_WYRD_GOLD_HONEYCOMB">
+        <item type="honeycombs" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold jug" category="curious_altar" reaction="FREE_1_WYRD_GOLD_JUG">
+        <item type="jugs" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold boning knife" category="curious_altar" reaction="FREE_1_WYRD_GOLD_KNIFE_BONING">
+        <item type="boning knives" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold carving knife" category="curious_altar" reaction="FREE_1_WYRD_GOLD_KNIFE_CARVING">
+        <item type="carving knives" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold meat cleaver" category="curious_altar" reaction="FREE_1_WYRD_GOLD_KNIFE_MEAT_CLEAVER">
+        <item type="meat cleavers" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold meat slicer" category="curious_altar" reaction="FREE_1_WYRD_GOLD_KNIFE_SLICING">
+        <item type="slicing knives" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold ladle" category="curious_altar" reaction="FREE_1_WYRD_GOLD_LADLE">
+        <item type="ladles" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold mechanism" category="curious_altar" reaction="FREE_1_WYRD_GOLD_MECHANISM">
+        <item type="trapparts" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold millstone" category="curious_altar" reaction="FREE_1_WYRD_GOLD_MILLSTONE">
+        <item type="millstone" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold mortar" category="curious_altar" reaction="FREE_1_WYRD_GOLD_MORTAR">
+        <item type="mortars" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold nest box" category="curious_altar" reaction="FREE_1_WYRD_GOLD_NEST_BOX">
+        <item type="nest boxes" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold pestle" category="curious_altar" reaction="FREE_1_WYRD_GOLD_PESTLE">
+        <item type="pestles" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 large wyrd gold pot" category="curious_altar" reaction="FREE_1_WYRD_GOLD_POT">
+        <item type="pots" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold quern" category="curious_altar" reaction="FREE_1_WYRD_GOLD_QUERN">
+        <item type="quern" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold quiver" category="curious_altar" reaction="FREE_1_WYRD_GOLD_QUIVER">
+        <item type="quiver" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold splint" category="curious_altar" reaction="FREE_1_WYRD_GOLD_SPLINT">
+        <item type="splint" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold armor stand" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ARMORSTAND">
+        <item type="armorstand" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold bed" category="curious_altar" reaction="FREE_1_WYRD_GOLD_BED">
+        <item type="bed" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold cabinet" category="curious_altar" reaction="FREE_1_WYRD_GOLD_CABINET">
+        <item type="cabinet" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold chair" category="curious_altar" reaction="FREE_1_WYRD_GOLD_CHAIR">
+        <item type="chair" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold chest" category="curious_altar" reaction="FREE_1_WYRD_GOLD_CHEST">
+        <item type="box" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold coffin" category="curious_altar" reaction="FREE_1_WYRD_GOLD_COFFIN">
+        <item type="coffin" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold door" category="curious_altar" reaction="FREE_1_WYRD_GOLD_DOOR">
+        <item type="door" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold flood gate" category="curious_altar" reaction="FREE_1_WYRD_GOLD_FLOODGATE">
+        <item type="floodgate" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold hatch cover" category="curious_altar" reaction="FREE_1_WYRD_GOLD_FLOORHATCHCOVER">
+        <item type="hatch_cover" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold grate" category="curious_altar" reaction="FREE_1_WYRD_GOLD_GRATE">
+        <item type="grate" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold statue" category="curious_altar" reaction="FREE_1_WYRD_GOLD_STATUE">
+        <item type="statue" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold table" category="curious_altar" reaction="FREE_1_WYRD_GOLD_TABLE">
+        <item type="table" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold traction bench" category="curious_altar" reaction="FREE_1_WYRD_GOLD_TRACTION_BENCH">
+        <item type="traction_bench" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold weapon rack" category="curious_altar" reaction="FREE_1_WYRD_GOLD_WEAPONRACK">
+        <item type="weaponrack" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold window frame" category="curious_altar" reaction="FREE_1_WYRD_GOLD_WINDOW">
+        <item type="window" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold ballista arrowhead" category="curious_altar" reaction="FREE_1_WYRD_GOLD_BALLISTAARROWHEAD">
+        <item type="ballistaarrowhead" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold cage" category="curious_altar" reaction="FREE_1_WYRD_GOLD_CAGE">
+        <item type="cage" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create wyrd gold crafts" category="curious_altar" reaction="FREE_1_WYRD_GOLD_CRAFTS(RANDOM)">
+        <item type="crafts" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold instrument" category="curious_altar" reaction="FREE_1_WYRD_GOLD_INSTRUMENT">
+        <item type="instrument" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold pipe section" category="curious_altar" reaction="FREE_1_WYRD_GOLD_PIPE_SECTION">
+        <item type="pipe_section" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold toy" category="curious_altar" reaction="FREE_1_WYRD_GOLD_TOY">
+        <item type="toy" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold ballista part" category="curious_altar" reaction="FREE_1_WYRD_GOLD_BALLISTAPART">
+        <item type="ballistaparts" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold catapult part" category="curious_altar" reaction="FREE_1_WYRD_GOLD_CATAPULTPART">
+        <item type="catapultparts" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold coin" category="curious_altar" reaction="FREE_1_WYRD_GOLD_COIN">
+        <item type="coin" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold orthopedic cast" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ORTHOPEDIC_CAST">
+        <item type="orthopedic_cast" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold slab" category="curious_altar" reaction="FREE_1_WYRD_GOLD_SLAB">
+        <item type="slab" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold ballista bolt" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_SIEGEAMMO_BALLISTA">
+        <item type="ballista arrows" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 enormous wyrd gold corkscrew" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_TRAPCOMP_ENORMOUSCORKSCREW">
+        <item type="corkscrews" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 giant wyrd gold axe blade" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_TRAPCOMP_GIANTAXEBLADE">
+        <item type="axe blades" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 large serrated wyrd gold disc" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_TRAPCOMP_LARGESERRATEDDISC">
+        <item type="discs" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 menacing wyrd gold spike" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_TRAPCOMP_MENACINGSPIKE">
+        <item type="spikes" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 spiked wyrd gold ball" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_TRAPCOMP_SPIKEDBALL">
+        <item type="balls" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold battleaxe" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_WEAPON_AXE_BATTLE">
+        <item type="battle axes" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold greataxe" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_WEAPON_AXE_GREAT">
+        <item type="great axes" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold blowgun" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_WEAPON_BLOWGUN">
+        <item type="blowguns" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold bow" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_WEAPON_BOW">
+        <item type="bows" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold crossbow" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_WEAPON_CROSSBOW">
+        <item type="crossbows" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 large wyrd gold dagger" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_WEAPON_DAGGER_LARGE">
+        <item type="daggers" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold flail" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_WEAPON_FLAIL">
+        <item type="flails" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold halberd" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_WEAPON_HALBERD">
+        <item type="halberds" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold warhammer" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_WEAPON_HAMMER_WAR">
+        <item type="war hammers" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold mace" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_WEAPON_MACE">
+        <item type="maces" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold maul" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_WEAPON_MAUL">
+        <item type="mauls" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold morningstar" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_WEAPON_MORNINGSTAR">
+        <item type="morningstars" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold pick" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_WEAPON_PICK">
+        <item type="picks" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold pike" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_WEAPON_PIKE">
+        <item type="pikes" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold scimitar" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_WEAPON_SCIMITAR">
+        <item type="scimitars" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold scourge" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_WEAPON_SCOURGE">
+        <item type="scourges" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold spear" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_WEAPON_SPEAR">
+        <item type="spears" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold two handed sword" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_WEAPON_SWORD_2H">
+        <item type="two-handed swords" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold long sword" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_WEAPON_SWORD_LONG">
+        <item type="long swords" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold short sword" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_WEAPON_SWORD_SHORT">
+        <item type="short swords" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold whip" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_WEAPON_WHIP">
+        <item type="whips" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold breastplate" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_ARMOR_BREASTPLATE">
+        <item type="breastplates" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold cape" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_ARMOR_CAPE">
+        <item type="capes" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold cloak" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_ARMOR_CLOAK">
+        <item type="cloaks" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold coat" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_ARMOR_COAT">
+        <item type="coats" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold dress" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_ARMOR_DRESS">
+        <item type="dresses" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold and leather scale armor" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_ARMOR_LEATHER">
+        <item type="armor" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold mail shirt" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_ARMOR_MAIL_SHIRT">
+        <item type="mail shirts" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold robe" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_ARMOR_ROBE">
+        <item type="robes" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold shirt" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_ARMOR_SHIRT">
+        <item type="shirts" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold toga" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_ARMOR_TOGA">
+        <item type="togas" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold tunic" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_ARMOR_TUNIC">
+        <item type="tunics" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold vest" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_ARMOR_VEST">
+        <item type="vests" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold pair of gauntlets" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_GLOVES_GAUNTLETS">
+        <item type="gauntlets" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold pair of gloves" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_GLOVES_GLOVES">
+        <item type="gloves" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold pair of mittens" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_GLOVES_MITTENS">
+        <item type="mittens" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold cap" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_HELM_CAP">
+        <item type="caps" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold helm" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_HELM_HELM">
+        <item type="helms" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold hood" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_HELM_HOOD">
+        <item type="hoods" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold mask" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_HELM_MASK">
+        <item type="masks" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold head scarf" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_HELM_SCARF_HEAD">
+        <item type="headscarves" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold turban" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_HELM_TURBAN">
+        <item type="turbans" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold face veil" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_HELM_VEIL_FACE">
+        <item type="face veils" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold head veil" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_HELM_VEIL_HEAD">
+        <item type="head veils" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold pair of braies" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_PANTS_BRAIES">
+        <item type="braies:braies" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold pair of greaves" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_PANTS_GREAVES">
+        <item type="greaves" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold pair of leggings" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_PANTS_LEGGINGS">
+        <item type="leggings" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold loincloth" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_PANTS_LOINCLOTH">
+        <item type="loincloths" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold pair of trousers" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_PANTS_PANTS">
+        <item type="trousers:trousers" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold skirt" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_PANTS_SKIRT">
+        <item type="skirts" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold long skirt" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_PANTS_SKIRT_LONG">
+        <item type="long skirts" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold short skirt" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_PANTS_SKIRT_SHORT">
+        <item type="short skirts" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold thong" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_PANTS_THONG">
+        <item type="thongs" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold buckler" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_SHIELD_BUCKLER">
+        <item type="bucklers" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold shield" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_SHIELD_SHIELD">
+        <item type="shields" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold pair of high boots" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_SHOES_BOOTS">
+        <item type="high boots" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold pair of low boots" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_SHOES_BOOTS_LOW">
+        <item type="low boots" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold pair of chausse" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_SHOES_CHAUSSE">
+        <item type="chausses" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold pair of sandals" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_SHOES_SANDAL">
+        <item type="sandals" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold pair of shoes" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_SHOES_SHOES">
+        <item type="shoes" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 wyrd gold pair of socks" category="curious_altar" reaction="FREE_1_WYRD_GOLD_ITEM_SHOES_SOCKS">
+        <item type="socks" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="destroy 1 length of copper wiring" category="e_f_o" reaction="DESTROY_1_COPPER_WIRE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 adamantine wafer" category="e_f_o" reaction="DESTROY_1_BAR_OF_ADAMANTINE(WAFER)">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 bar of charcoal" category="e_f_o" reaction="DESTROY_1_BAR_OF_CHARCOAL">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 bar of coke" category="e_f_o" reaction="DESTROY_1_BAR_OF_COKE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 ima firin mah metal" category="e_f_o" reaction="DESTROY_1_BAR_OF_IMETAL">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 bar of pearlash" category="e_f_o" reaction="DESTROY_1_BAR_OF_PEARLASH">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 bar of potash" category="e_f_o" reaction="DESTROY_1_BAR_OF_POTASH">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 steel bar" category="e_f_o" reaction="DESTROY_1_BAR_OF_STEEL">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 beeblebrox root seed" category="e_f_o" reaction="DESTROY_1_BEEBLEBROX_ROOT_SEED">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 broken radio" category="e_f_o" reaction="DESTROY_1_BROKEN_RADIO">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 chromium trap part" category="e_f_o" reaction="DESTROY_1_CHROMIUM_TRAP_PART">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 clay" category="e_f_o" reaction="DESTROY_1_CLAY">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 clear diamond" category="e_f_o" reaction="DESTROY_1_CLEAR_DIAMOND">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 glass statue" category="e_f_o" reaction="DESTROY_1_CLEAR_GLASS_STATUE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 glass window" category="e_f_o" reaction="DESTROY_1_CLEAR_GLASS_WINDOW">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 cow cheese" category="e_f_o" reaction="DESTROY_1_COW_CHEESE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 cow leather" category="e_f_o" reaction="DESTROY_1_COW_LEATHER">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 cow leather bag" category="e_f_o" reaction="DESTROY_1_COW_LEATHER_BAG">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 cow leather quiver" category="e_f_o" reaction="DESTROY_1_COW_LEATHER_QUIVER">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 delicious succubi cheese" category="e_f_o" reaction="DESTROY_1_DELICIOUS_SUCCUBI_CHEESE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 dragon fat" category="e_f_o" reaction="DESTROY_1_DRAGON_FAT">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 dragon meat" category="e_f_o" reaction="DESTROY_1_DRAGON_MEAT">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 dragon leather" category="e_f_o" reaction="DESTROY_1_DRAGON_SCALE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 giant cave spider silk bag" category="e_f_o" reaction="DESTROY_1_GIANT_CAVE_SPIDER_SILK_BAG">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 giant cave spider silk cloth" category="e_f_o" reaction="DESTROY_1_GIANT_CAVE_SPIDER_SILK_CLOTH">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 giant cave spider silk rope" category="e_f_o" reaction="DESTROY_1_GIANT_CAVE_SPIDER_SILK_ROPE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 granite stone" category="e_f_o" reaction="DESTROY_1_GRANITE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 granite block" category="e_f_o" reaction="DESTROY_1_GRANITE_BLOCK">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 ima firin mah cheese" category="e_f_o" reaction="DESTROY_1_ICHEESE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 imagine plant" category="e_f_o" reaction="DESTROY_1_IMAGINE_PLANT">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 imagine seed" category="e_f_o" reaction="DESTROY_1_IMAGINE_SEED">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 iron trap part" category="e_f_o" reaction="DESTROY_1_IRON_TRAP_PART">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 vorpal two handed sword" category="e_f_o" reaction="DESTROY_1_ITEM_WEAPON_SWORD_2H_VORPAL">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 vorpal whip" category="e_f_o" reaction="DESTROY_1_ITEM_WEAPON_WHIP_VORPAL">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 oaken log" category="e_f_o" reaction="DESTROY_1_OAKEN_LOG">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 oaken barrel" category="e_f_o" reaction="DESTROY_1_OAKEN_BARREL">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 oaken bed" category="e_f_o" reaction="DESTROY_1_OAKEN_BED">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 oaken bin" category="e_f_o" reaction="DESTROY_1_OAKEN_BIN">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 oaken bucket" category="e_f_o" reaction="DESTROY_1_OAKEN_BUCKET">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 oaken cabinet" category="e_f_o" reaction="DESTROY_1_OAKEN_CABINET">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 oaken chair" category="e_f_o" reaction="DESTROY_1_OAKEN_CHAIR">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 oaken chest" category="e_f_o" reaction="DESTROY_1_OAKEN_CHEST">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 oaken coffin" category="e_f_o" reaction="DESTROY_1_OAKEN_COFFIN">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 oaken crutch" category="e_f_o" reaction="DESTROY_1_OAKEN_CRUTCH">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 oaken door" category="e_f_o" reaction="DESTROY_1_OAKEN_DOOR">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 oaken splint" category="e_f_o" reaction="DESTROY_1_OAKEN_SPLINT">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 oaken table" category="e_f_o" reaction="DESTROY_1_OAKEN_TABLE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 obsidian" category="e_f_o" reaction="DESTROY_1_OBSIDIAN">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 plump helmet" category="e_f_o" reaction="DESTROY_1_PLUMP_HELMET">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 plump helmet spawn" category="e_f_o" reaction="DESTROY_1_PLUMP_HELMET_SPAWN">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 radio" category="e_f_o" reaction="DESTROY_1_RADIO">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 raw adamantine" category="e_f_o" reaction="DESTROY_1_RAW_ADAMANTINE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 raw amethyst" category="e_f_o" reaction="DESTROY_1_RAW_AMETHYST">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 raw clear glass" category="e_f_o" reaction="DESTROY_1_RAW_CLEAR_GLASS">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 raw diamond_ly" category="e_f_o" reaction="DESTROY_1_RAW_DIAMOND">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 rocket fist" category="e_f_o" reaction="DESTROY_1_ROCKET_FIST">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 rope reed rope" category="e_f_o" reaction="DESTROY_1_ROPE_REED_ROPE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 rope reed thread bag" category="e_f_o" reaction="DESTROY_1_ROPE_REED_THREAD_BAG">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 solid effort" category="e_f_o" reaction="DESTROY_1_SOLID_EFFORT">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 steel anvil" category="e_f_o" reaction="DESTROY_1_STEEL_ANVIL">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 steel buckler" category="e_f_o" reaction="DESTROY_1_STEEL_BUCKLER">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 steel cage" category="e_f_o" reaction="DESTROY_1_STEEL_CAGE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 steel chain" category="e_f_o" reaction="DESTROY_1_STEEL_CHAIN">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 steel flask" category="e_f_o" reaction="DESTROY_1_STEEL_FLASK">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 steel hive" category="e_f_o" reaction="DESTROY_1_STEEL_HIVE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 steel jug" category="e_f_o" reaction="DESTROY_1_STEEL_JUG">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 steel large pot" category="e_f_o" reaction="DESTROY_1_STEEL_LARGE_POT">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 steel nest box" category="e_f_o" reaction="DESTROY_1_STEEL_NEST_BOXE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 steel shield" category="e_f_o" reaction="DESTROY_1_STEEL_SHIELD">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 adamantine thread" category="e_f_o" reaction="DESTROY_1_THREAD_OF_ADAMANTINE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 giant cave spider silk thread" category="e_f_o" reaction="DESTROY_1_THREAD_OF_GIANT_CAVE_SPIDER_SILK">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 ima firin mah thread" category="e_f_o" reaction="DESTROY_1_THREAD_OF_IMETAL">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 rope reed fiber thread" category="e_f_o" reaction="DESTROY_1_THREAD_OF_ROPE_REED_FIBER">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 woolen yarn thread" category="e_f_o" reaction="DESTROY_1_THREAD_OF_WOOLEN_YARN">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 rat brain" category="e_f_o" reaction="DESTROY_1_VERMIN_BRAIN">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 wild strawberry seed" category="e_f_o" reaction="DESTROY_1_WILD_STRAWBERRY_SEED">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 woolen bag" category="e_f_o" reaction="DESTROY_1_WOOLEN_BAG">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 woolen cloth" category="e_f_o" reaction="DESTROY_1_WOOLEN_CLOTH">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 woolen rope" category="e_f_o" reaction="DESTROY_1_WOOLEN_ROPE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 ammo (CAUTION!)" category="e_f_o" reaction="DESTROY_1_AMMO">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 amulet (CAUTION!)" category="e_f_o" reaction="DESTROY_1_AMULET">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 animal trap (CAUTION!)" category="e_f_o" reaction="DESTROY_1_ANIMALTRAP">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 anvil (CAUTION!)" category="e_f_o" reaction="DESTROY_1_ANVIL">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 armor (CAUTION!)" category="e_f_o" reaction="DESTROY_1_ARMOR">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 armorstand (CAUTION!)" category="e_f_o" reaction="DESTROY_1_ARMORSTAND">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 backpack (CAUTION!)" category="e_f_o" reaction="DESTROY_1_BACKPACK">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 ballista arrowhead (CAUTION!)" category="e_f_o" reaction="DESTROY_1_BALLISTAARROWHEAD">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 ballista part (CAUTION!)" category="e_f_o" reaction="DESTROY_1_BALLISTAPART">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 bar (CAUTION!)" category="e_f_o" reaction="DESTROY_1_BAR">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 barrel (CAUTION!)" category="e_f_o" reaction="DESTROY_1_BARREL">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 bed (CAUTION!)" category="e_f_o" reaction="DESTROY_1_BED">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 bin (CAUTION!)" category="e_f_o" reaction="DESTROY_1_BIN">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 block (CAUTION!)" category="e_f_o" reaction="DESTROY_1_BLOCK">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 boulder (CAUTION!)" category="e_f_o" reaction="DESTROY_1_BOULDER">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 box (CAUTION!)" category="e_f_o" reaction="DESTROY_1_BOX">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 bracelet (CAUTION!)" category="e_f_o" reaction="DESTROY_1_BRACELET">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 bucket (CAUTION!)" category="e_f_o" reaction="DESTROY_1_BUCKET">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 cabinet (CAUTION!)" category="e_f_o" reaction="DESTROY_1_CABINET">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 cage (CAUTION!)" category="e_f_o" reaction="DESTROY_1_CAGE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 catapult part (CAUTION!)" category="e_f_o" reaction="DESTROY_1_CATAPULTPART">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 chain (CAUTION!)" category="e_f_o" reaction="DESTROY_1_CHAIN">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 chair (CAUTION!)" category="e_f_o" reaction="DESTROY_1_CHAIR">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 cheese (CAUTION!)" category="e_f_o" reaction="DESTROY_1_CHEESE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 cloth (CAUTION!)" category="e_f_o" reaction="DESTROY_1_CLOTH">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 coffin (CAUTION!)" category="e_f_o" reaction="DESTROY_1_COFFIN">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 coin (CAUTION!)" category="e_f_o" reaction="DESTROY_1_COIN">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 corpse (CAUTION!)" category="e_f_o" reaction="DESTROY_1_CORPSE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 corpsepiece (CAUTION!)" category="e_f_o" reaction="DESTROY_1_CORPSEPIECE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 crown (CAUTION!)" category="e_f_o" reaction="DESTROY_1_CROWN">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 crutch (CAUTION!)" category="e_f_o" reaction="DESTROY_1_CRUTCH">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 door (CAUTION!)" category="e_f_o" reaction="DESTROY_1_DOOR">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 drink (CAUTION!)" category="e_f_o" reaction="DESTROY_1_DRINK">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 earring (CAUTION!)" category="e_f_o" reaction="DESTROY_1_EARRING">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 egg (CAUTION!)" category="e_f_o" reaction="DESTROY_1_EGG">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 figurine (CAUTION!)" category="e_f_o" reaction="DESTROY_1_FIGURINE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 fish (CAUTION!)" category="e_f_o" reaction="DESTROY_1_FISH">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 raw fish (CAUTION!)" category="e_f_o" reaction="DESTROY_1_FISH_RAW">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 flask (CAUTION!)" category="e_f_o" reaction="DESTROY_1_FLASK">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 floodgate (CAUTION!)" category="e_f_o" reaction="DESTROY_1_FLOODGATE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 food (CAUTION!)" category="e_f_o" reaction="DESTROY_1_FOOD">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 gem (CAUTION!)" category="e_f_o" reaction="DESTROY_1_GEM">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 glob (CAUTION!)" category="e_f_o" reaction="DESTROY_1_GLOB">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 glove (CAUTION!)" category="e_f_o" reaction="DESTROY_1_GLOVE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 goblet (CAUTION!)" category="e_f_o" reaction="DESTROY_1_GOBLET">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 grate (CAUTION!)" category="e_f_o" reaction="DESTROY_1_GRATE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 hatch cover (CAUTION!)" category="e_f_o" reaction="DESTROY_1_HATCH_COVER">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 helm (CAUTION!)" category="e_f_o" reaction="DESTROY_1_HELM">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 instrument (CAUTION!)" category="e_f_o" reaction="DESTROY_1_INSTRUMENT">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 bolt sword (CAUTION!)" category="e_f_o" reaction="DESTROY_1_ITEM_WEAPON_BOLT_SWORD">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 two handed sword (CAUTION!)" category="e_f_o" reaction="DESTROY_1_ITEM_WEAPON_SWORD_2H">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 whip (CAUTION!)" category="e_f_o" reaction="DESTROY_1_ITEM_WEAPON_WHIP">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 leaf (CAUTION!)" category="e_f_o" reaction="DESTROY_1_LEAF">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 miscellaneous liquid (CAUTION!)" category="e_f_o" reaction="DESTROY_1_LIQUID_MISC">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 meat (CAUTION!)" category="e_f_o" reaction="DESTROY_1_MEAT">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 millstone (CAUTION!)" category="e_f_o" reaction="DESTROY_1_MILLSTONE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 orthopedic cast (CAUTION!)" category="e_f_o" reaction="DESTROY_1_ORTHOPEDIC_CAST">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 pants (CAUTION!)" category="e_f_o" reaction="DESTROY_1_PANTS">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 tame vermin (CAUTION!)" category="e_f_o" reaction="DESTROY_1_PET">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 pipe section (CAUTION!)" category="e_f_o" reaction="DESTROY_1_PIPE_SECTION">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 plant (CAUTION!)" category="e_f_o" reaction="DESTROY_1_PLANT">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 miscellaneous powder (CAUTION!)" category="e_f_o" reaction="DESTROY_1_POWDER_MISC">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 quern (CAUTION!)" category="e_f_o" reaction="DESTROY_1_QUERN">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 quiver (CAUTION!)" category="e_f_o" reaction="DESTROY_1_QUIVER">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 dead vermin (CAUTION!)" category="e_f_o" reaction="DESTROY_1_REMAINS">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 ring (CAUTION!)" category="e_f_o" reaction="DESTROY_1_RING">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 rock (CAUTION!)" category="e_f_o" reaction="DESTROY_1_ROCK">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 rough gem(CAUTION!)" category="e_f_o" reaction="DESTROY_1_ROUGH">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 scepter (CAUTION!)" category="e_f_o" reaction="DESTROY_1_SCEPTER">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 seed (CAUTION!)" category="e_f_o" reaction="DESTROY_1_SEED">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 shield (CAUTION!)" category="e_f_o" reaction="DESTROY_1_SHIELD">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 shoe (CAUTION!)" category="e_f_o" reaction="DESTROY_1_SHOE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 piece of siege ammunition (CAUTION!)" category="e_f_o" reaction="DESTROY_1_SIEGEAMMO">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 leather (CAUTION!)" category="e_f_o" reaction="DESTROY_1_SKIN_TANNED">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 slab (CAUTION!)" category="e_f_o" reaction="DESTROY_1_SLAB">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 smallgem (CAUTION!)" category="e_f_o" reaction="DESTROY_1_SMALLGEM">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 splint (CAUTION!)" category="e_f_o" reaction="DESTROY_1_SPLINT">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 statue (CAUTION!)" category="e_f_o" reaction="DESTROY_1_STATUE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 stone (CAUTION!)" category="e_f_o" reaction="DESTROY_1_STONE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 table (CAUTION!)" category="e_f_o" reaction="DESTROY_1_TABLE">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 thread (CAUTION!)" category="e_f_o" reaction="DESTROY_1_THREAD">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 tool (CAUTION!)" category="e_f_o" reaction="DESTROY_1_TOOL">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 totem (CAUTION!)" category="e_f_o" reaction="DESTROY_1_TOTEM">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 toy (CAUTION!)" category="e_f_o" reaction="DESTROY_1_TOY">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 traction bench (CAUTION!)" category="e_f_o" reaction="DESTROY_1_TRACTION_BENCH">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 trap component (CAUTION!)" category="e_f_o" reaction="DESTROY_1_TRAPCOMP">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 trap part (CAUTION!)" category="e_f_o" reaction="DESTROY_1_TRAPPART">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 live vermin (CAUTION!)" category="e_f_o" reaction="DESTROY_1_VERMIN">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 weapon (CAUTION!)" category="e_f_o" reaction="DESTROY_1_WEAPON">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 weaponrack (CAUTION!)" category="e_f_o" reaction="DESTROY_1_WEAPONRACK">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="destroy 1 window (CAUTION!)" category="e_f_o" reaction="DESTROY_1_WINDOW">
+        <item type="stone" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="create 10 adamantine thread (E.M.K.)" category="e_m_k" reaction="FREE_10_ADAMANTINE_THREAD(EMK)">
+        <item type="thread" material="ADAMANTINE"/>
+    </dfjob>
+    <dfjob name="create 10 adamantine wafers (E.M.K.)" category="e_m_k" reaction="FREE_10_ADAMANTINE_WAFERS(EMK)">
+        <item type="bar" material="ADAMANTINE"/>
+    </dfjob>
+    <dfjob name="create 10 bars of charcoal (E.M.K.)" category="e_m_k" reaction="FREE_10_BARS_OF_CHARCOAL(EMK)">
+        <item type="bar" material="COAL"/>
+    </dfjob>
+    <dfjob name="create 10 bars of coke (E.M.K.)" category="e_m_k" reaction="FREE_10_BARS_OF_COKE(EMK)">
+        <item type="bar" material="COAL"/>
+    </dfjob>
+    <dfjob name="create 10 bars of pearlash (E.M.K.)" category="e_m_k" reaction="FREE_10_BARS_OF_PEARLASH(EMK)">
+        <item type="bar" material="PEARLASH"/>
+    </dfjob>
+    <dfjob name="create 10 bars of potash (E.M.K.)" category="e_m_k" reaction="FREE_10_BARS_OF_POTASH(EMK)">
+        <item type="bar" material="POTASH"/>
+    </dfjob>
+    <dfjob name="create 10 beeblebrox root seeds (E.M.K.)" category="e_m_k" reaction="FREE_10_BEEBLEBROX_ROOT_SEEDS(EMK)">
+        <item type="seeds" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 clay (E.M.K.)" category="e_m_k" reaction="FREE_10_CLAY(EMK)">
+        <item type="boulder" material="CLAY"/>
+    </dfjob>
+    <dfjob name="create 10 clear diamonds (E.M.K.)" category="e_m_k" reaction="FREE_10_CLEAR_DIAMOND(EMK)">
+        <item type="rough" material="DIAMOND_CLEAR"/>
+    </dfjob>
+    <dfjob name="create 10 cow cheese (E.M.K.)" category="e_m_k" reaction="FREE_10_COW_CHEESE(EMK)">
+        <item type="cheese" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 cow leather (E.M.K.)" category="e_m_k" reaction="FREE_10_COW_LEATHER(EMK)">
+        <item type="skin_tanned" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 cow leather backpacks (E.M.K.)" category="e_m_k" reaction="FREE_10_COW_LEATHER_BACKPACKS(EMK)">
+        <item type="backpack" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 cow leather bags (E.M.K.)" category="e_m_k" reaction="FREE_10_COW_LEATHER_BAGS(EMK)">
+        <item type="box" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 cow leather quivers (E.M.K.)" category="e_m_k" reaction="FREE_10_COW_LEATHER_QUIVERS(EMK)">
+        <item type="quiver" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 delicious succubi cheese (E.M.K.)" category="e_m_k" reaction="FREE_10_DELICIOUS_SUCCUBI_CHEESE(EMK)">
+        <item type="cheese" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 dragon fat (E.M.K.)" category="e_m_k" reaction="FREE_10_DRAGON_FAT(EMK)">
+        <item type="glob" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 dragon meat (E.M.K.)" category="e_m_k" reaction="FREE_10_DRAGON_MEAT(EMK)">
+        <item type="meat" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 dragon scales (E.M.K.)" category="e_m_k" reaction="FREE_10_DRAGON_SCALE(EMK)">
+        <item type="skin_tanned" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 rope reed fiber thread (E.M.K.)" category="e_m_k" reaction="FREE_10_FIBER_THREAD(EMK)">
+        <item type="thread" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 giant cave spider silk bags (E.M.K.)" category="e_m_k" reaction="FREE_10_GIANT_CAVE_SPIDER_SILK_BAGS(EMK)">
+        <item type="box" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 giant cave spider silk cloth (E.M.K.)" category="e_m_k" reaction="FREE_10_GIANT_CAVE_SPIDER_SILK_CLOTH(EMK)">
+        <item type="cloth" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 giant cave spider silk rope (E.M.K.)" category="e_m_k" reaction="FREE_10_GIANT_CAVE_SPIDER_SILK_ROPE(EMK)">
+        <item type="chain" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 giant cave spider silk thread (E.M.K.)" category="e_m_k" reaction="FREE_10_GIANT_CAVE_SPIDER_SILK_THREAD(EMK)">
+        <item type="thread" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 granite blocks (E.M.K.)" category="e_m_k" reaction="FREE_10_GRANITE_BLOCKS(EMK)">
+        <item type="blocks" material="GRANITE"/>
+    </dfjob>
+    <dfjob name="create 10 oak buckets (E.M.K.)" category="e_m_k" reaction="FREE_10_OAK_BUCKETS(EMK)">
+        <item type="bucket" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 oak crutches (E.M.K.)" category="e_m_k" reaction="FREE_10_OAK_CRUTCHES(EMK)">
+        <item type="crutch" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 oak splints (E.M.K.)" category="e_m_k" reaction="FREE_10_OAK_SPLINTS(EMK)">
+        <item type="splint" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 obsidian (E.M.K.)" category="e_m_k" reaction="FREE_10_OBSIDIAN(EMK)">
+        <item type="stone" material="STONE"/>
+    </dfjob>
+    <dfjob name="create 10 plump helmet spawn (E.M.K.)" category="e_m_k" reaction="FREE_10_PLUMP_HELMET_SPAWN(EMK)">
+        <item type="seeds" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 raw adamantine (E.M.K.)" category="e_m_k" reaction="FREE_10_RAW_ADAMANTINE(EMK)">
+        <item type="boulder" material="RAW_ADAMANTINE"/>
+    </dfjob>
+    <dfjob name="create 10 raw amethysts (E.M.K.)" category="e_m_k" reaction="FREE_10_RAW_AMETHYSTS(EMK)">
+        <item type="rough" material="AMETHYST"/>
+    </dfjob>
+    <dfjob name="create 10 raw clear glass (E.M.K.)" category="e_m_k" reaction="FREE_10_RAW_CLEAR_GLASS(EMK)">
+        <item type="rough" material="GLASS_CLEAR"/>
+    </dfjob>
+    <dfjob name="create 10 rope reed rope (E.M.K.)" category="e_m_k" reaction="FREE_10_ROPE_REED_ROPE(EMK)">
+        <item type="chain" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 rope reed thread bags (E.M.K.)" category="e_m_k" reaction="FREE_10_ROPE_REED_THREAD_BAGS(EMK)">
+        <item type="box" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 steel bucklers (E.M.K.)" category="e_m_k" reaction="FREE_10_STEEL_BUCKLERS(EMK)">
+        <item type="bucklers" material="STEEL"/>
+    </dfjob>
+    <dfjob name="create 10 steel cages (E.M.K.)" category="e_m_k" reaction="FREE_10_STEEL_CAGES(EMK)">
+        <item type="cage" material="STEEL"/>
+    </dfjob>
+    <dfjob name="create 10 steel chains (E.M.K.)" category="e_m_k" reaction="FREE_10_STEEL_CHAINS(EMK)">
+        <item type="chain" material="STEEL"/>
+    </dfjob>
+    <dfjob name="create 10 steel flasks (E.M.K.)" category="e_m_k" reaction="FREE_10_STEEL_FLASKS(EMK)">
+        <item type="flask" material="STEEL"/>
+    </dfjob>
+    <dfjob name="create 10 steel hives (E.M.K.)" category="e_m_k" reaction="FREE_10_STEEL_HIVES(EMK)">
+        <item type="hives" material="STEEL"/>
+    </dfjob>
+    <dfjob name="create 10 steel jugs (E.M.K.)" category="e_m_k" reaction="FREE_10_STEEL_JUGS(EMK)">
+        <item type="jugs" material="STEEL"/>
+    </dfjob>
+    <dfjob name="create 10 steel large pots (E.M.K.)" category="e_m_k" reaction="FREE_10_STEEL_LARGE_POTS(EMK)">
+        <item type="pots" material="STEEL"/>
+    </dfjob>
+    <dfjob name="create 10 steel nest boxes (E.M.K.)" category="e_m_k" reaction="FREE_10_STEEL_NEST_BOXES(EMK)">
+        <item type="nest boxes" material="STEEL"/>
+    </dfjob>
+    <dfjob name="create 10 steel shields (E.M.K.)" category="e_m_k" reaction="FREE_10_STEEL_SHIELDS(EMK)">
+        <item type="shields" material="STEEL"/>
+    </dfjob>
+    <dfjob name="create 10 wild strawberry seeds (E.M.K.)" category="e_m_k" reaction="FREE_10_WILD_STRAWBERRY_SEEDS(EMK)">
+        <item type="seeds" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 woolen bags (E.M.K.)" category="e_m_k" reaction="FREE_10_WOOLEN_BAGS(EMK)">
+        <item type="box" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 woolen cloth (E.M.K.)" category="e_m_k" reaction="FREE_10_WOOLEN_CLOTH(EMK)">
+        <item type="cloth" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 woolen ropes (E.M.K.)" category="e_m_k" reaction="FREE_10_WOOLEN_ROPES(EMK)">
+        <item type="chain" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 woolen yarn thread (E.M.K.)" category="e_m_k" reaction="FREE_10_WOOLEN_YARN(EMK)">
+        <item type="thread" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 barrel of lye (E.M.K.)" category="e_m_k" reaction="FREE_BARREL_OF_LYE(EMK)">
+        <item type="liquid_misc" material="LYE"/>
+    </dfjob>
+    <dfjob name="create 1 barrel of delicious succubi milk (E.M.K.)" category="e_m_k" reaction="FREE_DELICIOUS_SUCCUBI_MILK(EMK)">
+        <item type="liquid_misc" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 barrel of dwarven wine (E.M.K.)" category="e_m_k" reaction="FREE_DWARVEN_WINE(EMK)">
+        <item type="drink" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create sand (E.M.K.)" category="e_m_k" reaction="FREE_SAND(EMK)">
+        <item type="powder_misc" material="SAND_BLACK"/>
+    </dfjob>
+    <dfjob name="create 1 steel anvil (E.M.K.)" category="e_m_k" reaction="FREE_STEEL_ANVIL(EMK)">
+        <item type="anvil" material="STEEL"/>
+    </dfjob>
+    <dfjob name="create 1 barrel of strawberry wine (E.M.K.)" category="e_m_k" reaction="FREE_STRAWBERRY_WINE(EMK)">
+        <item type="drink" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 barrel of sunshine (E.M.K.)" category="e_m_k" reaction="FREE_SUNSHINE(EMK)">
+        <item type="drink" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create white sand (E.M.K.)" category="e_m_k" reaction="FREE_WHITE_SAND(EMK)">
+        <item type="powder_misc" material="SAND_WHITE"/>
+    </dfjob>
+    <dfjob name="create 1 granite block (E.M.K.)" category="e_m_k" reaction="FREE_1_GRANITE_BLOCK(EMK)">
+        <item type="blocks" material="GRANITE"/>
+    </dfjob>
+    <dfjob name="create 1 oak bucket (E.M.K.)" category="e_m_k" reaction="FREE_1_OAK_BUCKET(EMK)">
+        <item type="bucket" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 oak crutch (E.M.K.)" category="e_m_k" reaction="FREE_1_OAK_CRUTCH(EMK)">
+        <item type="crutch" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 oak splint (E.M.K.)" category="e_m_k" reaction="FREE_1_OAK_SPLINT(EMK)">
+        <item type="splint" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 obsidian (E.M.K.)" category="e_m_k" reaction="FREE_1_OBSIDIAN(EMK)">
+        <item type="stone" material="STONE"/>
+    </dfjob>
+    <dfjob name="create 1 plump helmet spawn (E.M.K.)" category="e_m_k" reaction="FREE_1_PLUMP_HELMET_SPAWN(EMK)">
+        <item type="seeds" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="(Uses 100)Prospect Obsidian" category="mb_stone_smasher" reaction="MB_PROSPECT_OBSIDIAN">
+        <item type="bar" material="IRON"/>
+    </dfjob>
+    <dfjob name="Destroy SANDSTONE" category="mb_stone_smasher" reaction="MB_DESTROY_STONE_001">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Plant Cloth armor/shirts/tunics/cloaks/robes" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_002">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Silk(and GCS) Cloth armor/shirts/tunics/cloaks/robes" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_003">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Leather armor/shirts/tunics/cloaks/robes" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_004">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Bone armor/shirts/tunics/cloaks/robes" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_005">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Yarn Cloth shoes/socks" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_011">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Plant Cloth shoes/socks" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_012">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Silk(and GCS) Cloth shoes/socks" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_013">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Leather shoes/socks" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_014">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Bone shoes/socks" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_015">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Yarn Cloth hoods/helms" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_021">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Plant Cloth hoods/helms" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_022">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Silk(and GCS) Cloth hoods/helms" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_023">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Leather hoods/helms" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_024">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Bone hoods/helms" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_025">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Yarn Cloth gloves/mittens" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_031">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Plant Cloth gloves/mittens" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_032">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Silk(and GCS) Cloth gloves/mittens" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_033">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Leather gloves/mittens" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_034">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Bone gloves/mittens" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_035">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Yarn Cloth pants" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_041">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Plant Cloth pants" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_042">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Silk(and GCS) Cloth pants" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_043">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Leather pants" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_044">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Burn Bone pants" category="mb_item_burner" reaction="MB_DESTROY_OTHER_CLOTHES_045">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Cremate Vermin Corpses" category="mb_crematorium" reaction="MB_DESTROY_CORPSES_001">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Cremate Corpses" category="mb_crematorium" reaction="MB_DESTROY_CORPSES_002">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Cremate Body Parts" category="mb_crematorium" reaction="MB_DESTROY_CORPSES_003">
+        <item type="bar" material="ASH"/>
+    </dfjob>
+    <dfjob name="Vermin Corpse to Meat" category="mb_crematorium" reaction="MB_DESTROY_CORPSES_004">
+        <item type="meat" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="tan a hide" category="tanner" reaction="TAN_A_HIDE">
+        <item type="skin_tanned" material="NONE"/>
+    </dfjob>
+    <dfjob name="render fat" category="kitchen" reaction="RENDER_FAT">
+        <item type="glob" material="NONE"/>
+    </dfjob>
+    <dfjob name="make soap from tallow" category="soap_maker" reaction="MAKE_SOAP_FROM_TALLOW">
+        <item type="bar" material="NONE"/>
+    </dfjob>
+    <dfjob name="make soap from oil" category="soap_maker" reaction="MAKE_SOAP_FROM_OIL">
+        <item type="1" material="NONE"/>
+    </dfjob>
+    <dfjob name="make pearlash" category="kiln" reaction="MAKE_PEARLASH">
+        <item type="bar" material="PEARLASH"/>
+    </dfjob>
+    <dfjob name="make plaster powder" category="kiln" reaction="MAKE_PLASTER_POWDER">
+        <item type="powder_misc" material="PLASTER"/>
+    </dfjob>
+    <dfjob name="make sharp rock" category="quern" reaction="MAKE_SHARP_ROCK">
+        <item type="glob" material="NONE"/>
+    </dfjob>
+    <dfjob name="make clay jug" category="kiln" reaction="MAKE_CLAY_JUG">
+        <item type="tool" material="ITEM_TOOL_JUG"/>
+    </dfjob>
+    <dfjob name="make clay bricks" category="kiln" reaction="MAKE_CLAY_BRICKS">
+        <item type="blocks" material="NONE"/>
+    </dfjob>
+    <dfjob name="make clay statue" category="kiln" reaction="MAKE_CLAY_STATUE">
+        <item type="statue" material="NONE"/>
+    </dfjob>
+    <dfjob name="make large clay pot" category="kiln" reaction="MAKE_LARGE_CLAY_POT">
+        <item type="tool" material="ITEM_TOOL_LARGE_POT"/>
+    </dfjob>
+    <dfjob name="make clay crafts" category="kiln" reaction="MAKE_CLAY_CRAFTS">
+        <item type="crafts" material="NONE"/>
+    </dfjob>
+    <dfjob name="glaze clay/stone jug" category="kiln" reaction="GLAZE_JUG">
+        <item type="tool" material="ITEM_TOOL_JUG"/>
+    </dfjob>
+    <dfjob name="glaze clay/stone statue" category="kiln" reaction="GLAZE_STATUE">
+        <item type="statue" material="NONE"/>
+    </dfjob>
+    <dfjob name="glaze large clay/stone pot" category="kiln" reaction="GLAZE_LARGE_POT">
+        <item type="tool" material="ITEM_TOOL_LARGE_POT"/>
+    </dfjob>
+    <dfjob name="glaze clay/stone craft" category="kiln" reaction="GLAZE_CRAFT">
+        <item type="any_craft" material="NONE"/>
+    </dfjob>
+    <dfjob name="press liquid from paste" category="screw_press" reaction="PRESS_OIL">
+        <item type="tool" material="NONE"/>
+    </dfjob>
+    <dfjob name="make clay hive" category="kiln" reaction="MAKE_CLAY_HIVE">
+        <item type="tool" material="ITEM_TOOL_HIVE"/>
+    </dfjob>
+    <dfjob name="press honey from honeycomb" category="screw_press" reaction="PRESS_HONEYCOMB">
+        <item type="tool" material="NONE"/>
+    </dfjob>
+    <dfjob name="make wax crafts" category="craftsman" reaction="MAKE_WAX_CRAFTS">
+        <item type="crafts" material="all"/>
+    </dfjob>
+    <dfjob name="make mead" category="still" reaction="MAKE_MEAD">
+        <item type="drink" material="all"/>
+    </dfjob>
+    <dfjob name="untangle copper wiring (mad sci)" category="mad_scientist" reaction="SEPERATE_COPPER_WIRES2">
+        <item type="thread" material="COPPER"/>
+    </dfjob>
+    <dfjob name="repair radio" category="mad_scientist" reaction="FIX_RADIO2">
+        <item type="item_toy_radio" material="STEEL_STAINLESS"/>
+    </dfjob>
+    <dfjob name="salvage medical supplies" category="mad_scientist" reaction="SALVAGE_MEDICAL_SUPPLIES2">
+        <item type="powder_misc" material="PLASTER"/>
+    </dfjob>
+    <dfjob name="make metal mechanism" category="mad_scientist" reaction="MAKE_METAL_TRAPPART2">
+        <item type="trapparts" material="all"/>
+    </dfjob>
+    <dfjob name="convert bituminous coal to diamond" category="mad_scientist" reaction="DIAMOND_FROM_COAL2">
+        <item type="rough" material="DIAMOND_LY"/>
+    </dfjob>
+    <dfjob name="convert lignite to diamond" category="mad_scientist" reaction="DIAMOND_FROM_LIGNITE2">
+        <item type="rough" material="DIAMOND_LY"/>
+    </dfjob>
+    <dfjob name="salvage gears" category="mad_scientist" reaction="SALVAGE_GEARS2">
+        <item type="trapparts" material="IRON"/>
+    </dfjob>
+    <dfjob name="salvage gears" category="mad_scientist" reaction="SALVAGE_ENGINE_PARTS2">
+        <item type="rough" material="BELT_RUBBER"/>
+    </dfjob>
+    <dfjob name="salvage robot parts" category="mad_scientist" reaction="SALVAGE_ROBOT_PARTS2">
+        <item type="trapparts" material="CHROMIUM"/>
+    </dfjob>
+    <dfjob name="make wire bags" category="mad_scientist" reaction="METAL_BAG2">
+        <item type="bag" material="all"/>
+    </dfjob>
+    <dfjob name="make wire mesh bags" category="mad_scientist" reaction="METAL_BAG_TWO2">
+        <item type="bag" material="all"/>
+    </dfjob>
+    <dfjob name="build crappy radio" category="mad_scientist" reaction="MAKE_BROKEN_RADIO2">
+        <item type="rough" material="RADIO_BROKEN"/>
+    </dfjob>
+    <dfjob name="make wire mesh backpacks" category="mad_scientist" reaction="METAL_PACK">
+        <item type="backpack" material="all"/>
+    </dfjob>
+    <dfjob name="make rocket fist" category="mad_scientist" reaction="ROCKET_FIST">
+        <item type="item_trapcomp_rocketfist" material="all"/>
+    </dfjob>
+    <dfjob name="extrude copper wiring" category="mad_scientist" reaction="EXTRUDE_COPPER">
+        <item type="rough" material="COPPER_WIRING"/>
+    </dfjob>
+    <dfjob name="carve stone cage" category="mad_scientist" reaction="STONE_CAGE">
+        <item type="cage" material="all"/>
+    </dfjob>
+    <dfjob name="forge metal pipe section" category="mad_scientist" reaction="METAL_PIPES">
+        <item type="pipe_section" material="all"/>
+    </dfjob>
+    <dfjob name="make pipe section from lava resistant rock" category="mad_scientist" reaction="LAVA_RESISTANT_MECHANISMS">
+        <item type="trapparts" material="all"/>
+    </dfjob>
+    <dfjob name="extract dog blood" category="mad_scientist" reaction="EXTRACT_DOG_BLOOD">
+        <item type="liquid_misc" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="extract cow's blood" category="mad_scientist" reaction="EXTRACT_COW_BLOOD">
+        <item type="liquid_misc" material="CREATURE_MAT"/>
+    </dfjob>
+    <dfjob name="make photochromic glass window" category="mad_scientist" reaction="TRANSITION_LENS_WINDOW">
+        <item type="window" material="GLASS_CLEAR"/>
+    </dfjob>
+    <dfjob name="make photochromic glass statue" category="mad_scientist" reaction="TRANSITION_LENS_STATUE">
+        <item type="statue" material="GLASS_CLEAR"/>
+    </dfjob>
+    <dfjob name="make your own dog 2.0" category="mad_scientist" reaction="MAKE_YOUR_OWN_DOG">
+        <item type="yip_dog" material="NONE"/>
+    </dfjob>
+    <dfjob name="harvest swag from root of all evil" category="sawmill" reaction="PRECIOUS_HARVEST">
+        <item type="bar" material="COPPER"/>
+    </dfjob>
+    <dfjob name="make cheese blocks" category="cheeseworks" reaction="MAKE_CHEESEBLOCK">
+        <item type="blocks" material="all"/>
+    </dfjob>
+    <dfjob name="make cheese bars" category="bonecarvers" reaction="MAKE_CHEESEBAR">
+        <item type="bar" material="all"/>
+    </dfjob>
+    <dfjob name="make cheese door" category="cheeseworks" reaction="MAKE_CHEESEDOOR">
+        <item type="door" material="all"/>
+    </dfjob>
+    <dfjob name="make cheese flood gate" category="cheeseworks" reaction="MAKE_CHEESEFLOODGATE">
+        <item type="floodgate" material="all"/>
+    </dfjob>
+    <dfjob name="make cheese hatch cover" category="cheeseworks" reaction="MAKE_CHEESEHATCHCOVER">
+        <item type="hatch_cover" material="all"/>
+    </dfjob>
+    <dfjob name="make cheese throne" category="cheeseworks" reaction="MAKE_CHEESETHRONE">
+        <item type="chair" material="all"/>
+    </dfjob>
+    <dfjob name="make cheese table" category="cheeseworks" reaction="MAKE_CHEESETABLE">
+        <item type="table" material="all"/>
+    </dfjob>
+    <dfjob name="make cheese coffin" category="cheeseworks" reaction="MAKE_CHEESECOFFIN">
+        <item type="coffin" material="all"/>
+    </dfjob>
+    <dfjob name="make cheese armor stand" category="cheeseworks" reaction="MAKE_CHEESEARMORSTAND">
+        <item type="armorstand" material="all"/>
+    </dfjob>
+    <dfjob name="make cheese weapon rack" category="cheeseworks" reaction="MAKE_CHEESERACK">
+        <item type="weaponrack" material="all"/>
+    </dfjob>
+    <dfjob name="make cheese grate" category="cheeseworks" reaction="MAKE_CHEESEGRATE">
+        <item type="grate" material="all"/>
+    </dfjob>
+    <dfjob name="make cheese bed" category="cheeseworks" reaction="MAKE_CHEESEBED">
+        <item type="bed" material="all"/>
+    </dfjob>
+    <dfjob name="make cheese cage" category="cheeseworks" reaction="MAKE_CHEESECAGE">
+        <item type="cage" material="all"/>
+    </dfjob>
+    <dfjob name="make cheese splints" category="cheeseworks" reaction="MAKE_CHEESESPLINT">
+        <item type="splint" material="all"/>
+    </dfjob>
+    <dfjob name="make cheese crutch" category="cheeseworks" reaction="MAKE_CHEESECRUTCH">
+        <item type="crutch" material="all"/>
+    </dfjob>
+    <dfjob name="harvest coins from money tree" category="sawmill" reaction="COIN_HARVEST">
+        <item type="coin" material="COPPER"/>
+    </dfjob>
+    <dfjob name="begin firin IFM wafers" category="smelter" reaction="IWAFERS">
+        <item type="bar" material="IMETAL"/>
+    </dfjob>
+    <dfjob name="tan IFM wafers into cheese" category="tanner" reaction="MAKE_ICHEESE">
+        <item type="cheese" material="ICHEESE"/>
+    </dfjob>
+    <dfjob name="grind cheese" category="cgrinder" reaction="GRIND_CHEESE">
+        <item type="powder_misc" material="all"/>
+    </dfjob>
+    <dfjob name="finely grind metal cheese" category="cgrinder" reaction="GRIND_ICHEESE">
+        <item type="powder_misc" material="IDYE"/>
+    </dfjob>
+    <dfjob name="find fluffy wambler" category="mixery" reaction="ADV_FLUFFY_WAMBLER_FINDER">
+        <item type="drink" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="serve imaginary tea" category="mixery" reaction="MAKE_IMAGINARY_TEA">
+        <item type="drink" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="imagine..." category="imaginarium" reaction="IMAGINE">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="make coke from bituminous coal" category="smelter" reaction="BITUMINOUS_COAL_TO_COKE">
+        <item type="bar" material="COAL"/>
+    </dfjob>
+    <dfjob name="make coke from lignite" category="smelter" reaction="LIGNITE_TO_COKE">
+        <item type="bar" material="COAL"/>
+    </dfjob>
+    <dfjob name="make brass bars (use ore)" category="smelter" reaction="BRASS_MAKING">
+        <item type="bar" material="BRASS"/>
+    </dfjob>
+    <dfjob name="make brass bars (use bars)" category="smelter" reaction="BRASS_MAKING2">
+        <item type="bar" material="BRASS"/>
+    </dfjob>
+    <dfjob name="make bronze bars (use ore)" category="smelter" reaction="BRONZE_MAKING">
+        <item type="bar" material="BRONZE"/>
+    </dfjob>
+    <dfjob name="make bronze bars (use bars)" category="smelter" reaction="BRONZE_MAKING2">
+        <item type="bar" material="BRONZE"/>
+    </dfjob>
+    <dfjob name="make electrum bars (use ore)" category="smelter" reaction="ELECTRUM_MAKING">
+        <item type="bar" material="ELECTRUM"/>
+    </dfjob>
+    <dfjob name="make electrum bars (use bars)" category="smelter" reaction="ELECTRUM_MAKING2">
+        <item type="bar" material="ELECTRUM"/>
+    </dfjob>
+    <dfjob name="make billon bars (use ore)" category="smelter" reaction="BILLON_MAKING">
+        <item type="bar" material="BILLON"/>
+    </dfjob>
+    <dfjob name="make billon bars (use bars)" category="smelter" reaction="BILLON_MAKING2">
+        <item type="bar" material="BILLON"/>
+    </dfjob>
+    <dfjob name="make fine pewter bars (use ore)" category="smelter" reaction="PEWTER_FINE_MAKING">
+        <item type="bar" material="PEWTER_FINE"/>
+    </dfjob>
+    <dfjob name="make fine pewter bars (use bars)" category="smelter" reaction="PEWTER_FINE_MAKING2">
+        <item type="bar" material="PEWTER_FINE"/>
+    </dfjob>
+    <dfjob name="make trifle pewter bars (use ore)" category="smelter" reaction="PEWTER_TRIFLE_MAKING">
+        <item type="bar" material="PEWTER_TRIFLE"/>
+    </dfjob>
+    <dfjob name="make trifle pewter bars (use bars)" category="smelter" reaction="PEWTER_TRIFLE_MAKING2">
+        <item type="bar" material="PEWTER_TRIFLE"/>
+    </dfjob>
+    <dfjob name="make lay pewter bars (use bars)" category="smelter" reaction="PEWTER_LAY_MAKING">
+        <item type="bar" material="PEWTER_LAY"/>
+    </dfjob>
+    <dfjob name="make pig iron bars" category="smelter" reaction="PIG_IRON_MAKING">
+        <item type="bar" material="PIG_IRON"/>
+    </dfjob>
+    <dfjob name="make steel bars" category="smelter" reaction="STEEL_MAKING">
+        <item type="bar" material="STEEL"/>
+    </dfjob>
+    <dfjob name="make nickel silver bars" category="smelter" reaction="NICKEL_SILVER_MAKING">
+        <item type="bar" material="NICKEL_SILVER"/>
+    </dfjob>
+    <dfjob name="make black bronze bars" category="smelter" reaction="BLACK_BRONZE_MAKING">
+        <item type="bar" material="BLACK_BRONZE"/>
+    </dfjob>
+    <dfjob name="make sterling silver bars" category="smelter" reaction="STERLING_SILVER_MAKING">
+        <item type="bar" material="STERLING_SILVER"/>
+    </dfjob>
+    <dfjob name="make rose gold bars" category="smelter" reaction="ROSE_GOLD_MAKING">
+        <item type="bar" material="ROSE_GOLD"/>
+    </dfjob>
+    <dfjob name="make bismuth bronze bars" category="smelter" reaction="BISMUTH_BRONZE_MAKING">
+        <item type="bar" material="BISMUTH_BRONZE"/>
+    </dfjob>
+    <dfjob name="make adamantine wafers" category="smelter" reaction="ADAMANTINE_WAFERS">
+        <item type="bar" material="ADAMANTINE"/>
+    </dfjob>
+    <dfjob name="create 1 stack of sungwood arrows" category="song_altar" reaction="FREE_1_STACK_SUNGWOOD_ARROWS">
+        <item type="arrows" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 stack of sungwood bolts" category="song_altar" reaction="FREE_1_STACK_SUNGWOOD_BOLTS">
+        <item type="bolts" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood animal trap" category="song_altar" reaction="FREE_1_SUNGWOOD_ANIMALTRAP">
+        <item type="animaltrap" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood armor stand" category="song_altar" reaction="FREE_1_SUNGWOOD_ARMORSTAND">
+        <item type="armorstand" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood ballista part" category="song_altar" reaction="FREE_1_SUNGWOOD_BALLISTAPART">
+        <item type="ballistaparts" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood barrel" category="song_altar" reaction="FREE_1_SUNGWOOD_BARREL">
+        <item type="barrel" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood bed" category="song_altar" reaction="FREE_1_SUNGWOOD_BED">
+        <item type="bed" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood bin" category="song_altar" reaction="FREE_1_SUNGWOOD_BIN">
+        <item type="bin" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood block" category="song_altar" reaction="FREE_1_SUNGWOOD_BLOCK">
+        <item type="blocks" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 sungwood blocks" category="song_altar" reaction="FREE_10_SUNGWOOD_BLOCKS">
+        <item type="blocks" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 100 sungwood blocks" category="song_altar" reaction="FREE_100_SUNGWOOD_BLOCKS">
+        <item type="blocks" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood bucket" category="song_altar" reaction="FREE_1_SUNGWOOD_BUCKET">
+        <item type="bucket" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood cabinet" category="song_altar" reaction="FREE_1_SUNGWOOD_CABINET">
+        <item type="cabinet" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood cage" category="song_altar" reaction="FREE_1_SUNGWOOD_CAGE">
+        <item type="cage" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood catapult part" category="song_altar" reaction="FREE_1_SUNGWOOD_CATAPULTPARTS">
+        <item type="catapultparts" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood chair" category="song_altar" reaction="FREE_1_SUNGWOOD_CHAIR">
+        <item type="chair" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood chest" category="song_altar" reaction="FREE_1_SUNGWOOD_CHEST">
+        <item type="box" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood coffin" category="song_altar" reaction="FREE_1_SUNGWOOD_COFFIN">
+        <item type="coffin" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood crutch" category="song_altar" reaction="FREE_1_SUNGWOOD_CRUTCH">
+        <item type="crutch" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood cup" category="song_altar" reaction="FREE_1_SUNGWOOD_CUP">
+        <item type="goblet" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood door" category="song_altar" reaction="FREE_1_SUNGWOOD_DOOR">
+        <item type="door" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood flask" category="song_altar" reaction="FREE_1_SUNGWOOD_FLASK">
+        <item type="flask" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood flood gate" category="song_altar" reaction="FREE_1_SUNGWOOD_FLOODGATE">
+        <item type="floodgate" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood hatch cover" category="song_altar" reaction="FREE_1_SUNGWOOD_FLOORHATCHCOVER">
+        <item type="hatch_cover" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood grate" category="song_altar" reaction="FREE_1_SUNGWOOD_GRATE">
+        <item type="grate" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood hive" category="song_altar" reaction="FREE_1_SUNGWOOD_HIVE">
+        <item type="hives" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood instrument" category="song_altar" reaction="FREE_1_SUNGWOOD_INSTRUMENT">
+        <item type="instrument" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood buckler" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_SHIELD_BUCKLER">
+        <item type="bucklers" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood shield" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_SHIELD_SHIELD">
+        <item type="shields" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood ballista bolt" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_SIEGEAMMO_BALLISTA">
+        <item type="ballista arrows" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 enormous sungwood corkscrew" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_TRAPCOMP_ENORMOUSCORKSCREW">
+        <item type="corkscrews" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 giant sungwood axe blade" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_TRAPCOMP_GIANTAXEBLADE">
+        <item type="axe blades" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 large serrated sungwood disc" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_TRAPCOMP_LARGESERRATEDDISC">
+        <item type="discs" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 menacing sungwood spike" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_TRAPCOMP_MENACINGSPIKE">
+        <item type="spikes" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 spiked sungwood ball" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_TRAPCOMP_SPIKEDBALL">
+        <item type="balls" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood battle axe" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_WEAPON_AXE_BATTLE">
+        <item type="battle axes" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood training axe" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_WEAPON_AXE_TRAINING">
+        <item type="training axes" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood bow" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_WEAPON_BOW">
+        <item type="bows" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood clawed glove" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_WEAPON_CLAWS">
+        <item type="clawed gloves" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood crossbow" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_WEAPON_CROSSBOW">
+        <item type="crossbows" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood war hammer" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_WEAPON_HAMMER_WAR">
+        <item type="war hammers" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood mace" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_WEAPON_MACE">
+        <item type="maces" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood giant pizza cutter" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_WEAPON_P_CUTTER">
+        <item type="pizza cutters" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood pick" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_WEAPON_PICK">
+        <item type="picks" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood plunger" category="song_altar" reaction="FREE_1_SUNGWOOD_KOL_ITEM_WEAPON_PLUNGER">
+        <item type="plungers" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood spear" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_WEAPON_SPEAR">
+        <item type="spears" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood training spear" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_WEAPON_SPEAR_TRAINING">
+        <item type="training spears" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood two handed sword" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_WEAPON_SWORD_2H">
+        <item type="two-handed swords" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood long sword" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_WEAPON_SWORD_LONG">
+        <item type="long swords" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood short sword" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_WEAPON_SWORD_SHORT">
+        <item type="short swords" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood training sword" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_WEAPON_SWORD_SHORT_TRAINING">
+        <item type="training swords" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood whip" category="song_altar" reaction="FREE_1_SUNGWOOD_ITEM_WEAPON_WHIP">
+        <item type="whips" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood jug" category="song_altar" reaction="FREE_1_SUNGWOOD_JUG">
+        <item type="jugs" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood log" category="song_altar" reaction="FREE_1_SUNGWOOD_LOG">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 sungwood logs" category="song_altar" reaction="FREE_10_SUNGWOOD_LOGS">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 100 sungwood logs" category="song_altar" reaction="FREE_100_SUNGWOOD_LOGS">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood mechanism" category="song_altar" reaction="FREE_1_SUNGWOOD_MECHANISM">
+        <item type="trapparts" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood millstone" category="song_altar" reaction="FREE_1_SUNGWOOD_MILLSTONE">
+        <item type="millstone" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood nest box" category="song_altar" reaction="FREE_1_SUNGWOOD_NEST_BOX">
+        <item type="nest boxes" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood pipe section" category="song_altar" reaction="FREE_1_SUNGWOOD_PIPE_SECTION">
+        <item type="pipe_section" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 large sungwood pot" category="song_altar" reaction="FREE_1_SUNGWOOD_POT">
+        <item type="pots" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood quern" category="song_altar" reaction="FREE_1_SUNGWOOD_QUERN">
+        <item type="quern" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood slab (decorative)" category="song_altar" reaction="FREE_1_SUNGWOOD_SLAB">
+        <item type="slab" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood splint" category="song_altar" reaction="FREE_1_SUNGWOOD_SPLINT">
+        <item type="splint" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood statue" category="song_altar" reaction="FREE_1_SUNGWOOD_STATUE">
+        <item type="statue" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood table" category="song_altar" reaction="FREE_1_SUNGWOOD_TABLE">
+        <item type="table" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood toy" category="song_altar" reaction="FREE_1_SUNGWOOD_TOY">
+        <item type="toy" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood traction bench" category="song_altar" reaction="FREE_1_SUNGWOOD_TRACTION_BENCH">
+        <item type="traction_bench" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood weapon rack" category="song_altar" reaction="FREE_1_SUNGWOOD_WEAPONRACK">
+        <item type="weaponrack" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood window frame" category="song_altar" reaction="FREE_1_SUNGWOOD_WINDOW">
+        <item type="window" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 chromium bolt-sword" category="swordery" reaction="CHROMIUM_BOLT_SWORD">
+        <item type="bolt-swords" material="CHROMIUM"/>
+    </dfjob>
+    <dfjob name="create 1 deadly bolt-sword" category="swordery" reaction="DEADLY_BOLT_SWORD">
+        <item type="bolt-swords" material="DEADLY_BOLT_SWORD0"/>
+    </dfjob>
+    <dfjob name="create 1 deadly two handed sword" category="swordery" reaction="DEADLY_ITEM_WEAPON_SWORD_2H">
+        <item type="two-handed swords" material="DEADLY_BOLT_SWORD0"/>
+    </dfjob>
+    <dfjob name="create 1 deadly whip" category="swordery" reaction="DEADLY_ITEM_WEAPON_WHIP">
+        <item type="whips" material="DEADLY_BOLT_SWORD0"/>
+    </dfjob>
+    <dfjob name="create 1 depleted uranium bolt-sword" category="swordery" reaction="DEPLETED_URANIUM_BOLT_SWORD">
+        <item type="bolt-swords" material="DEPLETED_URANIUM"/>
+    </dfjob>
+    <dfjob name="create 1 dungium bolt-sword" category="swordery" reaction="DUNGIUM_BOLT_SWORD">
+        <item type="bolt-swords" material="DUNGIUM"/>
+    </dfjob>
+    <dfjob name="create 1 solid effort bolt-sword" category="swordery" reaction="ELBOW_GREASE_BOLT_SWORD">
+        <item type="bolt-swords" material="ELBOW_GREASE"/>
+    </dfjob>
+    <dfjob name="create 1 sungwood bolt-sword" category="swordery" reaction="FREE_1_SUNGWOOD_ITEM_WEAPON_BOLT_SWORD">
+        <item type="bolt-swords" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 white gold bolt-sword" category="swordery" reaction="FREE_1_WYRD_GOLD_ITEM_WEAPON_BOLT_SWORD">
+        <item type="bolt-swords" material="WYRD_GOLD"/>
+    </dfjob>
+    <dfjob name="create 1 hardened earth bolt-sword" category="swordery" reaction="HARDENED_EARTH_BOLT_SWORD">
+        <item type="bolt-swords" material="HARDENED_EARTH"/>
+    </dfjob>
+    <dfjob name="create 1 ima firin mah bolt-sword" category="swordery" reaction="IMETAL_BOLT_SWORD">
+        <item type="bolt-swords" material="IMETAL"/>
+    </dfjob>
+    <dfjob name="create 1 dense meat bolt-sword" category="swordery" reaction="KOL_DENSE_MEAT_BOLT_SWORD">
+        <item type="bolt-swords" material="KOL_DENSE_MEAT"/>
+    </dfjob>
+    <dfjob name="create 1 meat bolt-sword" category="swordery" reaction="KOL_MEAT_BOLT_SWORD">
+        <item type="bolt-swords" material="KOL_MEAT"/>
+    </dfjob>
+    <dfjob name="create 1 mozzarellium bolt-sword" category="swordery" reaction="MOZZARELLIUM_BOLT_SWORD">
+        <item type="bolt-swords" material="MOZZARELLIUM"/>
+    </dfjob>
+    <dfjob name="create 1 plasteel bolt-sword" category="swordery" reaction="PLASTEEL_BOLT_SWORD">
+        <item type="bolt-swords" material="PLASTEEL"/>
+    </dfjob>
+    <dfjob name="create 1 steel bolt-sword" category="swordery" reaction="STEEL_BOLT_SWORD">
+        <item type="bolt-swords" material="STEEL"/>
+    </dfjob>
+    <dfjob name="create 1 carbon steel bolt-sword" category="swordery" reaction="STEEL_CARBON_BOLT_SWORD">
+        <item type="bolt-swords" material="STEEL_CARBON"/>
+    </dfjob>
+    <dfjob name="create 1 stainless steel bolt-sword" category="swordery" reaction="STEEL_STAINLESS_BOLT_SWORD">
+        <item type="bolt-swords" material="STEEL_STAINLESS"/>
+    </dfjob>
+    <dfjob name="create 1 vorpal bolt-sword" category="swordery" reaction="VORPAL_BOLT_SWORD">
+        <item type="bolt-swords" material="VORPAL_BOLT_SWORD0"/>
+    </dfjob>
+    <dfjob name="create 1 vorpal two handed sword" category="swordery" reaction="VORPAL_ITEM_WEAPON_SWORD_2H">
+        <item type="two-handed swords" material="VORPAL_BOLT_SWORD0"/>
+    </dfjob>
+    <dfjob name="create 1 vorpal whip" category="swordery" reaction="VORPAL_ITEM_WEAPON_WHIP">
+        <item type="whips" material="VORPAL_BOLT_SWORD0"/>
+    </dfjob>
+    <dfjob name="create 10 oak logs" category="town_in_a_box" reaction="FREE_OAK">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 steel bars" category="town_in_a_box" reaction="FREE_STEEL">
+        <item type="bar" material="STEEL"/>
+    </dfjob>
+    <dfjob name="create 10 granite stones" category="town_in_a_box" reaction="FREE_GRANITE">
+        <item type="stone" material="STONE"/>
+    </dfjob>
+    <dfjob name="create 10 plump helmets" category="town_in_a_box" reaction="FREE_PLUMP_HELMETS">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 100 oak logs" category="town_in_a_box" reaction="FREE_OAK_100">
+        <item type="wood" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 100 steel bars" category="town_in_a_box" reaction="FREE_STEEL_100">
+        <item type="bar" material="STEEL"/>
+    </dfjob>
+    <dfjob name="create 100 granite stones" category="town_in_a_box" reaction="FREE_GRANITE_100">
+        <item type="stone" material="STONE"/>
+    </dfjob>
+    <dfjob name="create 100 plump helmets" category="town_in_a_box" reaction="FREE_PLUMP_HELMETS_100">
+        <item type="plant" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 oaken barrels" category="town_in_a_box" reaction="FREE_BARRELS">
+        <item type="barrel" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 oaken beds" category="town_in_a_box" reaction="FREE_BEDS">
+        <item type="bed" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 oaken doors" category="town_in_a_box" reaction="FREE_DOORS">
+        <item type="door" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 oaken cabinets" category="town_in_a_box" reaction="FREE_CABINETS">
+        <item type="cabinet" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 oaken chairs" category="town_in_a_box" reaction="FREE_CHAIRS">
+        <item type="chair" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 oaken tables" category="town_in_a_box" reaction="FREE_TABLES">
+        <item type="table" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 oaken bins" category="town_in_a_box" reaction="FREE_BINS">
+        <item type="bin" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 oaken chests" category="town_in_a_box" reaction="FREE_CHESTS">
+        <item type="box" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 10 oaken coffins" category="town_in_a_box" reaction="FREE_COFFINS">
+        <item type="coffin" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="adds water to an empty barrel" category="town_in_a_box" reaction="FREE_DRINKING_WATER">
+        <item type="drink" material="WATER"/>
+    </dfjob>
+    <dfjob name="adds mead to an empty barrel" category="town_in_a_box" reaction="FREE_HONEY">
+        <item type="liquid_misc" material="all"/>
+    </dfjob>
+    <dfjob name="create 1 oaken barrel" category="town_in_a_box" reaction="FREE_1_BARREL">
+        <item type="barrel" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 oaken bed" category="town_in_a_box" reaction="FREE_1_BED">
+        <item type="bed" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 oaken door" category="town_in_a_box" reaction="FREE_1_DOOR">
+        <item type="door" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 oaken cabinet" category="town_in_a_box" reaction="FREE_1_CABINET">
+        <item type="cabinet" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 oaken chair" category="town_in_a_box" reaction="FREE_1_CHAIR">
+        <item type="chair" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 oaken table" category="town_in_a_box" reaction="FREE_1_TABLE">
+        <item type="table" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 oaken bin" category="town_in_a_box" reaction="FREE_1_BIN">
+        <item type="bin" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 oaken chest" category="town_in_a_box" reaction="FREE_1_CHEST">
+        <item type="box" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="create 1 oaken coffin" category="town_in_a_box" reaction="FREE_1_COFFIN">
+        <item type="coffin" material="PLANT_MAT"/>
+    </dfjob>
+    <dfjob name="untangle copper wiring" category="wirery" reaction="SEPERATE_COPPER_WIRES1">
+        <item type="thread" material="COPPER"/>
+    </dfjob>
+    <dfjob name="scrounge for copper wiring" category="wirery" reaction="CHEAT_COPPER_WIRES">
+        <item type="thread" material="COPPER"/>
+    </dfjob>

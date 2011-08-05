@@ -1,0 +1,10 @@
+item_ammo_rails
+
+[OBJECT:ITEM]
+
+[ITEM_AMMO:ITEM_AMMO_RAILS]
+	[NAME:railgun cartridge:railgun cartridges]
+	[CLASS:RAIL]
+	[SIZE:150]
+	[ATTACK:BLUNT:50:5000:bash:bashes:NO_SUB:1000]
+

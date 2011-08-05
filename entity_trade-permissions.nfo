@@ -1,0 +1,37 @@
+	############################################################################################
+	#START ALLOW Diplomats - Done per Entity.
+	############################################################################################
+	[POSITION:DIPLOMAT]
+		[NAME:Diplomat:Diplomats]
+		[NUMBER:1]
+		[RESPONSIBILITY:MAKE_INTRODUCTIONS]
+		[RESPONSIBILITY:MAKE_PEACE_AGREEMENTS]
+		[RESPONSIBILITY:MAKE_TOPIC_AGREEMENTS]
+		APPOINTED_BY:DRUID Elven Diplomat
+		[PRECEDENCE:70]
+		[DO_NOT_CULL]
+		[COLOR:7:0:1]
+		[MENIAL_WORK_EXEMPTION]
+		[PUNISHMENT_EXEMPTION]
+		[ACCOUNT_EXEMPT]
+		[DUTY_BOUND]
+	############################################################################################
+	#END ALLOW Diplomats
+	############################################################################################
+	############################################################################################
+	#START ALLOW Guild Representative (No One Has really save your own civ) REMOVE FROM CIV YOU PLAN TO PLAY! CAN GET ANNOYING GUESSING WHICH OF THE *2* Treaties IS THE REAL ONE
+	############################################################################################
+	[POSITION:GUILD_REPRESENTATIVE]
+		[NAME:Guild Representative:Guild Representatives]
+		[NUMBER:1]
+		[RESPONSIBILITY:TRADE]
+		[PRECEDENCE:40]
+		[DO_NOT_CULL]
+		[COLOR:7:0:1]
+		[MENIAL_WORK_EXEMPTION]
+		[PUNISHMENT_EXEMPTION]
+		[ACCOUNT_EXEMPT]
+		[DUTY_BOUND]
+	############################################################################################
+	#END ALLOW Guild Representative
+	############################################################################################

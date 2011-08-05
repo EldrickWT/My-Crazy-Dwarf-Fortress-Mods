@@ -1,0 +1,24 @@
+c_variation_milkable_humanoid
+
+[OBJECT:BROKEN] Also remove the CV_ADD_TAG: part before pasting directly onto a creature/creature caste
+
+[CREATURE_VARIATION:MILKABLE_HUMANOID]
+	[CV_ADD_TAG:USE_MATERIAL_TEMPLATE:MILK:MILK_TEMPLATE]
+		[CV_ADD_TAG:STATE_NAME:ALL_SOLID:frozen breastmilk]
+		[CV_ADD_TAG:STATE_ADJ:ALL_SOLID:frozen breastmilk]
+		[CV_ADD_TAG:STATE_NAME:LIQUID:breastmilk]
+		[CV_ADD_TAG:STATE_ADJ:LIQUID:breastmilk]
+		[CV_ADD_TAG:STATE_NAME:GAS:boiling breastmilk]
+		[CV_ADD_TAG:STATE_ADJ:GAS:boiling breastmilk]
+		[CV_ADD_TAG:PREFIX:delicious]
+	[CV_ADD_TAG:MILKABLE:LOCAL_CREATURE_MAT:MILK:20000]
+	[CV_ADD_TAG:USE_MATERIAL_TEMPLATE:CHEESE:CREATURE_CHEESE_TEMPLATE]
+		[CV_ADD_TAG:STATE_NAME:SOLID:cheese]
+		[CV_ADD_TAG:STATE_ADJ:SOLID:cheese]
+		[CV_ADD_TAG:STATE_NAME:SOLID_POWDER:cheese powder]
+		[CV_ADD_TAG:STATE_ADJ:SOLID_POWDER:cheese powder]
+		[CV_ADD_TAG:STATE_NAME:LIQUID:melted cheese]
+		[CV_ADD_TAG:STATE_ADJ:LIQUID:melted cheese]
+		[CV_ADD_TAG:STATE_NAME:GAS:boiling cheese]
+		[CV_ADD_TAG:STATE_ADJ:GAS:boiling cheese]
+		[CV_ADD_TAG:PREFIX:NONE]
