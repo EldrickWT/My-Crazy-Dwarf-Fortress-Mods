@@ -13,5 +13,6 @@ inorganic_soil_silliness
 	[STATE_NAME_ADJ:ALL_SOLID:amper sand][DISPLAY_COLOR:6:6:1][TILE:'&']
 	[SOIL]
 	[SOIL_SAND]
+	[REACTION_CLASS:SAND]
 	[SOLID_DENSITY:1600]
 
