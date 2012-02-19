@@ -25,7 +25,7 @@ creature_heraldendtimes
 		[ATTACK_TRIGGER:1:1000:1000]
 	[EXTRAVISION]
 	[MAGMA_VISION]
-	[CANNOT_UNDEAD]
+	[NOT_LIVING] Not Supposed to die either. Curse you world gen!
 	[FIREIMMUNE_SUPER]
 	[FLIER]
 	[GRASSTRAMPLE:100]

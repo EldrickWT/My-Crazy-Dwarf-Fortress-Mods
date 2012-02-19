@@ -25,7 +25,7 @@ creature_featherheart
 	[DIFFICULTY:1]
 		[ATTACK_TRIGGER:1:1000:1000]
 	[EXTRAVISION]
-	[CANNOT_UNDEAD]
+	[NOT_LIVING] Fey as hades so no...
 	[FLIER]
 	[GRASSTRAMPLE:100]
 	[NO_DIZZINESS]

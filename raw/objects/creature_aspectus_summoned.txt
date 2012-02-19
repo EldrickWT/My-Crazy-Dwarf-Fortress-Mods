@@ -243,7 +243,7 @@ creature_aspectus_summoned
 		[LIKES_FIGHTING]
 		[EXTRAVISION]
 		[MAGMA_VISION]
-		[CANNOT_UNDEAD]
+		[NOT_LIVING]
 		[NO_DIZZINESS]
 		[NO_DRINK]
 		[NO_EAT]

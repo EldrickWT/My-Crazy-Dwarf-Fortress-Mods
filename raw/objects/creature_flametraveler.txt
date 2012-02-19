@@ -26,7 +26,7 @@ creature_flametraveler
 		[ATTACK_TRIGGER:1:1000:1000]
 	[EXTRAVISION]
 	[MAGMA_VISION]
-	[CANNOT_UNDEAD]
+	[NOT_LIVING] No Undead Outsiders... unless they are undead outsider vampire things, right Planescape?
 	[FIREIMMUNE_SUPER]
 	[FLIER]
 	[GRASSTRAMPLE:100]

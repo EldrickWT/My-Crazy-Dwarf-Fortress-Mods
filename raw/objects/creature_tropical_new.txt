@@ -2335,9 +2335,11 @@ Pythons were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:great size]
 
+[CREATURE:TAPIR]
 Tapirs were sponsored by the generous contributions of the Bay 12 community.
 
-[CREATURE:TAPIR]
+	Samthere - Release the war tapirs!
+
 	[DESCRIPTION:A medium-sized, mammal with a prehensile nose.  It lives in the tropical rainforest.]
 	[NAME:tapir:tapirs:tapir]
 	[CASTE_NAME:tapir:tapirs:tapir]

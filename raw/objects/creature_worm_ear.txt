@@ -48,7 +48,7 @@ creature_worm_ear
 		[POWER]
 		[PARALYZEIMMUNE]
 		[BENIGN]
-		[CANNOT_UNDEAD]
+		[NOT_LIVING]
 		[EVIL]
 		[GOOD]
 		[NO_DIZZINESS]

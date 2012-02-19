@@ -18,7 +18,6 @@ creature_massive_unicorpion
 		[ALL_ACTIVE]
 		[BENIGN]
 		[BUILDINGDESTROYER:1]
-		[CANNOT_UNDEAD]
 		[CANOPENDOORS]
 		[CAN_LEARN]
 		[CAN_SPEAK]
