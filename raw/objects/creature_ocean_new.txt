@@ -2,13 +2,13 @@ creature_ocean_new
 
 [OBJECT:CREATURE]
 
+[CREATURE:OCTOPUS]
 Octopuses were sponsored by the generous contributions of the Bay 12 community.
 
 	David Kidd
 	Willis
 	Gigalith
 
-[CREATURE:OCTOPUS]
 	[DESCRIPTION:A medium-sized underwater mollusk with eight arms.  It is the most clever of its kind.]
 	[NAME:octopus:octopuses:octopus]
 	[CASTE_NAME:octopus:octopuses:octopus]
@@ -130,11 +130,10 @@ Octopuses were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:intelligence]
 	[PREFSTRING:many arms]
 
+[CREATURE:CRAB]
 Crabs were sponsored by the generous contributions of the Bay 12 community.
 
 	Aqizzar
-
-[CREATURE:CRAB]
 	[DESCRIPTION:A tiny shelled ocean creature with many long legs.  It has two large pincers on its front limbs.]
 	[NAME:crab:crabs:crab]
 	[CASTE_NAME:crab:crabs:crab]
@@ -148,6 +147,7 @@ Crabs were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:pincers]
 	[PREFSTRING:sideways walk]
 	[AMPHIBIOUS]
+	[UNDERSWIM]
 	[ALL_ACTIVE]
 	[NO_SLEEP]
 	[HOMEOTHERM:10071]
@@ -236,11 +236,10 @@ Crabs were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:pincers]
 	[PREFSTRING:sideways walk]
 
+[CREATURE:LEOPARD_SEAL]
 Leopard seals were sponsored by the generous contributions of the Bay 12 community.
 
 	heph
-
-[CREATURE:LEOPARD_SEAL]
 	[DESCRIPTION:A large predatory amphibious mammal.  It is difficult to evade once in the water.]
 	[NAME:leopard seal:leopard seals:leopard seal]
 	[CASTE_NAME:leopard seal:leopard seals:leopard seal]
@@ -253,7 +252,8 @@ Leopard seals were sponsored by the generous contributions of the Bay 12 communi
 	[BIOME:OCEAN_ARCTIC]
 	[POPULATION_NUMBER:10:20]
 	[CLUSTER_NUMBER:1:1]
-	[BENIGN][NATURAL]
+	[BENIGN]
+	[NATURAL]
 	[PREFSTRING:fierce nature]
 	[BODY:BASIC_2PARTBODY:BASIC_HEAD:FRONT_BODY_FLIPPERS:REAR_BODY_FLIPPERS:2EYES:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:GENERIC_TEETH:RIBCAGE]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -300,10 +300,10 @@ Leopard seals were sponsored by the generous contributions of the Bay 12 communi
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
-			[TL_COLOR_MODIFIER:GREY:1]
+			[TL_COLOR_MODIFIER:GRAY:1]
 				[TLCM_NOUN:skin:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
-			[TL_COLOR_MODIFIER:IRIS_EYE_GREY:1]
+			[TL_COLOR_MODIFIER:IRIS_EYE_GRAY:1]
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:LEOPARD_SEAL_MAN]
@@ -352,12 +352,11 @@ Leopard seals were sponsored by the generous contributions of the Bay 12 communi
 	[GO_TO_END]
 	[PREFSTRING:fierce nature]
 
+[CREATURE:CUTTLEFISH]
 Cuttlefish were sponsored by the generous contributions of the Bay 12 community.
 
 	From Timofei to the cuddly denizens of xkcdsucks
 	Duncan Pettengill - "If you push something hard enough, it will fall over"
-
-[CREATURE:CUTTLEFISH]
 	[DESCRIPTION:A tiny sea mollusk.  It can change color and skin patterns for communication.]
 	[NAME:cuttlefish:cuttlefish:cuttlefish]
 	[CASTE_NAME:cuttlefish:cuttlefish:cuttlefish]
@@ -478,9 +477,8 @@ Cuttlefish were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:ability to change color]
 	[PREFSTRING:distinctive pupils]
 
-Orcas were sponsored by the generous contributions of the Bay 12 community.
-
 [CREATURE:ORCA]
+Orcas were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A huge ocean mammal.  It is a vicious predator and can hunt in groups.]
 	[NAME:orca:orcas:orca]
 	[CASTE_NAME:orca:orcas:orca]
@@ -488,7 +486,8 @@ Orcas were sponsored by the generous contributions of the Bay 12 community.
 	[CREATURE_TILE:'O'][COLOR:0:0:1]
 	[LARGE_ROAMING]
 	[AQUATIC][UNDERSWIM][IMMOBILE_LAND][BEACH_FREQUENCY:10]
-	[BENIGN][NATURAL]
+	[BENIGN]
+	[NATURAL]
 	[PETVALUE:750]
 	[BIOME:ANY_OCEAN]
 	[POPULATION_NUMBER:15:30]
@@ -602,9 +601,8 @@ Orcas were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:coloration]
 	[PREFSTRING:great jumps]
 
-Sponges were sponsored by the generous contributions of the Bay 12 community.
-
 [CREATURE:SPONGE]
+Sponges were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A tiny sea creature which dwells on the ocean floor, devoid of senses or motion.]
 	[NAME:sponge:sponges:sponge]
 	[CASTE_NAME:sponge:sponges:sponge]
@@ -612,6 +610,7 @@ Sponges were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:10]
 	[FREQUENCY:100]
 	[AQUATIC][NOBONES][IMMOBILE][UNDERSWIM]
+	[BENIGN]
 	[NATURAL]
 	[NOT_BUTCHERABLE]
 	[BIOME:ANY_OCEAN]
@@ -689,11 +688,10 @@ Sponges were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:squishy texture]
 
+[CREATURE:HORSESHOE_CRAB]
 Horseshoe crabs were sponsored by the generous contributions of the Bay 12 community.
 
 	"We were here ages ago, we'll be here after all of you are gone."
-
-[CREATURE:HORSESHOE_CRAB]
 	[DESCRIPTION:A tiny sea animal that lives in the sand just offshore.  It has a flat body with legs underneath.]
 	[NAME:horseshoe crab:horseshoe crabs:horseshoe crab]
 	[CASTE_NAME:horseshoe crab:horseshoe crabs:horseshoe crab]
@@ -701,6 +699,8 @@ Horseshoe crabs were sponsored by the generous contributions of the Bay 12 commu
 	[NATURAL]
 	[BIOME:ANY_OCEAN]
 	[LARGE_ROAMING]
+	[AMPHIBIOUS]
+	[UNDERSWIM]
 	[FREQUENCY:100]
 	[POPULATION_NUMBER:250:500]
 	[SPEED:2900]
@@ -709,10 +709,9 @@ Horseshoe crabs were sponsored by the generous contributions of the Bay 12 commu
 	[NO_SLEEP]
 	[SWIMS_INNATE][SWIM_SPEED:2500]
 	[MUNDANE]
-	[NOT_BUTCHERABLE]
 	[NOBONES]
 	[EXTRAVISION]
-	[BODY:BODY_WITH_HEAD_FLAG:TAIL]
+	[BODY:BODY_WITH_HEAD_FLAG:HEART:BRAIN:TAIL]
 	[BODY_DETAIL_PLAN:CHITIN_MATERIALS]
 	[BODY_DETAIL_PLAN:CHITIN_TISSUES]
 	[BODY_DETAIL_PLAN:EXOSKELETON_TISSUE_LAYERS:CHITIN:FAT:MUSCLE]
@@ -741,12 +740,12 @@ Horseshoe crabs were sponsored by the generous contributions of the Bay 12 commu
 
 [CREATURE:HORSESHOE_CRAB_MAN]
 	[COPY_TAGS_FROM:HORSESHOE_CRAB]
-	[GO_TO_TAG:BODY:BODY_WITH_HEAD_FLAG:TAIL]
-	[BODY:HUMANOID:TAIL]
-	[CV_REMOVE_TAG:BODY:BASIC_1PARTBODY:TAIL]
-	[APPLY_CURRENT_CREATURE_VARIATION]
 	[APPLY_CREATURE_VARIATION:ANIMAL_PERSON]
 	[APPLY_CURRENT_CREATURE_VARIATION]
+	[GO_TO_TAG:BODY]
+	[CV_REMOVE_TAG:BODY]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+	[BODY:HUMANOID:HEART:BRAIN:TAIL]
 	[GO_TO_END]
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:horseshoe crab man:horseshoe crab men:horseshoe crab man]
@@ -787,11 +786,10 @@ Horseshoe crabs were sponsored by the generous contributions of the Bay 12 commu
 	[GO_TO_END]
 	[PREFSTRING:ability to hide in sand]
 
+[CREATURE:SPERM_WHALE]
 Sperm whales were sponsored by the generous contributions of the Bay 12 community.
 
 	MUX
-
-[CREATURE:SPERM_WHALE]
 	[DESCRIPTION:A giant marine mammal with a toothy jaw.]
 	[NAME:sperm whale:sperm whales:sperm whale]
 	[CASTE_NAME:sperm whale:sperm whales:sperm whale]
@@ -799,7 +797,8 @@ Sperm whales were sponsored by the generous contributions of the Bay 12 communit
 	[CREATURE_TILE:'W'][COLOR:7:0:0]
 	[LARGE_ROAMING]
 	[AQUATIC][UNDERSWIM][IMMOBILE_LAND][BEACH_FREQUENCY:10]
-	[BENIGN][MEANDERER][NATURAL]
+	[BENIGN]
+	[MEANDERER][NATURAL]
 	[PETVALUE:1000]
 	[BIOME:ANY_OCEAN]
 	[POPULATION_NUMBER:15:30]
@@ -861,7 +860,7 @@ Sperm whales were sponsored by the generous contributions of the Bay 12 communit
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
-			[TL_COLOR_MODIFIER:GREY:100:WHITE:1]
+			[TL_COLOR_MODIFIER:GRAY:100:WHITE:1]
 				[TLCM_NOUN:skin:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -914,11 +913,10 @@ Sperm whales were sponsored by the generous contributions of the Bay 12 communit
 	[PREFSTRING:teeth]
 	[PREFSTRING:vengeful nature]
 
+[CREATURE:ELEPHANT_SEAL]
 Elephant seals were sponsored by the generous contributions of the Bay 12 community.
 
 	Cruxador
-
-[CREATURE:ELEPHANT_SEAL]
 	[DESCRIPTION:A large, predatory marine mammal.]
 	[NAME:elephant seal:elephant seals:elephant seal]
 	[CASTE_NAME:elephant seal:elephant seals:elephant seal]
@@ -931,7 +929,8 @@ Elephant seals were sponsored by the generous contributions of the Bay 12 commun
 	[BIOME:OCEAN_ARCTIC]
 	[POPULATION_NUMBER:15:30]
 	[CLUSTER_NUMBER:5:10]
-	[BENIGN][MEANDERER][NATURAL]
+	[BENIGN]
+	[MEANDERER][NATURAL]
 	[PREFSTRING:large floppy noses]
 	[PREFSTRING:great size]
 	[BODY:BASIC_2PARTBODY:BASIC_HEAD:FRONT_BODY_FLIPPERS:REAR_BODY_FLIPPERS:2EYES:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:GENERIC_TEETH:RIBCAGE]
@@ -985,7 +984,7 @@ Elephant seals were sponsored by the generous contributions of the Bay 12 commun
 			[TL_COLOR_MODIFIER:BROWN:1]
 				[TLCM_NOUN:skin:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
-			[TL_COLOR_MODIFIER:IRIS_EYE_GREY:1]
+			[TL_COLOR_MODIFIER:IRIS_EYE_GRAY:1]
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:ELEPHANT_SEAL_MAN]
@@ -1035,9 +1034,8 @@ Elephant seals were sponsored by the generous contributions of the Bay 12 commun
 	[PREFSTRING:large floppy noses]
 	[PREFSTRING:great size]
 
-Harp seals were sponsored by the generous contributions of the Bay 12 community.
-
 [CREATURE:HARP_SEAL]
+Harp seals were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A small marine mammal.  Its young are prized for their white fur.]
 	[NAME:harp seal:harp seals:harp seal]
 	[CASTE_NAME:harp seal:harp seals:harp seal]
@@ -1050,7 +1048,8 @@ Harp seals were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:OCEAN_ARCTIC]
 	[POPULATION_NUMBER:15:30]
 	[CLUSTER_NUMBER:3:7]
-	[BENIGN][NATURAL]
+	[BENIGN]
+	[NATURAL]
 	[PREFSTRING:adorable pups]
 	[BODY:BASIC_2PARTBODY:BASIC_HEAD:FRONT_BODY_FLIPPERS:REAR_BODY_FLIPPERS:2EYES:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:GENERIC_TEETH:RIBCAGE]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -1097,10 +1096,10 @@ Harp seals were sponsored by the generous contributions of the Bay 12 community.
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
-			[TL_COLOR_MODIFIER:GREY:1]
+			[TL_COLOR_MODIFIER:GRAY:1]
 				[TLCM_NOUN:skin:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
-			[TL_COLOR_MODIFIER:IRIS_EYE_GREY:1]
+			[TL_COLOR_MODIFIER:IRIS_EYE_GRAY:1]
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:HARP_SEAL_MAN]
@@ -1149,11 +1148,10 @@ Harp seals were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:adorable pups]
 
+[CREATURE:NAUTILUS]
 Nautiluses were sponsored by the generous contributions of the Bay 12 community.
 
 	Adam Isom
-
-[CREATURE:NAUTILUS]
 	[DESCRIPTION:A tiny, mollusk with a large shell and many tentacles.]
 	[NAME:nautilus:nautiluses:nautilus]
 	[CASTE_NAME:nautilus:nautiluses:nautilus]
@@ -1266,3 +1264,4 @@ Nautiluses were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:shells]
 	[PREFSTRING:many tentacles]
+

@@ -2,13 +2,13 @@ creature_tropical_new
 
 [OBJECT:CREATURE]
 
+[CREATURE:MONGOOSE]
 Mongooses were sponsored by the generous contributions of the Bay 12 community.
 
 	Monty TC
 	Kavlax likes mongooses for their agility and cunning.
 	DevHyfes - Should this journey lead to death, we ride together!
 
-[CREATURE:MONGOOSE]
 	[DESCRIPTION:A very small mammal with short legs and a long tail.  It hunts small animals to eat.]
 	[NAME:mongoose:mongooses:mongoose]
 	[CASTE_NAME:mongoose:mongooses:mongoose]
@@ -86,7 +86,7 @@ Mongooses were sponsored by the generous contributions of the Bay 12 community.
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
-			[TL_COLOR_MODIFIER:GREY:1]
+			[TL_COLOR_MODIFIER:GRAY:1]
 				[TLCM_NOUN:hair:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 	[TL_COLOR_MODIFIER:BROWN:1:BURNT_UMBER:1:CINNAMON:1:COPPER:1:DARK_BROWN:1:DARK_PEACH:1:DARK_TAN:1:ECRU:1:PALE_BROWN:1:PALE_CHESTNUT:1:PALE_PINK:1:PEACH:1:PINK:1:RAW_UMBER:1:SEPIA:1:TAN:1:TAUPE_PALE:1:TAUPE_SANDY:1]
@@ -145,11 +145,10 @@ Mongooses were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:agility]
 	[PREFSTRING:cunning]
 
+[CREATURE:HYENA]
 Hyenas were sponsored by the generous contributions of the Bay 12 community.
 	xnrad likes hyenas for their distinctive laugh
 	Cruxador
-
-[CREATURE:HYENA]
 	[DESCRIPTION:A medium-sized pack predator found in the savanna.]
 	[NAME:hyena:hyenas:hyena]
 	[CASTE_NAME:hyena:hyenas:hyena]
@@ -289,11 +288,10 @@ Hyenas were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:distinctive laugh]
 	[PREFSTRING:coordinated hunting]
 
+[CREATURE:ANACONDA]
 Anacondas were sponsored by the generous contributions of the Bay 12 community.
 
 	Jayson French - "May these creatures be blessed with the alacrity and lethality of the mighty carp."
-
-[CREATURE:ANACONDA]
 	[DESCRIPTION:A medium-sized snake that lives in the trees.  It eats prey much larger than itself and slays them by crushing them to death.]
 	[NAME:anaconda:anacondas:anaconda]
 	[CASTE_NAME:anaconda:anacondas:anaconda]
@@ -410,12 +408,11 @@ Anacondas were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:great size]
 
+[CREATURE:MONITOR_LIZARD]
 Monitor lizards were sponsored by the generous contributions of the Bay 12 community.
 
 	Umiman's objective: sponsor a large land predator to make players scream :)
 	Hi, Zari
-
-[CREATURE:MONITOR_LIZARD]
 	[DESCRIPTION:A medium-sized reptile.  They can be found foraging for food such as eggs or worms.  They are said to be the most intelligent of their kind.]
 	[NAME:monitor lizard:monitor lizards:monitor lizard]
 	[CASTE_NAME:monitor lizard:monitor lizards:monitor lizard]
@@ -552,11 +549,10 @@ Monitor lizards were sponsored by the generous contributions of the Bay 12 commu
 	[GO_TO_END]
 	[PREFSTRING:intelligence]
 
+[CREATURE:KING_COBRA]
 King cobras were sponsored by the generous contributions of the Bay 12 community.
 
 	Sponsored by cosh - <3 DF
-
-[CREATURE:KING_COBRA]
 	[DESCRIPTION:A small limbless reptile known for its deadly venom and the warning of its hood.]
 	[NAME:king cobra:king cobras:king cobra]
 	[CASTE_NAME:king cobra:king cobras:king cobra]
@@ -733,11 +729,10 @@ King cobras were sponsored by the generous contributions of the Bay 12 community
 	[GO_TO_END]
 	[PREFSTRING:charming hood]
 
+[CREATURE:OCELOT]
 Ocelots were sponsored by the generous contributions of the Bay 12 community.
 
 	Stephmo
-
-[CREATURE:OCELOT]
 	[DESCRIPTION:A small cat-like creature found in the jungle.]
 	[NAME:ocelot:ocelots:ocelot]
 	[CASTE_NAME:ocelot:ocelots:ocelot]
@@ -874,11 +869,10 @@ Ocelots were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:coat patterns]
 
+[CREATURE:JACKAL]
 Jackals were sponsored by the generous contributions of the Bay 12 community.
 
 	Cruxador
-
-[CREATURE:JACKAL]
 	[DESCRIPTION:A small wolf-like scavenger.  Normally found in pairs, jackals can form packs when they find a body.]
 	[NAME:jackal:jackals:jackal]
 	[CASTE_NAME:jackal:jackals:jackal]
@@ -1014,11 +1008,10 @@ Jackals were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:resourceful nature]
 
+[CREATURE:CAPUCHIN]
 Capuchins were sponsored by the generous contributions of the Bay 12 community.
 
 	DoubleDuke
-
-[CREATURE:CAPUCHIN]
 	[DESCRIPTION:A tiny diurnal monkey.  It spends its time in the trees searching for food.]
 	[NAME:capuchin:capuchins:capuchin]
 	[CASTE_NAME:capuchin:capuchins:capuchin]
@@ -1152,15 +1145,15 @@ Capuchins were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:intelligence]
 	[PREFSTRING:social nature]
 
-Sloths were sponsored by the generous contributions of the Bay 12 community.
-
 [CREATURE:SLOTH]
+Sloths were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A small, slow-moving mammal that lives in the trees.]
 	[NAME:sloth:sloths:sloth]
 	[CASTE_NAME:sloth:sloths:sloth]
 	[CREATURE_TILE:'s'][COLOR:7:0:0]
 	[NATURAL]
 	[PETVALUE:50]
+	[BENIGN]
 	[PET_EXOTIC]
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING][FREQUENCY:10]
@@ -1226,7 +1219,7 @@ Sloths were sponsored by the generous contributions of the Bay 12 community.
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
-			[TL_COLOR_MODIFIER:GREY:1]
+			[TL_COLOR_MODIFIER:GRAY:1]
 				[TLCM_NOUN:hair:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 	[TL_COLOR_MODIFIER:BROWN:1:BURNT_UMBER:1:CINNAMON:1:COPPER:1:DARK_BROWN:1:DARK_PEACH:1:DARK_TAN:1:ECRU:1:PALE_BROWN:1:PALE_CHESTNUT:1:PALE_PINK:1:PEACH:1:PINK:1:RAW_UMBER:1:SEPIA:1:TAN:1:TAUPE_PALE:1:TAUPE_SANDY:1]
@@ -1283,17 +1276,17 @@ Sloths were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:slow movement]
 
+[CREATURE:SPIDER_MONKEY]
 Spider monkeys were sponsored by the generous contributions of the Bay 12 community.
 
 	Matt Umbro
-
-[CREATURE:SPIDER_MONKEY]
 	[DESCRIPTION:A small animal found in the canopy of the jungle.  They have extremely long arms and legs.]
 	[NAME:spider monkey:spider monkeys:spider monkey]
 	[CASTE_NAME:spider monkey:spider monkeys:spider monkey]
 	[CREATURE_TILE:'m'][COLOR:0:0:1]
 	[NATURAL]
 	[PETVALUE:50]
+	[BENIGN]
 	[PET_EXOTIC]
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING][FREQUENCY:10]
@@ -1419,9 +1412,8 @@ Spider monkeys were sponsored by the generous contributions of the Bay 12 commun
 	[PREFSTRING:long limbs]
 	[PREFSTRING:prehensile tails]
 
-Pangolins were sponsored by the generous contributions of the Bay 12 community.
-
 [CREATURE:PANGOLIN]
+Pangolins were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A small mammal covered in hard scales.  It has a long nose and tongue which it uses to feed.]
 	[NAME:pangolin:pangolins:pangolin]
 	[CASTE_NAME:pangolin:pangolins:pangolin]
@@ -1438,7 +1430,8 @@ Pangolins were sponsored by the generous contributions of the Bay 12 community.
 	[GOBBLE_VERMIN_CLASS:EDIBLE_GROUND_BUG]
 	[POPULATION_NUMBER:10:20]
 	[CLUSTER_NUMBER:1:1]
-	[BENIGN][MEANDERER]
+	[BENIGN]
+	[MEANDERER]
 	[PREFSTRING:overlapping scales]
 	[BODY:QUADRUPED:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:5TOES_FQ_REG:5TOES_RQ_REG:MOUTH:TONGUE:RIBCAGE]
 	[BODYGLOSS:PAW]
@@ -1563,9 +1556,8 @@ Pangolins were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:overlapping scales]
 
-Black mambas were sponsored by the generous contributions of the Bay 12 community.
-
 [CREATURE:BLACK_MAMBA]
+Black mambas were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A small aggressive snake which can move very quickly.  Its venom is deadly.]
 	[NAME:black mamba:black mambas:black mamba]
 	[CASTE_NAME:black mamba:black mambas:black mamba]
@@ -1662,7 +1654,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
-			[TL_COLOR_MODIFIER:GREY:1]
+			[TL_COLOR_MODIFIER:GRAY:1]
 				[TLCM_NOUN:scales:PLURAL]
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -1749,9 +1741,8 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[PREFSTRING:aggression]
 	[PREFSTRING:deadly bite]
 
-Sloth bears were sponsored by the generous contributions of the Bay 12 community.
-
 [CREATURE:BEAR_SLOTH]
+Sloth bears were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A medium-sized mammal that lives in the trees.  It is known for its easy-going nature.]
 	[NAME:sloth bear:sloth bears:sloth bear]
 	[CASTE_NAME:sloth bear:sloth bears:sloth bear]
@@ -1888,17 +1879,17 @@ Sloth bears were sponsored by the generous contributions of the Bay 12 community
 	[GO_TO_END]
 	[PREFSTRING:large floppy ears]
 
+[CREATURE:AYE-AYE]
 Aye-ayes were sponsored by the generous contributions of the Bay 12 community.
 
 	LASD
-
-[CREATURE:AYE-AYE]
 	[DESCRIPTION:A small, nocturnal, tree-dwelling mammal.  It uses its long fingers to fish out grubs from the wood.]
 	[NAME:aye-aye:aye-ayes:aye-aye]
 	[CASTE_NAME:aye-aye:aye-ayes:aye-aye]
 	[CREATURE_TILE:'a'][COLOR:7:0:0]
 	[NATURAL]
 	[PETVALUE:50]
+	[BENIGN]
 	[PET_EXOTIC]
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING][FREQUENCY:10]
@@ -1965,7 +1956,7 @@ Aye-ayes were sponsored by the generous contributions of the Bay 12 community.
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
-			[TL_COLOR_MODIFIER:GREY:1]
+			[TL_COLOR_MODIFIER:GRAY:1]
 				[TLCM_NOUN:hair:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 	[TL_COLOR_MODIFIER:BROWN:1:BURNT_UMBER:1:CINNAMON:1:COPPER:1:DARK_BROWN:1:DARK_PEACH:1:DARK_TAN:1:ECRU:1:PALE_BROWN:1:PALE_CHESTNUT:1:PALE_PINK:1:PEACH:1:PINK:1:RAW_UMBER:1:SEPIA:1:TAN:1:TAUPE_PALE:1:TAUPE_SANDY:1]
@@ -2022,14 +2013,13 @@ Aye-ayes were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:interesting fingers]
 
+[CREATURE:BUSHMASTER]
 Bushmasters were sponsored by the generous contributions of the Bay 12 community.
 
  |\___/"""""\  ___
 =##BUSHMASTER#|cwc|
  `""""##|_)##\ \==|
       HH    \#\
-
-[CREATURE:BUSHMASTER]
 	[DESCRIPTION:A tiny venomous snake.  It is the longest of the pit vipers.]
 	[NAME:bushmaster:bushmasters:bushmaster]
 	[CASTE_NAME:bushmaster:bushmasters:bushmaster]
@@ -2208,11 +2198,10 @@ Bushmasters were sponsored by the generous contributions of the Bay 12 community
 	[GO_TO_END]
 	[PREFSTRING:deadly bite]
 
+[CREATURE:PYTHON]
 Pythons were sponsored by the generous contributions of the Bay 12 community.
 
 	RusAnon: for the symbol of best programming language
-
-[CREATURE:PYTHON]
 	[DESCRIPTION:A small snake found in the trees.  It kills its prey by using its long body to constrict them.]
 	[NAME:python:pythons:python]
 	[CASTE_NAME:python:pythons:python]
@@ -2339,7 +2328,6 @@ Pythons were sponsored by the generous contributions of the Bay 12 community.
 Tapirs were sponsored by the generous contributions of the Bay 12 community.
 
 	Samthere - Release the war tapirs!
-
 	[DESCRIPTION:A medium-sized, mammal with a prehensile nose.  It lives in the tropical rainforest.]
 	[NAME:tapir:tapirs:tapir]
 	[CASTE_NAME:tapir:tapirs:tapir]
@@ -2351,7 +2339,8 @@ Tapirs were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:200]
 	[PREFSTRING:floppy noses]
 	[LARGE_ROAMING]
-	[BENIGN][MEANDERER][PET_EXOTIC]
+	[BENIGN]
+	[MEANDERER][PET_EXOTIC]
 	[GRAZER:300]
 	[BODY:QUADRUPED:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:4TOES_FQ_REG:3TOES_RQ_REG:MOUTH:GENERIC_TEETH:RIBCAGE]
 	[NATURAL]
@@ -2489,9 +2478,8 @@ Tapirs were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:floppy noses]
 
-Impalas were sponsored by the generous contributions of the Bay 12 community.
-
 [CREATURE:IMPALA]
+Impalas were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A small, slender gazelle-like creature.]
 	[NAME:impala:impalas:impala]
 	[CASTE_NAME:impala:impalas:impala]
@@ -2507,7 +2495,8 @@ Impalas were sponsored by the generous contributions of the Bay 12 community.
 	[CLUSTER_NUMBER:5:10]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
-	[BENIGN][MEANDERER][NATURAL]
+	[BENIGN]
+	[MEANDERER][NATURAL]
 	[BODY:QUADRUPED_HOOF:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:GENERIC_TEETH:RIBCAGE]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
 		[USE_MATERIAL_TEMPLATE:HOOF:HOOF_TEMPLATE]
@@ -2624,11 +2613,10 @@ Impalas were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:mighty leaps]
 
+[CREATURE:AARDVARK]
 Aardvarks were sponsored by the generous contributions of the Bay 12 community.
 
 	Morty TC
-
-[CREATURE:AARDVARK]
 	[DESCRIPTION:A small, nocturnal mammal.  It has a long tongue with which to eat insects.]
 	[NAME:aardvark:aardvarks:aardvark]
 	[CASTE_NAME:aardvark:aardvarks:aardvark]
@@ -2643,7 +2631,8 @@ Aardvarks were sponsored by the generous contributions of the Bay 12 community.
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:15:30]
 	[CLUSTER_NUMBER:1:1]
-	[BENIGN][MEANDERER]
+	[BENIGN]
+	[MEANDERER]
 	[PREFSTRING:long ears]
 	[PREFSTRING:snout]
 	[BODY:QUADRUPED:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:4TOES_FQ_REG:5TOES_RQ_REG:MOUTH:GENERIC_TEETH:RIBCAGE]
@@ -2710,7 +2699,7 @@ Aardvarks were sponsored by the generous contributions of the Bay 12 community.
 			[TL_COLOR_MODIFIER:TAN:1]
 				[TLCM_NOUN:hair:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
-			[TL_COLOR_MODIFIER:GREY:1]
+			[TL_COLOR_MODIFIER:GRAY:1]
 				[TLCM_NOUN:skin:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -2766,17 +2755,17 @@ Aardvarks were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:long ears]
 	[PREFSTRING:snout]
 
+[CREATURE:LION_TAMARIN]
 Lion tamarins were sponsored by the generous contributions of the Bay 12 community.
 
 	kynalvarus hopes that those reading this will help http://www.savetheliontamarin.org/
-
-[CREATURE:LION_TAMARIN]
 	[DESCRIPTION:A small orange monkey with a long tail.]
 	[NAME:lion tamarin:lion tamarins:lion tamarin]
 	[CASTE_NAME:lion tamarin:lion tamarins:lion tamarin]
 	[CREATURE_TILE:249][COLOR:6:0:1]
 	[PETVALUE:10]
 	[FREQUENCY:100][VERMIN_GROUNDER]
+	[BENIGN]
 	[SMALL_REMAINS][NATURAL][PET_EXOTIC]
 	[NOT_BUTCHERABLE]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -2896,3 +2885,4 @@ Lion tamarins were sponsored by the generous contributions of the Bay 12 communi
 	[GO_TO_END]
 	[PREFSTRING:small size]
 	[PREFSTRING:manes]
+

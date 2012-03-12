@@ -22,9 +22,9 @@ descriptor_color_standard
 	[WORD:AQUAMARINE]
 	[RGB:127:255:212]
 
-[COLOR:ASH_GREY]
-	[NAME:ash grey]
-	[WORD:GREY]
+[COLOR:ASH_GRAY]
+	[NAME:ash gray]
+	[WORD:GRAY]
 	[RGB:178:190:181]
 
 [COLOR:AUBURN]
@@ -243,15 +243,10 @@ descriptor_color_standard
 	[WORD:GOLDENROD]
 	[RGB:218:165:32]
 
-[COLOR:GREY]
-	[NAME:grey]
-	[WORD:GREY]
+[COLOR:GRAY]
+	[NAME:gray]
+	[WORD:GRAY]
 	[RGB:128:128:128]
-
-[COLOR:DARK_GREY]
-	[NAME:grey]
-	[WORD:GREY]
-	[RGB:192:192:192]
 
 [COLOR:GREEN]
 	[NAME:green]
@@ -488,9 +483,9 @@ descriptor_color_standard
 	[WORD:BLUE]
 	[RGB:135:206:235]
 
-[COLOR:SLATE_GREY]
-	[NAME:slate grey]
-	[WORD:GREY]
+[COLOR:SLATE_GRAY]
+	[NAME:slate gray]
+	[WORD:GRAY]
 	[RGB:112:128:144]
 
 [COLOR:SPRING_GREEN]
@@ -508,10 +503,10 @@ descriptor_color_standard
 	[WORD:TAUPE]
 	[RGB:72:60:50]
 
-[COLOR:TAUPE_GREY]
-	[NAME:taupe grey]
+[COLOR:TAUPE_GRAY]
+	[NAME:taupe gray]
 	[WORD:TAUPE]
-	[WORD:GREY]
+	[WORD:GRAY]
 	[RGB:139:133:137]
 
 [COLOR:TAUPE_MEDIUM]

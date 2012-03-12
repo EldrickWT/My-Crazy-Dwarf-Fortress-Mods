@@ -2,12 +2,12 @@ creature_tundra_taiga_new
 
 [OBJECT:CREATURE]
 
+[CREATURE:STOAT]
 Stoats were sponsored by the generous contributions of the Bay 12 community.
 
 	De5me7
 	Naros - Stoats! The solution to your rabbit and/or cat problems.
 
-[CREATURE:STOAT]
 	[DESCRIPTION:A small weasel-like creature that hunts rodents and preys on the nests of birds.]
 	[NAME:stoat:stoats:stoat]
 	[GENERAL_CHILD_NAME:stoat kit:stoat kits]
@@ -142,12 +142,11 @@ Stoats were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:ability to take down large prey]
 
+[CREATURE:LYNX]
 Lynx were sponsored by the generous contributions of the Bay 12 community.
 
 	Glowcat
 	When you simply can't have a lobster -- veok, the Lobster Rage Fist
-
-[CREATURE:LYNX]
 	[DESCRIPTION:A medium-sized mammalian predator.  It is known by the tell-tale tufts of hair on the tips of its ears.]
 	[NAME:lynx:lynx:lynx]
 	[CASTE_NAME:lynx:lynx:lynx]
@@ -280,3 +279,4 @@ Lynx were sponsored by the generous contributions of the Bay 12 community.
 	[MOUNT_EXOTIC]
 	[GO_TO_END]
 	[PREFSTRING:ear tufts]
+

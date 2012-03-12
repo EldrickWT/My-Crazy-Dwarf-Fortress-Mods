@@ -2,6 +2,7 @@ creature_bug_slug_new
 
 [OBJECT:CREATURE]
 
+[CREATURE:DAMSELFLY]
 Damselflies were sponsored by the generous contributions of the Bay 12 community.
 
 	C.J. Hull
@@ -101,12 +102,11 @@ Damselflies were sponsored by the generous contributions of the Bay 12 community
 	[GO_TO_END]
 	[PREFSTRING:coloration]
 
+[CREATURE:MOTH]
 Moths were sponsored by the generous contributions of the Bay 12 community.
 
 	Rafael Fiol
 	Shakkara thinks this game had a serious lack of cute moths
-
-[CREATURE:MOTH]
 	[DESCRIPTION:A tiny nocturnal insect.  It flies toward flames in the night.]
 	[CREATURE_TILE:249][COLOR:6:0:0]
 	[NAME:moth:moths:moth]
@@ -119,6 +119,7 @@ Moths were sponsored by the generous contributions of the Bay 12 community.
 	[SMALL_REMAINS][NO_WINTER]
 	[SPEED:700]
 	[PREFSTRING:coloration]
+	[BENIGN]
 	[FLIER]
 	[NOCTURNAL]
 	[NO_SLEEP]
@@ -201,11 +202,10 @@ Moths were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:coloration]
 
+[CREATURE:GRASSHOPPER]
 Grasshoppers were sponsored by the generous contributions of the Bay 12 community.
 
 	Bernard Suits
-
-[CREATURE:GRASSHOPPER]
 	[DESCRIPTION:A tiny insect which uses its powerful legs to leap and make noise.]
 	[NAME:grasshopper:grasshoppers:grasshopper]
 	[CASTE_NAME:grasshopper:grasshoppers:grasshopper]
@@ -220,6 +220,7 @@ Grasshoppers were sponsored by the generous contributions of the Bay 12 communit
 	[SPEED:2900]
 	[PREFSTRING:chirping]
 	[PREFSTRING:great leaps]
+	[BENIGN]
 	[ALL_ACTIVE]
 	[NO_SLEEP]
 	[HOMEOTHERM:10071]
@@ -302,11 +303,10 @@ Grasshoppers were sponsored by the generous contributions of the Bay 12 communit
 	[PREFSTRING:chirping]
 	[PREFSTRING:great leaps]
 
+[CREATURE:BARK_SCORPION]
 Bark scorpions were sponsored by the generous contributions of the Bay 12 community.
 
 	in fond memory of Ivan
-
-[CREATURE:BARK_SCORPION]
 	[DESCRIPTION:A tiny yellow bug.  It has pincers and a stinging tail which can prove fatal.]
 	[NAME:bark scorpion:bark scorpions:bark scorpion]
 	[CASTE_NAME:bark scorpion:bark scorpions:bark scorpion]
@@ -430,9 +430,8 @@ Bark scorpions were sponsored by the generous contributions of the Bay 12 commun
 	[PREFSTRING:pincers]
 	[PREFSTRING:stinging tail]
 
-Mantises were sponsored by the generous contributions of the Bay 12 community.
-
 [CREATURE:MANTIS]
+Mantises were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A tiny green insect.  It has long, distinctive forelimbs that it uses to catch its prey.]
 	[NAME:mantis:mantises:mantis]
 	[CASTE_NAME:mantis:mantises:mantis]
@@ -532,11 +531,10 @@ Mantises were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:predatory nature]
 	[PREFSTRING:grasping legs]
 
+[CREATURE:TICK]
 Ticks were sponsored by the generous contributions of the Bay 12 community.
 
 	infection vector extraordinaire!
-
-[CREATURE:TICK]
 	[DESCRIPTION:A tiny, blood-sucking bug found in wooded areas.]
 	[NAME:tick:ticks:tick]
 	[CASTE_NAME:tick:ticks:tick]
@@ -633,11 +631,10 @@ Ticks were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:ability to expand]
 
+[CREATURE:LOUSE]
 Lice were sponsored by the generous contributions of the Bay 12 community.
 
 	Maldoror
-
-[CREATURE:LOUSE]
 	Should not be able to survive away from host.
 	[DESCRIPTION:A tiny parasitic insect.  It feeds on skin and blood.]
 	[NAME:louse:lice:louse]
@@ -734,11 +731,10 @@ Lice were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:ability to infest]
 
+[CREATURE:THRIPS]
 Thrips were sponsored by the generous contributions of the Bay 12 community.
 
 	For Sachin Gadani
-
-[CREATURE:THRIPS]
 	[DESCRIPTION:A tiny pest insect.  It feeds on both crops and other bugs.]
 	[NAME:thrips:thrips:thrips]
 	[CASTE_NAME:thrips:thrips:thrips]
@@ -753,6 +749,7 @@ Thrips were sponsored by the generous contributions of the Bay 12 community.
 	[SPEED:2900]
 	[PREFSTRING:prolific breeding]
 	[ALL_ACTIVE]
+	[BENIGN]
 	[FLIER]
 	[NO_SLEEP]
 	[HOMEOTHERM:10071]
@@ -835,9 +832,8 @@ Thrips were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:prolific breeding]
 
-Slugs were sponsored by the generous contributions of the Bay 12 community.
-
 [CREATURE:SLUG]
+Slugs were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A tiny land mollusk.  It can be found under rotten logs and in gardens.]
 	[NAME:slug:slugs:slug]
 	[CASTE_NAME:slug:slugs:slug]
@@ -846,6 +842,7 @@ Slugs were sponsored by the generous contributions of the Bay 12 community.
 	[VERMIN_SOIL][FREQUENCY:100][VERMIN_HATEABLE]
 	[SMALL_REMAINS][VERMIN_NOTRAP][NOBONES]
 	[NATURAL][PET]
+	[BENIGN]
 	[NOT_BUTCHERABLE]
 	[BIOME:NOT_FREEZING]
 	[POPULATION_NUMBER:250:500]
@@ -917,9 +914,8 @@ Slugs were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:slime trails]
 
-Mosquitos were sponsored by the generous contributions of the Bay 12 community.
-
 [CREATURE:MOSQUITO]
+Mosquitos were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A tiny pest insect.  It uses its long nose to suck blood from its host.]
 	[NAME:mosquito:mosquitos:mosquito]
 	[CASTE_NAME:mosquito:mosquitos:mosquito]
@@ -1023,11 +1019,10 @@ Mosquitos were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:high-pitched buzz]
 	[PREFSTRING:ability to feast on blood]
 
+[CREATURE:SPIDER_JUMPING]
 Jumping spiders were sponsored by the generous contributions of the Bay 12 community.
 
 	John 'Chaoseed' Evans
-
-[CREATURE:SPIDER_JUMPING]
 	[DESCRIPTION:A tiny black bug that lacks a web but can leap short distances.]
 	[NAME:jumping spider:jumping spiders:jumping spider]
 	[CASTE_NAME:jumping spider:jumping spiders:jumping spider]
@@ -1128,11 +1123,10 @@ Jumping spiders were sponsored by the generous contributions of the Bay 12 commu
 	[PREFSTRING:striking appearance]
 	[PREFSTRING:ability to leap]
 
+[CREATURE:TERMITE]
 Termites were sponsored by the generous contributions of the Bay 12 community.
 
 	RiceMunk
-
-[CREATURE:TERMITE]
 	[DESCRIPTION:A tiny insect capable of destroying large wooden structures when in large numbers.]
 	[NAME:termite:termites:termite]
 	[CREATURE_TILE:250][COLOR:7:0:1]
@@ -1193,11 +1187,10 @@ Termites were sponsored by the generous contributions of the Bay 12 community.
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
 
+[CREATURE:MOON_SNAIL]
 Moon snails were sponsored by the generous contributions of the Bay 12 community.
 
 	"In soviet russia, snail eats YOU with tiny fork!"
-
-[CREATURE:MOON_SNAIL]
 	[DESCRIPTION:A tiny predatory mollusk.  It is brightly colored.]
 	[NAME:moon snail:moon snails:moon snail]
 	[CASTE_NAME:moon snail:moon snails:moon snail]
@@ -1248,7 +1241,7 @@ Moon snails were sponsored by the generous contributions of the Bay 12 community
 		[TL_COLOR_MODIFIER:RED:1]
 			[TLCM_NOUN:shell:SINGULAR]
 	[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
-		[TL_COLOR_MODIFIER:GREY:1]
+		[TL_COLOR_MODIFIER:GRAY:1]
 			[TLCM_NOUN:skin:SINGULAR]
 
 [CREATURE:MOON_SNAIL_MAN]
@@ -1296,11 +1289,10 @@ Moon snails were sponsored by the generous contributions of the Bay 12 community
 	[PREFSTRING:predatory nature]
 	[PREFSTRING:striking coloration]
 
+[CREATURE:SPIDER_BROWN_RECLUSE]
 Brown recluse spiders were sponsored by the generous contributions of the Bay 12 community.
 
 	Arthemax
-
-[CREATURE:SPIDER_BROWN_RECLUSE]
 	[DESCRIPTION:A tiny brown bug known for its powerful poison.]
 	[NAME:brown recluse spider:brown recluse spiders:brown recluse spider]
 	[CASTE_NAME:brown recluse spider:brown recluse spiders:brown recluse spider]
@@ -1456,11 +1448,10 @@ Brown recluse spiders were sponsored by the generous contributions of the Bay 12
 	[GO_TO_END]
 	[PREFSTRING:venomous bite]
 
+[CREATURE:SNAIL]
 Snails were sponsored by the generous contributions of the Bay 12 community.
 
 	Liegrean
-
-[CREATURE:SNAIL]
 	[DESCRIPTION:A tiny land mollusk with a large shell.]
 	[NAME:snail:snails:snail]
 	[CASTE_NAME:snail:snails:snail]
@@ -1468,6 +1459,7 @@ Snails were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:10]
 	[VERMIN_SOIL][FREQUENCY:100][VERMIN_HATEABLE]
 	[SMALL_REMAINS][VERMIN_NOTRAP][NOBONES]
+	[BENIGN]
 	[NATURAL][PET]
 	[NOT_BUTCHERABLE]
 	[BIOME:NOT_FREEZING]
@@ -1504,7 +1496,7 @@ Snails were sponsored by the generous contributions of the Bay 12 community.
 		[TL_COLOR_MODIFIER:BROWN:1]
 			[TLCM_NOUN:shell:SINGULAR]
 	[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
-		[TL_COLOR_MODIFIER:GREY:1]
+		[TL_COLOR_MODIFIER:GRAY:1]
 			[TLCM_NOUN:skin:SINGULAR]
 
 [CREATURE:SNAIL_MAN]
@@ -1546,3 +1538,4 @@ Snails were sponsored by the generous contributions of the Bay 12 community.
 	[MOUNT_EXOTIC]
 	[GO_TO_END]
 	[PREFSTRING:shells]
+

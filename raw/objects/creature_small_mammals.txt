@@ -84,10 +84,10 @@ creature_small_mammals
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
 
-[CREATURE:SQUIRREL_GREY]
+[CREATURE:SQUIRREL_GRAY]
 	[DESCRIPTION:A small grey rodent found chirping in the trees of temperate woodlands.]
-	[NAME:grey squirrel:grey squirrels:grey squirrel]
-	[CASTE_NAME:grey squirrel:grey squirrels:grey squirrel]
+	[NAME:gray squirrel:gray squirrels:gray squirrel]
+	[CASTE_NAME:gray squirrel:gray squirrels:gray squirrel]
 	[CREATURE_TILE:249][COLOR:7:0:0]
 	[PETVALUE:10]
 	[FREQUENCY:100][VERMIN_GROUNDER]
@@ -152,7 +152,7 @@ creature_small_mammals
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
-			[TL_COLOR_MODIFIER:GREY:1]
+			[TL_COLOR_MODIFIER:GRAY:1]
 				[TLCM_NOUN:hair:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 	[TL_COLOR_MODIFIER:BROWN:1:BURNT_UMBER:1:CINNAMON:1:COPPER:1:DARK_BROWN:1:DARK_PEACH:1:DARK_TAN:1:ECRU:1:PALE_BROWN:1:PALE_CHESTNUT:1:PALE_PINK:1:PEACH:1:PINK:1:RAW_UMBER:1:SEPIA:1:TAN:1:TAUPE_PALE:1:TAUPE_SANDY:1]
@@ -314,3 +314,4 @@ creature_small_mammals
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
+

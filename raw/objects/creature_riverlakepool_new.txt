@@ -2,12 +2,12 @@ creature_riverlakepool_new
 
 [OBJECT:CREATURE]
 
+[CREATURE:RIVER OTTER]
 Otters were sponsored by the generous contributions of the Bay 12 community.
 
 	Freaky - Likes otters for their slinky bodies!
 	moomeli
 
-[CREATURE:RIVER OTTER]
 	[DESCRIPTION:A small river mammal with a long body.  They enjoy eating shellfish and other small animals.]
 	[NAME:river otter:river otters:river otter]
 	[CASTE_NAME:river otter:river otters:river otter]
@@ -231,12 +231,11 @@ Otters were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:playfulness]
 
+[CREATURE:SNAPPING TURTLE]
 Snapping turtles were sponsored by the generous contributions of the Bay 12 community.
 
 	Intelligent Shade of Blue
 	Marshall Burns
-
-[CREATURE:SNAPPING TURTLE]
 	[DESCRIPTION:A medium-sized reptile with a thick shell, which it can retreat into when threatened.  This creature can administer a painful bite.]
 	[NAME:common snapping turtle:common snapping turtles:common snapping turtle]
 	[CASTE_NAME:common snapping turtle:common snapping turtles:common snapping turtle]
@@ -454,11 +453,10 @@ Snapping turtles were sponsored by the generous contributions of the Bay 12 comm
 	[PREFSTRING:vicious bites]
 	[PREFSTRING:long necks]
 
+[CREATURE:BEAVER]
 Beavers were sponsored by the generous contributions of the Bay 12 community.
 
 	Lord Darkstar
-
-[CREATURE:BEAVER]
 	[DESCRIPTION:A small river mammal with a flat tail, known for building wooden dams.]
 	[NAME:beaver:beavers:beaver]
 	[CASTE_NAME:beaver:beavers:beaver]
@@ -472,7 +470,8 @@ Beavers were sponsored by the generous contributions of the Bay 12 community.
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:15:30]
 	[CLUSTER_NUMBER:3:10]
-	[BENIGN][MEANDERER]
+	[BENIGN]
+	[MEANDERER]
 	[PREFSTRING:dams]
 	[PREFSTRING:tree-felling habits]
 	[BODY:QUADRUPED:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:4TOES_FQ_REG:5TOES_RQ_REG:MOUTH:RODENT_TEETH:RIBCAGE]
@@ -595,13 +594,12 @@ Beavers were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:dams]
 	[PREFSTRING:tree-felling habits]
 
+[CREATURE:LEECH]
 Leeches were sponsored by the generous contributions of the Bay 12 community.
 
 	Footkerchief struggles in vain against the grip of the Leech's mouth.
 	Karlito
 	Baalak Nalzar-aung
-
-[CREATURE:LEECH]
 	[DESCRIPTION:A tiny, aquatic, worm-like creature that feeds on blood.]
 	[NAME:leech:leeches:leech]
 	[CASTE_NAME:leech:leeches:leech]
@@ -692,12 +690,11 @@ Leeches were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:feeding habits]
 
+[CREATURE:AXOLOTL]
 Axolotls were sponsored by the generous contributions of the Bay 12 community.
 
 	Sponsored by Cheesetroll, because it pays his bills.
 	Paul W.
-
-[CREATURE:AXOLOTL]
 	[DESCRIPTION:A small salamander found in remote lakes.  It has the mysterious ability to regrow limbs.]
 	[NAME:axolotl:axolotls:axolotl]
 	[CASTE_NAME:axolotl:axolotls:axolotl]
@@ -809,9 +806,8 @@ Axolotls were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:gills]
 
-Minks were sponsored by the generous contributions of the Bay 12 community.
-
 [CREATURE:MINK]
+Minks were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A small, predatory, weasel-like mammal.  It is also semi-aquatic.]
 	[NAME:mink:minks:mink]
 	[CASTE_NAME:mink:minks:mink]
@@ -946,11 +942,10 @@ Minks were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:long bodies]
 
+[CREATURE:POND_TURTLE]
 Pond turtles were sponsored by the generous contributions of the Bay 12 community.
 
 	Shane Phillips
-
-[CREATURE:POND_TURTLE]
 	[DESCRIPTION:A tiny reptile with a shell on its back.  It can be found in rivers and ponds.]
 	[NAME:pond turtle:pond turtles:pond turtle]
 	[CASTE_NAME:pond turtle:pond turtles:pond turtle]
@@ -958,6 +953,7 @@ Pond turtles were sponsored by the generous contributions of the Bay 12 communit
 	[PETVALUE:10]
 	[VERMIN_FISH][FISHITEM]
 	[AMPHIBIOUS][SMALL_REMAINS][NO_WINTER]
+	[BENIGN]
 	[NATURAL][PET_EXOTIC]
 	[NOT_BUTCHERABLE]
 	[CARNIVORE]
@@ -1075,3 +1071,4 @@ Pond turtles were sponsored by the generous contributions of the Bay 12 communit
 	[MOUNT_EXOTIC]
 	[GO_TO_END]
 	[PREFSTRING:shells]
+

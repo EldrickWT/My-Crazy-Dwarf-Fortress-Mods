@@ -5,3 +5,12 @@ http://www.bay12forums.com/smf/index.php?topic=89174.0
 
 Wiki for the Mods:
 http://wiki.greypages.org/index.php/Dwarf_Fortress/Mods/Raws
+
+
+Structure:
+
+data - the colors, inits, worldgen, speeches, and my modded fortressintro
+Holding Pen - If something is being worked on an original -likely broken- will be here.
+raw-notes - all the motes for my mod(s)
+raw - a big merge of all my mods and all other mods I've added to My Little Arachnids and or Aspectus Lolin.
+split out mods - all my mods in individual packages. should all have mirrors of my 31.25 versions that were posted to DFFD assuming github does not destroy.

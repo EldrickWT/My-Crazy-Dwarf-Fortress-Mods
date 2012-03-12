@@ -1,0 +1,23 @@
+	############################################################################################
+	#Start Creation Forge
+	############################################################################################
+	[PERMITTED_BUILDING:CREATION_FORGE]
+	[PERMITTED_REACTION:FREE_COW_CHEESE]
+	[PERMITTED_REACTION:FREE_ADAMANTINE_WAFERS]
+	[PERMITTED_REACTION:FREE_ADAMANTINE_THREAD]
+	[PERMITTED_REACTION:FREE_RAW_ADAMANTINE]
+	[PERMITTED_REACTION:FREE_OBSIDIAN]
+	[PERMITTED_REACTION:FREE_ANVIL]
+	[PERMITTED_REACTION:FREE_SILK]
+	[PERMITTED_REACTION:FREE_YARN]
+	[PERMITTED_REACTION:FREE_FIBER]
+	[PERMITTED_REACTION:FREE_CLEAR_DIAMOND]
+	[PERMITTED_REACTION:FREE_COKE]
+	[PERMITTED_REACTION:FREE_SAND]
+	[PERMITTED_REACTION:FREE_LEATHER]
+	[PERMITTED_REACTION:FREE_MEAT]
+	[PERMITTED_REACTION:FREE_FAT]
+	[PERMITTED_REACTION:FREE_SUNSHINE]
+	############################################################################################
+	#End Creation Forge
+	############################################################################################

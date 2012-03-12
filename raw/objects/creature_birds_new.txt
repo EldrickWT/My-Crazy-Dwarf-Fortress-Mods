@@ -2,13 +2,13 @@ creature_birds_new
 
 [OBJECT:CREATURE]
 
+[CREATURE:BIRD_CROW]
 Crows were sponsored by the generous contributions of the Bay 12 community.
 
 	Calcipher
 	Tsennaya ptitsa!
 	In Memory of Half-Beak
 
-[CREATURE:BIRD_CROW]
 	[DESCRIPTION:A small black bird that feeds on carrion.  It is social, very intelligent and knows how to use tools.]
 	[NAME:crow:crows:crow]
 	[CASTE_NAME:crow:crows:crow]
@@ -24,6 +24,7 @@ Crows were sponsored by the generous contributions of the Bay 12 community.
 	[VERMIN_GROUNDER][FREQUENCY:100]
 	[POPULATION_NUMBER:250:500]
 	[SMALL_REMAINS]
+	[BENIGN]
 	[FLIER]
 	[CHILD:1]
 	[DIURNAL]
@@ -152,13 +153,12 @@ Crows were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:intelligence]
 
+[CREATURE:BIRD_RAVEN]
 Ravens were sponsored by the generous contributions of the Bay 12 community.
 
 	Corvus Corax sponsored by Melkorp
 	"Ravens are 'inventors'; that is, they have the ability to solve problems presented to them."
 	Thes33 - "Neverdwarf."
-
-[CREATURE:BIRD_RAVEN]
 	[DESCRIPTION:A small, foreboding black bird that feeds on carrion.  It is social, very intelligent, and knows how to use tools.]
 	[NAME:raven:ravens:raven]
 	[CASTE_NAME:raven:ravens:raven]
@@ -177,6 +177,7 @@ Ravens were sponsored by the generous contributions of the Bay 12 community.
 	[POPULATION_NUMBER:250:500]
 	[CLUSTER_NUMBER:2:10]
 	[SMALL_REMAINS]
+	[BENIGN]
 	[FLIER]
 	[CHILD:1]
 	[DIURNAL]
@@ -305,12 +306,11 @@ Ravens were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:intelligence]
 
+[CREATURE:BIRD_CASSOWARY]
 Cassowaries were sponsored by the generous contributions of the Bay 12 community.
 
 	Spam180
 	culling66
-
-[CREATURE:BIRD_CASSOWARY]
 	[DESCRIPTION:A small, flightless, brightly-colored bird.]
 	[NAME:cassowary:cassowaries:cassowary]
 	[CASTE_NAME:cassowary:cassowaries:cassowary]
@@ -321,7 +321,8 @@ Cassowaries were sponsored by the generous contributions of the Bay 12 community
 	[NATURAL]
 	[LARGE_ROAMING]
 	[PETVALUE:100]
-	[BENIGN][MEANDERER]
+	[BENIGN]
+	[MEANDERER]
 	[PET_EXOTIC]
 	[DIURNAL]
 	[HOMEOTHERM:10067]
@@ -445,16 +446,15 @@ Cassowaries were sponsored by the generous contributions of the Bay 12 community
 	[GO_TO_END]
 	[PREFSTRING:casques]
 
-Kea were sponsored by the generous contributions of the Bay 12 community.
-
 [CREATURE:BIRD_KEA]
+Kea were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A small, green, intelligent mountain parrot.]
 	[NAME:kea:kea:kea]
 	[CASTE_NAME:kea:kea:kea]
 	[GENERAL_CHILD_NAME:kea chick:kea chicks]
 	[CREATURE_TILE:'k'][COLOR:2:0:0]
 	[POPULATION_NUMBER:15:30]
-	[CLUSTER_NUMBER:5:10]
+	[CLUSTER_NUMBER:5:10][LOOSE_CLUSTERS]
 	[NATURAL]
 	[LARGE_ROAMING]
 	[CURIOUSBEAST_EATER]
@@ -595,12 +595,11 @@ Kea were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:curiosity]
 	[PREFSTRING:intelligence]
 
+[CREATURE:BIRD_OWL_SNOWY]
 Snowy owls were sponsored by the generous contributions of the Bay 12 community.
 
 	Regis
 	Errol
-
-[CREATURE:BIRD_OWL_SNOWY]
 	[DESCRIPTION:A small white bird that hunts in the coldest reaches of the world.]
 	[NAME:snowy owl:snowy owls:snowy owl]
 	[CASTE_NAME:snowy owl:snowy owls:snowy owl]
@@ -609,6 +608,7 @@ Snowy owls were sponsored by the generous contributions of the Bay 12 community.
 	[POPULATION_NUMBER:15:30]
 	[NATURAL]
 	[LARGE_ROAMING]
+	[BENIGN]
 	[PETVALUE:25]
 	[PET_EXOTIC]
 	[FLIER]
@@ -744,12 +744,11 @@ Snowy owls were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:yellow eyes]
 	[PREFSTRING:coloration]
 
+[CREATURE:SPARROW]
 Sparrows were sponsored by the generous contributions of the Bay 12 community.
 
 	Claudi
 	spuggie
-
-[CREATURE:SPARROW]
 	[DESCRIPTION:A tiny brown bird that can be found in most temperate regions.]
 	[NAME:sparrow:sparrows:sparrow]
 	[CASTE_NAME:sparrow:sparrows:sparrow]
@@ -766,6 +765,7 @@ Sparrows were sponsored by the generous contributions of the Bay 12 community.
 	[VERMIN_GROUNDER][FREQUENCY:100]
 	[POPULATION_NUMBER:250:500]
 	[SMALL_REMAINS]
+	[BENIGN]
 	[FLIER]
 	[CHILD:1]
 	[DIURNAL]
@@ -896,12 +896,11 @@ Sparrows were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:lovely songs]
 	[PREFSTRING:dust baths]
 
+[CREATURE:BIRD_STORK_WHITE]
 Storks were sponsored by the generous contributions of the Bay 12 community.
 
 	Urist the Stork sponsored by Markavian - A Stork is for life not just for Christmas
 	"From Alsace, with love."
-
-[CREATURE:BIRD_STORK_WHITE]
 	[DESCRIPTION:A small bird with long legs and bill, and a extremely long wingspan.]
 	[NAME:white stork:white storks:white stork]
 	[CASTE_NAME:white stork:white storks:white stork]
@@ -914,7 +913,8 @@ Storks were sponsored by the generous contributions of the Bay 12 community.
 	[POPULATION_NUMBER:15:30]
 	[CLUSTER_NUMBER:5:10]
 	[PETVALUE:25]
-	[BENIGN][MEANDERER][PET_EXOTIC]
+	[BENIGN]
+	[MEANDERER][PET_EXOTIC]
 	[FLIER]
 	[DIURNAL]
 	[HOMEOTHERM:10067]
@@ -1033,13 +1033,12 @@ Storks were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:long legs]
 	[PREFSTRING:long bills]
 
+[CREATURE:BIRD_LOON]
 Loons were sponsored by the generous contributions of the Bay 12 community.
 
 	IL
 	Usurper
 	Sponsored by Klokwurk. You can't get better than awesome!
-
-[CREATURE:BIRD_LOON]
 	[DESCRIPTION:A small water bird found in remote lakes.  It is known for its haunting call.]
 	[NAME:loon:loons:loon]
 	[CASTE_NAME:loon:loons:loon]
@@ -1053,7 +1052,8 @@ Loons were sponsored by the generous contributions of the Bay 12 community.
 	[POPULATION_NUMBER:15:30]
 	[CLUSTER_NUMBER:1:4]
 	[PETVALUE:10]
-	[BENIGN][MEANDERER][PET_EXOTIC]
+	[BENIGN]
+	[MEANDERER][PET_EXOTIC]
 	[FLIER]
 	[DIURNAL]
 	[HOMEOTHERM:10067]
@@ -1170,12 +1170,11 @@ Loons were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:haunting call]
 	[PREFSTRING:coloration]
 
+[CREATURE:BIRD_OWL_BARN]
 Barn owl were sponsored by the generous contributions of the Bay 12 community.
 
 	Murk
 	Glaucus - "Only when the dusk starts to fall does the owl of Minerva spread its wings and fly."
-
-[CREATURE:BIRD_OWL_BARN]
 	[DESCRIPTION:A small, nocturnal bird of prey found in woodland regions.  Its hunger for rodents drives it to take residence in buildings.]
 	[NAME:barn owl:barn owls:barn owl]
 	[CASTE_NAME:barn owl:barn owls:barn owl]
@@ -1184,6 +1183,7 @@ Barn owl were sponsored by the generous contributions of the Bay 12 community.
 	[POPULATION_NUMBER:15:30]
 	[NATURAL]
 	[LARGE_ROAMING]
+	[BENIGN]
 	[PETVALUE:25]
 	[PET_EXOTIC]
 	[FLIER]
@@ -1321,12 +1321,11 @@ Barn owl were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:coloration]
 
+[CREATURE:BIRD_PARAKEET]
 Parakeets were sponsored by the generous contributions of the Bay 12 community.
 
 	Bungie
 	Spinner
-
-[CREATURE:BIRD_PARAKEET]
 	[DESCRIPTION:A tiny parrot found in flocks of many hundreds.  Exceptional birds can be taught to speak.]
 	[NAME:parakeet:parakeets:parakeet]
 	[CASTE_NAME:parakeet:parakeets:parakeet]
@@ -1340,6 +1339,7 @@ Parakeets were sponsored by the generous contributions of the Bay 12 community.
 	[VERMIN_GROUNDER][FREQUENCY:100]
 	[POPULATION_NUMBER:250:500]
 	[SMALL_REMAINS]
+	[BENIGN]
 	[FLIER]
 	[CHILD:1]
 	[DIURNAL]
@@ -1470,11 +1470,10 @@ Parakeets were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:coloration]
 	[PREFSTRING:ability to speak]
 
+[CREATURE:BIRD_KAKAPO]
 Kakapo were sponsored by the generous contributions of the Bay 12 community.
 
 	You've just been shagged by a rare parrot!
-
-[CREATURE:BIRD_KAKAPO]
 	[DESCRIPTION:A small flightless green parrot.  It is nocturnal and counts itself among the longest-lived birds.]
 	[NAME:kakapo:kakapo:kakapo]
 	[CASTE_NAME:kakapo:kakapo:kakapo]
@@ -1489,7 +1488,8 @@ Kakapo were sponsored by the generous contributions of the Bay 12 community.
 	[POPULATION_NUMBER:15:30]
 	[CLUSTER_NUMBER:1:1]
 	[PETVALUE:50]
-	[BENIGN][MEANDERER][PET_EXOTIC]
+	[BENIGN]
+	[MEANDERER][PET_EXOTIC]
 	[NOCTURNAL]
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:2500]
@@ -1609,12 +1609,11 @@ Kakapo were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:flightlessness]
 	[PREFSTRING:booming calls]
 
+[CREATURE:BIRD_PARROT_GREY]
 Grey parrots were sponsored by the generous contributions of the Bay 12 community.
 
 	Mephansteras - In Memory of Alex
 	Rainseeker's bird Maggie
-
-[CREATURE:BIRD_PARROT_GREY]
 	[DESCRIPTION:The most intelligent of birds.  It can be found in the rainforest.]
 	[NAME:grey parrot:grey parrots:grey parrot]
 	[CASTE_NAME:grey parrot:grey parrots:grey parrot]
@@ -1625,6 +1624,7 @@ Grey parrots were sponsored by the generous contributions of the Bay 12 communit
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[POPULATION_NUMBER:15:30]
 	[CLUSTER_NUMBER:3:5]
+	[BENIGN]
 	[PETVALUE:10]
 	[MEANDERER][PET_EXOTIC]
 	[FLIER]
@@ -1687,7 +1687,7 @@ Grey parrots were sponsored by the generous contributions of the Bay 12 communit
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
-			[TL_COLOR_MODIFIER:GREY:1]
+			[TL_COLOR_MODIFIER:GRAY:1]
 				[TLCM_NOUN:feathers:PLURAL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 	[TL_COLOR_MODIFIER:BROWN:1:BURNT_UMBER:1:CINNAMON:1:COPPER:1:DARK_BROWN:1:DARK_PEACH:1:DARK_TAN:1:ECRU:1:PALE_BROWN:1:PALE_CHESTNUT:1:PALE_PINK:1:PEACH:1:PINK:1:RAW_UMBER:1:SEPIA:1:TAN:1:TAUPE_PALE:1:TAUPE_SANDY:1]
@@ -1743,11 +1743,10 @@ Grey parrots were sponsored by the generous contributions of the Bay 12 communit
 	[PREFSTRING:intelligence]
 	[PREFSTRING:social nature]
 
+[CREATURE:BIRD_PUFFIN]
 Puffins were sponsored by the generous contributions of the Bay 12 community.
 
 	Sponsored on behalf of Ekaterina Puffini
-
-[CREATURE:BIRD_PUFFIN]
 	[DESCRIPTION:A tiny diving bird found living on seaside cliffs in the colder climates.]
 	[NAME:puffin:puffins:puffin]
 	[CASTE_NAME:puffin:puffins:puffin]
@@ -1759,7 +1758,8 @@ Puffins were sponsored by the generous contributions of the Bay 12 community.
 	[POPULATION_NUMBER:30:50]
 	[CLUSTER_NUMBER:5:10]
 	[PETVALUE:10]
-	[BENIGN][PET_EXOTIC]
+	[BENIGN]
+	[PET_EXOTIC]
 	[FLIER]
 	[DIURNAL]
 	[HOMEOTHERM:10067]
@@ -1874,11 +1874,10 @@ Puffins were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:colorful beaks]
 
+[CREATURE:BIRD_SWAN]
 Swans were sponsored by the generous contributions of the Bay 12 community.
 
 	IL
-
-[CREATURE:BIRD_SWAN]
 	[DESCRIPTION:A small aquatic bird, prized for its beauty.]
 	[NAME:swan:swans:swan]
 	[CHILD:1][GENERAL_CHILD_NAME:cygnet:cygnets]
@@ -1890,7 +1889,8 @@ Swans were sponsored by the generous contributions of the Bay 12 community.
 	[POPULATION_NUMBER:15:30]
 	[CLUSTER_NUMBER:1:2]
 	[PETVALUE:10]
-	[BENIGN][MEANDERER][PET_EXOTIC]
+	[BENIGN]
+	[MEANDERER][PET_EXOTIC]
 	[FLIER]
 	[DIURNAL]
 	[HOMEOTHERM:10067]
@@ -2007,11 +2007,10 @@ Swans were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:beauty]
 
+[CREATURE:BIRD_LORIKEET]
 Lorikeets were sponsored by the generous contributions of the Bay 12 community.
 
 	Kishmond - For Kiku
-
-[CREATURE:BIRD_LORIKEET]
 	[DESCRIPTION:A tiny, brightly-colored tree parrot.  It uses its tongue to feed on plants.]
 	[NAME:lorikeet:lorikeets:lorikeet]
 	[CASTE_NAME:lorikeet:lorikeets:lorikeet]
@@ -2022,6 +2021,7 @@ Lorikeets were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:SWAMP_MANGROVE]
 	[VERMIN_GROUNDER][FREQUENCY:100]
 	[POPULATION_NUMBER:250:500]
+	[BENIGN]
 	[SMALL_REMAINS]
 	[FLIER]
 	[CHILD:1]
@@ -2153,11 +2153,10 @@ Lorikeets were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:bright coloration]
 	[PREFSTRING:playful personalities]
 
+[CREATURE:BIRD_WREN]
 Wrens were sponsored by the generous contributions of the Bay 12 community.
 
 	St. Stephen
-
-[CREATURE:BIRD_WREN]
 	[DESCRIPTION:A tiny brown bird given to singing complex songs.]
 	[NAME:wren:wrens:wren]
 	[CASTE_NAME:wren:wrens:wren]
@@ -2173,6 +2172,7 @@ Wrens were sponsored by the generous contributions of the Bay 12 community.
 	[VERMIN_GROUNDER][FREQUENCY:100]
 	[POPULATION_NUMBER:250:500]
 	[SMALL_REMAINS]
+	[BENIGN]
 	[FLIER]
 	[CHILD:1]
 	[DIURNAL]
@@ -2301,11 +2301,10 @@ Wrens were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:intricate songs]
 
+[CREATURE:BIRD_OSPREY]
 Ospreys were sponsored by the generous contributions of the Bay 12 community.
 
 	Saga Stigsdotter
-
-[CREATURE:BIRD_OSPREY]
 	[DESCRIPTION:A small bird of prey with black markings on its eyes.  It hunts near bodies of water.]
 	[NAME:osprey:ospreys:osprey]
 	[CASTE_NAME:osprey:ospreys:osprey]
@@ -2316,6 +2315,7 @@ Ospreys were sponsored by the generous contributions of the Bay 12 community.
 	[LARGE_ROAMING]
 	[PETVALUE:25]
 	[PET_EXOTIC]
+	[BENIGN]
 	[FLIER]
 	[BONECARN]
 	[CHILD:1]
@@ -2450,11 +2450,10 @@ Ospreys were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:fishing ability]
 
+[CREATURE:BIRD_EMU]
 Emus were sponsored by the generous contributions of the Bay 12 community.
 
 	Pangaron
-
-[CREATURE:BIRD_EMU]
 	[DESCRIPTION:A large flightless bird.  It is very curious and has been known to follow other creatures.]
 	[NAME:emu:emus:emu]
 	[CASTE_NAME:emu:emus:emu]
@@ -2467,7 +2466,8 @@ Emus were sponsored by the generous contributions of the Bay 12 community.
 	[NATURAL]
 	[LARGE_ROAMING]
 	[PETVALUE:100]
-	[BENIGN][MEANDERER]
+	[BENIGN]
+	[MEANDERER]
 	[PET_EXOTIC]
 	[DIURNAL]
 	[HOMEOTHERM:10067]
@@ -2594,11 +2594,10 @@ Emus were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:size]
 	[PREFSTRING:inquisitive nature]
 
+[CREATURE:BIRD_COCKATIEL]
 Cockatiels were sponsored by the generous contributions of the Bay 12 community.
 
 	To Beth, from Andy
-
-[CREATURE:BIRD_COCKATIEL]
 	[DESCRIPTION:A tiny crested parrot.  They are prized as domestic companions.]
 	[NAME:cockatiel:cockatiels:cockatiel]
 	[CASTE_NAME:cockatiel:cockatiels:cockatiel]
@@ -2610,6 +2609,7 @@ Cockatiels were sponsored by the generous contributions of the Bay 12 community.
 	[VERMIN_GROUNDER][FREQUENCY:100]
 	[POPULATION_NUMBER:250:500]
 	[SMALL_REMAINS]
+	[BENIGN]
 	[FLIER]
 	[CHILD:1]
 	[DIURNAL]
@@ -2738,9 +2738,8 @@ Cockatiels were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:crests]
 
-Peach-faced lovebirds were sponsored by the generous contributions of the Bay 12 community.
-
 [CREATURE:BIRD_LOVEBIRD_PEACH-FACED]
+Peach-faced lovebirds were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A tiny, brightly colored parrot.  They are clever and learn many tricks.]
 	[NAME:peach-faced lovebird:peach-faced lovebirds:peach-faced lovebird]
 	[CASTE_NAME:peach-faced lovebird:peach-faced lovebirds:peach-faced lovebird]
@@ -2882,11 +2881,10 @@ Peach-faced lovebirds were sponsored by the generous contributions of the Bay 12
 	[GO_TO_END]
 	[PREFSTRING:loving nature]
 
+[CREATURE:BIRD_MAGPIE]
 Magpies were sponsored by the generous contributions of the Bay 12 community.
 
 	harakka
-
-[CREATURE:BIRD_MAGPIE]
 	[DESCRIPTION:A tiny black and white bird.  It is one of the most intelligent of the natural creatures.]
 	[NAME:magpie:magpies:magpie]
 	[CASTE_NAME:magpie:magpies:magpie]
@@ -2899,6 +2897,7 @@ Magpies were sponsored by the generous contributions of the Bay 12 community.
 	[VERMIN_GROUNDER][FREQUENCY:100]
 	[POPULATION_NUMBER:250:500]
 	[SMALL_REMAINS]
+	[BENIGN]
 	[FLIER]
 	[CHILD:1]
 	[DIURNAL]
@@ -3029,9 +3028,8 @@ Magpies were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:intelligence]
 	[PREFSTRING:fondness of shiny objects]
 
-Kestrels were sponsored by the generous contributions of the Bay 12 community.
-
 [CREATURE:BIRD_KESTREL]
+Kestrels were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A tiny bird of prey.  It hovers above the ground and swoops down to snatch rodents and mice.]
 	[NAME:kestrel:kestrels:kestrel]
 	[CASTE_NAME:kestrel:kestrels:kestrel]
@@ -3042,6 +3040,7 @@ Kestrels were sponsored by the generous contributions of the Bay 12 community.
 	[LARGE_ROAMING]
 	[PETVALUE:25]
 	[PET]
+	[BENIGN]
 	[FLIER]
 	[BONECARN]
 	[CHILD:1]
@@ -3122,7 +3121,7 @@ Kestrels were sponsored by the generous contributions of the Bay 12 community.
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
-			[TL_COLOR_MODIFIER:CHESTNUT:1] need grey heads
+			[TL_COLOR_MODIFIER:CHESTNUT:1] need gray heads
 				[TLCM_NOUN:feathers:PLURAL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 	[TL_COLOR_MODIFIER:BROWN:1:BURNT_UMBER:1:CINNAMON:1:COPPER:1:DARK_BROWN:1:DARK_PEACH:1:DARK_TAN:1:ECRU:1:PALE_BROWN:1:PALE_CHESTNUT:1:PALE_PINK:1:PEACH:1:PINK:1:RAW_UMBER:1:SEPIA:1:TAN:1:TAUPE_PALE:1:TAUPE_SANDY:1]
@@ -3178,9 +3177,8 @@ Kestrels were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:coloration]
 	[PREFSTRING:hunting prowess]
 
-Albatrosses were sponsored by the generous contributions of the Bay 12 community.
-
 [CREATURE:BIRD_ALBATROSS]
+Albatrosses were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A small sea bird with great wings.  It soars through the sky and dives for food on the surface of the water.]
 	[NAME:albatross:albatrosses:albatross]
 	[CASTE_NAME:albatross:albatrosses:albatross]
@@ -3192,7 +3190,8 @@ Albatrosses were sponsored by the generous contributions of the Bay 12 community
 	[POPULATION_NUMBER:15:30]
 	[CLUSTER_NUMBER:1:10]
 	[PETVALUE:10]
-	[BENIGN][PET_EXOTIC]
+	[BENIGN]
+	[PET_EXOTIC]
 	[FLIER]
 	[DIURNAL]
 	[HOMEOTHERM:10067]
@@ -3307,11 +3306,10 @@ Albatrosses were sponsored by the generous contributions of the Bay 12 community
 	[GO_TO_END]
 	[PREFSTRING:large wings]
 
+[CREATURE:BIRD_OWL_GREAT_HORNED]
 Great horned owls were sponsored by the generous contributions of the Bay 12 community.
 
 	The Eyes of Profit
-
-[CREATURE:BIRD_OWL_GREAT_HORNED]
 	[DESCRIPTION:A small, nocturnal bird of prey with large eyes and protruding feathers.]
 	[NAME:great horned owl:great horned owls:great horned owl]
 	[CASTE_NAME:great horned owl:great horned owls:great horned owl]
@@ -3460,11 +3458,10 @@ Great horned owls were sponsored by the generous contributions of the Bay 12 com
 	[PREFSTRING:piercing yellow eyes]
 	[PREFSTRING:ear tufts]
 
+[CREATURE:BIRD_EAGLE]
 Eagles were sponsored by the generous contributions of the Bay 12 community.
 
 	Gfamad
-
-[CREATURE:BIRD_EAGLE]
 	[DESCRIPTION:A small bird of prey.]
 	[NAME:eagle:eagles:eagle]
 	[CASTE_NAME:eagle:eagles:eagle]
@@ -3475,6 +3472,7 @@ Eagles were sponsored by the generous contributions of the Bay 12 community.
 	[LARGE_ROAMING]
 	[PETVALUE:25]
 	[PET]
+	[BENIGN]
 	[FLIER]
 	[BONECARN]
 	[CHILD:1]
@@ -3610,11 +3608,10 @@ Eagles were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:high soaring]
 
+[CREATURE:BIRD_HORNBILL]
 Hornbills were sponsored by the generous contributions of the Bay 12 community.
 
 	Sponsored by Hornbill Interactive – Jim Regan / balrogkernel
-
-[CREATURE:BIRD_HORNBILL]
 	[DESCRIPTION:A tiny bird with a large, brightly-colored bill.]
 	[NAME:hornbill:hornbills:hornbill]
 	[CASTE_NAME:hornbill:hornbills:hornbill]
@@ -3625,6 +3622,7 @@ Hornbills were sponsored by the generous contributions of the Bay 12 community.
 	[LARGE_ROAMING]
 	[PETVALUE:25]
 	[PET_EXOTIC]
+	[BENIGN]
 	[FLIER]
 	[CHILD:1]
 	[ALL_ACTIVE]
@@ -3752,11 +3750,10 @@ Hornbills were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:great bills]
 
+[CREATURE:BIRD_LOVEBIRD_MASKED]
 Masked lovebirds were sponsored by the generous contributions of the Bay 12 community.
 
 	From Jake, for my lovebird Heather.
-
-[CREATURE:BIRD_LOVEBIRD_MASKED]
 	[DESCRIPTION:A tiny, colorful bird.  It can be trained to be a pleasant companion.]
 	[NAME:masked lovebird:masked lovebirds:masked lovebird]
 	[CASTE_NAME:masked lovebird:masked lovebirds:masked lovebird]
@@ -3895,9 +3892,8 @@ Masked lovebirds were sponsored by the generous contributions of the Bay 12 comm
 	[GO_TO_END]
 	[PREFSTRING:loving nature]
 
-Bushtits were sponsored by the generous contributions of the Bay 12 community.
-
 [CREATURE:BIRD_BUSHTIT]
+Bushtits were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A tiny brown bird found in open woodlands.]
 	[NAME:bushtit:bushtits:bushtit]
 	[CASTE_NAME:bushtit:bushtits:bushtit]
@@ -3909,6 +3905,7 @@ Bushtits were sponsored by the generous contributions of the Bay 12 community.
 	[POPULATION_NUMBER:250:500]
 	[SMALL_REMAINS]
 	[FLIER]
+	[BENIGN]
 	[CHILD:1]
 	[DIURNAL]
 	[HOMEOTHERM:10071]
@@ -4037,3 +4034,4 @@ Bushtits were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:small size]
 	[PREFSTRING:twittering groups]
+

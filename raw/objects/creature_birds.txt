@@ -495,7 +495,8 @@ Penguins were sponsored by the generous contributions of the Bay 12 community.
 	[POPULATION_NUMBER:15:30]
 	[CLUSTER_NUMBER:5:10]
 	[PETVALUE:10]
-	[BENIGN][MEANDERER]
+	[BENIGN]
+	[MEANDERER]
 	[DIURNAL] DF doesn't have arctic sunlight cycles
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:2500]
@@ -586,7 +587,8 @@ Penguins were sponsored by the generous contributions of the Bay 12 community.
 	[POPULATION_NUMBER:15:30]
 	[CLUSTER_NUMBER:5:10]
 	[PETVALUE:10]
-	[BENIGN][MEANDERER]
+	[BENIGN]
+	[MEANDERER]
 	[DIURNAL] DF doesn't have arctic sunlight cycles
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:2500]
@@ -678,7 +680,8 @@ Penguins were sponsored by the generous contributions of the Bay 12 community.
 	[POPULATION_NUMBER:15:30]
 	[CLUSTER_NUMBER:5:10]
 	[PETVALUE:10]
-	[BENIGN][MEANDERER]
+	[BENIGN]
+	[MEANDERER]
 	[DIURNAL] DF doesn't have arctic sunlight cycles
 	[HOMEOTHERM:10067]
 	[SWIMS_INNATE][SWIM_SPEED:2500]
@@ -809,14 +812,13 @@ Penguins were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:waddling gait]
 	[PREFSTRING:way of flying through the water]
 
+[CREATURE:BIRD_FALCON_PEREGRINE]
 Peregrine falcons were sponsored by the generous contributions of the Bay 12 community.
 
 	Demon
 	PMantix
 	MAShapiro
 	John Tait from Harrow, Middlesex: "Hunting food for vermin"
-
-[CREATURE:BIRD_FALCON_PEREGRINE]
 	[DESCRIPTION:A small bird of prey that is capable of great speed.  They dive on unsuspecting vermin.]
 	[NAME:peregrine falcon:peregrine falcons:peregrine falcon]
 	[GENERAL_CHILD_NAME:peregrine falcon chick:peregrine falcon chicks]
@@ -825,6 +827,7 @@ Peregrine falcons were sponsored by the generous contributions of the Bay 12 com
 	[NATURAL]
 	[LARGE_ROAMING]
 	[PETVALUE:25]
+	[BENIGN]
 	[PET]
 	[FLIER]
 	[BONECARN]
@@ -975,12 +978,11 @@ Peregrine falcons were sponsored by the generous contributions of the Bay 12 com
 	[SELECT_CASTE:ALL]
 	[PREFSTRING:ability to dive through the air]
 
+[CREATURE:BIRD_KIWI]
 Kiwis were sponsored by the generous contributions of the Bay 12 community.
 
 	For Tamsyn Muir
 	Gregory Kampjes, McLovin
-
-[CREATURE:BIRD_KIWI]
 	[DESCRIPTION:A small, brown, flightless bird.  It eats insects and grubs and is known for its keen sense of smell.]
 	[NAME:kiwi:kiwis:kiwi]
 	[CHILD:1][GENERAL_CHILD_NAME:kiwi chick:kiwi chicks]
@@ -992,7 +994,8 @@ Kiwis were sponsored by the generous contributions of the Bay 12 community.
 	[NATURAL]
 	[LARGE_ROAMING]
 	[PETVALUE:10]
-	[BENIGN][MEANDERER]
+	[BENIGN]
+	[MEANDERER]
 	[PET_EXOTIC]
 	[GOBBLE_VERMIN_CLASS:EDIBLE_GROUND_BUG]
 	[NOCTURNAL]
@@ -1120,6 +1123,7 @@ Kiwis were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:great size]
 	[PREFSTRING:long beaks]
 
+[CREATURE:BIRD_OSTRICH]
 Ostriches were sponsored by the generous contributions of the Bay 12 community.
 
 	Pangaron
@@ -1127,8 +1131,6 @@ Ostriches were sponsored by the generous contributions of the Bay 12 community.
 	BlargityBlarg lived on a farm of these things 'til he was five!
 	Priestly
 	Tristan Hayes
-
-[CREATURE:BIRD_OSTRICH]
 	[DESCRIPTION:A large flightless bird that runs through the savanna.  It has a long neck and legs.]
 	[NAME:ostrich:ostriches:ostrich]
 	[CHILD:1][GENERAL_CHILD_NAME:ostrich chick:ostrich chicks]
@@ -1141,7 +1143,8 @@ Ostriches were sponsored by the generous contributions of the Bay 12 community.
 	[NATURAL]
 	[LARGE_ROAMING]
 	[PETVALUE:100]
-	[BENIGN][MEANDERER]
+	[BENIGN]
+	[MEANDERER]
 	[PET_EXOTIC]
 	[DIURNAL]
 	[HOMEOTHERM:10067]
@@ -1224,7 +1227,7 @@ Ostriches were sponsored by the generous contributions of the Bay 12 community.
 		[SET_TL_GROUP:BY_CATEGORY:BODY_UPPER:FEATHER]
 		 [PLUS_TL_GROUP:BY_CATEGORY:BODY_LOWER:FEATHER]
 		 [PLUS_TL_GROUP:BY_CATEGORY:WING:FEATHER]
-			[TL_COLOR_MODIFIER:GREY:1]
+			[TL_COLOR_MODIFIER:GRAY:1]
 				[TLCM_NOUN:feathers:PLURAL]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:TAIL:FEATHER]
@@ -1291,5 +1294,4 @@ Ostriches were sponsored by the generous contributions of the Bay 12 community.
 	[SELECT_CASTE:ALL]
 	[PREFSTRING:long necks]
 	[PREFSTRING:giant eggs]
-
 

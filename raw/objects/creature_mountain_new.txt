@@ -2,12 +2,12 @@ creature_mountain_new
 
 [OBJECT:CREATURE]
 
+[CREATURE:WOLVERINE]
 Wolverines were sponsored by the generous contributions of the Bay 12 community.
 
 	Merry Christmas
 	Doug Treder and sons
 
-[CREATURE:WOLVERINE]
 	[DESCRIPTION:A small, muscular, weasel-like creature.  It is known for its ferocity.]
 	[NAME:wolverine:wolverines:wolverine]
 	[CASTE_NAME:wolverine:wolverines:wolverine]
@@ -22,7 +22,8 @@ Wolverines were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:FOREST_TAIGA]
 	[BIOME:MOUNTAIN]
 	[BONECARN]
-	[BENIGN][PRONE_TO_RAGE:10]
+	[BENIGN]
+	[PRONE_TO_RAGE:10]
 	[GRASSTRAMPLE:0]
 	[PREFSTRING:tenacity]
 	[BODY:QUADRUPED:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:5TOES_FQ_REG:5TOES_RQ_REG:MOUTH:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]
@@ -153,9 +154,8 @@ Wolverines were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[PREFSTRING:tenacity]
 
-Chinchillas were sponsored by the generous contributions of the Bay 12 community.
-
 [CREATURE:CHINCHILLA]
+Chinchillas were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A tiny furry rodent dwelling in the hollow cracks of rocks.  They can be found high in the mountains.]
 	[NAME:chinchilla:chinchillas:chinchilla]
 	[CASTE_NAME:chinchilla:chinchillas:chinchilla]
@@ -168,7 +168,8 @@ Chinchillas were sponsored by the generous contributions of the Bay 12 community
 	[BIOME:MOUNTAIN]
 	[POPULATION_NUMBER:15:30]
 	[CLUSTER_NUMBER:3:5]
-	[BENIGN][MEANDERER]
+	[BENIGN]
+	[MEANDERER]
 	[PREFSTRING:fur]
 	[BODY:QUADRUPED:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:4TOES_FQ_REG:3TOES_RQ_REG:MOUTH:RODENT_TEETH:RIBCAGE]
 	[BODYGLOSS:PAW]
@@ -228,7 +229,7 @@ Chinchillas were sponsored by the generous contributions of the Bay 12 community
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
-			[TL_COLOR_MODIFIER:GREY:1]
+			[TL_COLOR_MODIFIER:GRAY:1]
 				[TLCM_NOUN:hair:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 	[TL_COLOR_MODIFIER:BROWN:1:BURNT_UMBER:1:CINNAMON:1:COPPER:1:DARK_BROWN:1:DARK_PEACH:1:DARK_TAN:1:ECRU:1:PALE_BROWN:1:PALE_CHESTNUT:1:PALE_PINK:1:PEACH:1:PINK:1:RAW_UMBER:1:SEPIA:1:TAN:1:TAUPE_PALE:1:TAUPE_SANDY:1]
@@ -285,3 +286,4 @@ Chinchillas were sponsored by the generous contributions of the Bay 12 community
 	[MOUNT_EXOTIC]
 	[GO_TO_END]
 	[PREFSTRING:fur]
+
