@@ -10,7 +10,8 @@ http://wiki.greypages.org/index.php/Dwarf_Fortress/Mods/Raws
 Structure:
 
 data - the colors, inits, worldgen, speeches, and my modded fortressintro
+dfhack - a backup of my dfhack plugin source files. They're in the plugin/devel folder. movein needs serious work. everything else in there works.
 Holding Pen - If something is being worked on an original -likely broken- will be here.
-raw-notes - all the motes for my mod(s)
-raw - a big merge of all my mods and all other mods I've added to My Little Arachnids and or Aspectus Lolin.
-split out mods - all my mods in individual packages. should all have mirrors of my 31.25 versions that were posted to DFFD assuming github does not destroy.
+raw-notes - all the notes for my mod(s)
+raw - a big merge of all my mods and all other mods I've added to My Little Arachnids and or Aspectus Lolin. 0.34.07
+split out mods - all my mods in individual packages. should all have mirrors of my 31.25 version zips that were posted to DFFD assuming github does not destroy. pre .07 haven't felt healthy enough sorry. It's a slog.
