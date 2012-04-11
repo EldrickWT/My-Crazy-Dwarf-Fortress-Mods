@@ -1,5 +1,6 @@
 //wagonshotarray is based on wagonshot.
 //wagonshot is based on code from "probe.cpp" by peterix.
+// for 34.07
 #include <algorithm> // for std::transform
 #include <assert.h>
 #include <climits>

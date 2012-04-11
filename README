@@ -3,14 +3,14 @@ http://www.bay12forums.com/smf/index.php?topic=80990.0
 My Little Arachnids:
 http://www.bay12forums.com/smf/index.php?topic=89174.0
 
-Wiki for the Mods: (until greypages.org expires...)
-http://wiki.greypages.org/index.php/Dwarf_Fortress/Mods/Raws
+Wiki for the Mods:
+http://wiki.the-arc.net/index.php/Dwarf_Fortress/Mods/Raws
 
 
 Structure:
 
 data - the colors, inits, worldgen, speeches, and my modded fortressintro
-dfhack - a backup of my dfhack plugin source files. They're in the plugin/devel folder. movein needs serious work. everything else in there works.
+dfhack - a backup of my dfhack plugin source files. They're in the plugin/devel folder. movein needs serious work (does next to nothing useful). everything else in there works.
 Holding Pen - If something is being worked on an original -likely broken- will be here.
 raw-notes - all the notes for my mod(s)
 raw - a big merge of all my mods and all other mods I've added to My Little Arachnids and or Aspectus Lolin. 0.34.07

@@ -1,4 +1,5 @@
 // Friar - For Adding a Super Noble who can handle everything short of Monarchy for your Embark Group. Based on: Fixpositions by Quietust
+// for 34.07
 #include <algorithm> // for std::transform
 #include <assert.h>
 #include <climits>

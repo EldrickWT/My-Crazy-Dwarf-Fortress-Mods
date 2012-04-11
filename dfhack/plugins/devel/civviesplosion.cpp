@@ -1,7 +1,8 @@
-// Civvie( Ex)plosion
+// Civvie( Ex)plosion based on catsplosion
 // By Zhentar , Further modified by dark_rabite, peterix, belal
 // This work of evil makes Civilians (aka Dwarves) pregnant
 // and due within 2 in-game hours...
+// for 34.07
 
 #include <iostream>
 #include <cstdlib>

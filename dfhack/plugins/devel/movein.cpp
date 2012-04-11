@@ -1,4 +1,5 @@
-// movein is based on code from "probe.cpp" by peterix.
+// movein is based on code from "probe.cpp" by peterix. tries to make the target under cursor move in (prealpha)
+// for 34.07
 #include <iostream>
 #include <iomanip>
 #include <climits>

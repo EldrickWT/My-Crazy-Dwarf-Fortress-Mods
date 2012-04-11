@@ -1,4 +1,5 @@
-// Civilizationdump - SUPPOSED to dump all the civilizations -flagging for religious groups on the way-
+// Civilizationdump - SUPPOSED to dump all the civilizations
+// for 34.07
 
 #include <iostream>
 #include <cstdlib>
