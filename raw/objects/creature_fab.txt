@@ -5,6 +5,7 @@ creature_fab
 [CREATURE:FABULOUSA]
 	[NAME:Fabulousa:Fabulousa:Fabulous]
 	[CHILD:0]
+	[BODY_SIZE:0:0:64000]
 	[BODY_SIZE:0:0:65000]
 	PET
 	COMMON_DOMESTIC

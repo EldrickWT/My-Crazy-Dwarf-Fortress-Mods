@@ -365,6 +365,8 @@ inorganic_stone_silliness
 	[MAX_EDGE:0] to contrast adamantine
 	[ITEMS_HARD]
 	[IS_STONE]
+	[ENVIRONMENT:ALL_STONE:VEIN:100]
+
 
 [INORGANIC:OH_CARP]
 	[USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
