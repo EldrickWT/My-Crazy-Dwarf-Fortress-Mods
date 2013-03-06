@@ -1921,8 +1921,7 @@ entity_default
 		[PUNISHMENT_EXEMPTION]
 		[ACCOUNT_EXEMPT]
 		[DUTY_BOUND]
-	[DIPLOMAT_BODYGUARDS]
-
+		[DIPLOMAT_BODYGUARDS]
 	############################################################################################
 	#END ALLOW Diplomats
 	############################################################################################
@@ -1940,7 +1939,7 @@ entity_default
 		[PUNISHMENT_EXEMPTION]
 		[ACCOUNT_EXEMPT]
 		[DUTY_BOUND]
-	[MERCHANT_BODYGUARDS]
+		[MERCHANT_BODYGUARDS]
 	############################################################################################
 	#END ALLOW Guild Representative
 	############################################################################################
