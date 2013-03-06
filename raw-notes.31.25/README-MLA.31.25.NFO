@@ -1,0 +1,46 @@
+My Little Arachnid PACKAGE\README.NFO                                                  THIS FILE. HI.
+My Little Arachnid PACKAGE\raw\notes\creature_base_spider.txt                          A DOES NOT EXIST Template spider. You can see what the mess looks like when not in CASTE Hell.
+My Little Arachnid PACKAGE\raw\notes\creature_base_unicorpion.txt                      ^- but for Unicorpions.
+My Little Arachnid PACKAGE\raw\notes\creature_feral_spiders.text                       An Older version of the above file. For evolution's sake.
+My Little Arachnid PACKAGE\raw\notes\creature_feral_unicorpions.text                   An Older version of the above file. For evolution's sake.
+My Little Arachnid PACKAGE\raw\notes\creature_lazy_spider.old                          A test in anger to see if I could just COPY the critters into one file and not have to fight as hard. It would need a LOT more work to be useful. Evolution data.
+My Little Arachnid PACKAGE\raw\notes\creature_lazy_spider.txt                          Lazy Spiders are test critters. Currently set up for CHITIN style testing. AA are plain, AB are Grimlocke's method, AE are Sphalerite's method. Still grinding areans x.X
+My Little Arachnid PACKAGE\raw\notes\creature_mla_template.nfo                         A Template for Adding Arachnids easily to the creature_mla.txt file. I just need to change "arachnid" to ... camel spider? whatever I build next.
+My Little Arachnid PACKAGE\raw\notes\creature_original_lazy_spider.txt                 A single lazy spider for combat testing. Not the lack of venoms and toxins.
+My Little Arachnid PACKAGE\raw\notes\creature_original_lazy_unicorpion.txt             there are testing unicorpions too.
+My Little Arachnid PACKAGE\raw\notes\entity_ethics.nfo                                 Entity Ethics Notes. Nothing more.
+My Little Arachnid PACKAGE\raw\notes\entity_RELIGION-2.0.permissions.nfo               Alluvian's Religion Mod 2.0
+My Little Arachnid PACKAGE\raw\notes\entity_trade-permissions.nfo                      Mini-Mod Trade data.
+My Little Arachnid PACKAGE\raw\notes\female_caste_profession_name.nfo                  What it says on the tin.
+My Little Arachnid PACKAGE\raw\notes\language_words.nfo                                Notes. How is it notes? It's sorted.
+My Little Arachnid PACKAGE\raw\notes\male_caste_profession_name.nfo                    What it says on the tin.
+My Little Arachnid PACKAGE\raw\notes\material_template_wyrd_gold.nfo                   Wyrd White Gold notes.
+My Little Arachnid PACKAGE\raw\notes\personality_baseline.nfo                          Personality Notes.
+My Little Arachnid PACKAGE\raw\notes\skill_list.nfo                                    Skill information
+My Little Arachnid PACKAGE\raw\notes\spider_list.nfo                                   The List of Spiders.
+My Little Arachnid PACKAGE\raw\notes\stat_info.nfo                                     Stat Information.
+My Little Arachnid PACKAGE\raw\objects\body_flavor_spiders.txt                         The eyes
+My Little Arachnid PACKAGE\raw\objects\creature_feral_spider.txt                       A Simple 2 Spider file. Think of them like Wild Ponies. They have their own agendas
+My Little Arachnid PACKAGE\raw\objects\creature_feral_unicorpion.txt                   A simple 2 Unicorpion File. Wild Uni's etc etc.
+My Little Arachnid PACKAGE\raw\objects\creature_flavor_spiders.txt                     Real Spiders of Flavor. Included for contrast. They may come visit...........
+My Little Arachnid PACKAGE\raw\objects\creature_flavor_unicorpions.txt                 Real Unicorpions of Flavor. See above.
+My Little Arachnid PACKAGE\raw\objects\creature_massive_unicorpion.txt                 The Unicorpion as seen on the Forums. Renamed to MASSIVE UNICORPION because it is. 5 Times an MLA Uni at birth alone.
+My Little Arachnid PACKAGE\raw\objects\creature_mla.txt                                The Massively Casted, Massively Creature Varied main file and the one the civ uses.
+My Little Arachnid PACKAGE\raw\objects\creature_mla_spiders.text                       A Previous Incarnation for evolution's sake.
+My Little Arachnid PACKAGE\raw\objects\c_variation_arachnid_spider.txt                 The Base CVs are within for the spider bodies.
+My Little Arachnid PACKAGE\raw\objects\c_variation_arachnid_unicorpion.txt             The Base CVs are within for the unicorpion bodies.
+My Little Arachnid PACKAGE\raw\objects\c_variation_flavor_arachnid.txt                 The Big Flavor file for creature_mla.txt contains the custom chitins, and flavor sections (toxins and attacks and coloration)
+My Little Arachnid PACKAGE\raw\objects\c_variation_flavor_arachnid_spider.nfo          Before it was merged into one file with the file below.
+My Little Arachnid PACKAGE\raw\objects\c_variation_flavor_arachnid_unicorpion.nfo      Before it was merged into one file with the file above.
+My Little Arachnid PACKAGE\raw\objects\c_variation_giant_spider.txt                    More part of RSoF than MLA at this point.
+My Little Arachnid PACKAGE\raw\objects\c_variation_giant_unicorpion.txt                More part of RUoF than MLA at this point.
+My Little Arachnid PACKAGE\raw\objects\entity_mla.txt                                  The Entity file for the My Little Arachnids.
+My Little Arachnid PACKAGE\raw\objects\inorganic_aspectus.txt                          Needed Inorganics File. If you already have it do not use this one. It's tailored.
+My Little Arachnid PACKAGE\raw\objects\inorganic_metal_wyrd_gold.txt                   ""
+My Little Arachnid PACKAGE\raw\objects\inorganic_stone_gem_aspectus.txt                ""
+My Little Arachnid PACKAGE\raw\objects\inorganic_stone_silliness.txt                   ""
+My Little Arachnid PACKAGE\raw\objects\language_ENGLISH.txt                            Language file for the entity.
+My Little Arachnid PACKAGE\raw\objects\material_template_aspectus.txt                  Ice template
+My Little Arachnid PACKAGE\raw\objects\material_template_sungwood.txt                  Sungwood Template
+My Little Arachnid PACKAGE\raw\objects\material_template_wyrd_gold.txt                 Wyrd White Gold Template
+My Little Arachnid PACKAGE\raw\objects\plant_sungwood.txt                              Needed Plant File.

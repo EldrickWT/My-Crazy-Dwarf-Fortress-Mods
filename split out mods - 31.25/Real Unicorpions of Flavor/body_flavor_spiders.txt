@@ -1,0 +1,8 @@
+body_flavor_spiders
+
+[OBJECT:BODY]
+
+[BODY:8EYES]
+Needs to go somewhere for now.
+	[BP:EYE:eye:eyes][CONTYPE:HEAD][SIGHT][EMBEDDED][SMALL][NUMBER:8][CATEGORY:EYE]
+		[DEFAULT_RELSIZE:1]

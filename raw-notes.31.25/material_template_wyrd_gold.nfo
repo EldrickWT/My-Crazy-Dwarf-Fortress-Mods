@@ -1,0 +1,51 @@
+material_template_wyrd_gold
+
+[OBJECT:MATERIAL_TEMPLATE]
+
+[MATERIAL_TEMPLATE:WYRD_GOLD_TEMPLATE]
+	[STATE_COLOR:ALL_SOLID:FLAX] These are the state names, adjectives and colors for the material.
+	[STATE_NAME:ALL_SOLID:white gold] These are the state names, adjectives and colors for the material.
+	[STATE_ADJ:ALL_SOLID:white golden] These are the state names, adjectives and colors for the material.
+	[STATE_NAME:SOLID_POWDER:white gold dust] These are the state names, adjectives and colors for the material.
+	[STATE_COLOR:LIQUID:BUFF] These are the state names, adjectives and colors for the material.
+	[STATE_NAME:LIQUID:molten white gold] These are the state names, adjectives and colors for the material.
+	[STATE_ADJ:LIQUID:molten white golden] These are the state names, adjectives and colors for the material.
+	[STATE_COLOR:GAS:GOLD] These are the state names, adjectives and colors for the material.
+	[STATE_NAME:GAS:boiling white gold] These are the state names, adjectives and colors for the material.
+	[STATE_ADJ:GAS:boiling white golden] These are the state names, adjectives and colors for the material.
+	[DISPLAY_COLOR:6:0:1] Yellow, but NOT the same color as Gold. (6:6:1)
+	[MATERIAL_VALUE:20] The modifier used to all values involving the material. should be higher... gold itself is 30 afterall... but then there's the suspicions about it... hmmm....
+	[SPEC_HEAT:450] Temperature information.
+	[IGNITE_POINT:NONE] Temperature information.
+	[MELTING_POINT:11924] Temperature information.Gold Plus 9
+	[BOILING_POINT:15150] Temperature information.Already 9 points over gold...
+	[HEATDAM_POINT:NONE] Temperature information.
+	[COLDDAM_POINT:NONE] Temperature information.
+	[MAT_FIXED_TEMP:NONE] Temperature information.
+	[SOLID_DENSITY:22000] Density information.  Not used for very much, but it comes up in inventory weight and fighting. used platinum and fudged
+	[LIQUID_DENSITY:20000] Density information.  Not used for very much, but it comes up in inventory weight and fighting. used platinum and fudged
+	[MOLAR_MASS:200000] Not used. used a round number above gold.
+	[IMPACT_YIELD:1080000] Used for blunt-force combat, measured in KPa.  Data scattered around the net (used compressive strength).  All very spotty. Less than Steel more than Gold
+	[IMPACT_FRACTURE:1080000] Used for blunt-force combat, measured in KPa.  Data scattered around the net (used compressive strength).  All very spotty. Less than Steel more than Gold
+	[IMPACT_STRAIN_AT_YIELD:1000] Used for blunt-force combat, measured in KPa.  Data scattered around the net (used compressive strength).  All very spotty. More than Steel
+	[COMPRESSIVE_YIELD:1080000] Not used.Using Impact Number
+	[COMPRESSIVE_FRACTURE:1080000] Not used.Using Impact Number
+	[COMPRESSIVE_STRAIN_AT_YIELD:1000] Not used.Using Impact Number
+	[TENSILE_YIELD:520000] Not used.More than Steel
+	[TENSILE_FRACTURE:860000] Not used.More than Steel
+	[TENSILE_STRAIN_AT_YIELD:1000] Not used.Using Impact Number
+	[TORSION_YIELD:520000] Not used.Using tensile
+	[TORSION_FRACTURE:860000] Not used.Using tensile
+	[TORSION_STRAIN_AT_YIELD:1000] Not used.Using Impact Number
+	[SHEAR_YIELD:520000] Used for cutting calculations in combat, measured in KPa.  Data scattered around the net (used tensile strength).  All very spotty.Using tensile
+	[SHEAR_FRACTURE:860000] Used for cutting calculations in combat, measured in KPa.  Data scattered around the net (used tensile strength).  All very spotty.Using tensile
+	[SHEAR_STRAIN_AT_YIELD:1000] Used for cutting calculations in combat, measured in KPa.  Data scattered around the net (used tensile strength).  All very spotty.Using Impact Number
+	[BENDING_YIELD:520000] Not used.Using tensile
+	[BENDING_FRACTURE:860000] Not used.Using tensile
+	[BENDING_STRAIN_AT_YIELD:1000] Not used.Using Impact Number
+	[MAX_EDGE:12500] A unitless measure for how sharp the edge is for combat purposes. (need 10,000 at least for most weaponsmithing). More than Steel, Less than Cotton Candy.
+	[ABSORPTION:0] Used for pressing oil into jugs -- anything greater than zero needs to be glazed first.
+	[IS_METAL][ITEMS_HARD][ITEMS_SOFT][ITEMS_WEAPON][ITEMS_WEAPON_RANGED][ITEMS_AMMO][ITEMS_DIGGER][ITEMS_ARMOR][ITEMS_SIEGE_ENGINE][ITEMS_ANVIL] Determines what sorts of objects can be built with the item.
+	[PEARL] So it'll be snagged for crafts more readily, and to as to curiousness
+	[IMPLIES_ANIMAL_KILL] lemme tell you this story about the virgin getting sacrificed to Cth... oh you heard it?
+

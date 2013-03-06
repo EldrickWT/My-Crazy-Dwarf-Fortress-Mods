@@ -1,0 +1,32 @@
+creature_feral_unicorpion
+
+[OBJECT:CREATURE]
+
+[CREATURE:FERAL_UNICORPION]
+	[NAME:Feral Unicorpion:Feral Unicorpions:Feral Arachnid]
+	[CASTE_NAME:Feral Unicorpion:Feral Unicorpions:Feral Arachnid]
+	[DESCRIPTION:An imposing unicorpion skitters nearby. Its patterned, battle damaged carapace warns of its feral nature. Beware it's bites.]
+	[CASTE:FERAL_UNICORPION_FEMALE]
+		[FEMALE]
+		[CASTE_COLOR:0:7:0]
+	[CASTE:FERAL_UNICORPION_MALE]
+		[MALE]
+		[CASTE_COLOR:0:7:1]
+	[SELECT_CASTE:ALL]
+		[BODY_DETAIL_PLAN:CHITIN_TISSUES]
+		[APPLY_CREATURE_VARIATION:UNICORPION_START]
+		[APPLY_CURRENT_CREATURE_VARIATION]
+		[APPLY_CREATURE_VARIATION:UNICORPION_MIDDLE]
+		[APPLY_CURRENT_CREATURE_VARIATION]
+		[APPLY_CREATURE_VARIATION:UNICORPION_END]
+		[APPLY_CURRENT_CREATURE_VARIATION]
+		[APPLY_CREATURE_VARIATION:FERAL_UNICORPION_FLAVORED]
+		[APPLY_CURRENT_CREATURE_VARIATION]
+
+[CREATURE:GIANT_FERAL_UNICORPION]
+	[COPY_TAGS_FROM:FERAL_UNICORPION]
+	[APPLY_CREATURE_VARIATION:GIANT_UNICORPION]
+	[DESCRIPTION:A giant imposing unicorpion skitters nearby. Its patterned, battle damaged carapace warns of its feral nature. Beware its sting!]
+	[NAME:Giant Feral Unicorpion:Giant Feral Unicorpions:Giant Feral Arachnid]
+	[CASTE_NAME:Giant Feral Unicorpion:Giant Feral Unicorpions:Giant Feral Arachnid]
+

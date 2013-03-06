@@ -1,0 +1,20 @@
+	############################################################################################
+	#Start Urban Renewal
+	############################################################################################
+	[PERMITTED_BUILDING:T_W_01N]
+	[PERMITTED_BUILDING:T_W_01S]
+	[PERMITTED_BUILDING:T_W_01W]
+	[PERMITTED_BUILDING:T_W_01E]
+	[PERMITTED_BUILDING:T_W_02N]
+	[PERMITTED_BUILDING:T_W_02S]
+	[PERMITTED_BUILDING:T_W_02W]
+	[PERMITTED_BUILDING:T_W_02E]
+	[PERMITTED_BUILDING:U_R_01]
+	[PERMITTED_BUILDING:U_R_05]
+	[PERMITTED_BUILDING:U_R_10]
+	[PERMITTED_BUILDING:U_R_15]
+	[PERMITTED_BUILDING:U_R_32]
+	############################################################################################
+	#End Urban Renewal
+	############################################################################################
+
