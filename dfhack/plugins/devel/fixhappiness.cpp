@@ -41,7 +41,6 @@ using df::global::ui;
 
 
 
-command_result civilizationdump (color_ostream &out, std::vector <std::string> & parameters);
 command_result fixhappiness (color_ostream &out, vector <string> & parameters);
 
 DFHACK_PLUGIN("fixhappiness");

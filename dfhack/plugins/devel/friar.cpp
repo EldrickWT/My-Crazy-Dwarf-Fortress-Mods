@@ -126,10 +126,10 @@ command_result friaradd (color_ostream &out, vector<string> &parameters)
 				pos->flags.set(entity_position_flags::COLOR);
 				pos->flags.set(entity_position_flags::HAS_RESPONSIBILITIES);
 				pos->flags.set(entity_position_flags::IS_LEADER);
-				pos->flags.set(entity_position_flags::anon_1);
-				pos->flags.set(entity_position_flags::anon_2);
-				pos->flags.set(entity_position_flags::anon_3);
-				pos->flags.set(entity_position_flags::anon_4);
+				pos->flags.set(entity_position_flags::unk_12);
+				pos->flags.set(entity_position_flags::unk_13);
+				pos->flags.set(entity_position_flags::unk_1a);
+				pos->flags.set(entity_position_flags::unk_1b);
 				pos->precedence = 130;
 				pos->flags.set(entity_position_flags::FLASHES);
 				pos->flags.set(entity_position_flags::EXPORTED_IN_LEGENDS);

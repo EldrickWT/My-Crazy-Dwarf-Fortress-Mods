@@ -20,7 +20,9 @@ using namespace std;
 #include "modules/Materials.h"
 #include "modules/MapCache.h"
 #include "MiscUtils.h"
-
+#include "df/historical_entity.h"
+#include "df/historical_figure.h"
+#include "df/ui.h"
 #include "df/world.h"
 
 
@@ -29,6 +31,7 @@ using std::string;
 using namespace DFHack;
 using namespace df::enums;
 using df::global::world;
+using df::global::ui;
 
 DFHACK_PLUGIN("movein");
 
@@ -45,9 +48,9 @@ DFhackCExport command_result plugin_init ( color_ostream &out, std::vector <Plug
 	// Fill the command list with your commands.
 	commands.clear();
 	commands.push_back(PluginCommand(
-									"movein",
-									"Make the target join your fortress.",
-									movein));
+		"movein",
+		"Make the target join your fortress.",
+		movein));
 	return CR_OK;
 }
 
@@ -77,6 +80,12 @@ command_result movein (color_ostream &out, vector <string> & parameters)
 			if(unit->pos.x == cursorX && unit->pos.y == cursorY && unit->pos.z == cursorZ)
 			{
 				unit->flags1.bits.diplomat = 0;
+				unit->flags2.bits.resident = 0;
+				unit->flags1.bits.merchant = 0;
+				unit->flags1.bits.forest = 0;
+				unit->civ_id = df::global::ui->civ_id;
+				//add them to fortress_entity unit_ids and that should avoid them becoming pets
+				//add them to fortress_entity hist_figures and that should avoid them becoming pets
 				out.print("The target should movein!\n");
 				continue;
 			}
