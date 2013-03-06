@@ -10,8 +10,8 @@ N/A
 Structure:
 
 data - the colors, inits, worldgen, speeches, and my modded fortressintro
-dfhack - a backup of my dfhack plugin source files. They're in the plugin/devel folder. movein needs serious work (does next to nothing useful). everything else in there works.
+dfhack - a backup of my dfhack plugin source files. They're in the plugin/devel folder. movein needs serious work (it's old and "tweak makeown" works a bit better). everything else in there works.
 Holding Pen - If something is being worked on an original -likely broken- will be here.
-raw-notes - all the notes for my mod(s)
-raw - a big merge of all my mods and all other mods I've added to My Little Arachnids and or Aspectus Lolin. 0.34.07
+raw-notes - all the (notes, addendums, apocrypha, and some experiments) for my mod(s) a few newly updated for 0.34.11
+raw - a big merge of all my mods and all other mods I've added to My Little Arachnids and or Aspectus Lolin. 0.34.11
 split out mods - all my mods in individual packages. should all have mirrors of my 31.25 version zips that were posted to DFFD assuming github does not destroy. pre .07 haven't felt healthy enough sorry. It's a slog.
