@@ -3,7 +3,12 @@ dfhack.gui.getSelectedUnit().flags1.merchant = 0
 dfhack.gui.getSelectedUnit().flags1.forest = 0
 dfhack.gui.getSelectedUnit().flags2.resident = 0
 dfhack.gui.getSelectedUnit().civ_id = df.global.ui.civ_id
+
 for _,v in ipairs(df.global.world.raws.buildings.all) do print(v.code) end
 for _,v in ipairs(df.global.world.raws.itemdefs.all) do print(v.code) end
 for _,v in ipairs(df.global.world.raws.reactions.all) do print(v.code) end
 for _,v in ipairs(df.global.world.raws.interactions) do print(v.name) end
+
+:lua for _,v in ipairs(df.global.world.units.active) do printall(v) end
+
+:lua for _,v in ipairs(df.global.world.units.active) do if not (v.civ_id == df.global.ui.civ_id) then print(df.global.world.raws.creatures.all[v.race].creature_id) end end
