@@ -306,7 +306,7 @@ inorganic_stone_silliness
 	[MATERIAL_VALUE:3]
 	[DISPLAY_COLOR:4:4:1]
 	[TILE:15]
-	[IS_GEM:fossilized chicken fingers:NP:OVERWRITE_SOLID]
+	[IS_GEM:fossilized chicken fingers:fossilized chicken fingers:OVERWRITE_SOLID]
 	[ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:100]
 
 [INORGANIC:MALLOW]
