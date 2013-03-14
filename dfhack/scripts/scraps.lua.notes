@@ -1,14 +1,23 @@
-dfhack.gui.getSelectedUnit().flags1.diplomat = 0
-dfhack.gui.getSelectedUnit().flags1.merchant = 0
-dfhack.gui.getSelectedUnit().flags1.forest = 0
-dfhack.gui.getSelectedUnit().flags2.resident = 0
-dfhack.gui.getSelectedUnit().civ_id = df.global.ui.civ_id
+:lua dfhack.gui.getSelectedUnit().flags1.diplomat = 0
+:lua dfhack.gui.getSelectedUnit().flags1.merchant = 0
+:lua dfhack.gui.getSelectedUnit().flags1.forest = 0
+:lua dfhack.gui.getSelectedUnit().flags2.resident = 0
+:lua dfhack.gui.getSelectedUnit().civ_id = df.global.ui.civ_id
 
-for _,v in ipairs(df.global.world.raws.buildings.all) do print(v.code) end
-for _,v in ipairs(df.global.world.raws.itemdefs.all) do print(v.code) end
-for _,v in ipairs(df.global.world.raws.reactions.all) do print(v.code) end
-for _,v in ipairs(df.global.world.raws.interactions) do print(v.name) end
+:lua for _,v in ipairs(df.global.world.raws.buildings.all) do print(v.code) end
+:lua for _,v in ipairs(df.global.world.raws.itemdefs.all) do print(v.code) end
+:lua for _,v in ipairs(df.global.world.raws.reactions.all) do print(v.code) end
+:lua for _,v in ipairs(df.global.world.raws.interactions) do print(v.name) end
 
 :lua for _,v in ipairs(df.global.world.units.active) do printall(v) end
 
 :lua for _,v in ipairs(df.global.world.units.active) do if not (v.civ_id == df.global.ui.civ_id) then print(df.global.world.raws.creatures.all[v.race].creature_id) end end
+
+:lua print(dfhack.matinfo,decode(item.mat_type, item.mat_index))
+:lua print(dfhack.matinfo.getToken(item))
+
+:lua for _,v in ipairs(df.global.world.entities.all) do print(v.entity_raw.code.. " is the pure ENTITY for the "..dfhack.TranslateName(v.name,true)) end
+:lua for _,v in ipairs(df.global.world.entities.all) do if (v.entity_raw.code == "BOGWRAITH") then print(dfhack.TranslateName(v.name,true)) end end
+
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.profession == 103) and (v.profession2 == 103) then v.profession = 0 v.profession2 = 0 print(dfhack.TranslateName(v.name)) end end end
+v.relations.following needs blasting :/
