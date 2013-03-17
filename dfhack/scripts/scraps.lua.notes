@@ -13,11 +13,12 @@
 
 :lua for _,v in ipairs(df.global.world.units.active) do if not (v.civ_id == df.global.ui.civ_id) then print(df.global.world.raws.creatures.all[v.race].creature_id) end end
 
+:lua for _,v in ipairs(df.global.world.units.active) do if not (v.civ_id == df.global.ui.civ_id) then starter=("Creature: "..df.global.world.raws.creatures.all[v.race].creature_id.." ENTITY Race: ") if not (v.civ_id == -1) then ender=(df.global.world.entities.all[v.civ_id].entity_raw.code.. " ENTITY Civilization Name: " ..dfhack.TranslateName(df.global.world.entities.all[v.civ_id].name,true)) else ender=("Wild Population") end print(starter,ender) end end
+
 :lua print(dfhack.matinfo,decode(item.mat_type, item.mat_index))
 :lua print(dfhack.matinfo.getToken(item))
 
 :lua for _,v in ipairs(df.global.world.entities.all) do print(v.entity_raw.code.. " is the pure ENTITY for the "..dfhack.TranslateName(v.name,true)) end
 :lua for _,v in ipairs(df.global.world.entities.all) do if (v.entity_raw.code == "BOGWRAITH") then print(dfhack.TranslateName(v.name,true)) end end
 
-:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.profession == 103) and (v.profession2 == 103) then v.profession = 0 v.profession2 = 0 print(dfhack.TranslateName(v.name)) end end end
-v.relations.following needs blasting :/
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.profession == 103) and (v.profession2 == 103) then v.profession = 102 v.profession2 = 102 v.relations.following = nil print(dfhack.TranslateName(v.name)) end end end
