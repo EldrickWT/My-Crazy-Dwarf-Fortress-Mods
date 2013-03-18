@@ -6,6 +6,7 @@ creature_feral_unicorpion
 	[NAME:Feral Unicorpion:Feral Unicorpions:Feral Arachnid]
 	[CASTE_NAME:Feral Unicorpion:Feral Unicorpions:Feral Arachnid]
 	[DESCRIPTION:An imposing unicorpion skitters nearby. Its patterned, battle damaged carapace warns of its feral nature. Beware it's bites.]
+	[CREATURE_TILE:'U']
 	[CASTE:FERAL_UNICORPION_FEMALE]
 		[FEMALE]
 		[CASTE_COLOR:0:7:0]

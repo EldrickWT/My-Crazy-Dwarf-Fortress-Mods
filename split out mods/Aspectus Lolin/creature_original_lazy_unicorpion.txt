@@ -6,6 +6,7 @@ creature_original_lazy_unicorpion
 	[NAME:Lazy Unicorpion:Lazy Unicorpions:Derp]
 	[CASTE_NAME:Lazy Unicorpion:Lazy Unicorpions:Derp]
 	[DESCRIPTION:This lazy unicorpion just wants to test. WITHOUT STUDYING!]
+	[CREATURE_TILE:'U']
 	[CASTE:LAZY_UNICORPION_FEMALE]
 		[FEMALE]
 		[CASTE_COLOR:7:7:1]

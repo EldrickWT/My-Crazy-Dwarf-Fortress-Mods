@@ -306,7 +306,7 @@ inorganic_stone_silliness
 	[MATERIAL_VALUE:3]
 	[DISPLAY_COLOR:4:4:1]
 	[TILE:15]
-	[IS_GEM:fossilized chicken fingers:NP:OVERWRITE_SOLID]
+	[IS_GEM:fossilized chicken fingers:fossilized chicken fingers:OVERWRITE_SOLID]
 	[ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:100]
 
 [INORGANIC:MALLOW]
@@ -365,6 +365,8 @@ inorganic_stone_silliness
 	[MAX_EDGE:0] to contrast adamantine
 	[ITEMS_HARD]
 	[IS_STONE]
+	[ENVIRONMENT:ALL_STONE:VEIN:100]
+
 
 [INORGANIC:OH_CARP]
 	[USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]

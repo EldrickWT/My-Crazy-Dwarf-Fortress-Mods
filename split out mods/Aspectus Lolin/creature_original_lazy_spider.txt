@@ -6,6 +6,7 @@ creature_original_lazy_spider
 	[NAME:Lazy Spider:Lazy Spiders:Derp]
 	[CASTE_NAME:Lazy Spider:Lazy Spiders:Derp]
 	[DESCRIPTION:This lazy spider just wants to test. WITHOUT STUDYING!]
+	[CREATURE_TILE:'S']
 	[CASTE:LAZY_SPIDER_FEMALE]
 		[FEMALE]
 		[CASTE_COLOR:7:7:1]
