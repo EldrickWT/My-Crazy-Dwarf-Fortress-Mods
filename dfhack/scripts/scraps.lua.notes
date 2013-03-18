@@ -22,3 +22,7 @@
 :lua for _,v in ipairs(df.global.world.entities.all) do if (v.entity_raw.code == "BOGWRAITH") then print(dfhack.TranslateName(v.name,true)) end end
 
 :lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.profession == 103) and (v.profession2 == 103) then v.profession = 102 v.profession2 = 102 v.relations.following = nil print(dfhack.TranslateName(v.name)) end end end
+
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.race == df.global.ui.race_id) then if not (v.relations.following == nil) then print(dfhack.TranslateName(v.relations.following.name).." is followed by "..dfhack.TranslateName(v.name)) end end end end
+
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.race == df.global.ui.race_id) then if not (v.relations.following == nil) then print(dfhack.TranslateName(v.relations.following.name).." is followed by "..dfhack.TranslateName(v.name)) v.relations.following=nil print("... no Longer.")end end end end
