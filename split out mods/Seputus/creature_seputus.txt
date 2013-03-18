@@ -3,9 +3,6 @@ creature_seputus
 [OBJECT:CREATURE]
 
 [CREATURE:SEPUTUS]
-	COPY_TAGS_FROM:HUMAN
-	APPLY_CREATURE_VARIATION:SEPUTUS_NORMAL
-	APPLY_CURRENT_CREATURE_VARIATION
 	[NAME:Seputus:Seputus:Seputus]
 	[CASTE_NAME:Seputus:Seputus:Seputus]
 	[BABYNAME:Seputus spawn:Seputus spawn:Seputus spawn]
@@ -13,7 +10,6 @@ creature_seputus
 	[CHILDNAME:Seputus spawn:Seputus spawn:Seputus spawn]
 	[GENERAL_CHILD_NAME:Seputus spawn:Seputus spawn:Seputus spawn]
 	[DESCRIPTION:A medium sized creature, hated by most civilized folk, for their vile and insidious ways. While they do not necessarily consort with demons, they do indeed consort with worse. Things from beyond the walls of time itself that are older than it is possible for them to be. Their current name stems from the fact they were lured to an area and then the area was ciollapsed out from under them dumping them into a chasm... thought to never be heard from again. And yet their altars to their Curious Powers are always popping up. They have apparently ceased hiding away almost entirely.]
-	[POP_RATIO:99]
 	[NATURAL_SKILL:ALCHEMY:2]
 	[NATURAL_SKILL:ANIMALCARE:2]
 	[NATURAL_SKILL:ANIMALTRAIN:2]
@@ -221,7 +217,11 @@ creature_seputus
 	[CREATURE_SOLDIER_TILE:154]
 	[INTELLIGENT]
 	[CANOPENDOORS]
-	[BENIGN]
+	[CHILD:0]
+	[EQUIPS]
+	[DIURNAL]
+	[HOMEOTHERM:10067]
+	[SWIMS_INNATE][SWIM_SPEED:2500]
 	[PREFSTRING:stature]
 	[BODY:HUMANOID:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:FACIAL_FEATURES:TEETH:RIBCAGE]
 	[CASTE:FEMALE]
@@ -353,11 +353,6 @@ creature_seputus
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_CANLATCH]
-	[CHILD:0]
-	[EQUIPS]
-	[DIURNAL]
-	[HOMEOTHERM:10067]
-	[SWIMS_INNATE][SWIM_SPEED:2500]
 	[MANNERISM_FINGERS:finger:fingers]
 	[MANNERISM_NOSE:nose]
 	[MANNERISM_EAR:ear]

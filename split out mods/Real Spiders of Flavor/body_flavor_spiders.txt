@@ -44,3 +44,4 @@ Needs to go somewhere for now.
 		[DEFAULT_RELSIZE:50]
 	[BP:LF4:left fourth foot:left fourth feet][CON:LA4][STANCE][LEFT][CATEGORY:FOOT_REAR]
 		[DEFAULT_RELSIZE:50]
+

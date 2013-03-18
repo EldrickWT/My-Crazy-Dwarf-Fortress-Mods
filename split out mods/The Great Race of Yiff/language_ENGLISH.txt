@@ -839,7 +839,7 @@ language_ENGLISH
 	[T_WORD:GREATEST:greatest]
 	[T_WORD:GREED:greed]
 	[T_WORD:GREEN:green]
-	[T_WORD:GREY:grey]
+	[T_WORD:GRAY:grey]
 	[T_WORD:GRIEF:grief]
 	[T_WORD:GRIFFON:griffon]
 	[T_WORD:GRILL:grill]
