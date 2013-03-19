@@ -4,6 +4,8 @@
 :lua dfhack.gui.getSelectedUnit().flags2.resident = 0
 :lua dfhack.gui.getSelectedUnit().civ_id = df.global.ui.civ_id
 
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true).." will be butchered.") unit.flags2.slaughter=true
+
 :lua for _,v in ipairs(df.global.world.raws.buildings.all) do print(v.code) end
 :lua for _,v in ipairs(df.global.world.raws.itemdefs.all) do print(v.code) end
 :lua for _,v in ipairs(df.global.world.raws.reactions.all) do print(v.code) end
@@ -27,3 +29,12 @@
 :lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.race == df.global.ui.race_id) then if not (v.relations.following == nil) then print(dfhack.TranslateName(v.relations.following.name).." is followed by "..dfhack.TranslateName(v.name)) end end end end
 
 :lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.race == df.global.ui.race_id) then if not (v.relations.following == nil) then print(dfhack.TranslateName(v.relations.following.name).." is followed by "..dfhack.TranslateName(v.name)) v.relations.following=nil print("... no Longer.")end end end end
+
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) and not (v.flags1.dead) and (v.mood > -1) and (v.mood < 7) then print(dfhack.TranslateName(v.name,true).." is nuts.. and worthless trash *elitist snort*... but tasty.") v.flags2.slaughter=true end end
+
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.pos.x=122 unit.pos.y=94 unit.pos.z=108
+
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.mood=7
+
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit)
+
