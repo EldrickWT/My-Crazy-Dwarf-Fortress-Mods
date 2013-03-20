@@ -21,8 +21,8 @@
 :lua item=dfhack.gui.getSelectedItem() print(dfhack.matinfo.decode(item.mat_type, item.mat_index))
 :lua item=dfhack.gui.getSelectedItem() print(dfhack.matinfo.getToken(item))
 
-:lua for _,v in ipairs(df.global.world.entities.all) do print(v.entity_raw.code.. " is the pure ENTITY for the "..dfhack.TranslateName(v.name,true)) end
-:lua for _,v in ipairs(df.global.world.entities.all) do if (v.entity_raw.code == "BOGWRAITH") then print(dfhack.TranslateName(v.name,true)) end end
+:lua for _,v in ipairs(df.global.world.entities.all) do if not (v.type > 0) then print(v.entity_raw.code.. " is the pure ENTITY for "..dfhack.TranslateName(v.name,true)) end end
+:lua for _,v in ipairs(df.global.world.entities.all) do if not (v.type > 0) then if (v.entity_raw.code == "KAPA") then print(dfhack.TranslateName(v.name,true)) end end end
 
 :lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.profession == 103) and (v.profession2 == 103) then v.profession = 102 v.profession2 = 102 v.relations.following = nil print(dfhack.TranslateName(v.name)) end end end
 
