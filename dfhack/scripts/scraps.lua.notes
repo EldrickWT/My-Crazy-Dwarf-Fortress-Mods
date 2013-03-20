@@ -3,8 +3,10 @@
 :lua dfhack.gui.getSelectedUnit().flags1.forest = 0
 :lua dfhack.gui.getSelectedUnit().flags2.resident = 0
 :lua dfhack.gui.getSelectedUnit().civ_id = df.global.ui.civ_id
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true))
 
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true).." will be butchered.") unit.flags2.slaughter=true
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true).." is ready for battle.") unit.profession=99 unit.profession2=102
 
 :lua for _,v in ipairs(df.global.world.raws.buildings.all) do print(v.code) end
 :lua for _,v in ipairs(df.global.world.raws.itemdefs.all) do print(v.code) end
