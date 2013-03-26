@@ -6,6 +6,7 @@
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true))
 
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true).." will be butchered.") unit.flags2.slaughter=true
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true).." is disarmed.") unit.flags1.suppress_wield=true
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true).." is ready for battle.") unit.profession=99 unit.profession2=102
 
 :lua for _,v in ipairs(df.global.world.raws.buildings.all) do print(v.code) end
@@ -26,7 +27,14 @@
 :lua for _,v in ipairs(df.global.world.entities.all) do if not (v.type > 0) then print(v.entity_raw.code.. " is the pure ENTITY for "..dfhack.TranslateName(v.name,true)) end end
 :lua for _,v in ipairs(df.global.world.entities.all) do if not (v.type > 0) then if (v.entity_raw.code == "KAPA") then print(dfhack.TranslateName(v.name,true)) end end end
 
-:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.profession == 103) and (v.profession2 == 103) then v.profession = 102 v.profession2 = 102 v.relations.following = nil print(dfhack.TranslateName(v.name)) end end end
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.profession >= 103) and (v.profession2 >= 103) then v.profession = 102 v.profession2 = 102 v.relations.following = nil print(dfhack.TranslateName(v.name)) end end end
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then v.flags1.ridden=false end end
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then v.flags1.rider=false end end
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then v.flags1.on_ground=false end end
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then v.relations.rider_mount_id=-1 end end
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.mood==8) then v.mood=-1 end end end
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.counters.soldier_mood==2) then v.counters.soldier_mood_countdown=1 end end end
+
 
 :lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.race == df.global.ui.race_id) then if not (v.relations.following == nil) then print(dfhack.TranslateName(v.relations.following.name).." is followed by "..dfhack.TranslateName(v.name)) end end end end
 
@@ -40,3 +48,4 @@
 
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit)
 
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit) unit.profession = 103 unit.profession2 = 103

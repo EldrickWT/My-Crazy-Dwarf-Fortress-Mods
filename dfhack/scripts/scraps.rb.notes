@@ -1,0 +1,4 @@
+ rb_eval unit=df.unit_find(:selected); p (unit)
+ rb_eval df.world.items.all.each { |it| it.flags.forbid = false }
+ rb_eval df.world.items.all.each { |it| it.flags.dump = false }
+ rb_eval df.world.items.all.each { |it| it.flags.hidden = false }
