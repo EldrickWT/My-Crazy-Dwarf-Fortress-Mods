@@ -24,16 +24,30 @@
 :lua item=dfhack.gui.getSelectedItem() print(dfhack.matinfo.decode(item.mat_type, item.mat_index))
 :lua item=dfhack.gui.getSelectedItem() print(dfhack.matinfo.getToken(item))
 
-:lua for _,v in ipairs(df.global.world.entities.all) do if not (v.type > 0) then print(v.entity_raw.code.. " is the pure ENTITY for "..dfhack.TranslateName(v.name,true)) end end
+:lua for _,v in ipairs(df.global.world.entities.all) do if not (v.type > 0) then print(v.entity_raw.code.. " is the pure ENTITY for "..dfhack.TranslateName(v.name,true), v.id) end end
 :lua for _,v in ipairs(df.global.world.entities.all) do if not (v.type > 0) then if (v.entity_raw.code == "KAPA") then print(dfhack.TranslateName(v.name,true)) end end end
 
-:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.profession >= 103) and (v.profession2 >= 103) then v.profession = 102 v.profession2 = 102 v.relations.following = nil print(dfhack.TranslateName(v.name)) end end end
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.profession >= 103) or (v.profession2 >= 103) then v.profession = 102 v.profession2 = 102 v.relations.following = nil print(dfhack.TranslateName(v.name)) end end end
 :lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then v.flags1.ridden=false end end
 :lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then v.flags1.rider=false end end
 :lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then v.flags1.on_ground=false end end
 :lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then v.relations.rider_mount_id=-1 end end
 :lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.mood==8) then v.mood=-1 end end end
 :lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.counters.soldier_mood==2) then v.counters.soldier_mood_countdown=1 end end end
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.status.labors.FISH==true) then v.status.labors.FISH=false end end end
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.status.labors.BEEKEEPING==true) then v.status.labors.BEEKEEPING=false end end end
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.status.labors.RECOVER_WOUNDED==false) then v.status.labors.RECOVER_WOUNDED=true end end end
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.status.labors.FEED_WATER_CIVILIANS==false) then v.status.labors.FEED_WATER_CIVILIANS=true end end end
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.status.labors.HAUL_STONE==false) then v.status.labors.HAUL_STONE=true end end end
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.status.labors.HAUL_WOOD==false) then v.status.labors.HAUL_WOOD=true end end end
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.status.labors.HAUL_BODY==false) then v.status.labors.HAUL_BODY=true end end end
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.status.labors.HAUL_FOOD==false) then v.status.labors.HAUL_FOOD=true end end end
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.status.labors.HAUL_REFUSE==false) then v.status.labors.HAUL_REFUSE=true end end end
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.status.labors.HAUL_ITEM==false) then v.status.labors.HAUL_ITEM=true end end end
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.status.labors.HAUL_FURNITURE==false) then v.status.labors.HAUL_FURNITURE=true end end end
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.status.labors.HAUL_ANIMAL==false) then v.status.labors.HAUL_ANIMAL=true end end end
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.status.labors.PUSH_HAUL_VEHICLE==false) then v.status.labors.PUSH_HAUL_VEHICLE=true end end end
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.status.labors.CLEAN==false) then v.status.labors.CLEAN=true end end end
 
 
 :lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then if (v.race == df.global.ui.race_id) then if not (v.relations.following == nil) then print(dfhack.TranslateName(v.relations.following.name).." is followed by "..dfhack.TranslateName(v.name)) end end end end
@@ -47,5 +61,15 @@
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.mood=7
 
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit)
-
+//child
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit) unit.profession = 103 unit.profession2 = 103
+//std
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit) unit.profession = 102 unit.profession2 = 102
+//war
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit) unit.profession = 99 unit.profession2 = 99
+//hunting
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit) unit.profession = 98 unit.profession2 = 98
+
+:lua for _,v in ipairs(df.global.ui.main.fortress_entity.populations) do printall(v) end
+
+

@@ -1,0 +1,2 @@
+0001 entity_default.txt(2182):  [PERMITTED_REACTION:TAN_A_HIDE]
+0002 entity_default.txt(2183):  [PERMITTED_REACTION:RENDER_FAT]
