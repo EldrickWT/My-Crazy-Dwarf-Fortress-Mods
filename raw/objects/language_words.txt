@@ -7486,6 +7486,11 @@ language_words
 		[THE_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
 		[OF_NOUN_PLUR]
+	[ADJ:slutty]
+		[ADJ_DIST:2]
+		[FRONT_COMPOUND_ADJ]
+		[REAR_COMPOUND_ADJ]
+		
 
 [WORD:SMASH]
 	[VERB:smash:smashes:smashed:smashed:smashing]

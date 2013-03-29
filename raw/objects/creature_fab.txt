@@ -7,9 +7,9 @@ creature_fab
 	[CHILD:0]
 	[BODY_SIZE:0:0:64000]
 	[BODY_SIZE:0:0:65000]
-	PET
+	PET They would be so expensive to grab Indentured Servants from as a species.
 	COMMON_DOMESTIC
-	PETVALUE:50
+	PETVALUE:50 From a Template...
 	TRAINABLE
 	[BIOME:ALL_MAIN]
 	[FREQUENCY:100]

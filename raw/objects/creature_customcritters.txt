@@ -3706,7 +3706,7 @@ creature_customcritters
 
 [CREATURE:GIANT_TRIBONIOPHORUS]
 ***FOREST***
-	[DESCRIPTION:An enormous slug that crawls through dense froests and jungles. It attempts to crush its prey, covering them in a vile slime.]
+	[DESCRIPTION:An enormous slug that crawls through dense forests and jungles. It attempts to crush its prey, covering them in a vile slime.]
 	[NAME:giant triboniophorus:giant triboniophoruses:giant triboniophorus]
 	[CASTE_NAME:giant triboniophorus:giant triboniophoruses:giant triboniophorus]
 	[SPEED:4500]

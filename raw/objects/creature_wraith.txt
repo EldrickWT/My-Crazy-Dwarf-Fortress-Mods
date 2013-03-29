@@ -10,12 +10,12 @@ creature_wraith
 	[GLOWTILE:'"']
 	[GLOWCOLOR:6:0:1]
 
-	[PET]
-	[PETVALUE:10]
+	[PET] Good here or in its own caste(s). See notes about PACK_ANIMAL
+	[PETVALUE:10] Cheap but not too cheap.
 	[TRAINABLE]
-	[COMMON_DOMESTIC]
-	[PACK_ANIMAL]
-	[TRADE_CAPACITY:1000]
+	[COMMON_DOMESTIC] Buy more civilians (when playing Wraith)
+	[PACK_ANIMAL] Keep before the embark screen fine... REMOVE BEFORE ACTUAL PLAY... makes them unable to empty their own inventory.
+	[TRADE_CAPACITY:1000] Keep before the embark screen fine... REMOVE BEFORE ACTUAL PLAY
 
 	[BIOME:ALL_MAIN]
 	[FREQUENCY:100]

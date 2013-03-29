@@ -1162,6 +1162,7 @@ creature_mla
 		[DESCRIPTION:A tachikoma. It has a beautiful finish to its paint job. Thus it is not plain nor ordinary... for some kind of mechanical arachnid. Beware its spinning projectiles and rousing intellectual debates on the nature of... hey wake up!]
 		[CASTE_NAME:Tachikoma:Tachikomas:Tachikomatic]
 		[CASTE_COLOR:0:7:1]
+		[NOMEAT]
 
 	[SELECT_CASTE:HEAVY_TACHIKOMA_FEMALE]
 	[SELECT_ADDITIONAL_CASTE:HEAVY_TACHIKOMA_MALE]
@@ -1170,3 +1171,4 @@ creature_mla
 		[CASTE_COLOR:0:7:1]
 		[APPLY_CREATURE_VARIATION:HEAVY_TACHIKOMA_FLAVORED]
 			[APPLY_CURRENT_CREATURE_VARIATION]
+		[NOMEAT]
