@@ -56,7 +56,7 @@
 
 :lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) and not (v.flags1.dead) and (v.mood > -1) and (v.mood < 7) then print(dfhack.TranslateName(v.name,true).." is nuts.. and worthless trash *elitist snort*... but tasty.") v.flags2.slaughter=true end end
 
-:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.pos.x=122 unit.pos.y=94 unit.pos.z=108
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.pos.x=113 unit.pos.y=50 unit.pos.z=115 (113, 50, 115)
 
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.mood=7
 
