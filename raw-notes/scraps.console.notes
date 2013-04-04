@@ -214,18 +214,15 @@ createitem WOOD PLANT_MAT:SUNGWOOD:WOOD 100
 createitem WOOD PLANT_MAT:TOWER_CAP:WOOD 100
 createitem WOOD PLANT_MAT:TUNNEL_TUBE:WOOD 100
 createitem WOOD PLANT_MAT:WILLOW:WOOD 100
+workflow enable drybuckets auto-melt
 workflow amount AMMO:ITEM_AMMO_ARROWS 1000 5
 workflow amount AMMO:ITEM_AMMO_BLOWDARTS 1000 5
 workflow amount AMMO:ITEM_AMMO_BOLTS 1000 5
 workflow amount AMMO:ITEM_AMMO_RAILS 1000 5
-workflow amount BLOCKS 100 5
-workflow amount BLOCKS/STONE 300 100
 workflow amount CLOTH 100 5
-workflow amount COIN 100 5
-workflow amount DRINK 20000 5
-workflow amount FOOD 1000 10
+workflow amount DRINK 2000 5
+workflow amount FOOD 2000 10
 workflow amount LIQUID_MISC//LYE 200 5
-workflow amount PLANT 100 5
 workflow amount POWDER_MISC/SAND 200 5
 workflow amount THREAD 1000 5
 workflow count AMULET 10 5
@@ -247,19 +244,25 @@ workflow count ARMORSTAND 4 1
 workflow count BACKPACK 10 5
 workflow count BALLISTAARROWHEAD 10 5
 workflow count BALLISTAPARTS 10 5
+workflow count BAR 3000 10
 workflow count BAR//ASH 30 1
-workflow count BAR//CREATURE_MAT:DRAGON:FAT 200 1
+workflow count BAR//COAL 1000 1
+workflow count BAR//CREATURE_MAT:DRAGON:FAT 20 1
 workflow count BAR//CREATURE_MAT:DRAGON:SOAP 20 1
 workflow count BAR//CREATURE_MAT:DRAGON:TALLOW 20 1
 workflow count BAR//INORGANIC:ADAMANTINE 1000 1
+workflow count BAR//INORGANIC:WYRD_GOLD 1000 1
 workflow count BAR/METAL 1000 1
 workflow count BAR/SOAP 300 10
 workflow count BARREL 20 5
 workflow count BED 30 10
 workflow count BIN 30 10
+workflow count BLOCKS 100 5
+workflow count BLOCKS/STONE 300 100
 workflow count BOULDER 20 5
+workflow count BOULDER//FIRE_CLAY 20 5
 workflow count BOULDER//INORGANIC:OBSIDIAN 200 10
-workflow count BOULDER/CLAY 20 5
+workflow count BOULDER//INORGANIC:WYRD_GOLD 200 10
 workflow count BOX 60 10
 workflow count BRACELET 10 5
 workflow count BUCKET 10 5
@@ -268,7 +271,11 @@ workflow count CAGE 10 5
 workflow count CATAPULTPARTS 10 5
 workflow count CHAIN 10 5
 workflow count CHAIR 30 10
+workflow count CHEESE 200 1
+workflow count CHEESE//CREATURE_MAT:COW:CHEESE 20 1
+workflow count CLOTH 100 5
 workflow count COFFIN 30 5
+workflow count COIN 100 5
 workflow count CRAFTS 10 5
 workflow count CROWN 10 5
 workflow count CRUTCH 10 5
@@ -308,11 +315,12 @@ workflow count PANTS:ITEM_PANTS_SKIRT_LONG 10 5
 workflow count PANTS:ITEM_PANTS_SKIRT_SHORT 10 5
 workflow count PANTS:ITEM_PANTS_THONG 10 5
 workflow count PIPE_SECTION 10 5
+workflow count PLANT 100 5
 workflow count QUERN 10 5
 workflow count QUIVER 10 5
 workflow count RING 10 5
 workflow count SCEPTER 10 5
-workflow count SEEDS 1 1
+workflow count SEEDS 10 1
 workflow count SHIELD:ITEM_SHIELD_BUCKLER 10 5
 workflow count SHIELD:ITEM_SHIELD_SHIELD 10 5
 workflow count SHOES:ITEM_SHOES_BOOTS 10 5
@@ -371,7 +379,6 @@ workflow count WEAPON:ITEM_WEAPON_MORNINGSTAR 10 5
 workflow count WEAPON:ITEM_WEAPON_P_CUTTER 10 5
 workflow count WEAPON:ITEM_WEAPON_PICK 10 5
 workflow count WEAPON:ITEM_WEAPON_PIKE 10 5
-workflow count WEAPON:ITEM_WEAPON_PLUNGER 10 5
 workflow count WEAPON:ITEM_WEAPON_RAILGUN 10 5
 workflow count WEAPON:ITEM_WEAPON_SCIMITAR 10 5
 workflow count WEAPON:ITEM_WEAPON_SCOURGE 10 5
