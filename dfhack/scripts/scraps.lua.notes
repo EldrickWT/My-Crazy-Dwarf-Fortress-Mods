@@ -72,4 +72,6 @@
 
 :lua for _,v in ipairs(df.global.ui.main.fortress_entity.populations) do printall(v) end
 
+//sentience
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) df.global.world.raws.creatures.all[unit.race].flags.CASTE_CAN_SPEAK = true df.global.world.raws.creatures.all[unit.race].flags.CASTE_CAN_LEARN = true
 

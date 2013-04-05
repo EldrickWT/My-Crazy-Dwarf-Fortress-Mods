@@ -16,6 +16,8 @@ creature_wraith
 	[COMMON_DOMESTIC] Buy more civilians (when playing Wraith)
 	[PACK_ANIMAL] Keep before the embark screen fine... REMOVE BEFORE ACTUAL PLAY... makes them unable to empty their own inventory.
 	[TRADE_CAPACITY:1000] Keep before the embark screen fine... REMOVE BEFORE ACTUAL PLAY
+	[APPLY_CREATURE_VARIATION:PET_CIV]
+	[APPLY_CURRENT_CREATURE_VARIATION]
 
 	[BIOME:ALL_MAIN]
 	[FREQUENCY:100]
@@ -85,6 +87,7 @@ creature_wraith
 			[STATE_ADJ:LIQUID:wraith breastmilk]
 			[STATE_NAME:GAS:boiling wraith breastmilk]
 			[STATE_ADJ:GAS:boiling wraith breastmilk]
+			[PREFIX:NONE]
 		[MILKABLE:LOCAL_CREATURE_MAT:MILK:20000]
 		[USE_MATERIAL_TEMPLATE:CHEESE:CREATURE_CHEESE_TEMPLATE]
 			[STATE_NAME:SOLID:wraith cheese]
@@ -95,6 +98,7 @@ creature_wraith
 			[STATE_ADJ:LIQUID:melted wraith cheese]
 			[STATE_NAME:GAS:boiling wraith cheese]
 			[STATE_ADJ:GAS:boiling wraith cheese]
+			[PREFIX:NONE]
 		[LITTERSIZE:7:7]
 		[BODY:HUMANOID:FEMALE:NEUTRAL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]
 	[CASTE:MALE]
