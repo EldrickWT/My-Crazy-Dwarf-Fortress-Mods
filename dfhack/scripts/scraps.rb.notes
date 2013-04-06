@@ -24,6 +24,7 @@ rb_eval df.world.items.all.each { |it| it.flags.hidden = false }
 
 rb_eval p df.ui.main
 
-rb_eval df.world.units.active { |it| it.flags1.hidden_in_ambush = false }
+rb_eval df.world.units.active { |it| it.flags1.hidden_in_ambush = false; it.flags1.hidden_ambusher = false}
+
 
 rb_eval tile = df.map_tile_at(x, y, z) ; burrow = tile.mapblock.block_burrows.find { |bb| bb.tile_bitmask.bits[tile.dy][tile.dx] > 0 } ; if burrow ; puts "In burrow #{burrow.id}" ; end
