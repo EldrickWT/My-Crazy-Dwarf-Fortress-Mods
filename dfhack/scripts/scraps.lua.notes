@@ -62,16 +62,22 @@
 
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit)
 //child
-:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit) unit.profession = 103 unit.profession2 = 103
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.profession = 103 unit.profession2 = 103
 //std
-:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit) unit.profession = 102 unit.profession2 = 102
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.profession = 102 unit.profession2 = 102
 //war
-:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit) unit.profession = 99 unit.profession2 = 99
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.profession = 99 unit.profession2 = 99
 //hunting
-:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit) unit.profession = 98 unit.profession2 = 98
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.profession = 98 unit.profession2 = 98
 
 :lua for _,v in ipairs(df.global.ui.main.fortress_entity.populations) do printall(v) end
 
 //sentience
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) df.global.world.raws.creatures.all[unit.race].flags.CASTE_CAN_SPEAK = true df.global.world.raws.creatures.all[unit.race].flags.CASTE_CAN_LEARN = true
 
+:lua for _,v in ipairs(df.global.world.raws.creatures.all) do if (v.flags.DOES_NOT_EXIST == true) then print(_,v.creature_id) end end
+:lua df.global.world.raws.creatures.all[556].flags.DOES_NOT_EXIST == false
+
+:lua for _,v in ipairs(df.global.world.units.all) do if (df.global.world.raws.creatures.all[v.race].flags.DOES_NOT_EXIST == true) then print(_,v.creature_id) end end
+
+:lua for _,v in ipairs(df.global.world.units.active) do if (df.global.world.raws.creatures.all[v.race].flags.CASTE_CAN_SPEAK == true) then print(dfhack.TranslateName(v.name,true)," is a ", df.global.world.raws.creatures.all[v.race].creature_id) end end
