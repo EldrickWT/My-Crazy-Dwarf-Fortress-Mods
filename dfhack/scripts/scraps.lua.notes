@@ -81,3 +81,5 @@
 :lua for _,v in ipairs(df.global.world.units.all) do if (df.global.world.raws.creatures.all[v.race].flags.DOES_NOT_EXIST == true) then print(_,v.creature_id) end end
 
 :lua for _,v in ipairs(df.global.world.units.active) do if (df.global.world.raws.creatures.all[v.race].flags.CASTE_CAN_SPEAK == true) then print(dfhack.TranslateName(v.name,true)," is a ", df.global.world.raws.creatures.all[v.race].creature_id) end end
+
+:lua for _,v in ipairs(df.global.world.units.all) do if (df.global.world.raws.creatures.all[v.race].flags.UNIQUE_DEMON == true) then print(_,v.creature_id) end end
