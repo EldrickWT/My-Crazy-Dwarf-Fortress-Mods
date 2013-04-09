@@ -156,5 +156,5 @@ creature_worm_ear
 		[SOUND:PEACEFUL_INTERMITTENT:200:10000:VOCALIZATION:hum:hums:pronounced humming]
 		[TRAPAVOID]
 		[WEBIMMUNE]
-		APPLY_CREATURE_VARIATION:ZHA_UNIQUE_DEMON How else is it gonna do what I want :/
+		[APPLY_CREATURE_VARIATION:ZHA_UNIQUE_DEMON] How else is it gonna do what I want :/
 
