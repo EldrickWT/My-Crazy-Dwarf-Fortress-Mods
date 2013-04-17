@@ -29,7 +29,7 @@ creature_queen_succubus
 		[UNDERGROUND_DEPTH:0:7]
 		[GRASSTRAMPLE:100]
 		[POP_RATIO:1]
-		[POPULATION_NUMBER:1] In case DOES NOT EXIST is removed...
+		[POPULATION_NUMBER:1:1] In case DOES NOT EXIST is removed...
 		[POWER]
 		[SPEECH:dwarf.txt]
 		[BABYNAME:succubus baby:succubus babies]
