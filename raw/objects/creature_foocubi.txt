@@ -6,14 +6,14 @@ creature_foocubi
 	[NAME:Sex Demon:Sex Demons:Foocubi]
 	[CHILD:0]
 	[BODY_SIZE:0:0:3000]
-	[BODY_SIZE:0:180:15000]
-	[BODY_SIZE:1:0:65000]
+	[BODY_SIZE:0:4:15000]
+	[BODY_SIZE:0:8:65000]
 	[PET]
 	[COMMON_DOMESTIC]
 	[PETVALUE:50]
 	[TRAINABLE]
 	ADOPTS_OWNER Problematic with Merchants and Diplomats and and and. Beware civilians who like Foocubi with this turned on. Because when it is on and working... DenMothers/Fathers with whole... scout troops following them everywhere. Newborns ditching their mother for the DenMother.
-	[APPLY_CREATURE_VARIATION:PET_CIV]
+	APPLY_CREATURE_VARIATION:PET_CIV
 	[APPLY_CURRENT_CREATURE_VARIATION]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:2:3]

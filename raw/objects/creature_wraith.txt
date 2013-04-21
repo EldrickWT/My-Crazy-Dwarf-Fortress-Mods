@@ -6,7 +6,7 @@ creature_wraith
 	[NAME:Wraith:Wraiths:Wraith]
 	[CHILD:0]
 	[BODY_SIZE:0:0:74000]
-	[BODY_SIZE:0:0:95000]
+	[BODY_SIZE:0:8:95000]
 	[GLOWTILE:'"']
 	[GLOWCOLOR:6:0:1]
 
@@ -16,7 +16,7 @@ creature_wraith
 	[COMMON_DOMESTIC] Buy more civilians (when playing Wraith)
 	[PACK_ANIMAL] Keep before the embark screen fine... REMOVE BEFORE ACTUAL PLAY... makes them unable to empty their own inventory.
 	[TRADE_CAPACITY:1000] Keep before the embark screen fine... REMOVE BEFORE ACTUAL PLAY
-	[APPLY_CREATURE_VARIATION:PET_CIV]
+	APPLY_CREATURE_VARIATION:PET_CIV
 	[APPLY_CURRENT_CREATURE_VARIATION]
 
 	[BIOME:ALL_MAIN]
