@@ -87,22 +87,32 @@ command_result civilizationdump (color_ostream &out, std::vector <std::string> &
 			}
 		case 2:
 			{
-				out.print("%s is a Group(2)... that's %s in English\n", Translation::TranslateName(&df::historical_entity::find(i)->name, false).c_str(), Translation::TranslateName(&df::historical_entity::find(i)->name, true).c_str());
+				out.print("%s is a Vessel Crew(2)... that's %s in English\n", Translation::TranslateName(&df::historical_entity::find(i)->name, false).c_str(), Translation::TranslateName(&df::historical_entity::find(i)->name, true).c_str());
 				continue;
 			}
 		case 3:
 			{
-				out.print("%s is a Survivor Group(3)... that's %s in English\n", Translation::TranslateName(&df::historical_entity::find(i)->name, false).c_str(), Translation::TranslateName(&df::historical_entity::find(i)->name, true).c_str());
+				out.print("%s is a Survivor/Migrating Group(3)... that's %s in English\n", Translation::TranslateName(&df::historical_entity::find(i)->name, false).c_str(), Translation::TranslateName(&df::historical_entity::find(i)->name, true).c_str());
 				continue;
 			}
 		case 4:
 			{
-				out.print("%s is a Group(4)... that's %s in English\n", Translation::TranslateName(&df::historical_entity::find(i)->name, false).c_str(), Translation::TranslateName(&df::historical_entity::find(i)->name, true).c_str());
+				out.print("%s is a Nomadic Group(4)... that's %s in English\n", Translation::TranslateName(&df::historical_entity::find(i)->name, false).c_str(), Translation::TranslateName(&df::historical_entity::find(i)->name, true).c_str());
 				continue;
 			}
 		case 5:
 			{
 				out.print("%s is a Religion(5)... that's %s in English\n", Translation::TranslateName(&df::historical_entity::find(i)->name, false).c_str(), Translation::TranslateName(&df::historical_entity::find(i)->name, true).c_str());
+				continue;
+			}
+		case 6:
+			{
+				out.print("%s is a Military Group(6)... that's %s in English\n", Translation::TranslateName(&df::historical_entity::find(i)->name, false).c_str(), Translation::TranslateName(&df::historical_entity::find(i)->name, true).c_str());
+				continue;
+			}
+		case 7:
+			{
+				out.print("%s is an Outcast Group(7)... that's %s in English\n", Translation::TranslateName(&df::historical_entity::find(i)->name, false).c_str(), Translation::TranslateName(&df::historical_entity::find(i)->name, true).c_str());
 				continue;
 			}
 		default:

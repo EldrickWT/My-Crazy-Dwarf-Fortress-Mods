@@ -69,16 +69,16 @@ command_result civviesplosion (color_ostream &out, std::vector <std::string> & p
 	}
 	else
 	{
-		for(size_t i = 0; i < world->units.all.size(); i++)
+		for(size_t i = 0; i < world->units.active.size(); i++)
 		{
-			df::unit * unit = world->units.all[i];
-			if(unit->pos.x == cursorX && unit->pos.y == cursorY && unit->pos.z == cursorZ && unit->civ_id == ui->civ_id) //make sure they are 'friendlies'
+			df::unit * unit = world->units.active[i];
+			if(unit->pos.x == cursorX && unit->pos.y == cursorY && unit->pos.z == cursorZ && unit->civ_id == ui->civ_id && !unit->flags1.bits.dead && !unit->flags3.bits.ghostly && !unit->flags3.bits.scuttle && !unit->flags2.bits.killed && !unit->flags2.bits.for_trade) //make sure they are -living- 'friendlies'
 			{
 				targetted = world->raws.creatures.all[Units::GetCreature(i)->race]->creature_id.c_str();
 				out.print("Targetting: %s\n",targetted.c_str());
 				continue;
 			}
-			if (unit->pos.x == cursorX && unit->pos.y == cursorY && unit->pos.z == cursorZ && unit->civ_id != ui->civ_id) //you've targetted a unit who isn't one of yours.
+			if (unit->pos.x == cursorX && unit->pos.y == cursorY && unit->pos.z == cursorZ && unit->civ_id != ui->civ_id) //you've targetted a unit who isn't necessarily friendly.
 			{
 				out.print("Invalid Target. Skipping.\n");
 				continue;

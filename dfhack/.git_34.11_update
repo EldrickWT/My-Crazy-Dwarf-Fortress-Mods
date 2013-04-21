@@ -1,8 +1,13 @@
+git stash save
 cd plugins/df2mc
 git checkout master
 git pull
 cd ../..
 cd plugins/stonesense
+git checkout master
+git pull
+cd ../..
+cd plugins/isoworld
 git checkout master
 git pull
 cd ../..
@@ -16,4 +21,4 @@ git pull
 cd ../..
 git checkout master
 git pull origin master
-
+git stash apply
