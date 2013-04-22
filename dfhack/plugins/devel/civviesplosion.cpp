@@ -63,6 +63,8 @@ command_result civviesplosion (color_ostream &out, std::vector <std::string> & p
 	int32_t cursorX, cursorY, cursorZ;
 	Gui::getCursorCoords(cursorX,cursorY,cursorZ);
 	std::basic_string<char, std::char_traits<char>, std::allocator<char>> targetted;
+	bool skipped;
+	skipped=false;
 	if(cursorX == -30000)
 	{
 		out.printerr("No cursor; place cursor over creature to convince it to engage with someone.\n");
@@ -72,19 +74,72 @@ command_result civviesplosion (color_ostream &out, std::vector <std::string> & p
 		for(size_t i = 0; i < world->units.active.size(); i++)
 		{
 			df::unit * unit = world->units.active[i];
-			if(unit->pos.x == cursorX && unit->pos.y == cursorY && unit->pos.z == cursorZ && unit->civ_id == ui->civ_id && !unit->flags1.bits.dead && !unit->flags3.bits.ghostly && !unit->flags3.bits.scuttle && !unit->flags2.bits.killed && !unit->flags2.bits.for_trade) //make sure they are -living- 'friendlies'
+			if(unit->pos.x == cursorX && unit->pos.y == cursorY && unit->pos.z == cursorZ)
 			{
-				targetted = world->raws.creatures.all[Units::GetCreature(i)->race]->creature_id.c_str();
-				out.print("Targetting: %s\n",targetted.c_str());
-				continue;
-			}
-			if (unit->pos.x == cursorX && unit->pos.y == cursorY && unit->pos.z == cursorZ && unit->civ_id != ui->civ_id) //you've targetted a unit who isn't necessarily friendly.
-			{
-				out.print("Invalid Target. Skipping.\n");
-				continue;
+				if(unit->civ_id == ui->civ_id)
+				{
+					if (!unit->flags1.bits.dead)
+					{
+						if (!unit->flags3.bits.ghostly)
+						{
+							if (!unit->flags3.bits.scuttle)
+							{
+								if (!unit->flags2.bits.killed)
+								{
+									if (!unit->flags2.bits.for_trade)
+									{
+										targetted = world->raws.creatures.all[Units::GetCreature(i)->race]->creature_id.c_str();
+										out.print("Targetting: %s\n",targetted.c_str());
+										skipped=false;
+										continue;
+									}
+									else
+									{
+										out.print("Unit designated for trading. Skipping.\n");
+										skipped=true;
+										continue;
+									}
+								}
+								else
+								{
+									out.print("Unit killed via function. Offspring unlikely. Skipping.\n");
+									skipped=true;
+									continue;
+								}
+							}
+							else
+							{
+								out.print("Wagons don't breed (Unit designated for skuttling... via script or vampire attack). Skipping.\n");
+								skipped=true;
+								continue;
+							}
+						}
+						else
+						{
+							out.print("Ghostly unit. Skipping.\n");
+							skipped=true;
+							continue;
+						}
+					}
+					else
+					{
+						out.print("Unit is dead. Skipping.\n");
+						skipped=true;
+						continue;
+					}
+				}
+				else
+				{
+					out.print("Not aligned with your fortress. Skipping.\n");
+					skipped=true;
+					continue;
+				}
 			}
 		}
-		out.print("All %s should be engaging soon.\n", targetted.c_str());
+		if (!skipped)
+			out.print("All %s should be engaging soon.\n", targetted.c_str());
+		else
+			out.print("Given target unacceptable. Printing active creature list.\n");
 		list<string> s_creatures;
 		// only cursor target.
 		s_creatures.push_back(targetted);
