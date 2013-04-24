@@ -38,17 +38,17 @@ using namespace df::enums;
 using df::global::world;
 using df::global::ui;
 
-command_result civviesplosion (color_ostream &out, std::vector <std::string> & parameters);
+command_result civviesplosion2 (color_ostream &out, std::vector <std::string> & parameters);
 
-DFHACK_PLUGIN("civviesplosion");
+DFHACK_PLUGIN("civviesplosion2");
 
 // Mandatory init function. If you have some global state, create it here.
 DFhackCExport command_result plugin_init (color_ostream &out, std::vector <PluginCommand> &commands)
 {
 	// Fill the command list with your commands.
-	commands.push_back(PluginCommand("civviesplosion",
+	commands.push_back(PluginCommand("civviesplosion2",
 		"Begins Malicious Breeding Program.",
-		civviesplosion));
+		civviesplosion2));
 	return CR_OK;
 }
 
@@ -57,7 +57,7 @@ DFhackCExport command_result plugin_shutdown ( color_ostream &out )
 	return CR_OK;
 }
 
-command_result civviesplosion (color_ostream &out, std::vector <std::string> & parameters)
+command_result civviesplosion2 (color_ostream &out, std::vector <std::string> & parameters)
 {
 	CoreSuspender suspend;
 	int32_t cursorX, cursorY, cursorZ;
@@ -71,6 +71,7 @@ command_result civviesplosion (color_ostream &out, std::vector <std::string> & p
 	}
 	else
 	{
+		out.print("Cursor XYZ is %d %d %d\n", cursorX, cursorY, cursorZ); //I hate debugging lines.
 		for(size_t i = 0; i < world->units.active.size(); i++)
 		{
 			df::unit * unit = world->units.active[i];
@@ -78,52 +79,18 @@ command_result civviesplosion (color_ostream &out, std::vector <std::string> & p
 			{
 				if(unit->civ_id == ui->civ_id)
 				{
-					if (!unit->flags1.bits.dead)
+					if ((!unit->flags1.bits.dead) && (!unit->flags3.bits.ghostly) && (!unit->flags3.bits.scuttle) && (!unit->flags2.bits.killed) && (!unit->flags2.bits.for_trade))
 					{
-						if (!unit->flags3.bits.ghostly)
-						{
-							if (!unit->flags3.bits.scuttle)
-							{
-								if (!unit->flags2.bits.killed)
-								{
-									if (!unit->flags2.bits.for_trade)
-									{
-										targetted = world->raws.creatures.all[Units::GetCreature(i)->race]->creature_id.c_str();
-										out.print("Targetting: %s\n",targetted.c_str());
-										skipped=false;
-										continue;
-									}
-									else
-									{
-										out.print("Unit designated for trading. Skipping.\n");
-										skipped=true;
-										continue;
-									}
-								}
-								else
-								{
-									out.print("Unit killed via function. Offspring unlikely. Skipping.\n");
-									skipped=true;
-									continue;
-								}
-							}
-							else
-							{
-								out.print("Wagons don't breed (Unit designated for skuttling... via script or vampire attack). Skipping.\n");
-								skipped=true;
-								continue;
-							}
-						}
-						else
-						{
-							out.print("Ghostly unit. Skipping.\n");
-							skipped=true;
-							continue;
-						}
+						targetted = world->raws.creatures.all[Units::GetCreature(i)->race]->creature_id.c_str();
+						out.print("Targetting: %s at %d %d %d\n",targetted.c_str(), cursorX, cursorY, cursorZ);
+						out.print("which is hopefully the same as: %d %d %d\n", unit->pos.x, unit->pos.y, unit->pos.z);
+						out.print("which is hopefully the same as: %d %d %d\n", df::global::cursor->x, df::global::cursor->y, df::global::cursor->z);
+						skipped=false;
+						continue;
 					}
 					else
 					{
-						out.print("Unit is dead. Skipping.\n");
+						out.print("Given target (%s) unusable. Pick a different unit.\n", world->raws.creatures.all[Units::GetCreature(i)->race]->creature_id.c_str());
 						skipped=true;
 						continue;
 					}
@@ -139,7 +106,7 @@ command_result civviesplosion (color_ostream &out, std::vector <std::string> & p
 		if (!skipped)
 			out.print("All %s should be engaging soon.\n", targetted.c_str());
 		else
-			out.print("Given target unacceptable. Printing active creature list.\n");
+			out.print("Given target unusable for whatever reason. Pick a different unit. Printing active creature list.\n");
 		list<string> s_creatures;
 		// only cursor target.
 		s_creatures.push_back(targetted);
