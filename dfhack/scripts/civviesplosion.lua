@@ -25,12 +25,12 @@ function civviesplosion ()
 						a = a + 1
 					end
 					genes = v.appearance.genes:new()
-					v.relations.pregnancy_ptr = genes;
+					v.relations.pregnancy_genes = genes;
 					v.relations.pregnancy_timer = 30;
 					if (v.relations.lover_id == 0) then
-						v.relations.pregnancy_mystery = 0;
+						v.relations.pregnancy_caste = 0;
 					else
-						v.relations.pregnancy_mystery = 1;
+						v.relations.pregnancy_caste = 1;
 					end
 					c = c + 1
 				elseif (v.sex == -1) then
@@ -40,9 +40,9 @@ function civviesplosion ()
 						a = a + 1
 					end
 					genes = v.appearance.genes:new()
-					v.relations.pregnancy_ptr = genes;
+					v.relations.pregnancy_genes = genes;
 					v.relations.pregnancy_timer = 30;
-					v.relations.pregnancy_mystery = 1;
+					v.relations.pregnancy_caste = 1;
 					c = c + 1
 				end
 			end
