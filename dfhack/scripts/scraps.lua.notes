@@ -89,7 +89,11 @@
 :lua unit=dfhack.gui.getSelectedUnit() print(df.global.world.raws.creatures.all[unit.race].caste[unit.caste].fixed_temp)
 
 
-:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) and (unit.mood > -1) and (unit.mood < 7) then print(dfhack.TranslateName(unit.name,true).. " is a " ..df.global.world.raws.creatures.all[unit.race].creature_id.. "(" ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].caste_name[0]..") and their temp is " ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].fixed_temp.." Urist") end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then print(dfhack.TranslateName(unit.name,true).. " is a " ..df.global.world.raws.creatures.all[unit.race].creature_id.. "(" ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].caste_name[0]..") and their temp is " ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].fixed_temp.." Urist") end end end
 
 
-:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then print(dfhack.TranslateName(unit.name,true).." has the status " ..unit.enemy.enemy_status_slot) end end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then print(dfhack.TranslateName(unit.name,true)) end end end
+
+:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then print(dfhack.TranslateName(unit.name,true).. " is a " ..df.global.world.raws.creatures.all[unit.race].creature_id.. "(" ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].caste_name[0]..") and their temp is " ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].fixed_temp.." Urist") end end end
+
+:lua for _,unit in ipairs(df.global.world.units.active) do print(dfhack.TranslateName(unit.name,true).." is getting sent to the Thunderdome to WORK THEIR SHIT OUT.") unit.pos.x=136 unit.pos.y=97 unit.pos.z=99 end

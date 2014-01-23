@@ -1,4 +1,4 @@
--- This script will make any "old" dwarf 20 years old
+-- This script will make any "young" dwarf 20 years old
 -- usage is:  target a unit in DF, and execute this script in dfhack
 -- via ' lua /path/to/script '
 -- the target will be changed to 20 years old

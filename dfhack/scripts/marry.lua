@@ -33,7 +33,7 @@ function marry (unit_id1, unit_id2)
 		print('Warning: the second unit is already married.  Their marriage will be replaced.')
 	end
 
-	print("Marrying " .. victim1.name.nickname .. " and " .. victim2.name.nickname)
+	print("Marrying " .. dfhack.TranslateName(victim1.name,true) .. " and " .. dfhack.TranslateName(victim2.name,true))
 
 	for key, value in pairs(df.global.world.history.figures) do
 		if value.id == victim1.hist_figure_id then
@@ -57,10 +57,10 @@ function marry (unit_id1, unit_id2)
 	local new_link2 = df.histfig_hf_link_spousest:new()
 
 	-- Not documented, but this is the historical figure id
-	new_link1.anon_1 = victim2.hist_figure_id
+	new_link1.target_hf = victim2.hist_figure_id
 	new_link1.link_strength = 100
 
-	new_link2.anon_1 = victim1.hist_figure_id
+	new_link2.target_hf = victim1.hist_figure_id
 	new_link2.link_strength = 100
 
 	local link_count1 = #historic_victim1.histfig_links
