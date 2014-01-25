@@ -27,7 +27,7 @@ function civviesplosion ()
 					genes = v.appearance.genes:new()
 					v.relations.pregnancy_genes = genes;
 					v.relations.pregnancy_timer = 30;
-					if (v.relations.lover_id == 0) then
+					if (v.relations.lover_id == -1) and (v.relations.spouse_id == -1) then
 						v.relations.pregnancy_caste = 0;
 					else
 						v.relations.pregnancy_caste = 1;

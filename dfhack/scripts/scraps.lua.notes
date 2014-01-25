@@ -89,7 +89,7 @@
 :lua unit=dfhack.gui.getSelectedUnit() print(df.global.world.raws.creatures.all[unit.race].caste[unit.caste].fixed_temp)
 
 
-:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then print(dfhack.TranslateName(unit.name,true).. " is a " ..df.global.world.raws.creatures.all[unit.race].creature_id.. "(" ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].caste_name[0]..") and their temp is " ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].fixed_temp.." Urist") end end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then print(dfhack.TranslateName(unit.name,true).. " is a " ..df.global.world.raws.creatures.all[unit.race].creature_id.. "(" ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].caste_name[0]..") and their gender is ") if (df.global.world.raws.creatures.all[unit.race].caste[unit.caste].gender == 0) then print("Female [0]") elseif (df.global.world.raws.creatures.all[unit.race].caste[unit.caste].gender == 1) then print("Male [1]") else print("Other [cabbage]") end end end end
 
 
 :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then print(dfhack.TranslateName(unit.name,true)) end end end

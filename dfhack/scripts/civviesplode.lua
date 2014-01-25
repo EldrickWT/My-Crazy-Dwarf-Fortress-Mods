@@ -1,6 +1,4 @@
--- Civviesplode Lua Edition. On Map Members of the Target Species 'feel the touch of spring'. Does not work on Dead, Killed, Ghostly, Scuttled or units slated For trade
-
-local args = {...}
+-- Civviesplode Lua Edition. Target will 'feel the touch of spring'. Does not work on Dead, Killed, Ghostly, Scuttled or units slated For trade
 
 function civviesplode ()
 	local v = dfhack.gui.getSelectedUnit()
@@ -27,7 +25,7 @@ function civviesplode ()
 				genes = v.appearance.genes:new()
 				v.relations.pregnancy_genes = genes;
 				v.relations.pregnancy_timer = 30;
-				if (v.relations.lover_id == 0) then
+				if (v.relations.lover_id == -1) and (v.relations.spouse_id == -1) then
 					v.relations.pregnancy_caste = 0;
 				else
 					v.relations.pregnancy_caste = 1;

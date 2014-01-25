@@ -1,4 +1,4 @@
---By Telgin and Kurik Amudnil from the DFHACK r3 thread. And Eldrick Tobib with help from RPG Nostalgia
+--By Telgin and Kurik Amudnil from the DFHACK r3 thread (heal2). And Eldrick Tobib with help from RPG Nostalgia (cure4)
 function cure4()
 	for _,unit in pairs(df.global.world.units.active) do
 		unit.flags1.dead = false
@@ -10,4 +10,4 @@ function cure4()
 		end
 	end
 end
-cure4()
+dfhack.with_suspend(cure4)
