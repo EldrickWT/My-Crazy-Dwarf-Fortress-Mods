@@ -14,7 +14,7 @@
 :lua for _,unit in ipairs(df.global.world.raws.reactions.all) do print(unit.code) end
 :lua for _,unit in ipairs(df.global.world.raws.interactions) do print(unit.name) end
 
-:lua for _,unit in ipairs(df.global.world.units.active) do printall(v) end
+:lua for _,unit in ipairs(df.global.world.units.active) do printall(unit) end
 
 :lua for _,unit in ipairs(df.global.world.units.active) do if not (unit.civ_id == df.global.ui.civ_id) then print(df.global.world.raws.creatures.all[unit.race].creature_id) end end
 
@@ -59,6 +59,8 @@
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.pos.x=91 unit.pos.y=97 unit.pos.z=104
 
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.mood=7
+
+:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then unit.flags1.tame=true unit.training_level = 7 end end
 
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit)
 //child

@@ -12,6 +12,8 @@ for _,v in ipairs(df.global.world.units.active) do
             end
             print(namey.. " is all grown up!")
         end
+        v.flags1.tame=true
+        v.training_level = 7
         v.flags1.ridden=false 
         v.flags1.rider=false 
         v.flags1.on_ground=false 
