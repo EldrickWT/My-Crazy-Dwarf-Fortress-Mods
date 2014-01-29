@@ -1,4 +1,8 @@
--- Turns babies and children into adults, and assigns all labors to everyone in the fortress -also checks for messed up labors.
+-- Turns babies and children into adults, and assigns all labors to everyone in the fortress -also checks for messed up labors, and taming.
+debug = false
+for _,arg in ipairs({...}) do
+	if string.lower(arg) == "debug" then debug = true	end
+end
 for _,v in ipairs(df.global.world.units.active) do
     if v.civ_id == df.global.ui.civ_id then
         if (v.profession >= 103) or (v.profession2 >= 103) then
@@ -12,8 +16,36 @@ for _,v in ipairs(df.global.world.units.active) do
             end
             print(namey.. " is all grown up!")
         end
-        v.flags1.tame=true
-        v.training_level = 7
+        -- We don't check for POWER, should we? We also don't get nitty and gritty about the entity races.
+        -- Training_level 9 is "Semi-Wild" when the tame flag is true. df.global.ui.civ_id members are typically level 9
+        if (df.global.world.raws.creatures.all[v.race].creature_id == "DOWNTRODDEN")
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "FABULOUSA")
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "FOOCUBI")
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "KOLCHA")
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "MEWLI")
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "MESSIANIC_FLUFFBALL")
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "QUEEN_SUCCUBUS")
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "WRAITH") then
+            if (debug == true) then print("Untaming a " ..df.global.world.raws.creatures.all[v.race].creature_id) end
+            v.flags1.tame = false
+            v.training_level = 9
+        elseif (v.race == df.global.ui.race_id) then
+            if (debug == true) then print("Race match for a " ..df.global.world.raws.creatures.all[v.race].creature_id) end
+            v.flags1.tame = false
+            v.training_level = 9
+        elseif (df.global.world.raws.creatures.all[v.race].flags.CASTE_CAN_SPEAK == false) or (df.global.world.raws.creatures.all[v.race].flags.CASTE_CAN_LEARN == false) then
+            if (debug == true) then print("Impairment detected: " ..df.global.world.raws.creatures.all[v.race].creature_id) end
+            v.flags1.tame = true
+            v.training_level = 7
+        elseif not (v.race == df.global.ui.race_id) then
+            if (debug == true) then print("Race doesn't match for a " ..df.global.world.raws.creatures.all[v.race].creature_id) end
+            v.flags1.tame = true
+            v.training_level = 7
+        else --WTF?
+            if (debug == true) then print("No criteria for a " ..df.global.world.raws.creatures.all[v.race].creature_id.. ", so taming...") end
+            v.flags1.tame = false
+            v.training_level = 9
+        end
         v.flags1.ridden=false 
         v.flags1.rider=false 
         v.flags1.on_ground=false 

@@ -4,7 +4,7 @@ local args = ...
 
 function create_hist_fig(unit)
     if unit.flags1.important_historical_figure == true then
-        if args=="debug" then
+        if string.lower(args)=="debug" then
             print(dfhack.TranslateName(unit.name,true).." is already a historical figure.")
         end
         count = count - 1
@@ -90,7 +90,7 @@ function create_hist_fig(unit)
     df.global.ui.main.fortress_entity.nemesis:insert('#', new_nemesis_loc)
     df.global.world.entities.all[civ_index].nemesis_ids:insert('#', new_nemesis_id)
     df.global.world.entities.all[civ_index].nemesis:insert('#', new_nemesis_loc)
-    if args=="debug" then
+    if string.lower(args)=="debug" then
         print(dfhack.TranslateName(unit.name,true).." is now a historical figure.")
     end
 end
@@ -98,7 +98,7 @@ end
 count = 0
 for _,unit in pairs(df.global.world.units.active) do
     if (df.global.world.raws.creatures.all[unit.race].flags.CASTE_CAN_SPEAK) and (df.global.world.raws.creatures.all[unit.race].flags.CASTE_CAN_LEARN) and (unit.civ_id == df.global.ui.civ_id) then
-        if args=="debug" then print(dfhack.TranslateName(unit.name,true).." is being checked...") end
+        if string.lower(args)=="debug" then print(dfhack.TranslateName(unit.name,true).." is being checked...") end
         create_hist_fig(unit)
         count = count + 1
     end

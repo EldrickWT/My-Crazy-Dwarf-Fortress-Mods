@@ -84,7 +84,7 @@
 
 :lua for _,unit in ipairs(df.global.world.units.active) do if (df.global.world.raws.creatures.all[unit.race].flags.CASTE_CAN_SPEAK == true) then print(dfhack.TranslateName(unit.name,true)," is a ", df.global.world.raws.creatures.all[unit.race].creature_id) end end
 
-:lua for _,unit in ipairs(df.global.world.units.all) do if (df.global.world.raws.creatures.all[unit.race].flags.UNIQUE_DEMON == true) then print(_,unit.creature_id) end end
+:lua for _,unit in ipairs(df.global.world.units.all) do if (df.global.world.raws.creatures.all[unit.race].flags.CASTE_UNIQUE_DEMON == true) then print(_,unit.creature_id) end end
 
 :lua unit=dfhack.gui.getSelectedUnit() df.global.world.raws.creatures.all[unit.race].caste[unit.caste].fixed_temp=60001
 
@@ -98,4 +98,15 @@
 
 :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then print(dfhack.TranslateName(unit.name,true).. " is a " ..df.global.world.raws.creatures.all[unit.race].creature_id.. "(" ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].caste_name[0]..") and their temp is " ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].fixed_temp.." Urist") end end end
 
-:lua for _,unit in ipairs(df.global.world.units.active) do print(dfhack.TranslateName(unit.name,true).." is getting sent to the Thunderdome to WORK THEIR SHIT OUT.") unit.pos.x=136 unit.pos.y=97 unit.pos.z=99 end
+:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if (unit.race == df.global.ui.race_id) then print(dfhack.TranslateName(unit.name,true).." is getting sent to the Thunderdome to WORK THEIR SHIT OUT.") unit.pos.x=95 unit.pos.y=97 unit.pos.z=67 end
+
+
+:lua function find_entity(id) for ii = 0,#df.global.world.entities.all - 1 do if df.global.world.entities.all[ii].id == id then return ii end end return -1 end print(find_entity(df.global.ui.main.fortress_entity.entity_links[0].target))
+--aka df.global.ui.civ_id .... so why do people look it up the hard way? lack of docs?
+
+
+:lua for _,species in ipairs(df.global.world.raws.creatures.all) do for x,type in ipairs(species.caste) do if type.flags.DEMON==true then print(type.caste_name[0],..,species.creature_id,"are Demons") end end end
+:lua for _,species in ipairs(df.global.world.raws.creatures.all) do for x,type in ipairs(species.caste) do if species.flags.GENERATED==true then print(type.caste_name[0],"",species.creature_id,"was generated.") end end end
+
+//useless I know I know but still. BE HAPPY! >:-(
+:lua for _,unit in ipairs(df.global.world.units.all) do unit.status.happiness = 4000 end
