@@ -8,13 +8,23 @@ for _,v in ipairs(df.global.world.units.active) do
         if (v.profession >= 103) or (v.profession2 >= 103) then
             v.profession = 102
             v.profession2 = 102
-            v.relations.following = nil
+            if (v.flags1.diplomat == false)
+              and (v.flags1.merchant == false)
+              and (v.flags1.forest == false) then 
+                v.relations.following = nil
+            end
             if v.name.has_name == false then
                 namey = 'This one'
             else
                 namey = dfhack.TranslateName(v.name,true)
             end
             print(namey.. " is all grown up!")
+        end
+        --I could probably reuse it somehow... but I'm just gonna make a second "namey"... should probably check for nicknames... maybe later.
+        if v.name.has_name == false then
+            namey2 = 'without a name'
+        else
+            namey2 = 'named ' ..dfhack.TranslateName(v.name,true)
         end
         -- We don't check for POWER, should we? We also don't get nitty and gritty about the entity races.
         -- Training_level 9 is "Semi-Wild" when the tame flag is true. df.global.ui.civ_id members are typically level 9
@@ -26,23 +36,23 @@ for _,v in ipairs(df.global.world.units.active) do
           or (df.global.world.raws.creatures.all[v.race].creature_id == "MESSIANIC_FLUFFBALL")
           or (df.global.world.raws.creatures.all[v.race].creature_id == "QUEEN_SUCCUBUS")
           or (df.global.world.raws.creatures.all[v.race].creature_id == "WRAITH") then
-            if (debug == true) then print("Untaming a " ..df.global.world.raws.creatures.all[v.race].creature_id) end
+            if (debug == true) then print("Untaming a " ..df.global.world.raws.creatures.all[v.race].creature_id.. " " ..namey2) end
             v.flags1.tame = false
             v.training_level = 9
         elseif (v.race == df.global.ui.race_id) then
-            if (debug == true) then print("Race match for a " ..df.global.world.raws.creatures.all[v.race].creature_id) end
+            if (debug == true) then print("Race match for a " ..df.global.world.raws.creatures.all[v.race].creature_id.. " " ..namey2) end
             v.flags1.tame = false
             v.training_level = 9
         elseif (df.global.world.raws.creatures.all[v.race].flags.CASTE_CAN_SPEAK == false) or (df.global.world.raws.creatures.all[v.race].flags.CASTE_CAN_LEARN == false) then
-            if (debug == true) then print("Impairment detected: " ..df.global.world.raws.creatures.all[v.race].creature_id) end
+            if (debug == true) then print("Impairment detected: " ..df.global.world.raws.creatures.all[v.race].creature_id.. " " ..namey2) end
             v.flags1.tame = true
             v.training_level = 7
         elseif not (v.race == df.global.ui.race_id) then
-            if (debug == true) then print("Race doesn't match for a " ..df.global.world.raws.creatures.all[v.race].creature_id) end
+            if (debug == true) then print("Race doesn't match for a " ..df.global.world.raws.creatures.all[v.race].creature_id.. " " ..namey2) end
             v.flags1.tame = true
             v.training_level = 7
         else --WTF?
-            if (debug == true) then print("No criteria for a " ..df.global.world.raws.creatures.all[v.race].creature_id.. ", so taming...") end
+            if (debug == true) then print("No criteria for a " ..df.global.world.raws.creatures.all[v.race].creature_id.. " "..named..", so taming them.") end
             v.flags1.tame = false
             v.training_level = 9
         end
@@ -126,6 +136,7 @@ for _,v in ipairs(df.global.world.units.active) do
         v.status.labors.WAX_WORKING = true 
         v.status.labors.PUSH_HAUL_VEHICLE = true 
     end
+    --/Old/ code for checking for mysterious extra labors.
     if (v.civ_id == df.global.ui.civ_id) and not (v.status.labors[74] == false) then print(dfhack.TranslateName(v.name,true).." has a true value for status.labors.74") end
     if (v.civ_id == df.global.ui.civ_id) and not (v.status.labors[75] == false) then print(dfhack.TranslateName(v.name,true).." has a true value for status.labors.75") end
     if (v.civ_id == df.global.ui.civ_id) and not (v.status.labors[76] == false) then print(dfhack.TranslateName(v.name,true).." has a true value for status.labors.76") end

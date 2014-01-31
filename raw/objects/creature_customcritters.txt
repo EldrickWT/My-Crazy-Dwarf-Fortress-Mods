@@ -120,7 +120,7 @@ creature_customcritters
 
 [CREATURE:LESSER_KRAKEN]
 ***OCEAN***
-	[DESCRIPTION: A sub-species of Kraken that roams in groups across tidal zones in search of prey.]
+	[DESCRIPTION:A sub-species of Kraken that roams in groups across tidal zones in search of prey.]
 	[NAME:lesser kraken:lesser krakens:lesser kraken]
 	[CREATURE_TILE:'k']
 	[COLOR:4:0:3]
@@ -242,7 +242,7 @@ creature_customcritters
 
 [CREATURE:CAVE_KRAKEN]
 ***CAVE***
-	[DESCRIPTION: Lesser Krakens that have wandered into the caverns beneath the surface.]
+	[DESCRIPTION:Lesser Krakens that have wandered into the caverns beneath the surface.]
 	[NAME:cave kraken:cave krakens:cave kraken]
 	[CREATURE_TILE:'k']
 	[COLOR:7:0:0]
@@ -362,7 +362,7 @@ creature_customcritters
 
 [CREATURE:DEEP_KRAKEN]
 ***CAVE***
-	[DESCRIPTION: Demikrakens that prey upon creatures foolish enough to wander into their hunting grounds deep below the surface.]
+	[DESCRIPTION:Demikrakens that prey upon creatures foolish enough to wander into their hunting grounds deep below the surface.]
 	[NAME:deep kraken:deep krakens:deep kraken]
 	[CREATURE_TILE:'K']
 	[COLOR:7:0:0]
@@ -481,7 +481,7 @@ creature_customcritters
 
 [CREATURE:DEMIKRAKEN]
 ***OCEAN***
-	[DESCRIPTION: A huge squid that hunts for prey near the shoreline. It pins its victims down with powerful tentacles before ripping them apart with sharp hooks.]
+	[DESCRIPTION:A huge squid that hunts for prey near the shoreline. It pins its victims down with powerful tentacles before ripping them apart with sharp hooks.]
 	[NAME:demikraken:demikrakens:demikraken]
 	[CREATURE_TILE:'K']
 	[COLOR:4:0:3]
@@ -605,7 +605,7 @@ creature_customcritters
 [CREATURE:KRAKEN]
 ***MEGABEAST***
 	[NAME:kraken:krakens:kraken]
-	[DESCRIPTION: Massive, horrific sea monsters that devour everything they see.]
+	[DESCRIPTION:Massive, horrific sea monsters that devour everything they see.]
 	[CREATURE_TILE:'K']
 	[COLOR:5:0:1]
 	[PETVALUE:10000]
@@ -1994,7 +1994,7 @@ creature_customcritters
 
 [CREATURE:SIREN]
 ***OCEAN***
-	[DESCRIPTION: Evil ocean maidens that torture their prey with horrifying screams.]
+	[DESCRIPTION:Evil ocean maidens that torture their prey with horrifying screams.]
 	[NAME:siren:siren:siren]
 	[CASTE_NAME:siren:siren:siren]
 	[CREATURE_TILE:'S']
@@ -2227,7 +2227,7 @@ creature_customcritters
 
 [CREATURE:OBSIDIAN_SIREN]
 ***MAGMA***
-	[DESCRIPTION: Siren made out of obsidian stone found in the magma sea.]
+	[DESCRIPTION:Siren made out of obsidian stone found in the magma sea.]
 	[NAME:obsidian siren:obsidian siren:obsidian siren]
 	[CASTE_NAME:obsidian siren:obsidian siren:obsidian siren]
 	[CREATURE_TILE:'S']
@@ -2644,7 +2644,7 @@ creature_customcritters
 
 [CREATURE:UMBRA_MANTIS]
 ***CAVE***
-	[DESCRIPTION: Giant mantises living in the caverns. Their abdomens are swollen with a sweet juice produced by their consumption of plump helmets.]
+	[DESCRIPTION:Giant mantises living in the caverns. Their abdomens are swollen with a sweet juice produced by their consumption of plump helmets.]
 	[NAME:umbra mantis:umbra mantises:umbra mantis]
 	[CASTE_NAME:umbra mantis:umbra mantises:umbra mantis]
 	[CREATURE_TILE:'M']
@@ -4084,7 +4084,7 @@ creature_customcritters
 
 [CREATURE:BLOODCLOT_SHAMBLER]
 ***CAVE***
-	[DESCRIPTION: A hideous humanoid creature that is made out of clotted blood. It seeks to consume and corrupt other liquids or the creatures that hold them.]
+	[DESCRIPTION:A hideous humanoid creature that is made out of clotted blood. It seeks to consume and corrupt other liquids or the creatures that hold them.]
 	[NAME:blood clot shambler:blood clot shamblers:blood clot shambler]
 	[CASTE_NAME:blood clot shambler:blood clot shamblers:blood clot shambler]
 	[EVIL]
@@ -4405,7 +4405,7 @@ creature_customcritters
 
 [CREATURE:GRAVEL_SNAPPER]
 ***BADLAND***
-	[DESCRIPTION: A large reptile with rough, rock-solid scales. It prowls through deserts and wastelands in search of prey.]
+	[DESCRIPTION:A large reptile with rough, rock-solid scales. It prowls through deserts and wastelands in search of prey.]
 	[NAME:gravel snapper:gravel snappers:gravel snapper]
 	[CASTE_NAME:gravel snapper:gravel snappers:gravel snapper]
 	[CHILD:1]
@@ -4499,7 +4499,7 @@ creature_customcritters
 
 [CREATURE:BEAVER_RIVER]
 ***RIVER***
-	[DESCRIPTION: A large, semi-aquatic rodent known for the dams and lodges they build in rivers.]
+	[DESCRIPTION:A large, semi-aquatic rodent known for the dams and lodges they build in rivers.]
 	[NAME:river beaver:river beavers:river beaver]
 	[CASTE_NAME:river beaver:river beavers:river beaver]
 	[CREATURE_TILE:'b']
@@ -4663,7 +4663,7 @@ creature_customcritters
 
 [CREATURE:CAVE_BEAVER]
 ***CAVE***
-	[DESCRIPTION: Beavers that live in the caverns beneath the surface. They use underground trees and large mushrooms to build lodges in subterranean pools.]
+	[DESCRIPTION:Beavers that live in the caverns beneath the surface. They use underground trees and large mushrooms to build lodges in subterranean pools.]
 	[NAME:cave beaver:cave beavers:cave beaver]
 	[CASTE_NAME:cave beaver:cave beavers:cave beaver]
 	[CREATURE_TILE:'b']

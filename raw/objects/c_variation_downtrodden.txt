@@ -76,4 +76,5 @@ c_variation_downtrodden
 	[CV_ADD_TAG:SPEED:500]
 	[CV_ADD_TAG:TRANCES]
 	[CV_ADD_TAG:TRAPAVOID]
+	[CV_ADD_TAG:PREFSTRING:for surviving failing their gods without a curse like therianthropy or mummification...]
 

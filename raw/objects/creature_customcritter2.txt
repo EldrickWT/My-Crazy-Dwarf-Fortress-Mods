@@ -3,7 +3,7 @@ creature_customcritter2
 [OBJECT:CREATURE]
 
 [CREATURE:FLUX_SIREN]
-	[DESCRIPTION: Corrupted Siren that dwell inside the deep caverns. Their voices constantly change, inflicting different types of pain upon their victims.]
+	[DESCRIPTION:Corrupted Siren that dwell inside the deep caverns. Their voices constantly change, inflicting different types of pain upon their victims.]
 	[NAME:flux siren:flux siren:flux siren]
 	[CASTE_NAME:flux siren:flux siren:flux siren]
 	[CREATURE_TILE:'S'][COLOR:1:0:0]

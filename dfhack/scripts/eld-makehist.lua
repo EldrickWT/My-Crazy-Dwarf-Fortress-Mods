@@ -1,7 +1,7 @@
 --create missing historical figure and nemesis entries for everything with a working brain. 'eld-makehist debug' for verbosity
 
 local args = ...
-
+if args == nil then args = "false" end
 function create_hist_fig(unit)
     if unit.flags1.important_historical_figure == true then
         if string.lower(args)=="debug" then
