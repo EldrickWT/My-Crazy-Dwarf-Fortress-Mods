@@ -278,7 +278,7 @@ local PLURAL = 1
 local PRONOUNS = {
 	[0]='She',
 	[1]='He',
-	[2]='It',
+	[2]='They',
 }
 local BABY = 0
 local CHILD = 1
@@ -377,7 +377,7 @@ function Identity:init(args)
 	self.name = dfhack.TranslateName( dfhack.units.getVisibleName(u) )
 	self.name_en = dfhack.TranslateName( dfhack.units.getVisibleName(u) , true)
 	self.raw_prof = dfhack.units.getProfessionName(u)
-	self.pronoun = PRONOUNS[u.sex] or 'It'
+	self.pronoun = PRONOUNS[u.sex] or 'They'
 
 	if self.ident then
 		self.birth_date = Time{year = self.ident.birth_year, ticks = self.ident.birth_second}
