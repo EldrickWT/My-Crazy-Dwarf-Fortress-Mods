@@ -1,4 +1,5 @@
--- Turns babies and children into adults, and assigns all labors to everyone in the fortress -also checks for messed up labors, and taming.
+--Turns babies and children into adults, and assigns all labors to everyone in the fortress -also checks for messed up labors, and taming.
+--I know it doesn't look it but I am trying to not just tabulate every single creature in the objects directory. Really I swear.
 debug = false
 for _,arg in ipairs({...}) do
 	if string.lower(arg) == "debug" then debug = true	end
@@ -9,9 +10,12 @@ for _,v in ipairs(df.global.world.units.active) do
             v.profession = 102
             v.profession2 = 102
             if (v.flags1.diplomat == false)
-              and (v.flags1.merchant == false)
-              and (v.flags1.forest == false) then 
+              or (v.flags1.merchant == false)
+              or (v.flags1.forest == false) then
                 v.relations.following = nil
+                v.flags1.ridden=false
+                v.flags1.rider=false
+                v.relations.rider_mount_id=-1
             end
             if v.name.has_name == false then
                 namey = 'This one'
@@ -27,7 +31,7 @@ for _,v in ipairs(df.global.world.units.active) do
             namey2 = 'named ' ..dfhack.TranslateName(v.name,true)
         end
         -- We don't check for POWER, should we? We also don't get nitty and gritty about the entity races.
-        -- Training_level 9 is "Semi-Wild" when the tame flag is true. df.global.ui.civ_id members are typically level 9
+        -- Training_level 9 is -SOME KIND OF NORMAL- when the tame flag is false. df.global.ui.civ_id members are typically level 9
         if (df.global.world.raws.creatures.all[v.race].creature_id == "DOWNTRODDEN")
           or (df.global.world.raws.creatures.all[v.race].creature_id == "FABULOUSA")
           or (df.global.world.raws.creatures.all[v.race].creature_id == "FOOCUBI")
@@ -35,6 +39,7 @@ for _,v in ipairs(df.global.world.units.active) do
           or (df.global.world.raws.creatures.all[v.race].creature_id == "MEWLI")
           or (df.global.world.raws.creatures.all[v.race].creature_id == "MESSIANIC_FLUFFBALL")
           or (df.global.world.raws.creatures.all[v.race].creature_id == "QUEEN_SUCCUBUS")
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "TROLL")
           or (df.global.world.raws.creatures.all[v.race].creature_id == "WRAITH") then
             if (debug == true) then print("Untaming a " ..df.global.world.raws.creatures.all[v.race].creature_id.. " " ..namey2) end
             v.flags1.tame = false
@@ -47,6 +52,32 @@ for _,v in ipairs(df.global.world.units.active) do
             if (debug == true) then print("Impairment detected: " ..df.global.world.raws.creatures.all[v.race].creature_id.. " " ..namey2) end
             v.flags1.tame = true
             v.training_level = 7
+        --Need to spell out the higher order/entity races in case of "tweak makeown" and "mercenaries". Animalmen'll still be boned but they kinda should be. At current anyway.
+        --In either event, we're talking about CIV members already anyway. Aaand we already covered "pets" so now Mercenaries.
+        --Could potentially be cleaned up to pull from the master entity list or the entity raws ... but this should be quick at least.
+        elseif (df.global.world.raws.creatures.all[v.race].creature_id == "ANGEL") --ANGEL_CIV
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "SEPUTUS") --CULTIST
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "DWARF") --MOUNTAIN
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "ELF") --FOREST
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "HUMAN") --PLAINS
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "GOBLIN") --EVIL
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "KOBOLD") --SKULKING...
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "FABULOUSA") --FABULOUSA
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "FALLEN") --FALLEN
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "KAPA") --KAPA...
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "KOLCHA") --KOLCHA
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "LOLI") --LOLI_CIV
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "MEWLI") --MEWLI
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "MLA") --MLA_CIV
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "PEDO") --PEDO ... 
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "FOOCUBI") --W_FOOCUBI_CIV
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "WRAITH") --WRAITH
+          or (df.global.world.raws.creatures.all[v.race].creature_id == "YIFFIAN") then --YIFFIAN_CIV
+            if (debug == true) then print("Mercenary " ..df.global.world.raws.creatures.all[v.race].creature_id.. " " ..namey2) end
+            v.flags1.tame = false
+            v.training_level = 9
+        --Spot open for Semi-megabeasts here...
+        --Spot open for Megabeasts here...
         elseif not (v.race == df.global.ui.race_id) then
             if (debug == true) then print("Race doesn't match for a " ..df.global.world.raws.creatures.all[v.race].creature_id.. " " ..namey2) end
             v.flags1.tame = true
@@ -56,10 +87,7 @@ for _,v in ipairs(df.global.world.units.active) do
             v.flags1.tame = false
             v.training_level = 9
         end
-        v.flags1.ridden=false 
-        v.flags1.rider=false 
         v.flags1.on_ground=false 
-        v.relations.rider_mount_id=-1 
         if v.mood==8 then
             v.mood=-1
         end
