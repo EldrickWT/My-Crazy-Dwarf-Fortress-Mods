@@ -30,3 +30,4 @@ rb_eval tile = df.map_tile_at(x, y, z) ; burrow = tile.mapblock.block_burrows.fi
 
 
 rb_eval df.world.items.all.each { |it| it.flags.dump = true }
+rb_eval df.world.items.all.each { |it| it.flags.trader = false }
