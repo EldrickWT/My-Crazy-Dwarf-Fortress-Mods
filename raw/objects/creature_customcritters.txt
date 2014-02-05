@@ -3231,7 +3231,7 @@ creature_customcritters
 
 [CREATURE:SERPURO]
 ***BADLAND***
-	[DESCRIPTION:A large hoofed desert lizard with limp wings hanging from its sides. It tends to keep to itself, but can crush enemies and beathe fire when provoked.]
+	[DESCRIPTION:A large hoofed desert lizard with limp wings hanging from its sides. It tends to keep to itself, but can crush enemies and breathe fire when provoked.]
 	[NAME:serpuro:serpuros:serpuro]
 	[CASTE_NAME:serpuro:serpuros:serpuro]
 	[CREATURE_TILE:'S']

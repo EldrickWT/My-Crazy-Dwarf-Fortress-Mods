@@ -116,3 +116,6 @@
 :lua for _,unit in ipairs(df.global.world.units.active) do if not (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then print(dfhack.TranslateName(unit.name,true)) end end end
 :lua for _,unit in ipairs(df.global.world.units.active) do if not (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then if (unit.flags1.hidden_in_ambush==true) or (unit.flags1.hidden_ambusher==true) then print(dfhack.TranslateName(unit.name,true).. " is a " ..df.global.world.raws.creatures.all[unit.race].creature_id.. "(" ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].caste_name[0]..") and their temp is " ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].fixed_temp.." Urist") end end end end
 :lua for _,unit in ipairs(df.global.world.units.active) do if unit.flags3.scuttle==true then unit.animal.vanish_countdown=2 end end
+:lua for _,unit in ipairs(df.global.world.units.active) do unit.flags1.on_ground=false end
+
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(df.global.world.history.figures[unit.hist_figure_id])
