@@ -5,18 +5,21 @@ http://www.bay12forums.com/smf/index.php?topic=89174.0
 
 Wiki for the Mods:
 N/A
-A Playable Pregenned Region Download:
+A Playable Pregenned Region Download (34.11):
 http://dffd.wimbli.com/file.php?id=8353 34.11 r4
+Download (40.0X) -in the works.
 
 
 Structure:
 
-data - the colors, inits, worldgen, speeches, and my modded fortressintro
-dfhack - a backup of my dfhack plugin source files, AND the scripts folder. Now then not all is mine in there... some
-    is straight off the forums. Most everything should work.
+.X The version it SHOULD work for. 31.25 content is still spelled out for cautionary reasons.
+
+data.X - the colors, inits, worldgen, speeches, and my modded fortressintro
+dfhack.X - a backup of my dfhack plugin source files, AND the scripts folder. Now then not all is mine in there... some
+    are straight off the forums. Most everything should work.
 Holding Pen - If something is being worked on an original -likely broken- will be here.
-raw-notes - all the (notes, addendums, apocrypha, and some experiments) for my mod(s) a few newly updated for 0.34.11
+raw-notes.X - all the (notes, addendums, apocrypha, and some experiments) for my mod(s)
 raw-notes.31.25 - the above for 31.25... or at least the contents of the zips that should have been the 31.25 data ^^;
-raw - a big merge of all my mods and all other mods I've added to My Little Arachnids and or Aspectus Lolin. 0.34.11
-split out mods - all my mods in individual packages. 0.34.11
+raw.X - a big merge of all my mods and all other mods I've added to My Little Arachnids and or Aspectus Lolin.
+split out mods.X - all my mods in individual packages.
 split out mods - 31.25 - the contents of the 31.25 zips ...

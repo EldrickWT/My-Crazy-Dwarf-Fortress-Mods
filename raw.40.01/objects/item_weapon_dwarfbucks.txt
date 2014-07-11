@@ -1,0 +1,11 @@
+item_weapon_dwarfbucks
+
+[OBJECT:ITEM]
+	[ITEM_WEAPON:ITEM_WEAPON_DWARFBUCKS]
+	[NAME:stack of dwarfbucks:stacks of dwarfbucks]
+	[SIZE:200]
+	[SKILL:HAMMER]
+	[MINIMUM_SIZE:5000]
+	[MATERIAL_SIZE:1]
+	[ATTACK:BLUNT:200:500:slap:slaps:bills:3000]
+	[ATTACK_PREPARE_AND_RECOVER:4:4]

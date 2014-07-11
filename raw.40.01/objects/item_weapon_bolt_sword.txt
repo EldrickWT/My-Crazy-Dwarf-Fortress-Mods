@@ -1,0 +1,18 @@
+item_weapon_bolt_sword
+
+[OBJECT:ITEM]
+	[ITEM_WEAPON:ITEM_WEAPON_BOLT_SWORD]
+	[NAME:bolt-sword:bolt-swords]
+	[SIZE:400]
+	[SKILL:SWORD]
+	[RANGED:CROSSBOW:BOLT] Finally fixed this! Argh! SWORD has no ranged accuracy component -.-;
+	[SHOOT_FORCE:10000]
+	[SHOOT_MAXVEL:10000]
+	[TWO_HANDED:37500]
+	[MINIMUM_SIZE:32500]
+	[MATERIAL_SIZE:3]
+	[ATTACK:EDGE:20000:4000:slash:slashes:NO_SUB:1250]
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
+	[ATTACK:EDGE:50:2000:stab:stabs:NO_SUB:1000]
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
+
