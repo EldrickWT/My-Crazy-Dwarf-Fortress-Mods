@@ -12,7 +12,8 @@ Download (40.0X) -in the works.
 
 Structure:
 
-.X The version it SHOULD work for. 31.25 content is still spelled out for cautionary reasons.
+.X The version it SHOULD work for. 31.25 content is still spelled out for cautionary reasons. 40.01 dirs will
+be gone soon. Paranoia Sucks.
 
 data.X - the colors, inits, worldgen, speeches, and my modded fortressintro
 dfhack.X - a backup of my dfhack plugin source files, AND the scripts folder. Now then not all is mine in there... some
