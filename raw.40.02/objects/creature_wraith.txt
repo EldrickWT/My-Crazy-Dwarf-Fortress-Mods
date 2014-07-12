@@ -16,7 +16,7 @@ creature_wraith
 	[COMMON_DOMESTIC] Buy more civilians (when playing Wraith)
 	[PACK_ANIMAL] Keep before the embark screen fine... REMOVE BEFORE ACTUAL PLAY... makes them unable to empty their own inventory.
 	[TRADE_CAPACITY:1000] Keep before the embark screen fine... REMOVE BEFORE ACTUAL PLAY
-	[APPLY_CREATURE_VARIATION:PET_CIV]
+	APPLY_CREATURE_VARIATION:PET_CIV
 	[APPLY_CURRENT_CREATURE_VARIATION]
 	[BIOME:ALL_MAIN]
 	[FREQUENCY:100]

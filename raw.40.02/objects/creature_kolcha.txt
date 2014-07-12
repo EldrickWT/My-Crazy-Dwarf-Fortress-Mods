@@ -12,7 +12,7 @@ creature_kolcha
 	[COMMON_DOMESTIC]
 	[PETVALUE:50] As they'd come equipped... the right price would have to be worked out... IF they could come in armor.
 	[TRAINABLE]
-	[APPLY_CREATURE_VARIATION:PET_CIV]
+	APPLY_CREATURE_VARIATION:PET_CIV
 	[APPLY_CURRENT_CREATURE_VARIATION]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:2:3]
