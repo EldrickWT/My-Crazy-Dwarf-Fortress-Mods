@@ -7,13 +7,15 @@ Wiki for the Mods:
 N/A
 A Playable Pregenned Region Download (34.11):
 http://dffd.wimbli.com/file.php?id=8353 34.11 r4
-Download (40.0X) -in the works.
+Download (40.0X) -in the works... to think I /almost/ loaded a crashable save (40.02)
 
 
 Structure:
 
 .X The version it SHOULD work for. 31.25 content is still spelled out for cautionary reasons. 40.01 dirs will
 be gone soon. Paranoia Sucks.
+
+40.03 is the most current.
 
 data.X - the colors, inits, worldgen, speeches, and my modded fortressintro
 dfhack.X - a backup of my dfhack plugin source files, AND the scripts folder. Now then not all is mine in there... some

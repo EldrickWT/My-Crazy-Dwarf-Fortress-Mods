@@ -73,7 +73,7 @@
 :lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then v.status.labors.GLAZING = true end end
 :lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then v.status.labors.PRESSING = true end end
 :lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then v.status.labors.WAX_WORKING = true end end
-:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then v.status.labors.PUSH_HAUL_VEHICLE = true end end
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then v.status.labors.HANDLE_VEHICLES = true end end
 :lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) and not (v.status.labors[74] == false) then print(dfhack.TranslateName(v.name,true).." has a true value for status.labors.74") end end
 :lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) and not (v.status.labors[75] == false) then print(dfhack.TranslateName(v.name,true).." has a true value for status.labors.75") end end
 :lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) and not (v.status.labors[76] == false) then print(dfhack.TranslateName(v.name,true).." has a true value for status.labors.76") end end
