@@ -770,7 +770,7 @@ Horseshoe crabs were sponsored by the generous contributions of the Bay 12 commu
 	[GO_TO_TAG:BODY]
 	[CV_REMOVE_TAG:BODY]
 	[APPLY_CURRENT_CREATURE_VARIATION]
-	[BODY:HUMANOID_NECK:HEART:BRAIN:TAIL]
+	[BODY:HUMANOID:HEART:BRAIN:TAIL]
 	[GO_TO_END]
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:horseshoe crab man:horseshoe crab men:horseshoe crab man]

@@ -25,4 +25,3 @@ creature_equipment
 	[MUNDANE]
 	[ODOR_LEVEL:0]
 
-
