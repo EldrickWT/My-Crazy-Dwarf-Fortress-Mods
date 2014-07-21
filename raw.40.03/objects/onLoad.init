@@ -29,5 +29,7 @@ enable manipulator
 enable search
 enable automaterial
 stockflow enable
-:lua dfhack.onStateChange.onLoadBloodDel = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -time 1 -timeUnits months -command fix/blood-del') end end
-:lua dfhack.onStateChange.onLoadGrowthBug = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -time 1 -timeUnits months -command fix/growth-bug') end end
+:lua dfhack.onStateChange.onLoadBloodDel = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -name blooddeljorb -time 1 -timeUnits months -command fix/blood-del') end end
+:lua dfhack.onStateChange.onLoadGrowthBug = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -name growthbugjorb -time 1 -timeUnits months -command fix/growth-bug') end end
+:lua dfhack.onStateChange.onLoadConscript = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -name conscriptjorb -time 1 -timeUnits months -command conscript') end end
+:lua dfhack.onStateChange.onLoadRegrass = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -name regrassjorb -time 1 -timeUnits months -command regrass') end end
