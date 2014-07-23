@@ -13,8 +13,10 @@ creature_foocubi
 	[PETVALUE:50]
 	[TRAINABLE]
 	ADOPTS_OWNER Problematic with Merchants and Diplomats and and and. Beware civilians who like Foocubi with this turned on. Because when it is on and working... DenMothers/Fathers with whole... scout troops following them everywhere. Newborns ditching their mother for the DenMother.
+
 	APPLY_CREATURE_VARIATION:PET_CIV
 	[APPLY_CURRENT_CREATURE_VARIATION]
+
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:2:3]
 	[FREQUENCY:10]

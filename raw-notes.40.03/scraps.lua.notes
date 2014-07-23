@@ -5,6 +5,8 @@
 :lua dfhack.gui.getSelectedUnit().civ_id = df.global.ui.civ_id
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true))
 
+:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.flags1.forest==true or unit.flags1.diplomat==true or unit.flags1.merchant==true) then unit.flags1.left = true end end
+
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true).." will be butchered.") unit.flags2.slaughter=true
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true).." is disarmed.") unit.flags1.suppress_wield=true
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true).." is ready for battle.") unit.profession=99 unit.profession2=102
@@ -46,7 +48,7 @@
 :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if (unit.status.labors.HAUL_ITEM==false) then unit.status.labors.HAUL_ITEM=true end end end
 :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if (unit.status.labors.HAUL_FURNITURE==false) then unit.status.labors.HAUL_FURNITURE=true end end end
 :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if (unit.status.labors.HAUL_ANIMAL==false) then unit.status.labors.HAUL_ANIMAL=true end end end
-:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if (unit.status.labors.PUSH_HAUL_VEHICLE==false) then unit.status.labors.PUSH_HAUL_VEHICLE=true end end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if (unit.status.labors.HANDLE_VEHICLES==false) then unit.status.labors.HANDLE_VEHICLES=true end end end
 :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if (unit.status.labors.CLEAN==false) then unit.status.labors.CLEAN=true end end end
 
 
@@ -56,7 +58,7 @@
 
 :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) and not (unit.flags1.dead) and (unit.mood > -1) and (unit.mood < 7) then print(dfhack.TranslateName(unit.name,true).." is nuts.. and worthless trash *elitist snort*... but tasty.") unit.flags2.slaughter=true end end
 
-:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.pos.x=143 unit.pos.y=134 unit.pos.z=115 (143, 134, 115)
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.pos.x=146 unit.pos.y=100 unit.pos.z=124 (143, 134, 115)
 
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.mood=7
 
@@ -108,10 +110,6 @@
 :lua for _,species in ipairs(df.global.world.raws.creatures.all) do for x,type in ipairs(species.caste) do if type.flags.DEMON==true then print(type.caste_name[0],..,species.creature_id,"are Demons") end end end
 :lua for _,species in ipairs(df.global.world.raws.creatures.all) do for x,type in ipairs(species.caste) do if species.flags.GENERATED==true then print(type.caste_name[0],"",species.creature_id,"was generated.") end end end
 
-//useless I know I know but still. BE HAPPY! >:-(
-:lua for _,unit in ipairs(df.global.world.units.all) do unit.status.happiness = 4000 end
-
-
 
 :lua for _,unit in ipairs(df.global.world.units.active) do if not (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then print(dfhack.TranslateName(unit.name,true)) end end end
 :lua for _,unit in ipairs(df.global.world.units.active) do if not (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then if (unit.flags1.hidden_in_ambush==true) or (unit.flags1.hidden_ambusher==true) then print(dfhack.TranslateName(unit.name,true).. " is a " ..df.global.world.raws.creatures.all[unit.race].creature_id.. "(" ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].caste_name[0]..") and their temp is " ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].fixed_temp.." Urist") end end end end
@@ -122,8 +120,20 @@
 
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.status.labors) unit.status.labors.MINE = true
 
+#useless I know I know but still. BE HAPPY! >:-(
+:lua for _,unit in ipairs(df.global.world.units.active) do unit.status.happiness = 4000 end
 :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then unit.flags3.emotionally_overloaded = FALSE end end end
 
 
 #This looks messy :D
 :lua ~df.global.world.raws.creatures.all[df.global.world.entities.all[df.global.ui.civ_id].race].creature_id
+
+:lua for _,unit in ipairs(df.global.world.units.active) do if unit.flags1.merchant==true then unit.flags1.left=true end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if unit.flags1.forest==true then unit.flags1.left=true end end
+
+:lua for _,unit in ipairs(df.global.world.units.active) do unit.flags1.on_ground=false end
+
+#The weird things I've done before I found this gem ;;;>.>
+:lua ~df.global.cursor
+#Use that then this. replace the 68,92,119 with new x/y/z
+:lua item=dfhack.gui.getSelectedItem() dfhack.items.moveToGround(item,{x=68,y=92,z=119})
