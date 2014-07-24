@@ -1,0 +1,42 @@
+rb_eval def DFHack.onupdate ; DFHack.creatures.each { |c| DFHack.memwrite(c.memaddr+0x460, "\0\0") if c.race == 241 and c.alive? } end
+rb_eval df.world.units.all.find_all { |u| u.refs.find { |r| r.kind_of? GeneralRefContainedInItemst } }.each { |u| u.inventory.each { |i| i.item.flags.dump = true } }
+rb_eval p df.world.buildings.all[0].getType
+rb_eval p df.ui.main
+rb_eval p DFHack.get_global_address('world').to_s(16)
+rb_eval df.world.items.all.each { |it| it.flags.dump = true if it.respond_to?(:quality) and it.quality != :Masterful }
+rb_eval p df.world.history.figures.find_all { |f| f.entity_links.find { |l| l.kind_of?(DFHack::HistfigEntityLinkPositionst) and e = l.entity_tg and pa = e.positions.assignments.binsearch(l.assignment_id) and pos = e.positions.own.binsearch(pa.position_id) and pos.code =~ /monarch/i } }.map { |u| u.name.to_s }
+rb_eval p df.memory_patch(0x8a07057, [10].pack('C'))
+//Would allow UNIQUE_DEMON to work... if this was remotely current... and I knew how to write a memory_patch line.
+4B35CB: 4C 01 -> 00 00
+
+rb_eval p DFHack::Tiletype::NUME.keys
+rb_eval puts 'foo and bar', 'bar', 'baz'
+rb_eval df.world.items.other[:SEED].each { |i| i.flags.dump = true if i.flags.caged }
+rb_eval df.world.items.all.find { |i| i.refs.grep(DFHack::GeneralRefUnitItemownerst).find { |r| r.anon_1 > 1 } }
+rb_eval File.open('raws.txt', 'w') { |fd| fd.puts df.world.raws.creatures.all[-1].raws.to_a }
+rb_eval df.world.items.all.each { |it| it.flags.forbid = false }
+rb_eval df.gps.display_frames = 1
+rb_eval df.item_find.mat_type += 200 ; df.item_find.mat_index = BLA
+
+
+
+rb_eval unit=df.unit_find(:selected); p (unit)
+rb_eval df.world.items.all.each { |it| it.flags.forbid = false }
+rb_eval df.world.items.all.each { |it| it.flags.dump = false }
+rb_eval df.world.items.all.each { |it| it.flags.hidden = false }
+
+rb_eval p df.ui.main
+
+rb_eval df.world.units.active { |it| it.flags1.hidden_in_ambush = false; it.flags1.hidden_ambusher = false}
+
+rb_eval tile = df.map_tile_at(x, y, z) ; burrow = tile.mapblock.block_burrows.find { |bb| bb.tile_bitmask.bits[tile.dy][tile.dx] > 0 } ; if burrow ; puts "In burrow #{burrow.id}" ; end
+
+
+rb_eval df.world.items.all.each { |it| it.flags.dump = true }
+rb_eval df.world.items.all.each { |it| it.flags.trader = false }
+
+
+//really close to happy... but I hardly understand ruby... or file output frankly. just line 13 only outputs one critter
+rb_eval File.open('raws.txt', 'w') {df.world.raws.creatures.all.each { |fd| fd.puts fd.raws.to_a }}
+
+rb_eval item=df.item_find(:selected); p (item)
