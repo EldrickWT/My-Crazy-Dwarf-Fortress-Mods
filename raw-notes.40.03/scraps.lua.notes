@@ -11,10 +11,10 @@
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true).." is disarmed.") unit.flags1.suppress_wield=true
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true).." is ready for battle.") unit.profession=99 unit.profession2=102
 
-:lua for _,unit in ipairs(df.global.world.raws.buildings.all) do print(unit.code) end
-:lua for _,unit in ipairs(df.global.world.raws.itemdefs.all) do print(unit.code) end
-:lua for _,unit in ipairs(df.global.world.raws.reactions.all) do print(unit.code) end
-:lua for _,unit in ipairs(df.global.world.raws.interactions) do print(unit.name) end
+:lua for _,buildings in ipairs(df.global.world.raws.buildings.all) do print(buildings.code) end
+:lua for _,itemdefs in ipairs(df.global.world.raws.itemdefs.all) do print(itemdefs.code) end
+:lua for _,reactions in ipairs(df.global.world.raws.reactions.all) do print(reactions.code) end
+:lua for _,interactions in ipairs(df.global.world.raws.interactions) do print(interactions.name) end
 
 :lua for _,unit in ipairs(df.global.world.units.active) do printall(unit) end
 
@@ -23,11 +23,12 @@
 //fix/dead-units
 :lua for _,unit in ipairs(df.global.world.units.active) do if not (unit.civ_id == df.global.ui.civ_id) then starter=("Creature: "..df.global.world.raws.creatures.all[unit.race].creature_id.." ENTITY Race: ") if not (unit.civ_id == -1) then ender=(df.global.world.entities.all[unit.civ_id].entity_raw.code.. " ENTITY Civilization Name: " ..dfhack.TranslateName(df.global.world.entities.all[unit.civ_id].name,true)) else ender=("Wild Population") end print(starter,ender) end end
 
+:lua item=dfhack.gui.getSelectedItem() printall(item)
 :lua item=dfhack.gui.getSelectedItem() print(dfhack.matinfo.decode(item.mat_type, item.mat_index))
 :lua item=dfhack.gui.getSelectedItem() print(dfhack.matinfo.getToken(item))
 
-:lua for _,unit in ipairs(df.global.world.entities.all) do if not (unit.type > 0) then print(unit.entity_raw.code.. " is the pure ENTITY for "..dfhack.TranslateName(unit.name,true), unit.id) end end
-:lua for _,unit in ipairs(df.global.world.entities.all) do if not (unit.type > 0) then if (unit.entity_raw.code == "KAPA") then print(dfhack.TranslateName(unit.name,true)) end end end
+:lua for _,entity in ipairs(df.global.world.entities.all) do if not (entity.type > 0) then print(entity.entity_raw.code.. " is the pure ENTITY for "..dfhack.TranslateName(entity.name,true), entity.id) end end
+:lua for _,entity in ipairs(df.global.world.entities.all) do if not (entity.type > 0) then if (entity.entity_raw.code == "KAPA") then print(dfhack.TranslateName(entity.name,true), entity.id) end end end
 
 :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if (unit.profession >= 103) or (unit.profession2 >= 103) then unit.profession = 102 unit.profession2 = 102 unit.relations.following = nil print(dfhack.TranslateName(unit.name)) end end end
 :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then unit.flags1.ridden=false end end
@@ -58,8 +59,6 @@
 
 :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) and not (unit.flags1.dead) and (unit.mood > -1) and (unit.mood < 7) then print(dfhack.TranslateName(unit.name,true).." is nuts.. and worthless trash *elitist snort*... but tasty.") unit.flags2.slaughter=true end end
 
-:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.pos.x=146 unit.pos.y=100 unit.pos.z=124 (143, 134, 115)
-
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.mood=7
 
 :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then unit.flags1.tame=true unit.training_level = 7 end end
@@ -74,7 +73,7 @@
 //hunting
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.profession = 98 unit.profession2 = 98
 
-:lua for _,unit in ipairs(df.global.ui.main.fortress_entity.populations) do printall(v) end
+:lua for _,unit in ipairs(df.global.ui.main.fortress_entity.populations) do printall(unit) end
 
 //sentience
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) df.global.world.raws.creatures.all[unit.race].flags.CASTE_CAN_SPEAK = true df.global.world.raws.creatures.all[unit.race].flags.CASTE_CAN_LEARN = true
@@ -124,16 +123,35 @@
 :lua for _,unit in ipairs(df.global.world.units.active) do unit.status.happiness = 4000 end
 :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then unit.flags3.emotionally_overloaded = FALSE end end end
 
-
-#This looks messy :D
-:lua ~df.global.world.raws.creatures.all[df.global.world.entities.all[df.global.ui.civ_id].race].creature_id
-
 :lua for _,unit in ipairs(df.global.world.units.active) do if unit.flags1.merchant==true then unit.flags1.left=true end end
 :lua for _,unit in ipairs(df.global.world.units.active) do if unit.flags1.forest==true then unit.flags1.left=true end end
-
-:lua for _,unit in ipairs(df.global.world.units.active) do unit.flags1.on_ground=false end
 
 #The weird things I've done before I found this gem ;;;>.>
 :lua ~df.global.cursor
 #Use that then this. replace the 68,92,119 with new x/y/z
 :lua item=dfhack.gui.getSelectedItem() dfhack.items.moveToGround(item,{x=68,y=92,z=119})
+#Check out a spot first... with this! Bye bye zoom
+:lua df.global.cursor.x=111 df.global.cursor.y=1 df.global.cursor.z=124
+
+#Moved down here... closer to the cursor set.
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.pos.x=146 unit.pos.y=100 unit.pos.z=124
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.path.dest.x=146 unit.pos.x=146 unit.path.dest.y=100 unit.pos.y=100 unit.path.dest.z=124 unit.pos.z=124
+
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit) unit.name.nickname="Bump" unit.name.has_name=true
+
+#I'm butchering your stupid pet... and his buddy that refuses to stop pining for the militia recruit.
+:lua for _,unit in ipairs(df.global.world.units.active) do unit.relations.following = nil end
+:lua for _,unit in ipairs(df.global.world.units.active) do unit.relations.pet_owner_id = -1 end
+
+#Individually tag "tweak clear-missing"? Nope!
+:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.counters.death_id ~= -1) then death=df.death_info.find(unit.counters.death_id) death.flags.discovered=true end end
+
+#Honestly just wanted to make sure they usually match. I've been messing up the references in my head... pointing at index entries instead, etc
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) print(dfhack.TranslateName(df.historical_figure.find(unit.hist_figure_id).name,true))
+
+
+#These should all match. Paranoia sucks.
+:lua ~df.global.world.raws.creatures.all[df.historical_entity.find(df.global.ui.main.fortress_entity.id).race].creature_id
+:lua ~df.global.world.raws.creatures.all[df.historical_entity.find(df.global.ui.civ_id).race].creature_id
+:lua ~df.global.world.raws.creatures.all[df.global.ui.race_id].creature_id
+:lua ~df.creature_raw.find(df.global.ui.race_id).creature_id

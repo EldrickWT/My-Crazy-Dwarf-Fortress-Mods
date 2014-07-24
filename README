@@ -15,7 +15,7 @@ Structure:
 .X The version it SHOULD work for. 31.25 content is still spelled out for cautionary reasons. 40.01 dirs will
 be gone soon. Paranoia Sucks.
 
-40.03 is the most current.
+40.04 is the most current. 40.03's raws are compatible.
 
 data.X - the colors, inits, worldgen, speeches, and my modded fortressintro
 dfhack.X - a backup of my dfhack plugin source files, AND the scripts folder. Now then not all is mine in there... some
@@ -27,4 +27,4 @@ raw.X - a big merge of all my mods and all other mods I've added to My Little Ar
 split out mods.X - all my mods in individual packages.
 split out mods.31.25 - the contents of the 31.25 zips ...
 
-Errata: Nothing Pertinent This particular update. Mostly "What it Says on the Tin"
+Errata: The Trade Breaking Bugs are really annoying. At least with fastdwarf they happen faster :/
