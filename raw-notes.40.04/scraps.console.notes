@@ -901,7 +901,7 @@ createitem BLOCKS GLASS_CRYSTAL 1
 createitem CHAIN GLASS_CRYSTAL 1
 createitem BUCKET GLASS_CRYSTAL 1
 
-spawnunit QUEEN_SUCCUBUS 0 "Canal Sweetwater"
+spawnunit QUEEN_SUCCUBUS 0 "Canal Sweetwater" -- Don't forget to position cursor, and lookup that position then look up your civ_id number. Positioning is vital or they'll appear damned near anywhere. Do NOT hit enter until very sure.
 
 createitem ARMOR:ITEM_ARMOR_BREASTPLATE INORGANIC:LHIGATE 10
 createitem ARMOR:ITEM_ARMOR_CAPE INORGANIC:LHIGATE 10
