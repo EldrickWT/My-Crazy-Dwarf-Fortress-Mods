@@ -1,211 +1,211 @@
-Invoking:  fix/dead-units-slaughtered
-Invoking:  fix/growthbug
-Invoking:  fix/growthbug start
-Invoking: :lua df.global.cursor.x=111 df.global.cursor.y=1 df.global.cursor.z=124
-Invoking: :lua dfhack.onStateChange.onLoadBloodDel = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -name blooddeljorb -time 1 -timeUnits months -command fix/blood-del') end end
-Invoking: :lua dfhack.onStateChange.onLoadConscript = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -name conscriptjorb -time 1 -timeUnits months -command conscript') end end
-Invoking: :lua dfhack.onStateChange.onLoadGrowthBug = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -name growthbugjorb -time 1 -timeUnits months -command fix/growth-bug') end end
-Invoking: :lua dfhack.onStateChange.onLoadRegrass = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -name regrassjorb -time 1 -timeUnits months -command regrass') end end
-Invoking: :lua for _,entity in ipairs(df.global.world.entities.all) do if not (entity.type > 0) then if (entity.entity_raw.code == "KAPA") then print(dfhack.TranslateName(entity.name,true)) end end end
-Invoking: :lua for _,entity in ipairs(df.global.world.entities.all) do if not (entity.type > 0) then if (entity.entity_raw.code == "KAPA") then print(dfhack.TranslateName(entity.name,true), entity.id) end end end
-Invoking: :lua for _,entity in ipairs(df.global.world.entities.all) do if not (entity.type > 0) then print(entity.entity_raw.code.. " is the pure ENTITY for "..dfhack.TranslateName(entity.name,true), entity.id) end end
-Invoking: :lua for _,unit in ipairs(df.global.world.entities.all) do if not (unit.type > 0) then print(unit.entity_raw.code.. " is the pure ENTITY for "..dfhack.TranslateName(unit.name,true), unit.id) end end
-Invoking: :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if (unit.race == df.global.ui.race_id) then if not (unit.relations.following == nil) then print(dfhack.TranslateName(unit.relations.following.name).." is followed by "..dfhack.TranslateName(unit.name)) end end end end
-Invoking: :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then unit.flags3.emotionally_overloaded = FALSE end end end
-Invoking: :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.relations.following == nil) then print(dfhack.TranslateName(unit.relations.following.name).." is followed by "..dfhack.TranslateName(unit.name)) end end end
-Invoking: :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.counters.death_id ~= -1) then death=df.death_info.find(unit.counters.death_id) death.flags.discovered=true end end
-Invoking: :lua for _,unit in ipairs(df.global.world.units.active) do if not (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then if (unit.flags1.hidden_in_ambush==true) or (unit.flags1.hidden_ambusher==true) then print(dfhack.TranslateName(unit.name,true).. " is a " ..df.global.world.raws.creatures.all[unit.race].creature_id.. "(" ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].caste_name[0]..") and their temp is " ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].fixed_temp.." Urist") end end end end
-Invoking: :lua for _,unit in ipairs(df.global.world.units.active) do if not (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then print(dfhack.TranslateName(unit.name,true)) end end end
-Invoking: :lua for _,unit in ipairs(df.global.world.units.active) do if not (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then print(unit.race) end end end
-Invoking: :lua for _,unit in ipairs(df.global.world.units.active) do if not (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then printall(unit.race) end end end
-Invoking: :lua for _,unit in ipairs(df.global.world.units.active) do if unit.flags1.forest==true then unit.flags1.left=true end end
-Invoking: :lua for _,unit in ipairs(df.global.world.units.active) do if unit.flags1.merchant==true then unit.flags1.left=true end end
-Invoking: :lua for _,unit in ipairs(df.global.world.units.active) do unit.flags1.on_ground=false end
-Invoking: :lua for _,unit in ipairs(df.global.world.units.active) do unit.relations.following = nil end
-Invoking: :lua for _,unit in ipairs(df.global.world.units.active) do unit.relations.pet_owner_id = -1 end
-Invoking: :lua for _,unit in ipairs(df.global.world.units.active) do unit.status.happiness = 4000 end
-Invoking: :lua item=dfhack.gui.getSelectedItem() dfhack.items.moveToGround(item,{x=68,y=92,z=119})
-Invoking: :lua item=dfhack.gui.getSelectedItem() print(dfhack.matinfo.getToken(item))
-Invoking: :lua item=dfhack.gui.getSelectedItem() print(item.specific_refs)
-Invoking: :lua item=dfhack.gui.getSelectedItem() printall(item)
-Invoking: :lua item=dfhack.gui.getSelectedItem() printall(item.flags)
-Invoking: :lua item=dfhack.gui.getSelectedItem() printall(item.flags2)
-Invoking: :lua item=dfhack.gui.getSelectedItem() printall(item.general_refs)
-Invoking: :lua item=dfhack.gui.getSelectedItem() printall(item.general_refs[0])
-Invoking: :lua item=dfhack.gui.getSelectedItem() printall(item.pos)
-Invoking: :lua item=dfhack.gui.getSelectedItem() printall(item.specific_refs)
-Invoking: :lua item=dfhack.gui.getSelectedItem() unit=item.general_refs[0].unit_id perp=df.unit.find(unit) print(df.creature_raw.find(perp.race).creature_id) perp.flags1.dead=false perp.flags1.merchant=false perp.flags1.incoming=false perp.flags1.ridden=false
-Invoking: :lua item=dfhack.gui.getSelectedItem() unit=item.general_refs[0].unit_id perp=df.unit.find(unit) print(df.creature_raw.find(perp.race).creature_id) printall(perp)
-Invoking: :lua item=dfhack.gui.getSelectedItem() unit=item.general_refs[0].unit_id perp=df.unit.find(unit) print(df.creature_raw.find(perp.race).creature_id) printall(perp.flags1)
-Invoking: :lua item=dfhack.gui.getSelectedItem() unit=item.general_refs[0].unit_id perp=df.unit.find(unit) print(dfhack.TranslateName(perp.name,true))
-Invoking: :lua item=dfhack.gui.getSelectedItem() unit=item.general_refs[0].unit_id perp=df.unit.find(unit) printall(perp)
-Invoking: :lua item=dfhack.gui.getSelectedItem() unit=item.general_refs[0].unit_id perp=df.unit.find(unit) printall(perp) print(df.creature_raw.find(perp.race).creature_id)
-Invoking: :lua item=dfhack.gui.getSelectedItem() unit=item.general_refs[0].unit_id printall(df.unit.find(unit))
-Invoking: :lua item=dfhack.gui.getSelectedItem() unit=item.general_refs[0].unit_id printall(df.unit.find(unit).name)
-Invoking: :lua item=dfhack.gui.getSelectedItem() unit=item.general_refs[0].unit_id printall(df.unit.find(unit).name.words)
-Invoking: :lua item=dfhack.gui.getSelectedItem() unit=item.general_refs[0].unit_id printall(df.unit.find(unit).pos)
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) 
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) if unit.flags1.merchant==true then unit.flags1.left=true end
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) print(df.historical_figure.find((unit.id)))
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) print(dfhack.TranslateName((df.global.world.history.figures[unit.hist_figure_id].name),true))
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) print(dfhack.TranslateName((df.global.world.history.figures[unit.id].name),true))
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) print(dfhack.TranslateName(df.historical_figure.find(unit.hist_figure_id).name,true))
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) print(dfhack.TranslateName(df.historical_figure.find(unit.id).name,true))
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) print(unit.counters.death_id)
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(df.historical_figure.find((unit.id)))
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(dfhack.TranslateName(df.historical_figure.find(unit.id).name,true))
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit)
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.animal)
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.counters)
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.counters.death_id)
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.flags1)
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.flags1) unit.flags1.rider=false
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.name)
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.name) unit.name.has_name=true
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.name) unit.name.nickname="Bump"
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.path)
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.path.dest)
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.path.dest) unit.pos.x=68 unit.pos.y=40 unit.pos.z=124
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.pos)
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.relations)
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.relations) unit.following=-1
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.relations) unit.following=nil
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.relations) unit.relations.following=nil
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.flags1.left=true
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.path.dest.x=146 unit.pos.x=146 unit.path.dest.y=100 unit.pos.y=100 unit.path.dest.z=124 unit.pos.z=124
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.pos.x=146 unit.pos.y=100 unit.pos.z=124
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.pos.x=unit.path.dest.x unit.pos.y=unit.path.dest.y unit.pos.z=unit.path.dest.z
-Invoking: :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.profession = 99 unit.profession2 = 99
-Invoking: :lua ~df.creature_raw.find(df.global.ui.race_id).creature_id
-Invoking: :lua ~df.global.cursor
-Invoking: :lua ~df.global.ui
-Invoking: :lua ~df.global.ui.civ_id
-Invoking: :lua ~df.global.ui.main
-Invoking: :lua ~df.global.ui.main.fortress_entity
-Invoking: :lua ~df.global.ui.main.fortress_entity.id
-Invoking: :lua ~df.global.ui.race_id
-Invoking: :lua ~df.global.world.entities.all[df.global.ui.civ_id]
-Invoking: :lua ~df.global.world.entities.all[df.global.ui.main.fortress_entity.id]
-Invoking: :lua ~df.global.world.raws.creatures.all[df.global.ui.race_id].creature_id
-Invoking: :lua ~df.global.world.raws.creatures.all[df.historical_entity.find(df.global.ui.civ_id).race].creature_id
-Invoking: :lua ~df.global.world.raws.creatures.all[df.historical_entity.find(df.global.ui.main.fortress_entity.id).race].creature_id
-Invoking: :lua ~df.historical_entity.find(df.global.ui.main.fortress_entity.id)
-Invoking: autodump
-Invoking: autodump destroy
-Invoking: autodump forbidden
-Invoking: autodump help
-Invoking: binpatch apply 5forbiddenunlock
-Invoking: binpatch apply armorstand-capacity
-Invoking: binpatch apply custom-reagent-size
-Invoking: binpatch apply deconstruct-heapfall
-Invoking: binpatch apply deconstruct-teleport
-Invoking: binpatch apply hospital-overstocking
-Invoking: binpatch apply training-ammo
-Invoking: binpatch apply weaponrack-unassign
-Invoking: bprobe
-Invoking: brainwash
-Invoking: civviesplosion
-Invoking: clean all mud snow
-Invoking: cleanowned all
-Invoking: conscript
-Invoking: createitem ARMOR:ITEM_ARMOR_BREASTPLATE INORGANIC:LHIGATE 10
-Invoking: createitem ARMOR:ITEM_ARMOR_CAPE INORGANIC:LHIGATE 10
-Invoking: createitem ARMOR:ITEM_ARMOR_CLOAK INORGANIC:LHIGATE 10
-Invoking: createitem ARMOR:ITEM_ARMOR_COAT INORGANIC:LHIGATE 10
-Invoking: createitem ARMOR:ITEM_ARMOR_DRESS INORGANIC:LHIGATE 10
-Invoking: createitem ARMOR:ITEM_ARMOR_LEATHER INORGANIC:LHIGATE 10
-Invoking: createitem ARMOR:ITEM_ARMOR_MAIL_SHIRT INORGANIC:LHIGATE 10
-Invoking: createitem ARMOR:ITEM_ARMOR_ROBE INORGANIC:LHIGATE 10
-Invoking: createitem ARMOR:ITEM_ARMOR_SHIRT INORGANIC:LHIGATE 10
-Invoking: createitem ARMOR:ITEM_ARMOR_TOGA INORGANIC:LHIGATE 10
-Invoking: createitem ARMOR:ITEM_ARMOR_TUNIC INORGANIC:LHIGATE 10
-Invoking: createitem ARMOR:ITEM_ARMOR_VEST INORGANIC:LHIGATE 10
-Invoking: createitem BARREL INORGANIC:LHIGATE 100
-Invoking: createitem BIN INORGANIC:LHIGATE 100
-Invoking: createitem BOX INORGANIC:LHIGATE 100
-Invoking: createitem COFFIN PLANT_MAT:SUNGWOOD:WOOD 30
-Invoking: createitem COFFIN SUNGWOOD 30
-Invoking: createitem GLOVES:ITEM_GLOVES_GAUNTLETS INORGANIC:LHIGATE 10
-Invoking: createitem GLOVES:ITEM_GLOVES_GLOVES INORGANIC:LHIGATE 10
-Invoking: createitem HELM:ITEM_HELM_CAP INORGANIC:LHIGATE 10
-Invoking: createitem HELM:ITEM_HELM_HELM INORGANIC:LHIGATE 10
-Invoking: createitem PANTS:ITEM_PANTS_GREAVES INORGANIC:LHIGATE 10
-Invoking: createitem PANTS:ITEM_PANTS_PANTS INORGANIC:LHIGATE 10
-Invoking: createitem PANTS:ITEM_PANTS_SKIRT_SHORT INORGANIC:LHIGATE 10
-Invoking: createitem SHIELD:ITEM_SHIELD_SHIELD INORGANIC:LHIGATE 10
-Invoking: createitem SHOES:ITEM_SHOES_BOOTS INORGANIC:LHIGATE 10
-Invoking: createitem SHOES:ITEM_SHOES_SOCKS INORGANIC:LHIGATE 10
-Invoking: createitem SLAB PLANT_MAT:SUNGWOOD:WOOD 30
-Invoking: createitem TOOL:ITEM_TOOL_LARGE_POT INORGANIC:LHIGATE 100
-Invoking: createitem WEAPON:ITEM_WEAPON_AXE_BATTLE INORGANIC:LHIGATE 10
-Invoking: createitem WEAPON:ITEM_WEAPON_PICK INORGANIC:LHIGATE 10
-Invoking: cursecheck
-Invoking: deramp
-Invoking: enable automaterial
-Invoking: enable dwarfmonitor nestboxes fix-armory infiniteSky resume
-Invoking: enable manipulator
-Invoking: enable search
-Invoking: fastdwarf 1 0
-Invoking: fastdwarf 2 0
-Invoking: fastdwarf 2 1
-Invoking: fix-dump
-Invoking: fix/blood-del
-Invoking: fix/cloth-stockpile enable
-Invoking: fix/fat-dwarves
-Invoking: fix/growthbug enable
-Invoking: fix/stable-temp
-Invoking: fix/stable-temp apply
-Invoking: fixmakeown
-Invoking: full-heal
-Invoking: gui/dfstatus
-Invoking: heal2
-Invoking: help slam
-Invoking: itemsyndrome
-Invoking: keybinding
-Invoking: keybinding list
-Invoking: keybinding set Ctrl-Alt-R "tweak clear-missing"
-Invoking: keybinding set Ctrl-Shift-Alt-R "tweak clear-missing"
-Invoking: keybinding set Ctrl-Shift-E ":lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.profession = 99 unit.profession2 = 99"
-Invoking: keybinding set Ctrl-Shift-Q "gui/workshop-job"
-Invoking: keybinding set Ctrl-Shift-R "tiletypes-here-point"
-Invoking: keybinding set Ctrl-Shift-W "hackWish"
-Invoking: keybinding set Shift-K "slayrace him"
-Invoking: liquids
-Invoking: log-region
-Invoking: ls
-Invoking: ls -a
-Invoking: probe
-Invoking: putontable
-Invoking: rb_eval df.world.items.all.each { |it| it.flags.dump = false }
-Invoking: rb_eval df.world.items.all.each { |it| it.flags.forbid = false }
-Invoking: rb_eval df.world.items.all.each { |it| it.flags.foreign = false }
-Invoking: rb_eval df.world.items.all.each { |it| it.flags.hidden = false }
-Invoking: rb_eval df.world.items.all.each { |it| it.flags.trader = false }
-Invoking: regrass
-Invoking: repeat -name blooddeljorb -time 1 -timeUnits months -command fix/blood-del
-Invoking: repeat -name conscriptjorb -time 1 -timeUnits months -command conscript
-Invoking: repeat -name growthbugjorb -time 1 -timeUnits months -command fix/growth-bug
-Invoking: repeat -name regrassjorb -time 1 -timeUnits months -command regrass
-Invoking: reveal hell
-Invoking: showmood
-Invoking: siren
-Invoking: slam 10
-Invoking: slam 100
-Invoking: slam 1000
-Invoking: slam 10000
-Invoking: slayrace him
-Invoking: soundsense-season
-Invoking: tweak
-Invoking: tweak adamantine-cloth-wear
-Invoking: tweak clear-missing
-Invoking: tweak fix-dimensions
-Invoking: tweak hive-crash
-Invoking: tweak makeown
-Invoking: tweak military-color-assigned
-Invoking: tweak military-stable-assign
-Invoking: tweak stable-temp
-Invoking: unreveal
-Invoking: weather clear
-Invoking: zoom 111 1 124
-Invoking: zoom help
-Invoking: zoom help[
+fix/dead-units-slaughtered
+fix/growthbug
+fix/growthbug start
+:lua df.global.cursor.x=111 df.global.cursor.y=1 df.global.cursor.z=124
+:lua dfhack.onStateChange.onLoadBloodDel = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -name blooddeljorb -time 1 -timeUnits months -command fix/blood-del') end end
+:lua dfhack.onStateChange.onLoadConscript = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -name conscriptjorb -time 1 -timeUnits months -command conscript') end end
+:lua dfhack.onStateChange.onLoadGrowthBug = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -name growthbugjorb -time 1 -timeUnits months -command fix/growth-bug') end end
+:lua dfhack.onStateChange.onLoadRegrass = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -name regrassjorb -time 1 -timeUnits months -command regrass') end end
+:lua for _,entity in ipairs(df.global.world.entities.all) do if not (entity.type > 0) then if (entity.entity_raw.code == "KAPA") then print(dfhack.TranslateName(entity.name,true)) end end end
+:lua for _,entity in ipairs(df.global.world.entities.all) do if not (entity.type > 0) then if (entity.entity_raw.code == "KAPA") then print(dfhack.TranslateName(entity.name,true), entity.id) end end end
+:lua for _,entity in ipairs(df.global.world.entities.all) do if not (entity.type > 0) then print(entity.entity_raw.code.. " is the pure ENTITY for "..dfhack.TranslateName(entity.name,true), entity.id) end end
+:lua for _,unit in ipairs(df.global.world.entities.all) do if not (unit.type > 0) then print(unit.entity_raw.code.. " is the pure ENTITY for "..dfhack.TranslateName(unit.name,true), unit.id) end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if (unit.race == df.global.ui.race_id) then if not (unit.relations.following == nil) then print(dfhack.TranslateName(unit.relations.following.name).." is followed by "..dfhack.TranslateName(unit.name)) end end end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then unit.flags3.emotionally_overloaded = FALSE end end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.relations.following == nil) then print(dfhack.TranslateName(unit.relations.following.name).." is followed by "..dfhack.TranslateName(unit.name)) end end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.counters.death_id ~= -1) then death=df.death_info.find(unit.counters.death_id) death.flags.discovered=true end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if not (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then if (unit.flags1.hidden_in_ambush==true) or (unit.flags1.hidden_ambusher==true) then print(dfhack.TranslateName(unit.name,true).. " is a " ..df.global.world.raws.creatures.all[unit.race].creature_id.. "(" ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].caste_name[0]..") and their temp is " ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].fixed_temp.." Urist") end end end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if not (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then print(dfhack.TranslateName(unit.name,true)) end end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if not (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then print(unit.race) end end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if not (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then printall(unit.race) end end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if unit.flags1.forest==true then unit.flags1.left=true end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if unit.flags1.merchant==true then unit.flags1.left=true end end
+:lua for _,unit in ipairs(df.global.world.units.active) do unit.flags1.on_ground=false end
+:lua for _,unit in ipairs(df.global.world.units.active) do unit.relations.following = nil end
+:lua for _,unit in ipairs(df.global.world.units.active) do unit.relations.pet_owner_id = -1 end
+:lua for _,unit in ipairs(df.global.world.units.active) do unit.status.happiness = 4000 end
+:lua item=dfhack.gui.getSelectedItem() dfhack.items.moveToGround(item,{x=68,y=92,z=119})
+:lua item=dfhack.gui.getSelectedItem() print(dfhack.matinfo.getToken(item))
+:lua item=dfhack.gui.getSelectedItem() print(item.specific_refs)
+:lua item=dfhack.gui.getSelectedItem() printall(item)
+:lua item=dfhack.gui.getSelectedItem() printall(item.flags)
+:lua item=dfhack.gui.getSelectedItem() printall(item.flags2)
+:lua item=dfhack.gui.getSelectedItem() printall(item.general_refs)
+:lua item=dfhack.gui.getSelectedItem() printall(item.general_refs[0])
+:lua item=dfhack.gui.getSelectedItem() printall(item.pos)
+:lua item=dfhack.gui.getSelectedItem() printall(item.specific_refs)
+:lua item=dfhack.gui.getSelectedItem() unit=item.general_refs[0].unit_id perp=df.unit.find(unit) print(df.creature_raw.find(perp.race).creature_id) perp.flags1.dead=false perp.flags1.merchant=false perp.flags1.incoming=false perp.flags1.ridden=false
+:lua item=dfhack.gui.getSelectedItem() unit=item.general_refs[0].unit_id perp=df.unit.find(unit) print(df.creature_raw.find(perp.race).creature_id) printall(perp)
+:lua item=dfhack.gui.getSelectedItem() unit=item.general_refs[0].unit_id perp=df.unit.find(unit) print(df.creature_raw.find(perp.race).creature_id) printall(perp.flags1)
+:lua item=dfhack.gui.getSelectedItem() unit=item.general_refs[0].unit_id perp=df.unit.find(unit) print(dfhack.TranslateName(perp.name,true))
+:lua item=dfhack.gui.getSelectedItem() unit=item.general_refs[0].unit_id perp=df.unit.find(unit) printall(perp)
+:lua item=dfhack.gui.getSelectedItem() unit=item.general_refs[0].unit_id perp=df.unit.find(unit) printall(perp) print(df.creature_raw.find(perp.race).creature_id)
+:lua item=dfhack.gui.getSelectedItem() unit=item.general_refs[0].unit_id printall(df.unit.find(unit))
+:lua item=dfhack.gui.getSelectedItem() unit=item.general_refs[0].unit_id printall(df.unit.find(unit).name)
+:lua item=dfhack.gui.getSelectedItem() unit=item.general_refs[0].unit_id printall(df.unit.find(unit).name.words)
+:lua item=dfhack.gui.getSelectedItem() unit=item.general_refs[0].unit_id printall(df.unit.find(unit).pos)
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) 
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) if unit.flags1.merchant==true then unit.flags1.left=true end
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) print(df.historical_figure.find((unit.id)))
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) print(dfhack.TranslateName((df.global.world.history.figures[unit.hist_figure_id].name),true))
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) print(dfhack.TranslateName((df.global.world.history.figures[unit.id].name),true))
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) print(dfhack.TranslateName(df.historical_figure.find(unit.hist_figure_id).name,true))
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) print(dfhack.TranslateName(df.historical_figure.find(unit.id).name,true))
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) print(unit.counters.death_id)
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(df.historical_figure.find((unit.id)))
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(dfhack.TranslateName(df.historical_figure.find(unit.id).name,true))
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit)
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.animal)
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.counters)
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.counters.death_id)
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.flags1)
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.flags1) unit.flags1.rider=false
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.name)
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.name) unit.name.has_name=true
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.name) unit.name.nickname="Bump"
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.path)
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.path.dest)
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.path.dest) unit.pos.x=68 unit.pos.y=40 unit.pos.z=124
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.pos)
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.relations)
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.relations) unit.following=-1
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.relations) unit.following=nil
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.relations) unit.relations.following=nil
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.flags1.left=true
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.path.dest.x=146 unit.pos.x=146 unit.path.dest.y=100 unit.pos.y=100 unit.path.dest.z=124 unit.pos.z=124
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.pos.x=146 unit.pos.y=100 unit.pos.z=124
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.pos.x=unit.path.dest.x unit.pos.y=unit.path.dest.y unit.pos.z=unit.path.dest.z
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.profession = 99 unit.profession2 = 99
+:lua ~df.creature_raw.find(df.global.ui.race_id).creature_id
+:lua ~df.global.cursor
+:lua ~df.global.ui
+:lua ~df.global.ui.civ_id
+:lua ~df.global.ui.main
+:lua ~df.global.ui.main.fortress_entity
+:lua ~df.global.ui.main.fortress_entity.id
+:lua ~df.global.ui.race_id
+:lua ~df.global.world.entities.all[df.global.ui.civ_id]
+:lua ~df.global.world.entities.all[df.global.ui.main.fortress_entity.id]
+:lua ~df.global.world.raws.creatures.all[df.global.ui.race_id].creature_id
+:lua ~df.global.world.raws.creatures.all[df.historical_entity.find(df.global.ui.civ_id).race].creature_id
+:lua ~df.global.world.raws.creatures.all[df.historical_entity.find(df.global.ui.main.fortress_entity.id).race].creature_id
+:lua ~df.historical_entity.find(df.global.ui.main.fortress_entity.id)
+autodump
+autodump destroy
+autodump forbidden
+autodump help
+binpatch apply 5forbiddenunlock
+binpatch apply armorstand-capacity
+binpatch apply custom-reagent-size
+binpatch apply deconstruct-heapfall
+binpatch apply deconstruct-teleport
+binpatch apply hospital-overstocking
+binpatch apply training-ammo
+binpatch apply weaponrack-unassign
+bprobe
+brainwash
+civviesplosion
+clean all mud snow
+cleanowned all
+conscript
+createitem ARMOR:ITEM_ARMOR_BREASTPLATE INORGANIC:LHIGATE 10
+createitem ARMOR:ITEM_ARMOR_CAPE INORGANIC:LHIGATE 10
+createitem ARMOR:ITEM_ARMOR_CLOAK INORGANIC:LHIGATE 10
+createitem ARMOR:ITEM_ARMOR_COAT INORGANIC:LHIGATE 10
+createitem ARMOR:ITEM_ARMOR_DRESS INORGANIC:LHIGATE 10
+createitem ARMOR:ITEM_ARMOR_LEATHER INORGANIC:LHIGATE 10
+createitem ARMOR:ITEM_ARMOR_MAIL_SHIRT INORGANIC:LHIGATE 10
+createitem ARMOR:ITEM_ARMOR_ROBE INORGANIC:LHIGATE 10
+createitem ARMOR:ITEM_ARMOR_SHIRT INORGANIC:LHIGATE 10
+createitem ARMOR:ITEM_ARMOR_TOGA INORGANIC:LHIGATE 10
+createitem ARMOR:ITEM_ARMOR_TUNIC INORGANIC:LHIGATE 10
+createitem ARMOR:ITEM_ARMOR_VEST INORGANIC:LHIGATE 10
+createitem BARREL INORGANIC:LHIGATE 100
+createitem BIN INORGANIC:LHIGATE 100
+createitem BOX INORGANIC:LHIGATE 100
+createitem COFFIN PLANT_MAT:SUNGWOOD:WOOD 30
+createitem COFFIN SUNGWOOD 30
+createitem GLOVES:ITEM_GLOVES_GAUNTLETS INORGANIC:LHIGATE 10
+createitem GLOVES:ITEM_GLOVES_GLOVES INORGANIC:LHIGATE 10
+createitem HELM:ITEM_HELM_CAP INORGANIC:LHIGATE 10
+createitem HELM:ITEM_HELM_HELM INORGANIC:LHIGATE 10
+createitem PANTS:ITEM_PANTS_GREAVES INORGANIC:LHIGATE 10
+createitem PANTS:ITEM_PANTS_PANTS INORGANIC:LHIGATE 10
+createitem PANTS:ITEM_PANTS_SKIRT_SHORT INORGANIC:LHIGATE 10
+createitem SHIELD:ITEM_SHIELD_SHIELD INORGANIC:LHIGATE 10
+createitem SHOES:ITEM_SHOES_BOOTS INORGANIC:LHIGATE 10
+createitem SHOES:ITEM_SHOES_SOCKS INORGANIC:LHIGATE 10
+createitem SLAB PLANT_MAT:SUNGWOOD:WOOD 30
+createitem TOOL:ITEM_TOOL_LARGE_POT INORGANIC:LHIGATE 100
+createitem WEAPON:ITEM_WEAPON_AXE_BATTLE INORGANIC:LHIGATE 10
+createitem WEAPON:ITEM_WEAPON_PICK INORGANIC:LHIGATE 10
+cursecheck
+deramp
+enable automaterial
+enable dwarfmonitor nestboxes fix-armory infiniteSky resume
+enable manipulator
+enable search
+fastdwarf 1 0
+fastdwarf 2 0
+fastdwarf 2 1
+fix-dump
+fix/blood-del
+fix/cloth-stockpile enable
+fix/fat-dwarves
+fix/growthbug enable
+fix/stable-temp
+fix/stable-temp apply
+fixmakeown
+full-heal
+gui/dfstatus
+heal2
+help slam
+itemsyndrome
+keybinding
+keybinding list
+keybinding set Ctrl-Alt-R "tweak clear-missing"
+keybinding set Ctrl-Shift-Alt-R "tweak clear-missing"
+keybinding set Ctrl-Shift-E ":lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.profession = 99 unit.profession2 = 99"
+keybinding set Ctrl-Shift-Q "gui/workshop-job"
+keybinding set Ctrl-Shift-R "tiletypes-here-point"
+keybinding set Ctrl-Shift-W "hackWish"
+keybinding set Shift-K "slayrace him"
+liquids
+log-region
+ls
+ls -a
+probe
+putontable
+rb_eval df.world.items.all.each { |it| it.flags.dump = false }
+rb_eval df.world.items.all.each { |it| it.flags.forbid = false }
+rb_eval df.world.items.all.each { |it| it.flags.foreign = false }
+rb_eval df.world.items.all.each { |it| it.flags.hidden = false }
+rb_eval df.world.items.all.each { |it| it.flags.trader = false }
+regrass
+repeat -name blooddeljorb -time 1 -timeUnits months -command fix/blood-del
+repeat -name conscriptjorb -time 1 -timeUnits months -command conscript
+repeat -name growthbugjorb -time 1 -timeUnits months -command fix/growth-bug
+repeat -name regrassjorb -time 1 -timeUnits months -command regrass
+reveal hell
+showmood
+siren
+slam 10
+slam 100
+slam 1000
+slam 10000
+slayrace him
+soundsense-season
+tweak
+tweak adamantine-cloth-wear
+tweak clear-missing
+tweak fix-dimensions
+tweak hive-crash
+tweak makeown
+tweak military-color-assigned
+tweak military-stable-assign
+tweak stable-temp
+unreveal
+weather clear
+zoom 111 1 124
+zoom help
+zoom help[

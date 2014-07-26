@@ -34,6 +34,7 @@ rb_eval tile = df.map_tile_at(x, y, z) ; burrow = tile.mapblock.block_burrows.fi
 
 rb_eval df.world.items.all.each { |it| it.flags.dump = true }
 rb_eval df.world.items.all.each { |it| it.flags.trader = false }
+rb_eval df.world.items.all.each { |it| it.flags.foreign = false }
 
 
 //really close to happy... but I hardly understand ruby... or file output frankly. just line 13 only outputs one critter
