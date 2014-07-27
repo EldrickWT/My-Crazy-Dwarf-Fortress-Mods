@@ -76,4 +76,6 @@ c_variation_downtrodden
 	[CV_ADD_TAG:TRANCES]
 	[CV_ADD_TAG:TRAPAVOID]
 	[CV_ADD_TAG:PREFSTRING:for surviving failing their gods without a curse like therianthropy or mummification...]
+	[CV_ADD_TAG:ORIENTATION:FEMALE:25:50:25]
+	[CV_ADD_TAG:ORIENTATION:MALE:25:50:25]
 
