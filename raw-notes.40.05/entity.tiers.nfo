@@ -1,0 +1,27 @@
+P:\DFHack-Current-40.0X\raw\objects\entity_angel.txt(316): 			x	[ENTITY:ANGEL_CIV]		[MAX_STARTING_CIV_NUMBER:1]	[ADVENTURE_TIER:07] --1 because of "lore"
+P:\DFHack-Current-40.0X\raw\objects\entity_animal_peoples.txt(455): 	x	[ENTITY:ANIMAL_PEOPLES]	[MAX_STARTING_CIV_NUMBER:1]	[ADVENTURE_TIER:21] --1 to avoid spamming the world.
+P:\DFHack-Current-40.0X\raw\objects\entity_cultist.txt(316): 		x	[ENTITY:CULTIST]		[MAX_STARTING_CIV_NUMBER:1]	[ADVENTURE_TIER:11] --1 because of "lore"... for now... BWAHAHAHAHAHAHAHAHAHAHA!
+P:\DFHack-Current-40.0X\raw\objects\entity_evil.txt(316): 			x	[ENTITY:EVIL]			[MAX_STARTING_CIV_NUMBER:2]	[ADVENTURE_TIER:04] --temp disabled, evil2 is standing in.
+P:\DFHack-Current-40.0X\raw\objects\entity_evil2.txt(316): 			x	[ENTITY:EVIL]			[MAX_STARTING_CIV_NUMBER:10]	[ADVENTURE_TIER:24] --no treats here. what treat causes the slowdown? -.-;
+P:\DFHack-Current-40.0X\raw\objects\entity_fab.txt(316): 			x	[ENTITY:FABULOUSA]		[MAX_STARTING_CIV_NUMBER:2]	[ADVENTURE_TIER:16] --2 so there is competition
+P:\DFHack-Current-40.0X\raw\objects\entity_fallen.txt(316): 		x	[ENTITY:FALLEN]		[MAX_STARTING_CIV_NUMBER:2]	[ADVENTURE_TIER:12] --2 for now... BWAHAHAHAHAHAHAHAHAHAHA!
+P:\DFHack-Current-40.0X\raw\objects\entity_forest.txt(316): 		x	[ENTITY:FOREST]		[MAX_STARTING_CIV_NUMBER:3]	[ADVENTURE_TIER:02] --3 for the elven kings under the sky
+P:\DFHack-Current-40.0X\raw\objects\entity_gardohn.txt(316): 		x	[ENTITY:GARDOHN_CIV]	[MAX_STARTING_CIV_NUMBER:1]	[ADVENTURE_TIER:09] --1 because they'd have one huge xenophobic hatefilled loyal family BWAHAHAHAHAHAHAHAHAHAHA!
+P:\DFHack-Current-40.0X\raw\objects\entity_kapa.txt(316): 			x	[ENTITY:KAPA]			[MAX_STARTING_CIV_NUMBER:1]	[ADVENTURE_TIER:15] --1 to avoid spamming the world... and civilization is hard.
+P:\DFHack-Current-40.0X\raw\objects\entity_kolcha.txt(316): 		x	[ENTITY:KOLCHA]		[MAX_STARTING_CIV_NUMBER:4]	[ADVENTURE_TIER:22] --4 Feels strategic
+P:\DFHack-Current-40.0X\raw\objects\entity_loli.txt(316): 			x	[ENTITY:LOLI_CIV]		[MAX_STARTING_CIV_NUMBER:1]	[ADVENTURE_TIER:06] --1... kinda like there's only one Shire.
+P:\DFHack-Current-40.0X\raw\objects\entity_mewli.txt(316): 			x	[ENTITY:MEWLI]			[MAX_STARTING_CIV_NUMBER:3]	[ADVENTURE_TIER:13] --3 "lore"-wise this would be more philo... who am I kidding... matter of the heart have driven wedges in ages long passed. Or over population.
+P:\DFHack-Current-40.0X\raw\objects\entity_mla.txt(316): 			x	[ENTITY:MLA_CIV]		[MAX_STARTING_CIV_NUMBER:1]	[ADVENTURE_TIER:23] --1 because of Love and Peace.
+P:\DFHack-Current-40.0X\raw\objects\entity_mountain.txt(316): 		x	[ENTITY:MOUNTAIN]		[MAX_STARTING_CIV_NUMBER:7]	[ADVENTURE_TIER:03] --7 for the dwarf lords in their halls of stone
+P:\DFHack-Current-40.0X\raw\objects\entity_pedo.txt(316): 			x	[ENTITY:PEDO]			[MAX_STARTING_CIV_NUMBER:1]	[ADVENTURE_TIER:14] --1 because of greed. "They'll all be mine!"
+P:\DFHack-Current-40.0X\raw\objects\entity_plains.txt(316): 		x	[ENTITY:PLAINS]		[MAX_STARTING_CIV_NUMBER:9]	[ADVENTURE_TIER:01] --9 for mortal men doomed to die
+P:\DFHack-Current-40.0X\raw\objects\entity_proudhorn.txt(316): 		x	[ENTITY:PROUDHORN_CIV]	[MAX_STARTING_CIV_NUMBER:1]	[ADVENTURE_TIER:25] --1 for testing... and love and peace
+P:\DFHack-Current-40.0X\raw\objects\entity_skulking.txt(316): 		x	[ENTITY:SKULKING]		[MAX_STARTING_CIV_NUMBER:1]	[ADVENTURE_TIER:05] --1 to avoid spamming the world... want more than 3453461362 billion kobold camps.
+P:\DFHack-Current-40.0X\raw\objects\entity_vilehorn.txt(316): 		x	[ENTITY:VILEHORN_CIV]	[MAX_STARTING_CIV_NUMBER:1]	[ADVENTURE_TIER:26] --1 for testing... for now... BWAHAHAHAHAHAHAHAHAHAHA!
+P:\DFHack-Current-40.0X\raw\objects\entity_wild_foocubi.txt(316): 	x	[ENTITY:W_FOOCUBI_CIV]	[MAX_STARTING_CIV_NUMBER:2]	[ADVENTURE_TIER:08] --2. Just how it works in my head.
+P:\DFHack-Current-40.0X\raw\objects\entity_wraitha.txt(316): 		x	[ENTITY:WRAITHA]		[MAX_STARTING_CIV_NUMBER:1]	[ADVENTURE_TIER:17] --1 is enough
+P:\DFHack-Current-40.0X\raw\objects\entity_wraithb.txt(316): 		x	[ENTITY:WRAITHB]		[MAX_STARTING_CIV_NUMBER:1]	[ADVENTURE_TIER:18] --1 is enough
+P:\DFHack-Current-40.0X\raw\objects\entity_wraithc.txt(316): 		x	[ENTITY:WRAITHC]		[MAX_STARTING_CIV_NUMBER:1]	[ADVENTURE_TIER:19] --1 is enough
+P:\DFHack-Current-40.0X\raw\objects\entity_wraithd.txt(316): 		x	[ENTITY:BOGWRAITH]		[MAX_STARTING_CIV_NUMBER:1]	[ADVENTURE_TIER:20] --1 is enough... for now... BWAHAHAHAHAHAHAHAHAHAHA!
+P:\DFHack-Current-40.0X\raw\objects\entity_yiffian.txt(316): 		x	[ENTITY:YIFFIAN_CIV]	[MAX_STARTING_CIV_NUMBER:1]	[ADVENTURE_TIER:10] --1 is plenty
+                                                       ^^^----Indicates where the adventure_tier is in the file             60 total
