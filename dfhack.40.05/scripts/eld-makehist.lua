@@ -61,8 +61,8 @@ function create_hist_fig(unit)
     df.global.ui.main.fortress_entity.hist_figures:insert('#', new_hf_loc)
 
     civ_index = df.global.ui.civ_id
-    df.global.world.entities.all[civ_index].histfig_ids:insert('#', new_fig_id)
-    df.global.world.entities.all[civ_index].hist_figures:insert('#', new_hf_loc)
+    df.historical_entity.find(civ_index).histfig_ids:insert('#', new_fig_id)
+    df.historical_entity.find(civ_index).hist_figures:insert('#', new_hf_loc)
 
     new_nemesis_id = df.global.nemesis_next_id
     new_nemesis = df.nemesis_record:new()
@@ -70,12 +70,12 @@ function create_hist_fig(unit)
     new_nemesis.figure = new_hf_loc
     new_nemesis.unit = unit
     new_nemesis.unit_id = unit.id
-    new_nemesis.save_file_id = df.global.world.entities.all[civ_index].save_file_id
-    new_nemesis.member_idx = df.global.world.entities.all[civ_index].next_member_idx
+    new_nemesis.save_file_id = df.historical_entity.find(civ_index).save_file_id
+    new_nemesis.member_idx = df.historical_entity.find(civ_index).next_member_idx
     --group_leader_id = -1
     new_nemesis.unk10, new_nemesis.unk11, new_nemesis.unk12 = -1, -1, -1
 
-    df.global.world.entities.all[civ_index].next_member_idx = df.global.world.entities.all[civ_index].next_member_idx + 1
+    df.historical_entity.find(civ_index).next_member_idx = df.historical_entity.find(civ_index).next_member_idx + 1
 
     df.global.world.nemesis.all:insert('#', new_nemesis)
     df.global.nemesis_next_id = df.global.nemesis_next_id + 1
@@ -88,8 +88,8 @@ function create_hist_fig(unit)
 
     df.global.ui.main.fortress_entity.nemesis_ids:insert('#', new_nemesis_id)
     df.global.ui.main.fortress_entity.nemesis:insert('#', new_nemesis_loc)
-    df.global.world.entities.all[civ_index].nemesis_ids:insert('#', new_nemesis_id)
-    df.global.world.entities.all[civ_index].nemesis:insert('#', new_nemesis_loc)
+    df.historical_entity.find(civ_index).nemesis_ids:insert('#', new_nemesis_id)
+    df.historical_entity.find(civ_index).nemesis:insert('#', new_nemesis_loc)
     if string.lower(args)=="debug" then
         print(dfhack.TranslateName(unit.name,true).." is now a historical figure.")
     end

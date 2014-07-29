@@ -118,6 +118,9 @@
 :lua for _,unit in ipairs(df.global.world.units.active) do unit.flags1.on_ground=false end
 
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.status.labors) unit.status.labors.MINE = true
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.status.labors) unit.status.labors.FISH = true
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.status.labors) unit.status.labors.HUNT = true
+:lua for _,unit in ipairs(df.global.world.units.active) do if not (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then unit.status.labors.MINE = true end end end
 
 #useless I know I know but still. BE HAPPY! >:-(
 :lua for _,unit in ipairs(df.global.world.units.active) do unit.status.happiness = 4000 end
