@@ -7,7 +7,8 @@ Wiki for the Mods:
 N/A
 A Playable Pregenned Region Download (34.11):
 http://dffd.wimbli.com/file.php?id=8353 34.11 r4
-Download (40.0X) -in the works... to think I /almost/ loaded a crashable save (40.02)
+Download (40.0X)
+http://dffd.wimbli.com/file.php?id=9219 40.05 r2
 
 
 Structure:
@@ -15,7 +16,7 @@ Structure:
 .X The version it SHOULD work for. 31.25 content is still spelled out for cautionary reasons. 40.01 dirs will
 be gone soon. Paranoia Sucks.
 
-40.04 is the most current.
+40.05 is the most current.
 
 data.X - the colors, inits, worldgen, speeches, and my modded fortressintro
 dfhack.X - a backup of my dfhack plugin source files, AND the scripts folder. Now then not all is mine in there... some
@@ -27,5 +28,5 @@ raw.X - a big merge of all my mods and all other mods I've added to My Little Ar
 split out mods.X - all my mods in individual packages.
 split out mods.31.25 - the contents of the 31.25 zips ...
 
-Errata: The Trade Breaking Bugs are really annoying. At least with fastdwarf they happen faster :/
-        The new spawnunit.lua is VERY picky. Have all your options ready... seriously. Not kidding.
+Errata: Dwarf Fortress has a morbid sexual fetish about Middle Age... even if it has to generate someone
+        5000 (out of MAXAGE:10000:30000) years old to do it. Just see the 40.05 World

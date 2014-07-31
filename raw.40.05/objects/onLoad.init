@@ -1,3 +1,5 @@
+#My Crazy Default Init File
+#onLoad.init
 keybinding set Shift-K "slayrace him"
 keybinding set Ctrl-Shift-Q "gui/workshop-job"
 keybinding set Ctrl-Shift-W "hackWish"
@@ -10,15 +12,15 @@ fastdwarf 2 1
 soundsense-season
 log-region
 fix/cloth-stockpile enable
-# SUPPOSED to turn [UNIQUE_DEMON] into a RAW compatible token"
-binpatch apply 5forbiddenunlock
-binpatch apply deconstruct-teleport
-binpatch apply deconstruct-heapfall
-binpatch apply hospital-overstocking
-binpatch apply custom-reagent-size
-binpatch apply training-ammo
-binpatch apply weaponrack-unassign
-binpatch apply armorstand-capacity
+# SUPPOSED to turn [UNIQUE_DEMON] into a RAW compatible token
+#binpatch apply 5forbiddenunlock
+#binpatch apply deconstruct-teleport
+#binpatch apply deconstruct-heapfall
+#binpatch apply hospital-overstocking
+#binpatch apply custom-reagent-size
+#binpatch apply training-ammo
+#binpatch apply weaponrack-unassign
+#binpatch apply armorstand-capacity
 tweak stable-temp
 tweak fix-dimensions
 tweak military-stable-assign
@@ -28,6 +30,7 @@ tweak adamantine-cloth-wear
 enable manipulator
 enable search
 enable automaterial
+#Nuts
 #stockflow enable
 :lua dfhack.onStateChange.onLoadBloodDel = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -name blooddeljorb -time 1 -timeUnits months -command fix/blood-del') end end
 :lua dfhack.onStateChange.onLoadGrowthBug = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -name growthbugjorb -time 1 -timeUnits months -command fix/growth-bug') end end

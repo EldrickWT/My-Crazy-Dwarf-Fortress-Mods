@@ -78,28 +78,28 @@
 :lua for _,populations in ipairs(df.global.ui.main.fortress_entity.populations) do printall(populations) end
 
 //sentience
-:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) df.global.world.raws.creatures.all[unit.race].flags.CASTE_CAN_SPEAK = true df.global.world.raws.creatures.all[unit.race].flags.CASTE_CAN_LEARN = true
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) df.creature_raw.find(unit.race).flags.CASTE_CAN_SPEAK = true df.creature_raw.find(unit.race).flags.CASTE_CAN_LEARN = true
 
 :lua for _,unit in ipairs(df.global.world.raws.creatures.all) do if (unit.flags.DOES_NOT_EXIST == true) then print(_,unit.creature_id) end end
 :lua df.global.world.raws.creatures.all[556].flags.DOES_NOT_EXIST == false
 
-:lua for _,unit in ipairs(df.global.world.units.all) do if (df.global.world.raws.creatures.all[unit.race].flags.DOES_NOT_EXIST == true) then print(_,unit.creature_id) end end
+:lua for _,unit in ipairs(df.global.world.units.all) do if (df.creature_raw.find(unit.race).flags.DOES_NOT_EXIST == true) then print(_,unit.creature_id) end end
 
-:lua for _,unit in ipairs(df.global.world.units.active) do if (df.global.world.raws.creatures.all[unit.race].flags.CASTE_CAN_SPEAK == true) then print(dfhack.TranslateName(unit.name,true)," is a ", df.global.world.raws.creatures.all[unit.race].creature_id) end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if (df.creature_raw.find(unit.race).flags.CASTE_CAN_SPEAK == true) then print(dfhack.TranslateName(unit.name,true)," is a ", df.creature_raw.find(unit.race).creature_id) end end
 
-:lua for _,unit in ipairs(df.global.world.units.all) do if (df.global.world.raws.creatures.all[unit.race].flags.CASTE_UNIQUE_DEMON == true) then print(_,unit.creature_id) end end
+:lua for _,unit in ipairs(df.global.world.units.all) do if (df.creature_raw.find(unit.race).flags.CASTE_UNIQUE_DEMON == true) then print(_,unit.creature_id) end end
 
-:lua unit=dfhack.gui.getSelectedUnit() df.global.world.raws.creatures.all[unit.race].caste[unit.caste].fixed_temp=60001
+:lua unit=dfhack.gui.getSelectedUnit() df.creature_raw.find(unit.race).caste[unit.caste].fixed_temp=60001
 
-:lua unit=dfhack.gui.getSelectedUnit() print(df.global.world.raws.creatures.all[unit.race].caste[unit.caste].fixed_temp)
+:lua unit=dfhack.gui.getSelectedUnit() print(df.creature_raw.find(unit.race).caste[unit.caste].fixed_temp)
 
 
-:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then print(dfhack.TranslateName(unit.name,true).. " is a " ..df.global.world.raws.creatures.all[unit.race].creature_id.. "(" ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].caste_name[0]..") and their gender is ") if (df.global.world.raws.creatures.all[unit.race].caste[unit.caste].gender == 0) then print("Female [0]") elseif (df.global.world.raws.creatures.all[unit.race].caste[unit.caste].gender == 1) then print("Male [1]") else print("Other [cabbage]") end end end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then print(dfhack.TranslateName(unit.name,true).. " is a " ..df.creature_raw.find(unit.race).creature_id.. "(" ..df.creature_raw.find(unit.race).caste[unit.caste].caste_name[0]..") and their gender is ") if (df.creature_raw.find(unit.race).caste[unit.caste].gender == 0) then print("Female [0]") elseif (df.creature_raw.find(unit.race).caste[unit.caste].gender == 1) then print("Male [1]") else print("Other [cabbage]") end end end end
 
 
 :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then print(dfhack.TranslateName(unit.name,true)) end end end
 
-:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then print(dfhack.TranslateName(unit.name,true).. " is a " ..df.global.world.raws.creatures.all[unit.race].creature_id.. "(" ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].caste_name[0]..") and their temp is " ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].fixed_temp.." Urist") end end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then print(dfhack.TranslateName(unit.name,true).. " is a " ..df.creature_raw.find(unit.race).creature_id.. "(" ..df.creature_raw.find(unit.race).caste[unit.caste].caste_name[0]..") and their temp is " ..df.creature_raw.find(unit.race).caste[unit.caste].fixed_temp.." Urist") end end end
 
 :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if (unit.race == df.global.ui.race_id) then print(dfhack.TranslateName(unit.name,true).." is getting sent to the Thunderdome to WORK THEIR SHIT OUT.") unit.pos.x=95 unit.pos.y=97 unit.pos.z=67 end
 
@@ -113,14 +113,14 @@
 
 
 :lua for _,unit in ipairs(df.global.world.units.active) do if not (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then print(dfhack.TranslateName(unit.name,true)) end end end
-:lua for _,unit in ipairs(df.global.world.units.active) do if not (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then if (unit.flags1.hidden_in_ambush==true) or (unit.flags1.hidden_ambusher==true) then print(dfhack.TranslateName(unit.name,true).. " is a " ..df.global.world.raws.creatures.all[unit.race].creature_id.. "(" ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].caste_name[0]..") and their temp is " ..df.global.world.raws.creatures.all[unit.race].caste[unit.caste].fixed_temp.." Urist") end end end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if not (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then if (unit.flags1.hidden_in_ambush==true) or (unit.flags1.hidden_ambusher==true) then print(dfhack.TranslateName(unit.name,true).. " is a " ..df.creature_raw.find(unit.race).creature_id.. "(" ..df.creature_raw.find(unit.race).caste[unit.caste].caste_name[0]..") and their temp is " ..df.creature_raw.find(unit.race).caste[unit.caste].fixed_temp.." Urist") end end end end
 :lua for _,unit in ipairs(df.global.world.units.active) do if unit.flags3.scuttle==true then unit.animal.vanish_countdown=2 end end
 :lua for _,unit in ipairs(df.global.world.units.active) do unit.flags1.on_ground=false end
 
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.status.labors) unit.status.labors.MINE = true
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.status.labors) unit.status.labors.FISH = true
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit.status.labors) unit.status.labors.HUNT = true
-:lua for _,unit in ipairs(df.global.world.units.active) do if not (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then unit.status.labors.MINE = true end end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then unit.status.labors.MINE = true end end end
 
 #useless I know I know but still. BE HAPPY! >:-(
 :lua for _,unit in ipairs(df.global.world.units.active) do unit.status.happiness = 4000 end
@@ -161,3 +161,12 @@
 
 :lua item=dfhack.gui.getSelectedItem() unit=item.general_refs[0].unit_id perp=df.unit.find(unit) print(df.creature_raw.find(perp.race).creature_id) perp.flags1.dead=false perp.flags1.merchant=false perp.flags1.incoming=false perp.flags1.ridden=false
 :lua perp=dfhack.gui.getSelectedUnit() print(df.creature_raw.find(perp.race).creature_id) perp.flags1.dead=false perp.flags1.merchant=false perp.flags1.incoming=false perp.flags1.ridden=false
+
+#"bugger off"
+:lua unit=dfhack.gui.getSelectedUnit() unit.flags1.diplomat==true unit.meeting.state=3 unit.animal.leave_countdown=20000
+:lua unit=dfhack.gui.getSelectedUnit() if unit.flags1.diplomat==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 end
+:lua unit=dfhack.gui.getSelectedUnit() if unit.flags1.merchant==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 end
+:lua unit=dfhack.gui.getSelectedUnit() if unit.flags1.forest==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 end
+:lua for _,unit in ipairs(df.global.world.units.active) do if unit.flags1.diplomat==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if unit.flags1.merchant==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if unit.flags1.forest==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 end end
