@@ -137,9 +137,14 @@
 #Check out a spot first... with this! Bye bye zoom
 :lua df.global.cursor.x=111 df.global.cursor.y=1 df.global.cursor.z=124
 
+<global.T_cursor: 0x00b10d40>
+x                        = 37
+y                        = 94
+z                        = 123
+
 #Moved down here... closer to the cursor set.
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.pos.x=146 unit.pos.y=100 unit.pos.z=124
-:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.path.dest.x=179 unit.pos.x=179 unit.path.dest.y=179 unit.pos.y=179 unit.path.dest.z=124 unit.pos.z=124
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.path.dest.x=37 unit.pos.x=37 unit.path.dest.y=94 unit.pos.y=94 unit.path.dest.z=123 unit.pos.z=123 unit.flags1.on_ground=false
 
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit) unit.name.nickname="Bump" unit.name.has_name=true
 
@@ -158,12 +163,12 @@
 :lua ~df.global.world.raws.creatures.all[df.global.ui.race_id].creature_id
 :lua ~df.creature_raw.find(df.global.ui.race_id).creature_id
 
-
+#Good for Resurrecting Wagons that have died of fright
 :lua item=dfhack.gui.getSelectedItem() unit=item.general_refs[0].unit_id perp=df.unit.find(unit) print(df.creature_raw.find(perp.race).creature_id) perp.flags1.dead=false perp.flags1.merchant=false perp.flags1.incoming=false perp.flags1.ridden=false
 :lua perp=dfhack.gui.getSelectedUnit() print(df.creature_raw.find(perp.race).creature_id) perp.flags1.dead=false perp.flags1.merchant=false perp.flags1.incoming=false perp.flags1.ridden=false
 
 #"bugger off"
-:lua unit=dfhack.gui.getSelectedUnit() unit.flags1.diplomat==true unit.meeting.state=3 unit.animal.leave_countdown=20000
+:lua unit=dfhack.gui.getSelectedUnit() unit.flags1.diplomat=true unit.meeting.state=3 unit.animal.leave_countdown=20000
 :lua unit=dfhack.gui.getSelectedUnit() if unit.flags1.diplomat==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 end
 :lua unit=dfhack.gui.getSelectedUnit() if unit.flags1.merchant==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 end
 :lua unit=dfhack.gui.getSelectedUnit() if unit.flags1.forest==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 end
