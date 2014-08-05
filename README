@@ -18,7 +18,7 @@ be gone soon. Paranoia Sucks.
 
 40.06 is the most current... with its tiny number of changes from 40.05
 
-data.X - the colors, inits, worldgen, speeches, and my modded fortressintro
+data.X - the colors, inits, worldgen, speeches, modded fortressintro modded "human_trade_bye", and modded monarch
 dfhack.X - a backup of my dfhack plugin source files, AND the scripts folder. Now then not all is mine in there... some
     are straight off the forums. Most everything should work.
 Holding Pen - If something is being worked on an original -likely broken- will be here.
@@ -28,11 +28,4 @@ raw.X - a big merge of all my mods and all other mods I've added to My Little Ar
 split out mods.X - all my mods in individual packages.
 split out mods.31.25 - the contents of the 31.25 zips ...
 
-Errata: Dwarf Fortress has a morbid sexual fetish about Middle Age... even if it has
-        to generate someone 5000 (out of MAXAGE:10000:30000) years old to do it.
-	Just see the 40.05 World uploaded above.
-
-	Glad I made an assumption about the reptile/rodent/etc men being
-	included in the 30:50->5:10 downsizing. Made for less raw changes.
-
-	Yes the split out mods will eventually be made for 0.40.0X (none have yet asked)
+Errata: Yes the split out mods will eventually be made for 0.40.0X (none have yet asked)

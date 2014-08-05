@@ -901,6 +901,8 @@ createitem BLOCKS GLASS_CRYSTAL 1
 createitem CHAIN GLASS_CRYSTAL 1
 createitem BUCKET GLASS_CRYSTAL 1
 
+createitem BAR INORGANIC:ADAMANTINE 1000
+
 spawnunit QUEEN_SUCCUBUS 0 "Canal Sweetwater" -- Don't forget to position cursor, and lookup that position then look up your civ_id number. Positioning is vital or they'll appear damned near anywhere. Do NOT hit enter until very sure.
 spawnunit MEWLI 3 "Purrsia" 58 169 124 138
 
@@ -934,18 +936,19 @@ createitem BARREL INORGANIC:LHIGATE 100
 createitem BIN INORGANIC:LHIGATE 100
 createitem TOOL:ITEM_TOOL_LARGE_POT INORGANIC:LHIGATE 100
 
-#Dorm
+#RESIDENTIAL Dorm
 createitem BED INORGANIC:LHIGATE 20
 createitem BOX INORGANIC:LHIGATE 40
 createitem CABINET INORGANIC:LHIGATE 40
 createitem CHAIR INORGANIC:LHIGATE 20
 createitem TABLE INORGANIC:LHIGATE 20
 createitem DOOR INORGANIC:LHIGATE 32
-#Hall
+#Hall And Dormitory
 createitem DOOR INORGANIC:LHIGATE 8
 createitem CHAIR INORGANIC:LHIGATE 36
 createitem TABLE INORGANIC:LHIGATE 36
 createitem BED INORGANIC:LHIGATE 16
+#Well
 createitem TRAPPARTS INORGANIC:LHIGATE 1
 createitem BLOCKS INORGANIC:LHIGATE 1
 createitem CHAIN INORGANIC:LHIGATE 1
@@ -962,13 +965,18 @@ createitem SPLINT INORGANIC:LHIGATE 10
 createitem CRUTCH INORGANIC:LHIGATE 10
 createitem THREAD INORGANIC:LHIGATE 10
 createitem BAR CREATURE_MAT:COW:SOAP 20
-
+#Magma Forge
 createitem ANVIL INORGANIC:LHIGATE 1
 createitem BLOCKS INORGANIC:LHIGATE 1
-
-
+#Graveyard&TombMisc
 createitem COFFIN INORGANIC:LHIGATE 20
 createitem SLAB INORGANIC:LHIGATE 20
 createitem STATUE INORGANIC:LHIGATE 20
 createitem ARMORSTAND INORGANIC:LHIGATE 20
 createitem WEAPONRACK INORGANIC:LHIGATE 20
+#Cell Block
+createitem CAGE INORGANIC:LHIGATE 20
+createitem CHAIN INORGANIC:LHIGATE 6
+createitem TABLE INORGANIC:LHIGATE 1
+createitem CHAIR INORGANIC:LHIGATE 1
+createitem DOOR INORGANIC:LHIGATE 6

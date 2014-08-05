@@ -4,6 +4,7 @@ creature_vilehorn
 
 [CREATURE:VILEHORN]
 	[NAME:vilehorn:vilehorns:vilehorn]
+	[CREATURE_TILE:140]
 	[CHILD:0]
 	[BODY_SIZE:0:0:3000]
 	[BODY_SIZE:0:1:15000]

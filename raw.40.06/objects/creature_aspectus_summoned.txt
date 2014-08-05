@@ -4,6 +4,9 @@ creature_aspectus_summoned
 
 [CREATURE:ASPECTUS_SUMMONED]
 	[NAME:Summoned Aspect:Summoned Aspects:Aspectus]
+	[CREATURE_TILE:2]
+	[GLOWTILE:'"'][GLOWCOLOR:4:0:1]
+	[ALTTILE:165]
 	[CASTE:ASPECTUS_SUMMONED_POISON]
 		[DESCRIPTION:A smallish humanoid ... composed of poisons and toxins according to legend. If you can outlast them you should prove victorious. Beware their deadly everything.]
 		[CASTE_NAME:Aspect of Poison:Aspects of Poison:Aspectus]

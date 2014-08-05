@@ -4,6 +4,7 @@ creature_proudhorn
 
 [CREATURE:PROUDHORN]
 	[NAME:proudhorn:proudhorns:proudhorn]
+	[CREATURE_TILE:140]
 	[CHILD:0]
 	[BODY_SIZE:0:0:3000]
 	[BODY_SIZE:0:1:15000]
