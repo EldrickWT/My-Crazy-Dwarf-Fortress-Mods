@@ -38,6 +38,6 @@ rb_eval df.world.items.all.each { |it| it.flags.foreign = false }
 
 
 //really close to happy... but I hardly understand ruby... or file output frankly. just line 13 only outputs one critter
-rb_eval File.open('raws.txt', 'w') {df.world.raws.creatures.all.each { |fd| fd.puts fd.raws.to_a }}
+rb_eval bob=File.open('raws.txt', 'w') {df.world.raws.creatures.all.each { |fd| bob.puts fd.raws.to_a }}
 
 rb_eval item=df.item_find(:selected); p (item)

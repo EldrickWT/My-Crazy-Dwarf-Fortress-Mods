@@ -17,7 +17,7 @@ local MAPS = {
 	"Drainage",
 	"Savagery",
 	"Volcanism",
-	"Current vegitation",
+	"Current vegetation",
 	"Evil",
 	"Salinity",
 	"Structures/fields/roads/etc.",

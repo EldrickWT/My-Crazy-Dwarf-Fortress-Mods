@@ -1,0 +1,5 @@
+c_variation_zapalltags.txt - From recent C_V testing.
+c_variation_pet_civ.txt - from recent C_V testing.
+creature_bouldersaurian.txt - from recent C_V testing, and ITEM cloud temperature. Based on the CREATURE:DRAGON entry.
+creature_sworddrake.txt - from recent TRAILING_ITEM_FLOW testing. Based on the CREATURE:DRAGON entry.
+creature_swordwyrm.txt - from recent UNDIRECTED_ITEM_CLOUD testing. Based on the CREATURE:DRAGON entry.

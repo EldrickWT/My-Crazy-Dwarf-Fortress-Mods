@@ -28,4 +28,26 @@ raw.X - a big merge of all my mods and all other mods I've added to My Little Ar
 split out mods.X - all my mods in individual packages.
 split out mods.31.25 - the contents of the 31.25 zips ...
 
-Errata: Yes the split out mods will eventually be made for 0.40.0X (none have yet asked)
+Errata: Yes the split out mods will eventually be made for 0.40.0X (none have yet asked).
+
+HoldingPen: Currently contains files from the C_V testing. This includes phase 1 testing
+    (ZAPALLTAGS and the Bouldersaurian files) and the Phase 0 and Phase 2 testing
+    (c_v petciv). It's 0 and 2 as it was the catalyst/event 0, and a post zapalltags phase
+    as well.
+
+    In c_variation_zapalltags.txt we have C_V ZAPALLTAGS itself which includes every TOKEN
+    in use in a my raw directory with only the CURIOUSBEAST tokens enabled.
+    Also has a trimmed down C_V CRASH which will CTD if you put the C_V file
+    and creature_bouldersaurian.txt into a given raw\objects directory and run an arena test.
+    I've deleted a copy of PET_CIV from the file as that is now right next to the other C_V.
+
+    In c_variation_pet_civ.txt we have the otherwise innocent C_V that adding the CURIOUSBEAST
+    removal tags to caused the whole mess to begin with. We also have a CTD positive
+    version of PET_CIV (PET_CIV2) which matches the Phase 0/Event 0 version of the file.
+    When it was added to the creature_pedoness.txt to try to remove any of the
+    three CURIOUSBEAST tags Crashed Dwarf Fortress.
+
+    I've also tested it (Phase 2) by just adding PET_CIV2 instead of PET_CIV to the
+    creature_fab.txt (a creature that has never had a CURIOUSBEAST tag) and CTD'd just as
+    easily. I did try mixing it up... and found CURIOUSBEAST_ITEM to be the lesser
+    of the three evils. The other two seem to be all you need. Even singly.

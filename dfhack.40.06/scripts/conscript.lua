@@ -3,6 +3,9 @@
 debug = false
 for _,arg in ipairs({...}) do
 	if string.lower(arg) == "debug" then debug = true	end
+	if string.lower(arg) == "mine" then mine = true	end
+	if string.lower(arg) == "fish" then fish = true	end
+	if string.lower(arg) == "hunt" then hunt = true	end
 end
 for _,v in ipairs(df.global.world.units.active) do
     if v.civ_id == df.global.ui.civ_id then
@@ -32,58 +35,61 @@ for _,v in ipairs(df.global.world.units.active) do
         end
         -- We don't check for POWER, should we? We also don't get nitty and gritty about the entity races.
         -- Training_level 9 is -SOME KIND OF NORMAL- when the tame flag is false. df.global.ui.civ_id members are typically level 9
-        if (df.global.world.raws.creatures.all[v.race].creature_id == "DOWNTRODDEN")
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "FABULOUSA")
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "FOOCUBI")
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "KOLCHA")
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "MEWLI")
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "MESSIANIC_FLUFFBALL")
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "QUEEN_SUCCUBUS")
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "TROLL")
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "WRAITH") then
-            if (debug == true) then print("Untaming a " ..df.global.world.raws.creatures.all[v.race].creature_id.. " " ..namey2) end
+        if (df.creature_raw.find(v.race).creature_id == "DOWNTRODDEN")
+          or (df.creature_raw.find(v.race).creature_id == "FABULOUSA")
+          or (df.creature_raw.find(v.race).creature_id == "FOOCUBI")
+          or (df.creature_raw.find(v.race).creature_id == "KOLCHA")
+          or (df.creature_raw.find(v.race).creature_id == "MEWLI")
+          or (df.creature_raw.find(v.race).creature_id == "MESSIANIC_FLUFFBALL")
+          or (df.creature_raw.find(v.race).creature_id == "QUEEN_SUCCUBUS")
+          or (df.creature_raw.find(v.race).creature_id == "TROLL")
+          or (df.creature_raw.find(v.race).creature_id == "WRAITH") then
+            if (debug == true) then print("Untaming a " ..df.creature_raw.find(v.race).creature_id.. " " ..namey2) end
             v.flags1.tame = false
             v.training_level = 9
         elseif (v.race == df.global.ui.race_id) then
-            if (debug == true) then print("Race match for a " ..df.global.world.raws.creatures.all[v.race].creature_id.. " " ..namey2) end
+            if (debug == true) then print("Race match for a " ..df.creature_raw.find(v.race).creature_id.. " " ..namey2) end
             v.flags1.tame = false
             v.training_level = 9
-        elseif (df.global.world.raws.creatures.all[v.race].flags.CASTE_CAN_SPEAK == false) or (df.global.world.raws.creatures.all[v.race].flags.CASTE_CAN_LEARN == false) then
-            if (debug == true) then print("Impairment detected: " ..df.global.world.raws.creatures.all[v.race].creature_id.. " " ..namey2) end
+        elseif (df.creature_raw.find(v.race).flags.CASTE_CAN_SPEAK == false) or (df.creature_raw.find(v.race).flags.CASTE_CAN_LEARN == false) then
+            if (debug == true) then print("Impairment detected: " ..df.creature_raw.find(v.race).creature_id.. " " ..namey2) end
             v.flags1.tame = true
             v.training_level = 7
         --Need to spell out the higher order/entity races in case of "tweak makeown" and "mercenaries". Animalmen'll still be boned but they kinda should be. At current anyway.
         --In either event, we're talking about CIV members already anyway. Aaand we already covered "pets" so now Mercenaries.
         --Could potentially be cleaned up to pull from the master entity list or the entity raws ... but this should be quick at least.
-        elseif (df.global.world.raws.creatures.all[v.race].creature_id == "ANGEL") --ANGEL_CIV
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "SEPUTUS") --CULTIST
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "DWARF") --MOUNTAIN
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "ELF") --FOREST
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "HUMAN") --PLAINS
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "GOBLIN") --EVIL
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "KOBOLD") --SKULKING...
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "FABULOUSA") --FABULOUSA
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "FALLEN") --FALLEN
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "KAPA") --KAPA...
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "KOLCHA") --KOLCHA
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "LOLI") --LOLI_CIV
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "MEWLI") --MEWLI
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "MLA") --MLA_CIV
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "PEDO") --PEDO ... 
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "FOOCUBI") --W_FOOCUBI_CIV
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "WRAITH") --WRAITH
-          or (df.global.world.raws.creatures.all[v.race].creature_id == "YIFFIAN") then --YIFFIAN_CIV
-            if (debug == true) then print("Mercenary " ..df.global.world.raws.creatures.all[v.race].creature_id.. " " ..namey2) end
+        elseif (df.creature_raw.find(v.race).creature_id == "ANGEL") --ANGEL_CIV
+          or (df.creature_raw.find(v.race).creature_id == "SEPUTUS") --CULTIST
+          or (df.creature_raw.find(v.race).creature_id == "DWARF") --MOUNTAIN
+          or (df.creature_raw.find(v.race).creature_id == "ELF") --FOREST
+          or (df.creature_raw.find(v.race).creature_id == "HUMAN") --PLAINS
+          or (df.creature_raw.find(v.race).creature_id == "GOBLIN") --EVIL
+          or (df.creature_raw.find(v.race).creature_id == "KOBOLD") --SKULKING...
+          or (df.creature_raw.find(v.race).creature_id == "FABULOUSA") --FABULOUSA
+          or (df.creature_raw.find(v.race).creature_id == "FALLEN") --FALLEN
+          or (df.creature_raw.find(v.race).creature_id == "KAPA") --KAPA...
+          or (df.creature_raw.find(v.race).creature_id == "KOLCHA") --KOLCHA
+          or (df.creature_raw.find(v.race).creature_id == "LOLI") --LOLI_CIV
+          or (df.creature_raw.find(v.race).creature_id == "MEWLI") --MEWLI
+          or (df.creature_raw.find(v.race).creature_id == "MLA") --MLA_CIV
+          or (df.creature_raw.find(v.race).creature_id == "PEDO") --PEDO ... 
+          or (df.creature_raw.find(v.race).creature_id == "FOOCUBI") --W_FOOCUBI_CIV
+          or (df.creature_raw.find(v.race).creature_id == "PROUDHORN") --PROUDHORN_CIV
+          or (df.creature_raw.find(v.race).creature_id == "VILEHORN") --VILEHORN_CIV
+          or (df.creature_raw.find(v.race).creature_id == "GARDOHN") --GARDOHN
+          or (df.creature_raw.find(v.race).creature_id == "WRAITH") --WRAITH
+          or (df.creature_raw.find(v.race).creature_id == "YIFFIAN") then --YIFFIAN_CIV
+            if (debug == true) then print("Mercenary " ..df.creature_raw.find(v.race).creature_id.. " " ..namey2) end
             v.flags1.tame = false
             v.training_level = 9
         --Spot open for Semi-megabeasts here...
         --Spot open for Megabeasts here...
         elseif not (v.race == df.global.ui.race_id) then
-            if (debug == true) then print("Race doesn't match for a " ..df.global.world.raws.creatures.all[v.race].creature_id.. " " ..namey2) end
+            if (debug == true) then print("Race doesn't match for a " ..df.creature_raw.find(v.race).creature_id.. " " ..namey2) end
             v.flags1.tame = true
             v.training_level = 7
         else --WTF?
-            if (debug == true) then print("No criteria for a " ..df.global.world.raws.creatures.all[v.race].creature_id.. " "..named..", so taming them.") end
+            if (debug == true) then print("No criteria for a " ..df.creature_raw.find(v.race).creature_id.. " "..named..", so taming them.") end
             v.flags1.tame = false
             v.training_level = 9
         end
@@ -163,6 +169,9 @@ for _,v in ipairs(df.global.world.units.active) do
         v.status.labors.PRESSING = true 
         v.status.labors.WAX_WORKING = true 
         v.status.labors.HANDLE_VEHICLES = true 
+        if mine==true then v.status.labors.MINE = true end
+        if fish==true then v.status.labors.FISH = true end
+        if hunt==true then v.status.labors.HUNT = true end
     end
     --/Old/ code for checking for mysterious extra labors.
     if (v.civ_id == df.global.ui.civ_id) and not (v.status.labors[74] == false) then print(dfhack.TranslateName(v.name,true).." has a true value for status.labors.74") end

@@ -37,7 +37,10 @@ rb_eval df.world.items.all.each { |it| it.flags.trader = false }
 rb_eval df.world.items.all.each { |it| it.flags.foreign = false }
 
 
-//really close to happy... but I hardly understand ruby... or file output frankly. just line 13 only outputs one critter
-rb_eval File.open('raws.txt', 'w') {df.world.raws.creatures.all.each { |fd| fd.puts fd.raws.to_a }}
+//The first one outputs to the screen. Minimize the console and maybe even df to speed things up ...
+//  because the line after that WILL not get the whole thing buffered for some reason. Then you can
+//  paste in (from the console) anything missing at the tail end of the raws.txt file.
+rb_eval df.world.raws.creatures.all.each { |fd| fd.puts fd.raws.to_a }
+rb_eval bob=File.open('raws.txt', 'a') {df.world.raws.creatures.all.each { |fd| bob.puts fd.raws.to_a}}
 
 rb_eval item=df.item_find(:selected); p (item)

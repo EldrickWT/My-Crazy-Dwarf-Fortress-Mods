@@ -137,11 +137,6 @@
 #Check out a spot first... with this! Bye bye zoom
 :lua df.global.cursor.x=111 df.global.cursor.y=1 df.global.cursor.z=124
 
-<global.T_cursor: 0x00b10d40>
-x                        = 37
-y                        = 94
-z                        = 123
-
 #Moved down here... closer to the cursor set.
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.pos.x=146 unit.pos.y=100 unit.pos.z=124
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.path.dest.x=37 unit.pos.x=37 unit.path.dest.y=94 unit.pos.y=94 unit.path.dest.z=123 unit.pos.z=123 unit.flags1.on_ground=false
