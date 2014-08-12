@@ -1,0 +1,166 @@
+item_silliness
+
+[OBJECT:ITEM]
+
+[ITEM_TOY:ITEM_TOY_PINBALL]
+[NAME:pinball machine:pinball machines]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_BOBBLEHEAD]
+[NAME:bobblehead:bobbleheads]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_AIRHOCKEY]
+[NAME:air-hockey machine:air-hockey machines]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_DWARVEN_BARBIE]
+[NAME:moria beach barbie doll:moria beach barbie dolls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_LIGHTER]
+[NAME:lighter:lighters]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_RAZOR_BLADES]
+[NAME:razor blade:razor blades]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_DOLL_BLOWUP]
+[NAME:blow-up doll:blow-up dolls]
+
+[ITEM_TOY:ITEM_TOY_ADULT]
+[NAME:'adult toy':'adult toys']
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_ADULT_VIBRATING]
+[NAME:vibrating 'adult toy':vibrating 'adult toys']
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_BUBBLEWRAP]
+[NAME:bubble wrap:bubble wrap]
+
+[ITEM_TOY:ITEM_TOY_POTATO_HEAD]
+[NAME:Mister Bloated-Tuber Head:Mister Bloated-Tuber Heads]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_BALL]
+[NAME:ball:balls]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TOY_PUTTY]
+[NAME:putty:putties]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_HOLOPHONER]
+[NAME:holophoner:holophoners]
+[HARD_MAT]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_BLUEMAN_TUBULUM_BACKPACK]
+[NAME:backpack tubulum:backpack tubulums]
+[HARD_MAT]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_BLUEMAN_PIANO_SMASHER]
+[NAME:piano smasher:piano smashers]
+[HARD_MAT]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_BLUEMAN_AIRPOLE]
+[NAME:airpole:airpoles]
+[HARD_MAT]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_VUVUZELA]
+[NAME:vuvuzela:vuvuzelas]
+[HARD_MAT]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_THEREMIN]
+[NAME:theremin:theremins]
+[HARD_MAT]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_TRIANGLE]
+[NAMEtriangle:triangles]
+[HARD_MAT]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_COWBELL]
+[NAME:cow bell:cow bells]
+[HARD_MAT]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_DIDGERIDOO]
+[NAME:didgeridoo:didgeridoos]
+[HARD_MAT]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_PLAYER_PIANO]
+[NAME:player piano:player pianos]
+[HARD_MAT]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_ONE_MAN_BAND]
+[NAME:one-man band:one-man bands]
+[HARD_MAT]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_AMP_SPINAL_TAP]
+[NAME:amp that goes up to eleven:amps that go up to eleven]
+[HARD_MAT]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_WASHBOARD]
+[NAME:washboard:washboards]
+[HARD_MAT]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_ACCORDIAN]
+[NAME:accordian:accordians]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_BAGPIPES]
+[NAME:bagpipes:bagpipes]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_BANDGEEKS_TORTURE]
+[NAME:instrument of torture:instruments of torture]
+[HARD_MAT]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_BANDGEEKS_MAYONAISE]
+[NAME:jar of  mayonaise:jars of mayonaise]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_BANDGEEKS_HORSERADISH]
+[NAME:horseradish:jars of horseradish]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_BALALAIKA]
+[NAME:balalaika:balalaikas]
+[HARD_MAT]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_BOOBAM_DRUM]
+[NAME:boobam drum:Boobam drums]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_BFP]
+[NAME:bowafridgeaphone:bowafridgeaphones]
+[HARD_MAT]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_DAXO]
+[NAME:daxophone:daxophones]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_SLIDE_WHISTLE]
+[NAME:slide-whistle:slide-whistles]
+[HARD_MAT]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_DRUM_MACHINE]
+[NAME:electronic drum machine:electronic drum machines]
+[HARD_MAT]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_MOUSE_ORGAN]
+[NAME:ewing mouse organ:ewing mouse organs]
+[HARD_MAT]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_MOUSE_ORGAN_ALTERNATE_WORDING]
+[NAME:pythonian mouse organ:pythonian mouse organs]
+[HARD_MAT]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_WHOVILLE_JING_TINGLERS]
+[NAME:set of jing-tinglers:sets of jing-tinglers]
+[HARD_MAT]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_LASERHARP]
+[NAME:laser harp:laser harps]
+[HARD_MAT]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_MAGMAPHONE]
+[NAME:magmaphone:magmaphones]
+[HARD_MAT]
+
+[ITEM_INSTRUMENT:ITEM_INSTRUMENT_PYROPHONE]
+[NAME:pyrophone:pyrophones]
+[HARD_MAT]

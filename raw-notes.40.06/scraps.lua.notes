@@ -138,7 +138,7 @@
 :lua df.global.cursor.x=111 df.global.cursor.y=1 df.global.cursor.z=124
 
 #Moved down here... closer to the cursor set.
-:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.pos.x=146 unit.pos.y=100 unit.pos.z=124
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.pos.x=49 unit.pos.y=45 unit.pos.z=103
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.path.dest.x=37 unit.pos.x=37 unit.path.dest.y=94 unit.pos.y=94 unit.path.dest.z=123 unit.pos.z=123 unit.flags1.on_ground=false
 
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit) unit.name.nickname="Bump" unit.name.has_name=true
@@ -148,9 +148,14 @@
 :lua for _,unit in ipairs(df.global.world.units.active) do unit.relations.pet_owner_id = -1 end
 
 #Individually tag "tweak clear-missing"? Nope!
-:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.counters.death_id ~= -1) then death=df.death_info.find(unit.counters.death_id) death.flags.discovered=true end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.counters.death_id ~= -1) then death=df.incident.find(unit.counters.death_id) death.flags.discovered=true end end
 
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(df.historical_figure.find(unit.hist_figure_id))
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) fig=df.historical_figure.find(unit.hist_figure_id) printall(fig)
+
+:lua entity=df.historical_entity.find(1894) print(dfhack.TranslateName(entity.name,true)) printall(entity)
+#Oh my god this damned bug is showing me really odd things...
+:lua for _,unit in ipairs(df.global.world.units.active) do if unit.hist_figure_id~=-1 then fig=df.historical_figure.find(unit.hist_figure_id) zig=0 for k,v in pairs(fig.entity_links) do zig=zig+1 end zig=zig-1 while zig ~= -1 do print(dfhack.TranslateName(df.historical_entity.find(fig.entity_links[zig].entity_id).name,true)) zig=zig-1 end end end
 
 #These should all match. Paranoia sucks.
 :lua ~df.global.world.raws.creatures.all[df.historical_entity.find(df.global.ui.main.fortress_entity.id).race].creature_id

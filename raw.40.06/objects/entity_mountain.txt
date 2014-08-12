@@ -2590,12 +2590,12 @@ ELVEN---v
 	#START ALLOW Diplomats - Done per Entity.
 	############################################################################################
 	[POSITION:DIPLOMAT]
-		[NAME:Diplomat:Diplomats]
+		[NAME:diplomat:diplomats]
 		[NUMBER:1]
 		[RESPONSIBILITY:MAKE_INTRODUCTIONS]
 		[RESPONSIBILITY:MAKE_PEACE_AGREEMENTS]
 		[RESPONSIBILITY:MAKE_TOPIC_AGREEMENTS]
-		APPOINTED_BY:DRUID Elven Diplomat
+		[APPOINTED_BY:MONARCH]
 		[PRECEDENCE:70]
 		[DO_NOT_CULL]
 		[COLOR:7:0:1]
