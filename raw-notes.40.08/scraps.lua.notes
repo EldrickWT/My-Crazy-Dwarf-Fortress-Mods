@@ -133,7 +133,7 @@
 #The weird things I've done before I found this gem ;;;>.>
 :lua ~df.global.cursor
 #Use that then this. replace the 68,92,119 with new x/y/z
-:lua item=dfhack.gui.getSelectedItem() dfhack.items.moveToGround(item,{x=68,y=92,z=119})
+:lua item=dfhack.gui.getSelectedItem() dfhack.items.moveToGround(item,{x=79,y=138,z=71})
 #Check out a spot first... with this! Bye bye zoom
 :lua df.global.cursor.x=111 df.global.cursor.y=1 df.global.cursor.z=124
 
@@ -167,11 +167,27 @@
 :lua item=dfhack.gui.getSelectedItem() unit=item.general_refs[0].unit_id perp=df.unit.find(unit) print(df.creature_raw.find(perp.race).creature_id) perp.flags1.dead=false perp.flags1.merchant=false perp.flags1.incoming=false perp.flags1.ridden=false
 :lua perp=dfhack.gui.getSelectedUnit() print(df.creature_raw.find(perp.race).creature_id) perp.flags1.dead=false perp.flags1.merchant=false perp.flags1.incoming=false perp.flags1.ridden=false
 
-#"bugger off"
+#bugger off
 :lua unit=dfhack.gui.getSelectedUnit() unit.flags1.diplomat=true unit.meeting.state=3 unit.animal.leave_countdown=20000
+#bugger off already tagged freaks.
 :lua unit=dfhack.gui.getSelectedUnit() if unit.flags1.diplomat==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 end
 :lua unit=dfhack.gui.getSelectedUnit() if unit.flags1.merchant==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 end
 :lua unit=dfhack.gui.getSelectedUnit() if unit.flags1.forest==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 end
 :lua for _,unit in ipairs(df.global.world.units.active) do if unit.flags1.diplomat==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 end end
 :lua for _,unit in ipairs(df.global.world.units.active) do if unit.flags1.merchant==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 end end
 :lua for _,unit in ipairs(df.global.world.units.active) do if unit.flags1.forest==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 end end
+
+:lua for _,unit in ipairs(df.global.world.units.active) do if not unit.race==df.global.ui.race_id then unit.status.labors
+:lua for _,unit in ipairs(df.global.world.units.active) do if not unit.race==df.global.ui.race_id then unit.status.labors.HAUL_FURNITURE=false unit.status.labors.HAUL_ITEM=false unit.status.labors.HAUL_ANIMALS=false unit.status.labors.HANDLE_VEHICLES=false unit.status.labors.HAUL_TRADE=false unit.status.labors.PULL_LEVER=false unit.status.labors.HAUL_WATER=false end end
+
+:lua item=dfhack.gui.getSelectedItem() for ref,value in ipairs(item.general_refs) do if not ref=="building_id" then item.flags.in_building=false end end
+:lua for _,item in pairs(df.global.world.items.other.IN_PLAY) do item.flags.in_building=false end
+
+
+#No you are not friendly!
+:lua for _,unit in ipairs(df.global.world.units.active) do if df.creature_raw.find(unit.race).creature_id=="GARDOHN" then if unit.flags1.diplomat==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 unit.incoming=false end end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if df.creature_raw.find(unit.race).creature_id=="GARDOHN" then if unit.flags1.merchant==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 unit.incoming=false end end end
+:lua for _,unit in ipairs(df.global.world.units.active) do if df.creature_raw.find(unit.race).creature_id=="GARDOHN" then if unit.flags1.forest==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 unit.incoming=false end end end
+
+#No more mister nice guy
+:lua for _,unit in ipairs(df.global.world.units.active) do if df.creature_raw.find(unit.race).creature_id=="GARDOHN" then unit.flags1.left=true end end

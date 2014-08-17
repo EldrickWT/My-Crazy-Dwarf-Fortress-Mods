@@ -31,13 +31,13 @@ raw.X - a big merge of all my mods and all other mods I've added to My Little Ar
 split out mods.X - all my mods in individual packages.
 split out mods.31.25 - the contents of the 31.25 zips ...
 
-Errata: Split Out Mods 40.0X is current for 40.06... which since Vanilla has *1* raw change
-    from 40.08 so do please continue to enjoy. I don't even think the file is referenced...
+Errata: Just a push before 0.40.09. Lots of little changes in the scraps.blah files.
 
-    In other news I have a DFHACK fork now... So only sentiment keeps the dfhack.x chain
-    around for the time being. In time I may delete all traces on this repo, as the files
-    are all meer inches away. At least I'm not strange enough to FORCE them onto one repo.
-    Because it would be a 30 Inch Cube going into a 15 Inch Round Hole.
+drhack.X: 
+    I have a DFHACK fork now... So only sentiment keeps the dfhack.x chain around for the
+    time being. In time I may delete all traces on this repo, as the files are all meer
+    inches away. At least I'm not strange enough to FORCE them onto one repo. Because it
+    would be a 30 Inch Cube going into a 15 Inch Round Hole.
 
 Holding Pen: Currently contains files from the C_V testing. This includes phase 1 testing
     (ZAPALLTAGS and the Bouldersaurian files) and the Phase 0 and Phase 2 testing

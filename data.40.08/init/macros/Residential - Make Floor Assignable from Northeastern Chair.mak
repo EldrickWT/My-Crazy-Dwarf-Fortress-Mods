@@ -1,4 +1,4 @@
-Make Residential Floor Assignable from Northeastern Chair
+Residential - Make Floor Assignable from Northeastern Chair
 		MOVIE_RECORD
 		OPTION18
 		CUSTOM_R
