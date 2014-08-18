@@ -16,7 +16,7 @@ Structure:
 .X The version it SHOULD work for. 31.25 content is still spelled out for cautionary
     reasons. 40.05 and younger dirs will be gone soon. Paranoia Sucks.
 
-40.08 is the most current... and nearly identical to 40.06... but Paranoia...
+40.09 is the most current...
 
 data.X - the colors, inits, worldgen, speeches, modded fortressintro modded
     "human_trade_bye", and modded monarch
@@ -31,7 +31,7 @@ raw.X - a big merge of all my mods and all other mods I've added to My Little Ar
 split out mods.X - all my mods in individual packages.
 split out mods.31.25 - the contents of the 31.25 zips ...
 
-Errata: Just a push before 0.40.09. Lots of little changes in the scraps.blah files.
+Errata: So 0.40.09. Kegs. Because 500 units of valuable liquids on the ground sucks.
 
 drhack.X: 
     I have a DFHACK fork now... So only sentiment keeps the dfhack.x chain around for the
