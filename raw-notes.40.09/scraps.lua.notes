@@ -138,7 +138,7 @@
 :lua df.global.cursor.x=111 df.global.cursor.y=1 df.global.cursor.z=124
 
 #Moved down here... closer to the cursor set.
-:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.pos.x=49 unit.pos.y=45 unit.pos.z=103
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.pos.x=134 unit.pos.y=94 unit.pos.z=87
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.path.dest.x=37 unit.pos.x=37 unit.path.dest.y=94 unit.pos.y=94 unit.path.dest.z=123 unit.pos.z=123 unit.flags1.on_ground=false
 
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit) unit.name.nickname="Bump" unit.name.has_name=true

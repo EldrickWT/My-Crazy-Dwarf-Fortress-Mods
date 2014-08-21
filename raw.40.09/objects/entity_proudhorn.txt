@@ -723,7 +723,7 @@ entity_proudhorn
 		[DUTY_BOUND]
 		[REQUIRED_OFFICE:1]
 	[POSITION:CHIEF_MEDICAL_DWARF]
-		[NAME:chief medical angel:chief medical angels]
+		[NAME:chief healer:chief healers]
 		[SITE]
 		REQUIRES_MARKET
 		[NUMBER:1]

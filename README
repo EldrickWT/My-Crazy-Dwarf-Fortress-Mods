@@ -14,7 +14,7 @@ http://dffd.wimbli.com/file.php?id=9219 built on MLA v0.40.05 r2
 Structure:
 
 .X The version it SHOULD work for. 31.25 content is still spelled out for cautionary
-    reasons. 40.05 and younger dirs will be gone soon. Paranoia Sucks.
+    reasons. 40.05 and younger dirs will be gone when 40.10 arrives. Paranoia Sucks.
 
 40.09 is the most current...
 
@@ -31,7 +31,7 @@ raw.X - a big merge of all my mods and all other mods I've added to My Little Ar
 split out mods.X - all my mods in individual packages.
 split out mods.31.25 - the contents of the 31.25 zips ...
 
-Errata: So 0.40.09. Kegs. Because 500 units of valuable liquids on the ground sucks.
+Errata: Kegs are still the biggest change this version.
 
 drhack.X: 
     I have a DFHACK fork now... So only sentiment keeps the dfhack.x chain around for the
