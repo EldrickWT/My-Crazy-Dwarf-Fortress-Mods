@@ -1,6 +1,0 @@
-c_variation_zha_unique_demon
-
-[OBJECT:CREATURE_VARIATION]
-
-[CREATURE_VARIATION:ZHA_UNIQUE_DEMON]
-	CV_ADD_TAG:UNIQUE_DEMON Doesn't Work wiothout a binpatch... could never get the previous binpatch to work ;.;

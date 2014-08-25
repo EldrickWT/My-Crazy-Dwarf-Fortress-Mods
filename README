@@ -13,15 +13,15 @@ http://dffd.wimbli.com/file.php?id=9219 built on MLA v0.40.05 r2
 
 Structure:
 
-.X The version it SHOULD work for. 31.25 content is still spelled out for cautionary
-    reasons. 40.05 and younger dirs will be gone when 40.10 arrives. Paranoia Sucks.
+.X The version it SHOULD work for.
 
-40.09 is the most current...
+40.10 is the most current... no change from 40.09
 
 data.X - the colors, inits, worldgen, speeches, modded fortressintro modded
     "human_trade_bye", and modded monarch
-dfhack.X - a backup of my dfhack plugin source files, AND the scripts folder. Now then not
-    all is mine in there... some are straight off the forums. Most everything should work.
+dfhack.X - an outdated backup of my dfhack plugin source files, AND the scripts folder.
+    Now then not all is mine in there... some are straight off the forums.
+    Most everything should work for versions prior to 40.06
 Holding Pen - See Below.
 raw-notes.X - all the (notes, addendums, apocrypha, and some experiments) for my mod(s)
 raw-notes.31.25 - the above for 31.25... or at least the contents of the zips that should
@@ -31,7 +31,7 @@ raw.X - a big merge of all my mods and all other mods I've added to My Little Ar
 split out mods.X - all my mods in individual packages.
 split out mods.31.25 - the contents of the 31.25 zips ...
 
-Errata: Kegs are still the biggest change this version.
+Errata: Kegs are still the biggest change this version... even considering 40.10 is out.
 
 drhack.X: 
     I have a DFHACK fork now... So only sentiment keeps the dfhack.x chain around for the
