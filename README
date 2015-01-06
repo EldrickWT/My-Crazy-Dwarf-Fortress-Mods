@@ -15,7 +15,7 @@ Structure:
 
 .X The version it SHOULD work for.
 
-40.10 is the most current... no change from 40.09
+40.23 is the most current... almost no REAL raw changes from 40.13 NOT that I uploaded that...
 
 data.X - the colors, inits, worldgen, speeches, modded fortressintro modded
     "human_trade_bye", and modded monarch
@@ -33,7 +33,7 @@ split out mods.31.25 - the contents of the 31.25 zips ...
 
 Errata: Kegs are still the biggest change this version... even considering 40.10 is out.
 
-drhack.X: 
+dfhack.X: 
     I have a DFHACK fork now... So only sentiment keeps the dfhack.x chain around for the
     time being. In time I may delete all traces on this repo, as the files are all meer
     inches away. At least I'm not strange enough to FORCE them onto one repo. Because it
