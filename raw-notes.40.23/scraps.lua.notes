@@ -123,7 +123,7 @@
 :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then unit.status.labors.MINE = true end end end
 
 #useless I know I know but still. BE HAPPY! >:-(
-:lua for _,unit in ipairs(df.global.world.units.active) do unit.status.happiness = 4000 end
+:lua for _,unit in ipairs(df.global.world.units.active) do unit.status.current_soul.personality.stress_level = -4000 end
 :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then unit.flags3.emotionally_overloaded = FALSE end end end
 
 #I hate broken caravans... and caravans overstaying their welcome in general.

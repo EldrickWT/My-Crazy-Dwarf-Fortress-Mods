@@ -340,7 +340,7 @@ createitem CHAIR GLASS_CRYSTAL 36
 createitem TABLE GLASS_CRYSTAL 36
 createitem BED GLASS_CRYSTAL 16
 
-#plants to keep cooks busy. Stack size realistically onlt goes up to 7-10... 5 is nice and average :/
+#plants to keep cooks busy. Stack size realistically only goes up to 7-10... 5 is nice and average :/
 createitem PLANT PLANT:"ALFALFA":STRUCTURAL 5
 createitem PLANT PLANT:"ARTICHOKE":STRUCTURAL 5
 createitem PLANT PLANT:"ASPARAGUS":STRUCTURAL 5
@@ -909,6 +909,7 @@ workflow count TOOL:ITEM_TOOL_FORK_CARVING 10 5
 workflow count TOOL:ITEM_TOOL_HIVE 10 5
 workflow count TOOL:ITEM_TOOL_HONEYCOMB 10 5
 workflow count TOOL:ITEM_TOOL_JUG 10 5
+workflow count TOOL:ITEM_TOOL_KEG 100 5
 workflow count TOOL:ITEM_TOOL_KNIFE_BONING 10 5
 workflow count TOOL:ITEM_TOOL_KNIFE_CARVING 10 5
 workflow count TOOL:ITEM_TOOL_KNIFE_MEAT_CLEAVER 10 5
