@@ -153,7 +153,7 @@
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(df.historical_figure.find(unit.hist_figure_id))
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) fig=df.historical_figure.find(unit.hist_figure_id) printall(fig)
 
-:lua entity=df.historical_entity.find(1894) print(dfhack.TranslateName(entity.name,true)) printall(entity)
+:lua entity=df.historical_entity.find(63) print(dfhack.TranslateName(entity.name,true)) printall(entity)
 #Oh my god this damned bug is showing me really odd things...
 :lua for _,unit in ipairs(df.global.world.units.active) do if unit.hist_figure_id~=-1 then fig=df.historical_figure.find(unit.hist_figure_id) zig=0 for k,v in pairs(fig.entity_links) do zig=zig+1 end zig=zig-1 while zig ~= -1 do print(dfhack.TranslateName(df.historical_entity.find(fig.entity_links[zig].entity_id).name,true)) zig=zig-1 end end end
 
