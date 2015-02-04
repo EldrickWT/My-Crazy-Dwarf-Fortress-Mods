@@ -15,7 +15,7 @@ Structure:
 
 .X The version it SHOULD work for.
 
-40.24 is the most current and at this point it fairly confidently updated for 40.24...
+40.24 is the most current and at this point is fairly confidently updated for 40.24...
 
 data.X - the colors, inits, worldgen, speeches, modded fortressintro modded
     "human_trade_bye", and modded monarch
@@ -53,6 +53,9 @@ Errata: It's a good thing and bad thing that The Toady One finally updated some 
 
 	If anyone is reading this ... and has questions feel free to ask. I'll find out
 	somehow I suspect.
+
+	And now the Split Out Mods have been updated to 40.24... gave them a new folder
+	as the gelding stuff doesn't back port.
 
 dfhack.X: 
     I have a DFHACK fork now... So only sentiment keeps the dfhack.x chain around for the
