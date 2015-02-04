@@ -231,7 +231,7 @@ reaction_silliness2
 	[SKILL:BREWING]
 
 [REACTION:MAKE_BERRY_HELL_DRINK]
-	[NAME:make tortured spirits]
+	[NAME:make hellberry wine]
 	[BUILDING:MIXERY:NONE]
 	[REAGENT:A:1:PLANT:NONE:PLANT_MAT:BERRY_HELL:STRUCTURAL]
 		[UNROTTEN]
