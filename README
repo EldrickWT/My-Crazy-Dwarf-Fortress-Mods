@@ -15,7 +15,7 @@ Structure:
 
 .X The version it SHOULD work for.
 
-40.23 is the most current... almost no REAL raw changes from 40.13 NOT that I uploaded that...
+40.24 is the most current and at this point it fairly confidently updated for 40.24...
 
 data.X - the colors, inits, worldgen, speeches, modded fortressintro modded
     "human_trade_bye", and modded monarch
@@ -31,7 +31,28 @@ raw.X - a big merge of all my mods and all other mods I've added to My Little Ar
 split out mods.X - all my mods in individual packages.
 split out mods.31.25 - the contents of the 31.25 zips ...
 
-Errata: Kegs are still the biggest change this version... even considering 40.10 is out.
+Errata: It's a good thing and bad thing that The Toady One finally updated some "This will
+	passively fail but not break anything really" situations. Like NOW you don't
+	remove leather so that things know what happens if something INEVITABLY tans the
+	skin of a creature... that you really hoped they wouldn't. Lemme explain.
+	
+	Removed leather to not have cat leather items? Guess what. Cat skin items that you
+	can't sort. Although you might get people to not use them now... except for all 
+	the people not at your fortress using them just fine. Oh and bringing them all the
+	time for trade. Beg The Toady One for a NOSKIN token. Or make your own skin that
+	is missing certain tokens to avoid being skinned and tanned.
+
+	Interesting to fix some items because they aren't part of the body detail plan
+	anyway... so DF was confused as to what to do.
+
+	And all the :PLANT reactions are now :STRUCTURAL as the foot was finally put down
+	about that. I'd have done that one sooner if ... I'd thought about it. Oopsie.
+
+	In the Oopsie file - that sungwood stepladder, and adding geldability to my Dwarf
+	definition in the wrong place.
+
+	If anyone is reading this ... and has questions feel free to ask. I'll find out
+	somehow I suspect.
 
 dfhack.X: 
     I have a DFHACK fork now... So only sentiment keeps the dfhack.x chain around for the
