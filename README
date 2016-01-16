@@ -17,7 +17,7 @@ Structure:
 .X The version it SHOULD work for.
 
 40.24 is the most STABLE and at this point is fairly confidently updated for 40.24...
-42.04 is the most CURRENT and I've still not abused the error_log for it's lunch money...
+42.04 is the most CURRENT but needs more abuse to find issues...
 
 data.X - the colors, inits, worldgen, speeches, modded fortressintro modded
     "human_trade_bye", and modded monarch
@@ -35,10 +35,8 @@ split out mods.31.25 - the contents of the 31.25 zips ...
 
 Errata: 42.XX has arrived. Now to find all the things slipping under the radar. After all
 	just because the vanilla/vanilla-ish assets conform does not mean much of anything
-	else. Like what? Well I just recalled the Inebriation Dilusion of Dwarves. Not.
-	Propagated. Yet. Also might still be some issues with the entities. BUT The world
-	did gen.
-	ADDENDUM. No I'm not sure what I'm botching that's having things spam up the Commit MSG.
+	else.
+	Errorlog.txt is clean. No Pregenned World yet.
 
 dfhack.X: 
     I have a DFHACK fork now... So only sentiment keeps the dfhack.x chain around for the
