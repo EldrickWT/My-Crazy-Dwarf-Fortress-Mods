@@ -32,9 +32,8 @@ raw.X - a big merge of all my mods and all other mods I've added to My Little Ar
 split out mods.X - all my mods in individual packages.
 split out mods.31.25 - the contents of the 31.25 zips ...
 
-Errata: Some fixes to some custom plants. It is my hope that the fixes propagate with a
-	world generation, but I've been checking the current world I'm playing for other
-	issues.
+Errata: This is primarily to make sure all 40.XX stuff has propagated to github.
+	42.XX coming soon.
 
 dfhack.X: 
     I have a DFHACK fork now... So only sentiment keeps the dfhack.x chain around for the

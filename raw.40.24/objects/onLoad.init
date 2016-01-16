@@ -9,7 +9,7 @@ keybinding set Ctrl-Shift-T "liquids-here-point"
 itemsyndrome
 fix/growthbug enable
 enable dwarfmonitor nestboxes infiniteSky resume
-fastdwarf 1 0
+#fastdwarf 1 0
 soundsense-season
 eld-log-region
 # SUPPOSED to turn [UNIQUE_DEMON] into a RAW compatible token

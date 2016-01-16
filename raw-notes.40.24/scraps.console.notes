@@ -810,12 +810,12 @@ workflow count BALLISTAARROWHEAD 10 5
 workflow count BALLISTAPARTS 10 5
 workflow count BAR 3000 10
 workflow count BAR//ASH 30 1
-workflow count BAR//COAL 100 1
+workflow count BAR//COAL 100 10
 workflow count BAR//CREATURE_MAT:DRAGON:FAT 20 1
 workflow count BAR//CREATURE_MAT:DRAGON:SOAP 20 1
 workflow count BAR//CREATURE_MAT:DRAGON:TALLOW 20 1
-workflow count BAR//INORGANIC:ADAMANTINE 1000 1
-workflow count BAR//INORGANIC:WYRD_GOLD 1000 1
+workflow count BAR//INORGANIC:ADAMANTINE 1000 100
+workflow count BAR//INORGANIC:WYRD_GOLD 1000 100
 workflow count BAR/METAL 1000 1
 workflow count BAR/SOAP 300 10
 workflow count BARREL 20 5
@@ -1029,6 +1029,14 @@ createitem TOOL:ITEM_TOOL_LARGE_POT INORGANIC:LHIGATE 100
 createitem BIN INORGANIC:LHIGATE 100
 createitem TOOL:ITEM_TOOL_KEG INORGANIC:LHIGATE 100
 
+#Lazy Single Door
+createitem DOOR INORGANIC:LHIGATE 1
+#Single Room - Note the LACK of door
+createitem CABINET INORGANIC:LHIGATE 2
+createitem BOX INORGANIC:LHIGATE 2
+createitem CHAIR INORGANIC:LHIGATE 1
+createitem TABLE INORGANIC:LHIGATE 1
+createitem BED INORGANIC:LHIGATE 1
 #RESIDENTIAL Dorm
 createitem BED INORGANIC:LHIGATE 20
 createitem BOX INORGANIC:LHIGATE 40
@@ -1073,6 +1081,5 @@ createitem CHAIN INORGANIC:LHIGATE 6
 createitem TABLE INORGANIC:LHIGATE 1
 createitem CHAIR INORGANIC:LHIGATE 1
 createitem DOOR INORGANIC:LHIGATE 6
-
-
+#Stepladder - Me and my need to track what I last pasted before a crash...
 createitem TOOL:ITEM_TOOL_STEPLADDER INORGANIC:LHIGATE 10
