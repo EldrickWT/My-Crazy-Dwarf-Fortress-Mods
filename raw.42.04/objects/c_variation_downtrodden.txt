@@ -78,4 +78,7 @@ c_variation_downtrodden
 	[CV_ADD_TAG:PREFSTRING:for surviving failing their gods without a curse like therianthropy or mummification...]
 	[CV_ADD_TAG:ORIENTATION:FEMALE:25:50:25]
 	[CV_ADD_TAG:ORIENTATION:MALE:25:50:25]
+	[CV_ADD_TAG:STRANGE_MOODS]
+	[CV_ADD_TAG:SYNDROME_DILUTION_FACTOR:INEBRIATION:150]
+	[CV_ADD_TAG:OUTSIDER_CONTROLLABLE]
 

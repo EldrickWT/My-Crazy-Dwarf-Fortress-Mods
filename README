@@ -17,7 +17,7 @@ Structure:
 .X The version it SHOULD work for.
 
 40.24 is the most STABLE and at this point is fairly confidently updated for 40.24...
-42.04 is the most CURRENT but needs more abuse to find issues...
+42.05 is the most CURRENT but needs more abuse to find issues...
 
 data.X - the colors, inits, worldgen, speeches, modded fortressintro modded
     "human_trade_bye", and modded monarch
@@ -36,7 +36,7 @@ split out mods.31.25 - the contents of the 31.25 zips ...
 Errata: 42.XX has arrived. Now to find all the things slipping under the radar. After all
 	just because the vanilla/vanilla-ish assets conform does not mean much of anything
 	else.
-	Errorlog.txt is clean. No Pregenned World yet.
+	Errorlog.txt is clean. No Pregenned World yet. The known 42.04/05 bugs are weird.
 
 dfhack.X: 
     I have a DFHACK fork now... So only sentiment keeps the dfhack.x chain around for the
