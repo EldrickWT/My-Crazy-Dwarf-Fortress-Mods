@@ -8,7 +8,7 @@ keybinding set Ctrl-Shift-R "tiletypes-here-point"
 keybinding set Ctrl-Shift-T "liquids-here-point"
 itemsyndrome
 fix/growthbug enable
-enable dwarfmonitor nestboxes infiniteSky resume
+enable dwarfmonitor infiniteSky resume
 #fastdwarf 1 0
 soundsense-season
 eld-log-region

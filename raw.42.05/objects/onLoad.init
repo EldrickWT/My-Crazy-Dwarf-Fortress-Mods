@@ -6,9 +6,12 @@ keybinding set Ctrl-Shift-W "hackWish"
 keybinding set Ctrl-Shift-E ":lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.profession = 99 unit.profession2 = 99"
 keybinding set Ctrl-Shift-R "tiletypes-here-point"
 keybinding set Ctrl-Shift-T "liquids-here-point"
+keybinding set Ctrl-Shift-Y ":lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.profession = 102 unit.profession2 = 102"
+keybinding set Ctrl-Shift-O ":lua df.global.debug_turbospeed=true"
+keybinding set Ctrl-Shift-P ":lua df.global.debug_turbospeed=false"
 itemsyndrome
 fix/growthbug enable
-enable dwarfmonitor nestboxes infiniteSky resume
+enable dwarfmonitor infiniteSky resume
 #fastdwarf 1 0
 soundsense-season
 eld-log-region
@@ -22,10 +25,13 @@ enable manipulator
 enable search
 enable automaterial
 stockflow enable
-:lua dfhack.onStateChange.onLoadBloodDel = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -name blooddeljorb -time 1 -timeUnits months -command [fix/blood-del]') end end
-:lua dfhack.onStateChange.onLoadGrowthBug = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -name growthbugjorb -time 1 -timeUnits months -command [fix/growthbug]') end end
-:lua dfhack.onStateChange.onLoadRegrass = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -name regrassjorb -time 1 -timeUnits months -command [regrass max]') end end
-:lua dfhack.onStateChange.onLoadCleanMap = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -name cleanmapjorb -time 1 -timeUnits days -command [clean all mud snow]') end end
+#:lua dfhack.onStateChange.onLoadBloodDel = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -name blooddeljorb -time 1 -timeUnits months -command [fix/blood-del]') end end
+fix/blood-del
+#:lua dfhack.onStateChange.onLoadGrowthBug = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -name growthbugjorb -time 1 -timeUnits months -command [fix/growthbug]') end end
+#:lua dfhack.onStateChange.onLoadRegrass = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -name regrassjorb -time 1 -timeUnits months -command [regrass max]') end end
+repeat -name regrassjorb -time 1 -timeUnits days -command [ regrass max ]
+#:lua dfhack.onStateChange.onLoadCleanMap = function(state) if state == SC_WORLD_LOADED then dfhack.run_command('repeat -name cleanmapjorb -time 1 -timeUnits days -command [clean all mud snow]') end end
+repeat -name cleanmapjorb -time 1 -timeUnits days -command [ clean all snow ]
 :lua df.global.debug_showambush=true
 :lua df.global.debug_fastmining=true
 workNow 2

@@ -135,7 +135,7 @@
 #Use that then this. replace the 68,92,119 with new x/y/z
 :lua item=dfhack.gui.getSelectedItem() dfhack.items.moveToGround(item,{x=79,y=138,z=71})
 #Check out a spot first... with this! Bye bye zoom
-:lua df.global.cursor.x=111 df.global.cursor.y=1 df.global.cursor.z=124
+:lua df.global.cursor.x=87 df.global.cursor.y=97 df.global.cursor.z=161
 
 #Moved down here... closer to the cursor set.
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.pos.x=70 unit.pos.y=103 unit.pos.z=164
