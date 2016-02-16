@@ -18,15 +18,14 @@ Structure:
 
 .X The version it SHOULD work for.
 
-40.24 is the most STABLE and at this point is fairly confidently updated for 40.24...
-42.05 is the most CURRENT but needs more abuse to find issues...
-42.06 TBA
+42.05 is VERY STABLE and mostly Error Free. Perhaps just needs a new test fort.
+42.06 TBA - I just stared at too many files... not ready to stare at 42.06 yet.
 
 data.X - the colors, inits, worldgen, speeches, modded fortressintro modded
     "human_trade_bye", and modded monarch
 dfhack.X - an outdated backup of my dfhack plugin source files, AND the scripts folder.
     Now then not all is mine in there... some are straight off the forums.
-    Most everything should work for versions prior to 40.06
+    Most everything should work for versions prior to 40.06. More Below.
 Holding Pen - See Below.
 raw-notes.X - all the (notes, addendums, apocrypha, and some experiments) for my mod(s)
 raw-notes.31.25 - the above for 31.25... or at least the contents of the zips that should
@@ -39,9 +38,9 @@ split out mods.31.25 - the contents of the 31.25 zips ...
 Errata: 42.XX has arrived. Now to find all the things slipping under the radar. After all
 	just because the vanilla/vanilla-ish assets conform does not mean much of anything
 	else.
-	42.05 is still my current. 42.06 might have to wait a tad. 220 beds and an Inn
-	still has patrons tells me something is not quite right. TREE seeds are odd...
-	because dfhack's workflow sees them as FARMING seed producing jobs >.<
+	42.05 is still my current. 42.06 might have to wait a tad.
+	Latest. Just added Generated forms to just about everyone. And Book crafting -.-
+	and here I was trying to test that with my Fallen Fortress.
 
 dfhack.X: 
     I have a DFHACK fork now... So only sentiment keeps the dfhack.x chain around for the
