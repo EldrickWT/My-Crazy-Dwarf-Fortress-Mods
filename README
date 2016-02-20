@@ -19,7 +19,7 @@ Structure:
 .X The version it SHOULD work for.
 
 42.05 is VERY STABLE and mostly Error Free. Perhaps just needs a new test fort.
-42.06 TBA - I just stared at too many files... not ready to stare at 42.06 yet.
+42.06 TBA - I don't ADV Mode. No 42.06 DFHACK either. Might skip it.
 
 data.X - the colors, inits, worldgen, speeches, modded fortressintro modded
     "human_trade_bye", and modded monarch
@@ -39,8 +39,10 @@ Errata: 42.XX has arrived. Now to find all the things slipping under the radar. 
 	just because the vanilla/vanilla-ish assets conform does not mean much of anything
 	else.
 	42.05 is still my current. 42.06 might have to wait a tad.
-	Latest. Just added Generated forms to just about everyone. And Book crafting -.-
-	and here I was trying to test that with my Fallen Fortress.
+	Latest. Sungwood trees got a major upgrade. I still don't think they should just be
+	sprouting all over the surface...
+	like my Diamond Root Bulbs that seem to dominate ecosystems...
+	BUT they now have oils and soaps and paper and fruits and and and. Testing @.@v
 
 dfhack.X: 
     I have a DFHACK fork now... So only sentiment keeps the dfhack.x chain around for the
