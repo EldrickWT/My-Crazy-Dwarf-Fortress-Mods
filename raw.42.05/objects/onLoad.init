@@ -10,6 +10,7 @@ keybinding set Ctrl-Shift-Y ":lua unit=dfhack.gui.getSelectedUnit() print(dfhack
 keybinding set Ctrl-Shift-U ":lua item=dfhack.gui.getSelectedItem() item.flags.in_building=false"
 keybinding set Ctrl-Shift-O ":lua df.global.debug_turbospeed=true"
 keybinding set Ctrl-Shift-P ":lua df.global.debug_turbospeed=false"
+keybinding set Ctrl-Shift-B ":lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.flags2.slaughter=true"
 itemsyndrome
 fix/growthbug enable
 enable dwarfmonitor infiniteSky resume
