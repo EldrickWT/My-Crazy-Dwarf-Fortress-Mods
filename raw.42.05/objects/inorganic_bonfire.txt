@@ -15,4 +15,5 @@ inorganic_bonfire
 	[BOILING_POINT:NONE]
 	[SOLID_DENSITY:10000]
 	[IS_STONE]
+	[SPECIAL]
 
