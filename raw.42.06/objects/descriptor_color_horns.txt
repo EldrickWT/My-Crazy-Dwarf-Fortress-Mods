@@ -1,0 +1,27 @@
+descriptor_color_horns
+
+[OBJECT:DESCRIPTOR_COLOR]
+
+[COLOR:SMOOTH_HORN]
+	[NAME:smooth]
+	[RGB:255:0:0]
+
+[COLOR:SPIRAL_HORN]
+	[NAME:smooth]
+	[RGB:255:0:0]
+[COLOR:FLUTED_HORN]
+	[NAME:fluted]
+	[RGB:255:0:0]
+[COLOR:HELIX_HORN]
+	[NAME:helix]
+	[RGB:255:0:0]
+
+[COLOR:SPIKED_HORN]
+	[NAME:spiked-like-a-club-with-crystals]
+	[RGB:255:0:0]
+[COLOR:SHARDED_HORN]
+	[NAME:covered-in-crystal-shards]
+	[RGB:255:0:0]
+[COLOR:INFUSED_HORN]
+	[NAME:run-through-with-crystals]
+	[RGB:255:0:0]

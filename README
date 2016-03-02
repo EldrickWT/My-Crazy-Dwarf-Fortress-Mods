@@ -18,8 +18,7 @@ Structure:
 
 .X The version it SHOULD work for.
 
-42.05 is VERY STABLE and mostly Error Free. Perhaps just needs a new test fort.
-42.06 TBA - I don't ADV Mode. No 42.06 DFHACK either. Might skip it.
+42.06 is NOW TESTING. Hang onto something. Currently a Mewli fortress.
 
 data.X - the colors, inits, worldgen, speeches, modded fortressintro modded
     "human_trade_bye", and modded monarch
@@ -38,15 +37,20 @@ split out mods.31.25 - the contents of the 31.25 zips ...
 Errata: 42.XX has arrived. Now to find all the things slipping under the radar. After all
 	just because the vanilla/vanilla-ish assets conform does not mean much of anything
 	else.
-	42.05 is still my current. 42.06 might have to wait a tad.
 	Latest. Sungwood trees got a major upgrade. I still don't think they should just be
-	sprouting all over the surface... (addendum... I made them low freq)
-	like my Diamond Root Bulbs that seem to dominate ecosystems...
-	BUT they now have oils and soaps and paper and fruits and and and. Testing @.@v
+	sprouting all over the surface... (addendum... I made them low freq... I have two
+	saplings. So I think I nailed the frequency... for now.)
 	Also testing a change to INORGANIC:BONFIRE to keep people from bringing it onto my
-	map as innoculous things like bonfinre bagpipes >.<!! Not like I needed a trade depot.
+	map as innoculous things like bonfire musical instruments >.<!!
 	Slight Proliferation of petciv potential. IF they'll do work...
-	might as well let them unload their own inventories.
+	might as well let them unload their own inventories. Rice Pudding Golems testing fine...
+	Earth Golems kinda weird. They seem to refuse to note they can change their own equipment.
+
+	Testing @.@v
+
+	My DFHack scripts have their own repository. This should allow more frequent
+	backups/proliferation. I still had some 40.0X changes in there (my DFHack fork)...
+	but I was actually utilizing 42.0X scripts in my play directory. @.@
 
 dfhack.X: 
     I have a DFHACK fork now... So only sentiment keeps the dfhack.x chain around for the
