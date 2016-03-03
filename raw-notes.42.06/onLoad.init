@@ -35,5 +35,5 @@ repeat -name cleanmapjorb -time 1 -timeUnits days -command [ clean all snow ]
 workNow 2
 #conscript-eld
 repeat -name fixweatherjorb -time 7 -timeUnits days -command [ multicmd weather clear; weather rain]
-repeat -name alphareleasesavejorb -time 28 -timeUnits days -command [ multicmd nopause 1; quicksave; nopause 0 ]
+repeat -name alphareleasesavejorb -time 28 -timeUnits days -command [ quicksave ]
 :lua dfhack.script_environment('gui/prerelease-warning').shown = true
