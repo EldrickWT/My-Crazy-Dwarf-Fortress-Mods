@@ -5,20 +5,22 @@ http://www.bay12forums.com/smf/index.php?topic=89174.0
 
 Wiki for the Mods:
 N/A
-A Playable Pregenned Region Download (34.11):
+
+A Playable Pregenned Region
+Download (34.11):
 http://dffd.wimbli.com/file.php?id=8353 built on MLA v0.34.11 r4
 Download (40.0X)
 http://dffd.wimbli.com/file.php?id=9219 built on MLA v0.40.05 r2
 Download (40.2X)
 http://dffd.bay12games.com/file.php?id=10549 built on MLA v0.40.24 r2
 Download (42.XX)
-TBA -Tempted to slap my Fallen Fortress up and call it a day...
+TBA
 
 Structure:
 
 .X The version it SHOULD work for.
 
-42.06 is NOW TESTING. Hang onto something. Currently a Mewli fortress.
+42.06 is NOW TESTING. Hang onto something. Currently an Arachnid fortress.
 
 data.X - the colors, inits, worldgen, speeches, modded fortressintro modded
     "human_trade_bye", and modded monarch
@@ -38,19 +40,11 @@ Errata: 42.XX has arrived. Now to find all the things slipping under the radar. 
 	just because the vanilla/vanilla-ish assets conform does not mean much of anything
 	else.
 	Latest. Sungwood trees got a major upgrade. I still don't think they should just be
-	sprouting all over the surface... (addendum... I made them low freq... I have two
-	saplings. So I think I nailed the frequency... for now.)
-	Also testing a change to INORGANIC:BONFIRE to keep people from bringing it onto my
-	map as innoculous things like bonfire musical instruments >.<!!
+	sprouting all over the surface... so why does such a low frequency pop them up
+	everywhere? Granted they aren't as common as Diamond Root Bulbs but still.
+	Also testing a change to INORGANIC:BONFIRE - So far No new bonfire items.
 	Slight Proliferation of petciv potential. IF they'll do work...
-	might as well let them unload their own inventories. Rice Pudding Golems testing fine...
-	Earth Golems kinda weird. They seem to refuse to note they can change their own equipment.
-
-	Testing @.@v
-
-	My DFHack scripts have their own repository. This should allow more frequent
-	backups/proliferation. I still had some 40.0X changes in there (my DFHack fork)...
-	but I was actually utilizing 42.0X scripts in my play directory. @.@
+	might as well let them unload their own inventories. Testing is odd @.@v
 
 dfhack.X: 
     I have a DFHACK fork now... So only sentiment keeps the dfhack.x chain around for the
