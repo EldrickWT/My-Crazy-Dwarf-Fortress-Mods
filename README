@@ -20,7 +20,7 @@ Structure:
 
 .X The version it SHOULD work for.
 
-42.06 is NOW TESTING. Hang onto something. Currently an Arachnid fortress.
+42.06 is NOW TESTING. Brace for Impact.
 
 data.X - the colors, inits, worldgen, speeches, modded fortressintro modded
     "human_trade_bye", and modded monarch
@@ -39,13 +39,11 @@ split out mods.31.25 - the contents of the 31.25 zips ...
 Errata: 42.XX has arrived. Now to find all the things slipping under the radar. After all
 	just because the vanilla/vanilla-ish assets conform does not mean much of anything
 	else.
-	Latest. Sungwood trees got a major upgrade. I still don't think they should just be
-	sprouting all over the surface... so why does such a low frequency pop them up
-	everywhere? Granted they aren't as common as Diamond Root Bulbs but still.
-	Also testing a change to INORGANIC:BONFIRE - So far No new bonfire items.
-	Slight Proliferation of petciv potential. IF they'll do work...
-	might as well let them unload their own inventories. Testing is odd @.@v
-
+	So. Increased the civ counts from 1... after a world where an entire civ just
+	abandoned everything right before world gen ended. Did they all go Necromancer?
+	I'm still combing through the xml/legends/rhutabega. @.@
+	Also kinda getting sick of a minor megabeast wiping a civ entirely off the map
+	without trying. >_< And I'm still working on some Uninvited Guests, and and and...
 dfhack.X: 
     I have a DFHACK fork now... So only sentiment keeps the dfhack.x chain around for the
     time being. In time I may delete all traces on this repo, as the files are all meer
