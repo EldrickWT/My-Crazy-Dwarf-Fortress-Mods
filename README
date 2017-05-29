@@ -14,13 +14,15 @@ http://dffd.wimbli.com/file.php?id=9219 built on MLA v0.40.05 r2
 Download (40.2X)
 http://dffd.bay12games.com/file.php?id=10549 built on MLA v0.40.24 r2
 Download (42.XX)
+Cancelled
+Download (43.XX)
 TBA
 
 Structure:
 
 .X The version it SHOULD work for.
 
-42.06 is NOW TESTING. Brace for Impact.
+43.05 is NOW TESTING. Brace for Impact.
 
 data.X - the colors, inits, worldgen, speeches, modded fortressintro modded
     "human_trade_bye", and modded monarch
@@ -36,41 +38,14 @@ raw.X - a big merge of all my mods and all other mods I've added to My Little Ar
 split out mods.X - all my mods in individual packages.
 split out mods.31.25 - the contents of the 31.25 zips ...
 
-Errata: 42.XX has arrived. Now to find all the things slipping under the radar. After all
-	just because the vanilla/vanilla-ish assets conform does not mean much of anything
-	else.
+Errata: Version blahblahblah arrived .. find .. slipping .. radar.
+
 	So. Increased the civ counts from 1... after a world where an entire civ just
 	abandoned everything right before world gen ended. Did they all go Necromancer?
-	I'm still combing through the xml/legends/rhutabega. @.@
-	Also kinda getting sick of a minor megabeast wiping a civ entirely off the map
-	without trying. >_< And I'm still working on some Uninvited Guests, and and and...
 dfhack.X: 
     I have a DFHACK fork now... So only sentiment keeps the dfhack.x chain around for the
     time being. In time I may delete all traces on this repo, as the files are all meer
     inches away. At least I'm not strange enough to FORCE them onto one repo. Because it
     would be a 30 Inch Cube going into a 15 Inch Round Hole.
 
-Holding Pen: Currently contains files from the C_V testing. This includes phase 1 testing
-    (ZAPALLTAGS and the Bouldersaurian files) and the Phase 0 and Phase 2 testing
-    (c_v petciv). It's 0 and 2 as it was the catalyst/event 0, and a post zapalltags phase
-    as well.
-
-    In c_variation_zapalltags.txt we have C_V ZAPALLTAGS itself which includes every TOKEN
-    in use in a my raw directory with only the CURIOUSBEAST tokens enabled.
-    Also has a trimmed down C_V CRASH which will CTD if you put the C_V file
-    and creature_bouldersaurian.txt into a given raw\objects directory and run an arena
-    test. I've deleted a copy of PET_CIV from the file as that is now right next to this
-    C_V.
-
-    In c_variation_pet_civ.txt we have the otherwise innocent C_V that adding the
-    CURIOUSBEAST removal tags to caused the whole mess to begin with. We also have a
-    CTD positive version of PET_CIV (PET_CIV2) which matches the Phase 0/Event 0 version
-    of the file. When it was added to the creature_pedoness.txt to try to remove any of
-    the three CURIOUSBEAST tags Crashed Dwarf Fortress.
-
-    I've also tested it (Phase 2) by just adding PET_CIV2 instead of PET_CIV to the
-    creature_fab.txt (a creature that has never had a CURIOUSBEAST tag) and CTD'd just as
-    easily. I did try mixing it up... and found CURIOUSBEAST_ITEM to be the lesser
-    of the three evils. The other two seem to be all you need. Even singly. THAT SAID
-    it could be some pure overload of C_V data... GAITs, attacks, and the PET_CIV might
-    just be too much. Only the Toady One would know.
+Holding Pen: Currently contains files from the C_V testing. See previous README for details.
