@@ -1002,8 +1002,16 @@ createitem BUCKET GLASS_CRYSTAL 1
 createitem BAR INORGANIC:ADAMANTINE 1000
 createitem BOULDER INORGANIC:RAW_ADAMANTINE 10
 
-spawnunit QUEEN_SUCCUBUS 0 "Canal Sweetwater" -- Don't forget to position cursor, and lookup that position then look up your civ_id number. Positioning is vital or they'll appear damned near anywhere. Do NOT hit enter until very sure.
-spawnunit MEWLI 3 "Purrsia" 58 169 124 138
+#old spawnunit QUEEN_SUCCUBUS 0 "Canal Sweetwater" -- Don't forget to position cursor, and lookup that position then look up your civ_id number. Positioning is vital or they'll appear damned near anywhere. Do NOT hit enter until very sure.
+#old spawnunit MEWLI 3 "Purrsia" 58 169 124 138
+
+#HOW IT WORKS NOW (8/24/2017)
+modtools/create-unit -race MEWLI -caste MALE_SLAVE -setUnitToFort -name MEWLI -nick Rubble -age 10 -location [ 112 129 125 ]
+modtools/create-unit -race MEWLI -caste FEMALE_SLAVE -setUnitToFort -name MEWLI -nick Chisel -age 10 -location [ 111 129 125 ]
+
+#from above older example
+modtools/create-unit -race MEWLI -caste MALE_SLAVE -setUnitToFort -name MEWLI -nick Purrsia -age 10 -location [ 169 124 138 ]
+modtools/create-unit -race QUEEN_SUCCUBUS -setUnitToFort -nick "Canal Sweetwater" -age 100 #location is cursor. or use 'position' then put that into '-location [ x y z ]'
 
 createitem ARMOR:ITEM_ARMOR_BREASTPLATE INORGANIC:LHIGATE 10
 createitem ARMOR:ITEM_ARMOR_CAPE INORGANIC:LHIGATE 10
@@ -1027,6 +1035,10 @@ createitem PANTS:ITEM_PANTS_SKIRT_SHORT INORGANIC:LHIGATE 10
 createitem SHIELD:ITEM_SHIELD_SHIELD INORGANIC:LHIGATE 10
 createitem SHOES:ITEM_SHOES_BOOTS INORGANIC:LHIGATE 10
 createitem SHOES:ITEM_SHOES_SOCKS INORGANIC:LHIGATE 10
+
+#For the mindbogglingly /determined/ shoe wearers
+createitem SHOES:ITEM_SHOES_SHOES INORGANIC:LHIGATE 10
+
 
 createitem WEAPON:ITEM_WEAPON_AXE_BATTLE INORGANIC:LHIGATE 10
 createitem WEAPON:ITEM_WEAPON_PICK INORGANIC:LHIGATE 10
@@ -1088,7 +1100,7 @@ createitem CHAIN INORGANIC:LHIGATE 6
 createitem TABLE INORGANIC:LHIGATE 1
 createitem CHAIR INORGANIC:LHIGATE 1
 createitem DOOR INORGANIC:LHIGATE 6
-#Stepladder - Me and my need to track what I last pasted before a crash...
+#Stepladder
 createitem TOOL:ITEM_TOOL_STEPLADDER INORGANIC:LHIGATE 10
 
 createitem BARREL INORGANIC:WYRD_GOLD 100
@@ -1124,4 +1136,12 @@ createitem TOOL:ITEM_TOOL_KEG GLASS_CRYSTAL 100
 createitem BARREL PLANT_MAT:SUNGWOOD:WOOD 100
 createitem TOOL:ITEM_TOOL_LARGE_POT PLANT_MAT:SUNGWOOD:WOOD 100
 createitem BIN PLANT_MAT:SUNGWOOD:WOOD 100
+createitem BIN PLANT_MAT:SUNGWOOD:THREAD 100
 createitem TOOL:ITEM_TOOL_KEG PLANT_MAT:SUNGWOOD:WOOD 100
+
+createitem TOOL:ITEM_TOOL_SCROLL_ROLLERS PLANT_MAT:SUNGWOOD:WOOD 10
+createitem TOOL:ITEM_TOOL_QUIRE PLANT_MAT:SUNGWOOD:THREAD 10
+createitem TOOL:ITEM_TOOL_SCROLL PLANT_MAT:SUNGWOOD:THREAD 10
+createitem TOOL:ITEM_TOOL_BOOK_BINDING PLANT_MAT:SUNGWOOD:THREAD 10
+createitem TOOL:ITEM_TOOL_BOOKCASE PLANT_MAT:SUNGWOOD:WOOD 10
+createitem SHEET PLANT_MAT:SUNGWOOD:THREAD 10000

@@ -5,8 +5,6 @@
 :lua dfhack.gui.getSelectedUnit().civ_id = df.global.ui.civ_id
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true))
 
-:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.flags1.forest==true or unit.flags1.diplomat==true or unit.flags1.merchant==true) then unit.flags1.left = true end end
-
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true).." will be butchered.") unit.flags2.slaughter=true
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true).." is disarmed.") unit.flags1.suppress_wield=true
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true).." is ready for battle.") unit.profession=99 unit.profession2=102
@@ -123,7 +121,7 @@
 :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then unit.status.labors.MINE = true end end end
 
 #useless I know I know but still. BE HAPPY! >:-(
-:lua for _,unit in ipairs(df.global.world.units.active) do unit.status.current_soul.personality.stress_level = -4000 end
+:lua for _,unit in ipairs(df.global.world.units.active) do unit.status.current_soul.personality.stress_level = -40000 end
 :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.civ_id == df.global.ui.civ_id) then if not (unit.flags1.dead) then unit.flags3.emotionally_overloaded = FALSE end end end
 
 #I hate broken caravans... and caravans overstaying their welcome in general.
@@ -144,8 +142,7 @@
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(unit) unit.name.nickname="Bump" unit.name.has_name=true
 
 #I'm butchering your stupid pet... and his buddy that refuses to stop pining for the militia recruit.
-:lua for _,unit in ipairs(df.global.world.units.active) do unit.relations.following = nil end
-:lua for _,unit in ipairs(df.global.world.units.active) do unit.relations.pet_owner_id = -1 end
+:lua for _,unit in ipairs(df.global.world.units.active) do unit.following = nil unit.relationship_ids.Pet = -1 end
 
 #Individually tag "tweak clear-missing"? Nope!
 :lua for _,unit in ipairs(df.global.world.units.active) do if (unit.counters.death_id ~= -1) then death=df.incident.find(unit.counters.death_id) death.flags.discovered=true end end
@@ -153,7 +150,7 @@
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) printall(df.historical_figure.find(unit.hist_figure_id))
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) fig=df.historical_figure.find(unit.hist_figure_id) printall(fig)
 
-:lua entity=df.historical_entity.find(63) print(dfhack.TranslateName(entity.name,true)) printall(entity)
+:lua entity=df.historical_entity.find(df.global.ui.main.fortress_entity.id) print(dfhack.TranslateName(entity.name,true)) printall(entity)
 #Oh my god this damned bug is showing me really odd things...
 :lua for _,unit in ipairs(df.global.world.units.active) do if unit.hist_figure_id~=-1 then fig=df.historical_figure.find(unit.hist_figure_id) zig=0 for k,v in pairs(fig.entity_links) do zig=zig+1 end zig=zig-1 while zig ~= -1 do print(dfhack.TranslateName(df.historical_entity.find(fig.entity_links[zig].entity_id).name,true)) zig=zig-1 end end end
 
@@ -170,14 +167,9 @@
 :lua perp=dfhack.gui.getSelectedUnit() print(df.creature_raw.find(perp.race).creature_id) perp.flags1.dead=false perp.flags3.scuttle=false
 
 #bugger off
-:lua unit=dfhack.gui.getSelectedUnit() unit.flags1.diplomat=true unit.meeting.state=3 unit.animal.leave_countdown=20000
+:lua for _,unit in ipairs(df.global.world.units.active) do if (unit.flags1.forest==true or unit.flags1.diplomat==true or unit.flags1.merchant==true) then unit.flags1.left = true unit.meeting.state=3 unit.animal.leave_countdown=20000 end end
 #bugger off already tagged freaks.
-:lua unit=dfhack.gui.getSelectedUnit() if unit.flags1.diplomat==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 end
-:lua unit=dfhack.gui.getSelectedUnit() if unit.flags1.merchant==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 end
-:lua unit=dfhack.gui.getSelectedUnit() if unit.flags1.forest==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 end
-:lua for _,unit in ipairs(df.global.world.units.active) do if unit.flags1.diplomat==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 end end
-:lua for _,unit in ipairs(df.global.world.units.active) do if unit.flags1.merchant==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 end end
-:lua for _,unit in ipairs(df.global.world.units.active) do if unit.flags1.forest==true then unit.meeting.state=3 unit.animal.leave_countdown=20000 end end
+:lua unit=dfhack.gui.getSelectedUnit() if (unit.flags1.forest==true or unit.flags1.diplomat==true or unit.flags1.merchant==true) then unit.flags1.left = true unit.meeting.state=3 unit.animal.leave_countdown=20000 end end
 
 :lua for _,unit in ipairs(df.global.world.units.active) do if not unit.race==df.global.ui.race_id then unit.status.labors
 :lua for _,unit in ipairs(df.global.world.units.active) do if not unit.race==df.global.ui.race_id then unit.status.labors.HAUL_FURNITURE=false unit.status.labors.HAUL_ITEM=false unit.status.labors.HAUL_ANIMALS=false unit.status.labors.HANDLE_VEHICLES=false unit.status.labors.HAUL_TRADE=false unit.status.labors.PULL_LEVER=false unit.status.labors.HAUL_WATER=false end end
@@ -203,3 +195,39 @@
 :lua v=dfhack.gui.getSelectedUnit() v.status.labors.MINE = false v.status.labors.HAUL_STONE = true v.status.labors.HAUL_WOOD = true v.status.labors.HAUL_BODY = true v.status.labors.HAUL_FOOD = true v.status.labors.HAUL_REFUSE = true v.status.labors.HAUL_ITEM = true v.status.labors.HAUL_FURNITURE = true v.status.labors.HAUL_ANIMALS = true v.status.labors.CLEAN = true v.status.labors.CUTWOOD = false v.status.labors.CARPENTER = true v.status.labors.DETAIL = true v.status.labors.MASON = true v.status.labors.ARCHITECT = true v.status.labors.ANIMALTRAIN = true v.status.labors.ANIMALCARE = true v.status.labors.DIAGNOSE = true v.status.labors.SURGERY = true v.status.labors.BONE_SETTING = true v.status.labors.SUTURING = true v.status.labors.DRESSING_WOUNDS = true v.status.labors.FEED_WATER_CIVILIANS = true v.status.labors.RECOVER_WOUNDED = true v.status.labors.BUTCHER = true v.status.labors.TRAPPER = true v.status.labors.DISSECT_VERMIN = true v.status.labors.LEATHER = true v.status.labors.TANNER = true v.status.labors.BREWER = true v.status.labors.ALCHEMIST = true v.status.labors.SOAP_MAKER = true v.status.labors.WEAVER = true v.status.labors.CLOTHESMAKER = true v.status.labors.MILLER = true v.status.labors.PROCESS_PLANT = true v.status.labors.MAKE_CHEESE = true v.status.labors.MILK = true v.status.labors.COOK = true v.status.labors.PLANT = true v.status.labors.HERBALIST = true v.status.labors.FISH = false v.status.labors.CLEAN_FISH = true v.status.labors.DISSECT_FISH = true v.status.labors.HUNT = false v.status.labors.SMELT = true v.status.labors.FORGE_WEAPON = true v.status.labors.FORGE_ARMOR = true v.status.labors.FORGE_FURNITURE = true v.status.labors.METAL_CRAFT = true v.status.labors.CUT_GEM = true v.status.labors.ENCRUST_GEM = true v.status.labors.WOOD_CRAFT = true v.status.labors.STONE_CRAFT = true v.status.labors.BONE_CARVE = true v.status.labors.GLASSMAKER = true v.status.labors.EXTRACT_STRAND = true v.status.labors.SIEGECRAFT = true v.status.labors.SIEGEOPERATE = true v.status.labors.BOWYER = true v.status.labors.MECHANIC = true v.status.labors.POTASH_MAKING = true v.status.labors.LYE_MAKING = true v.status.labors.DYER = true v.status.labors.BURN_WOOD = true v.status.labors.OPERATE_PUMP = true v.status.labors.SHEARER = true v.status.labors.SPINNER = true v.status.labors.POTTERY = true v.status.labors.GLAZING = true v.status.labors.PRESSING = true v.status.labors.BEEKEEPING = false v.status.labors.WAX_WORKING = true v.status.labors.HANDLE_VEHICLES = true v.status.labors.HAUL_TRADE = true v.status.labors.PULL_LEVER = true v.status.labors.REMOVE_CONSTRUCTION = true v.status.labors.HAUL_WATER = true v.status.labors.GELD = true v.status.labors.BUILD_ROAD = true v.status.labors.BUILD_CONSTRUCTION = true
 
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) unit.following = nil
+
+#Some golems are fighting citizenship. Even with Noble positions they are losing civ_id @.@ You fix it and it's gone later.
+:lua for _,fig in ipairs(df.global.ui.main.fortress_entity.histfig_ids) do if (df.historical_figure.find(fig).civ_id ~= df.global.ui.civ_id) then if (df.unit.find(df.historical_figure.find(fig).unit_id).flags1.dead ~= true) then  print('Found one: ',dfhack.TranslateName(fig.name, true)) end end end
+:lua for _,fig in ipairs(df.global.ui.main.fortress_entity.hist_figures) do if (fig.civ_id ~= df.global.ui.civ_id) then if (df.unit.find(df.historical_figure.find(fig.id).unit_id).flags1.dead ~= true) then  print('Found one: ',dfhack.TranslateName(fig.name, true)) end end end
+
+
+#sanity checking step... *I* need it.
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) print(unit.id) print(df.unit.find(df.historical_figure.find(unit.hist_figure_id).unit_id).id)
+
+#Maybe this'll fix the golem citizenship fights...
+:lua for _,fig in ipairs(df.global.ui.main.fortress_entity.histfig_ids) do if (df.historical_figure.find(fig).civ_id ~= df.global.ui.civ_id) then if (df.unit.find(df.historical_figure.find(fig).unit_id).flags1.dead ~= true) then print(dfhack.TranslateName(df.historical_figure.find(fig).name,true)) df.historical_figure.find(fig).civ_id = df.global.ui.civ_id end end end
+:lua for _,fig in ipairs(df.global.ui.main.fortress_entity.hist_figures) do if (fig.civ_id ~= df.global.ui.civ_id) then if (df.unit.find(df.historical_figure.find(fig.id).unit_id).flags1.dead ~= true) then print(dfhack.TranslateName(fig.name,true)) fig.civ_id = df.global.ui.civ_id end end end
+
+#Need the following for group id somehow... wherever group id IS... maybe there's a find for it... or I can look up it's histfig or something. RESEARCH TIME
+:lua unit=dfhack.gui.getSelectedUnit() unit.civ_id = df.global.ui.civ_id
+
+:lua group=df.historical_entity.find(df.historical_entity.find(df.global.ui.main.fortress_entity.id).group_id) print('Group Identity',dfhack.TranslateName(group.name,true)) printall(group)
+#OR
+:lua group=df.historical_entity.find(df.global.ui.group_id) print('Group Identity',dfhack.TranslateName(group.name,true)) printall(group)
+
+:lua entity=df.historical_entity.find(df.global.ui.main.fortress_entity.id) print('Fortress Entity',dfhack.TranslateName(entity.name,true)) print('Site Name',dfhack.TranslateName(df.world_site.find(entity.site_links[0].target).name,true))
+#or (why yes I love the cross checkable nature of properly referenced data. it is also great when I come back to things a year later clueless...)
+:lua entity=df.historical_entity.find(df.global.ui.group_id) print('Fortress Entity',dfhack.TranslateName(entity.name,true)) print('Site Name',dfhack.TranslateName(df.world_site.find(df.global.ui.site_id).name,true))
+
+
+#Food hunger and sleep fixing... or remove the current loadout and place your own. :D
+:lua for _,fig in ipairs(df.global.ui.main.fortress_entity.histfig_ids) do if (df.historical_figure.find(fig).civ_id == df.global.ui.civ_id) then fig_unit = df.unit.find(df.historical_figure.find(fig).unit_id) if (fig_unit.flags1.dead ~= true) then print(dfhack.TranslateName(fig_unit.name,true).. ' will be tended to.') fig_unit.counters2.hunger_timer = -50000 fig_unit.counters2.thirst_timer = -50000 fig_unit.counters2.sleepiness_timer = -50000 end end end
+
+#Power to the Peasants
+:lua for _,v in ipairs(df.global.world.units.active) do if (v.civ_id == df.global.ui.civ_id) then v.profession = 102 v.profession2 = 102 end end
+
+#Forge weapon... because crafts can /get stuffed/.
+:lua for _,fig in ipairs(df.global.ui.main.fortress_entity.histfig_ids) do if (df.historical_figure.find(fig).civ_id == df.global.ui.civ_id) then fig_unit = df.unit.find(df.historical_figure.find(fig).unit_id) if (fig_unit.flags1.dead ~= true) then if fig_unit.flags1.had_mood == false then fig_unit.job.mood_skill = 27 end end end end
+
+#deathcause can be lacking...
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) print(unit.id) print('Last Known Position -which might be a coffin- at :lua df.global.cursor.x=' ..unit.pos.x.. ' df.global.cursor.y=' ..unit.pos.y.. ' df.global.cursor.z=' ..unit.pos.z.. ' Use loo\'k\', then cut and paste that to see where, and run deathcause to know more about how they died. Starving in a cage gives bupkiss.')

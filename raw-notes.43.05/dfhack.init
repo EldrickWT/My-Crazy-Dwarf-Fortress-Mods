@@ -2,6 +2,6 @@
 #binpatch apply 5forbiddenunlock
 unload building-hacks
 disable stockflow
-workflow disable
+#workflow disable
 workNow 0
-:lua dfhack.script_environment('gui/prerelease-warning').shown = true
+# :lua dfhack.script_environment('gui/prerelease-warning').shown = true

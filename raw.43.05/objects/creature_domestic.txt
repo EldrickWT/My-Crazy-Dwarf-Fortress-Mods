@@ -1054,7 +1054,7 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:BIRD_CHICKEN]
-	[DESCRIPTION:A small domestic bird capable of flying short distances.  It is prized for its tasty eggs.]
+	[DESCRIPTION:A small domestic bird capable of flying short distances. It is prized for its tasty eggs.]
 	[NAME:chicken:chickens:chicken]
 	[CHILD:1][GENERAL_CHILD_NAME:chick:chicks]
 	[CREATURE_TILE:'c'][COLOR:6:0:0]
