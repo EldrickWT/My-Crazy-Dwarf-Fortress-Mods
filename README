@@ -17,12 +17,15 @@ Download (42.XX)
 Cancelled
 Download (43.XX)
 TBA
+Download (44.XX)
+TBA
+
 
 Structure:
 
 .X The version it SHOULD work for.
 
-43.05 is NOW TESTING. Brace for Impact.
+44.06 is NOW TESTING. No raw changes from 44.05
 
 data.X - the colors, inits, worldgen, speeches, modded fortressintro modded
     "human_trade_bye", and modded monarch
@@ -38,10 +41,11 @@ raw.X - a big merge of all my mods and all other mods I've added to My Little Ar
 split out mods.X - all my mods in individual packages.
 split out mods.31.25 - the contents of the 31.25 zips ...
 
-Errata: Version blahblahblah arrived .. find .. slipping .. radar.
+Errata: Version 44.06 arrived... but I hear 44.07 might be soon. Oh well. I haven't
+	posted these in forever so now is as good a time as any I guess.
 
-	So. Increased the civ counts from 1... after a world where an entire civ just
-	abandoned everything right before world gen ended. Did they all go Necromancer?
+	Got hit kinda hard by all the not-able-to-worship and no-drinks for critters mess.
+	OTHERWISE things have mostly been golden since last UPLOADED set of files. RAW-wise
 dfhack.X: 
     I have a DFHACK fork now... So only sentiment keeps the dfhack.x chain around for the
     time being. In time I may delete all traces on this repo, as the files are all meer

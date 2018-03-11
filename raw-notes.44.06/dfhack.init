@@ -1,0 +1,8 @@
+# SUPPOSED to turn [UNIQUE_DEMON] into a RAW compatible token"
+#binpatch apply 5forbiddenunlock
+unload building-hacks
+disable stockflow
+#workflow disable
+workNow 0
+unload dwarfvet
+# :lua dfhack.script_environment('gui/prerelease-warning').shown = true

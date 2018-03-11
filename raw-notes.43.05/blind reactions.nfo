@@ -1,0 +1,45 @@
+	############################################################################################
+	#Start Blind Reactions -for when the input metal does.not.matter. Just like with Wood
+	############################################################################################
+	[PERMITTED_REACTION:FORGE_METAL_BARREL_(BR)]
+	[PERMITTED_REACTION:FORGE_METAL_BARREL_(MAGMASAFE)_(BR)]
+	[PERMITTED_REACTION:FORGE_METAL_BIN_(BR)]
+	[PERMITTED_REACTION:FORGE_METAL_BIN_(MAGMASAFE)_(BR)]
+	[PERMITTED_REACTION:FORGE_METAL_BOX_(BR)]
+	[PERMITTED_REACTION:FORGE_METAL_BOX_(MAGMASAFE)_(BR)]
+	[PERMITTED_REACTION:FORGE_METAL_CHAIN_(BR)]
+	[PERMITTED_REACTION:FORGE_METAL_CHAIN_(MAGMASAFE)_(BR)]
+	[PERMITTED_REACTION:FORGE_METAL_KEG_(BR)]
+	[PERMITTED_REACTION:FORGE_METAL_KEG_(MAGMASAFE)_(BR)]
+	[PERMITTED_REACTION:FORGE_METAL_MECHANISM_(BR)]
+	[PERMITTED_REACTION:FORGE_METAL_MECHANISM_(MAGMASAFE)_(BR)]
+	[PERMITTED_REACTION:FORGE_METAL_POT_(BR)]
+	[PERMITTED_REACTION:FORGE_METAL_POT_(MAGMASAFE)_(BR)]
+	[PERMITTED_REACTION:FORGE_METAL_STATUE_(BR)]
+	[PERMITTED_REACTION:FORGE_METAL_STATUE_(MAGMASAFE)_(BR)]
+	############################################################################################
+	#End Blind Reactions
+	############################################################################################
+
+	############################################################################################
+	#Start Blind Reactions -for when the input metal does.not.matter. Just like with Wood
+	############################################################################################
+	PERMITTED_REACTION:FORGE_METAL_BARREL_(BR)
+	PERMITTED_REACTION:FORGE_METAL_BARREL_(MAGMASAFE)_(BR)
+	PERMITTED_REACTION:FORGE_METAL_BIN_(BR)
+	PERMITTED_REACTION:FORGE_METAL_BIN_(MAGMASAFE)_(BR)
+	PERMITTED_REACTION:FORGE_METAL_BOX_(BR)
+	PERMITTED_REACTION:FORGE_METAL_BOX_(MAGMASAFE)_(BR)
+	PERMITTED_REACTION:FORGE_METAL_CHAIN_(BR)
+	PERMITTED_REACTION:FORGE_METAL_CHAIN_(MAGMASAFE)_(BR)
+	PERMITTED_REACTION:FORGE_METAL_KEG_(BR)
+	PERMITTED_REACTION:FORGE_METAL_KEG_(MAGMASAFE)_(BR)
+	PERMITTED_REACTION:FORGE_METAL_MECHANISM_(BR)
+	PERMITTED_REACTION:FORGE_METAL_MECHANISM_(MAGMASAFE)_(BR)
+	PERMITTED_REACTION:FORGE_METAL_POT_(BR)
+	PERMITTED_REACTION:FORGE_METAL_POT_(MAGMASAFE)_(BR)
+	PERMITTED_REACTION:FORGE_METAL_STATUE_(BR)
+	PERMITTED_REACTION:FORGE_METAL_STATUE_(MAGMASAFE)_(BR)
+	############################################################################################
+	#End Blind Reactions
+	############################################################################################
