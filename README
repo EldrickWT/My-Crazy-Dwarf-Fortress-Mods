@@ -25,7 +25,7 @@ Structure:
 
 .X The version it SHOULD work for.
 
-44.08 is NOW TESTING. No raw changes from 44.06
+44.08 is NOW TESTING. No significant raw changes since 44.05
 
 data.X - the colors, inits, worldgen, speeches, modded fortressintro modded
     "human_trade_bye", and modded monarch
