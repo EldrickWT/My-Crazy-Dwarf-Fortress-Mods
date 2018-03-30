@@ -1,0 +1,82 @@
+############################################################################################
+#                   My Crazy Default Init File
+#                   onLoad.init
+############################################################################################
+#                   Your workshop hackery key is here.
+keybinding set Ctrl-Shift-Q "gui/workshop-job"
+#                   Your item hackery key is here.
+keybinding set Ctrl-Shift-W "gui/create-item"
+#                   War Beam. Great for preparing for war... or just deciding what critters are YOURS and what's ready for the kitchen. Great for singling out breeding clusters too.
+keybinding set Ctrl-Shift-E ":lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true).. ' has been trained for War.') unit.profession = 99 unit.profession2 = 99"
+keybinding set Ctrl-Shift-R "tiletypes-here-point"
+keybinding set Ctrl-Shift-T "liquids-here"
+#                   Peasant beam. Maybe conscript is toooooo much. Maybe you can't make out Fishery Workers against the black. Maybe a 'war chicken' was not intended.
+keybinding set Ctrl-Shift-Y ":lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true).. ' is now a Peasant.') unit.profession = 102 unit.profession2 = 102"
+#                   For when that cheese sits in the building for an age of the world.
+keybinding set Ctrl-Shift-U ":lua item=dfhack.gui.getSelectedItem() item.flags.in_building=false"
+#                   One key conscription. Run twice and it should be clean... if you're paranoid.
+keybinding set Ctrl-Shift-I " multicmd conscript-eld mine nobees; :lua for _,unit in ipairs(df.global.world.units.active) do unit.following = nil unit.relationship_ids.Pet = -1 end "
+#                   'Overdrive'
+keybinding set Ctrl-Shift-O "fastdwarf 1 0"
+#                   'Overtake'
+keybinding set Ctrl-Shift-Alt-O "fastdwarf 2 1"
+#                   Back to normal 'Plod'
+keybinding set Ctrl-Shift-P "fastdwarf 0 0"
+#                   Because my for loops were ignoring me with dwarfvet enabled.
+keybinding set Ctrl-Shift-A ":lua unit=dfhack.gui.getSelectedUnit() unit.civ_id = df.global.ui.civ_id print(dfhack.TranslateName(unit.name,true).. ' has had their civilization entry fixed.')"
+#                   Don't care...
+keybinding set Ctrl-Shift-S "fix/dead-units"
+#                   Like it says within.
+keybinding set Ctrl-Shift-D " :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) print(unit.id) print('Last Known Position -which might be a coffin- at :lua df.global.cursor.x=' ..unit.pos.x.. ' df.global.cursor.y=' ..unit.pos.y.. ' df.global.cursor.z=' ..unit.pos.z.. ' Use loo\'k\', then cut and paste that to see where, and run deathcause to know more about how they died. Starving in a cage gives bupkiss.') "
+#                   My fortress residents seem to be completely ignoring anything caged, or pastured, in Shaftburied.
+keybinding set Ctrl-Shift-F " :lua for _,fig in ipairs(df.global.ui.main.fortress_entity.histfig_ids) do if (df.historical_figure.find(fig).civ_id == df.global.ui.civ_id) then fig_unit = df.unit.find(df.historical_figure.find(fig).unit_id) if (fig_unit.flags1.dead ~= true) then fig_unit.counters2.hunger_timer = 5000 fig_unit.counters2.thirst_timer = 5000 fig_unit.counters2.sleepiness_timer = 5000 fig_unit.counters2.stomach_content = 5000 fig_unit.counters2.stomach_food = 5000 end end end "
+#                   Because exterminate is politically correct now.
+keybinding set Shift-K "slayrace him"
+#                   Because /filth/ needs butchering. "But my pet..." /Filth/ should have been left off the map... to die.
+keybinding set Ctrl-Shift-B ":lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)..' will be slated for the butcher stand') unit.flags2.slaughter=true"
+#                   I shouldn't actually need this one... with the repeating job below.
+keybinding set Ctrl-Shift-M " multicmd dowork ; domine "
+#                   Too slow
+:lua df.global.debug_fastmining=true
+#                   Not on my watch.
+:lua df.global.debug_showambush=true
+#                   Better this nagging it's unneeded, than a popup window.
+:lua dfhack.script_environment('gui/prerelease-warning').shown = true
+#                   Needs tweaking. Messes with traders... even though it should not. Run manually after the tradesmen leave.
+#conscript-eld mine nobees
+eld-log-region
+enable automaterial
+fix/blood-del
+#                   Breaks /many/ pets, and "makeown" in general.
+#dwarfvet enable
+enable dwarfmonitor
+fix/growthbug enable
+enable infiniteSky
+itemsyndrome
+enable manipulator
+enable resume
+enable search
+soundsense-season
+stockflow enable
+workNow 2
+repeat -name alphareleasesavejorb -time 28 -timeUnits days -command [ quicksave ]
+#                   the examples of the next two are 10 days. I shudder to think...
+repeat -name checktreesjorb -time 1 -timeUnits days -command [ warn-stuck-trees ]
+repeat -name checkstarvingjorb -time 1 -timeUnits days -command [ warn-starving ]
+#                   Not items because that gets rid of fruits, nuts, leaves that fall in item clouds.
+repeat -name cleanmapjorb -time 1 -timeUnits days -command [ clean all snow ]
+#                   Best used of drier maps, or fire prone ones.
+repeat -name fixweatherjorb -time 7 -timeUnits days -command [ multicmd weather clear; weather rain ]
+#                   It is a kinda nice wind simulator too... and turns bamboo stands into real thick places.
+repeat -name regrassjorb -time 1 -timeUnits days -command [ regrass max ]
+#                   Every 4 hours... I like my ant farms motive.
+repeat -name doworkjorb -time 200 -timeUnits ticks -command [ dowork ]
+repeat -name dominejorb -time 200 -timeUnits ticks -command [ domine ]
+#                   everyone gets a sherpa so they can GET OVER THEMSELVES.
+repeat -name sherpajorb -time 1 -timeUnits days -command [ fillneeds -all ]
+#                   SUPPOSED to turn [UNIQUE_DEMON] into a RAW compatible token
+#binpatch apply 5forbiddenunlock
+tweak adamantine-cloth-wear
+tweak fast-heat 5
+tweak military-color-assigned
+tweak military-stable-assign

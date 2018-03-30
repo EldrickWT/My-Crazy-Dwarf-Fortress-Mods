@@ -25,7 +25,7 @@ Structure:
 
 .X The version it SHOULD work for.
 
-44.06 is NOW TESTING. No raw changes from 44.05
+44.08 is NOW TESTING. No raw changes from 44.06
 
 data.X - the colors, inits, worldgen, speeches, modded fortressintro modded
     "human_trade_bye", and modded monarch
@@ -41,15 +41,12 @@ raw.X - a big merge of all my mods and all other mods I've added to My Little Ar
 split out mods.X - all my mods in individual packages.
 split out mods.31.25 - the contents of the 31.25 zips ...
 
-Errata: Version 44.06 arrived... but I hear 44.07 might be soon. Oh well. I haven't
-	posted these in forever so now is as good a time as any I guess.
+Errata: Version 44.08 arrived...
 
-	Got hit kinda hard by all the not-able-to-worship and no-drinks for critters mess.
-	OTHERWISE things have mostly been golden since last UPLOADED set of files. RAW-wise
 dfhack.X: 
     I have a DFHACK fork now... So only sentiment keeps the dfhack.x chain around for the
     time being. In time I may delete all traces on this repo, as the files are all meer
     inches away. At least I'm not strange enough to FORCE them onto one repo. Because it
     would be a 30 Inch Cube going into a 15 Inch Round Hole.
 
-Holding Pen: Currently contains files from the C_V testing. See previous README for details.
+Holding Pen: Currently contains files from the C_V testing. See a previous README for details.
