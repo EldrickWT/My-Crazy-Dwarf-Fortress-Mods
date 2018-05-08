@@ -25,7 +25,7 @@ Structure:
 
 .X The version it SHOULD work for.
 
-44.08 is NOW TESTING. No significant raw changes since 44.05
+44.10 is NOW TESTING. No significant raw changes since 44.05
 
 data.X - the colors, inits, worldgen, speeches, modded fortressintro modded
     "human_trade_bye", and modded monarch
@@ -41,7 +41,7 @@ raw.X - a big merge of all my mods and all other mods I've added to My Little Ar
 split out mods.X - all my mods in individual packages.
 split out mods.31.25 - the contents of the 31.25 zips ...
 
-Errata: Version 44.08 arrived...
+Errata: Version 44.10 arrived...
 
 dfhack.X: 
     I have a DFHACK fork now... So only sentiment keeps the dfhack.x chain around for the
