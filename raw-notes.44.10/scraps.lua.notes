@@ -231,3 +231,19 @@
 
 #deathcause can be lacking...
 :lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(unit.name,true)) print(unit.id) print('Last Known Position -which might be a coffin- at :lua df.global.cursor.x=' ..unit.pos.x.. ' df.global.cursor.y=' ..unit.pos.y.. ' df.global.cursor.z=' ..unit.pos.z.. ' Use loo\'k\', then cut and paste that to see where, and run deathcause to know more about how they died. Starving in a cage gives bupkiss.')
+
+##LANGUAGE WORKSPACE! I started with Bits taken from babblefish.lua but that's not a commandline translation tool at present so... but it pointed me in the right direction.
+
+#397 is HIDE
+:lua print(df.global.world.raws.language.words[397].word)
+#hide is coce in elf. ansi 1252 doesn't show the accent marks correctly. that's oem 437. so we need this and prior badly for variable checking on the command line.
+:lua print(df.global.world.raws.language.translations[1].words[397].value)
+
+#spammy search for the coce first name
+:lua bob=0 while (df.historical_figure.find(bob)) do if (df.historical_figure.find(bob).name.first_name == df.global.world.raws.language.translations[1].words[397].value) then print(dfhack.TranslateName(df.historical_figure.find(bob).name,false,false)) end bob=bob+1 end
+#cursecheck told me the secrets of finding identities... so a spammy search for the firstname... but under identies...
+:lua bob=0 while (df.identity.find(bob)) do if (df.identity.find(bob).name.first_name == df.global.world.raws.language.translations[1].words[397].value) then print(dfhack.TranslateName(df.identity.find(bob).name,false,false)) end bob=bob+1 end
+
+##THE RESULTS OF THE WORK
+#this works if you know they had 2 other identies. yeah no for loop or size check my lua fu is not that strong. IDEALLY it would do a check for size/length/rutabegas and put a fresh line with a fresh identity. again my lua is weak. at least in a month this lazy crap will still make sense.
+:lua unit=dfhack.gui.getSelectedUnit() print("Unit name: " ..dfhack.TranslateName(unit.name)) print("Historical figure: "  ..dfhack.TranslateName(df.historical_figure.find(unit.hist_figure_id).name)) print("Current Identity: "   ..dfhack.TranslateName(df.identity.find(df.historical_figure.find(unit.hist_figure_id).info.reputation.cur_identity).name)) print("Prior Identities: 1 " ..dfhack.TranslateName(df.identity.find(df.historical_figure.find(unit.hist_figure_id).info.reputation.all_identities[0]).name)) print("Prior Identities: 2 " ..dfhack.TranslateName(df.identity.find(df.historical_figure.find(unit.hist_figure_id).info.reputation.all_identities[1]).name))

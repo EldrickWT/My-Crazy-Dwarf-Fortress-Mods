@@ -5,4 +5,5 @@ disable stockflow
 #workflow disable
 workNow 0
 unload dwarfvet
+tweak block-labors disable
 # :lua dfhack.script_environment('gui/prerelease-warning').shown = true
