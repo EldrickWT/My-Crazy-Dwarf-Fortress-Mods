@@ -247,3 +247,12 @@
 ##THE RESULTS OF THE WORK
 #this works if you know they had 2 other identies. yeah no for loop or size check my lua fu is not that strong. IDEALLY it would do a check for size/length/rutabegas and put a fresh line with a fresh identity. again my lua is weak. at least in a month this lazy crap will still make sense.
 :lua unit=dfhack.gui.getSelectedUnit() print("Unit name: " ..dfhack.TranslateName(unit.name)) print("Historical figure: "  ..dfhack.TranslateName(df.historical_figure.find(unit.hist_figure_id).name)) print("Current Identity: "   ..dfhack.TranslateName(df.identity.find(df.historical_figure.find(unit.hist_figure_id).info.reputation.cur_identity).name)) print("Prior Identities: 1 " ..dfhack.TranslateName(df.identity.find(df.historical_figure.find(unit.hist_figure_id).info.reputation.all_identities[0]).name)) print("Prior Identities: 2 " ..dfhack.TranslateName(df.identity.find(df.historical_figure.find(unit.hist_figure_id).info.reputation.all_identities[1]).name))
+
+#New visible name fun... since the plot varnish is not being applied to unit.name from cur_identity
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(df.identity.find(df.historical_figure.find(unit.hist_figure_id).info.reputation.cur_identity).name))
+
+#Faster... path to unit's identity. via unit and getidentity.
+:lua unit=dfhack.gui.getSelectedUnit() print(dfhack.TranslateName(dfhack.units.getIdentity(unit).name))
+
+#This worked?? No variable. @.@ yesIforgotyoucandothatforoneofs
+:lua df.historical_figure.find(dfhack.gui.getSelectedUnit().hist_figure_id)
